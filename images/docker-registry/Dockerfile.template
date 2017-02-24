@@ -1,0 +1,14 @@
+FROM ${IMAGE_PARENT}
+MAINTAINER ${MAINTAINER}
+
+ADD rootfs.tar /
+
+ENV DISTRIBUTION_DIR /go/src/github.com/docker/distribution \
+  GOPATH $DISTRIBUTION_DIR/Godeps/_workspace:/go
+
+WORKDIR $DISTRIBUTION_DIR
+
+EXPOSE 5000
+
+ENTRYPOINT ["registry"]
+CMD ["cmd/registry/config.yml"]

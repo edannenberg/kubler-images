@@ -1,0 +1,20 @@
+FROM ${IMAGE_PARENT}
+MAINTAINER ${MAINTAINER}
+
+ADD rootfs.tar /
+
+ADD etc /etc
+
+RUN eselect postgresql set 9.5 && \
+    chmod +x $(find /etc/service -name run) && \
+    ln -s /etc/s6_finish_default /etc/service/postgres/finish && \
+    ln -s /etc/service/postgres /service && \
+    ln -s /etc/service/cron /service
+
+ENV PGDATA /var/lib/postgresql/data
+
+VOLUME /var/lib/postgresql/data /backup
+
+EXPOSE 5432
+
+CMD ["/bin/s6-svscan", "-t0", "/service"]

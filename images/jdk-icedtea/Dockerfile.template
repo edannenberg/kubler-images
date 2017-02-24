@@ -1,0 +1,7 @@
+FROM ${IMAGE_PARENT}
+MAINTAINER ${MAINTAINER}
+
+ADD rootfs.tar /
+
+RUN ldconfig && \
+    eselect java-vm set system 1
