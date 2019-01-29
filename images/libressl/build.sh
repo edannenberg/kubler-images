@@ -16,7 +16,7 @@ configure_bob()
     emerge -C dev-libs/openssl
     emerge -1 dev-libs/libressl net-misc/wget
 
-    # always build from source for these as a binary package linked against an older libressl version forces an
+    # always build from source for these as a binary package linked against an older libressl version forces a
     # downgrade to that version. possibly a bug in portage?
     local current_emerge_opts="${EMERGE_DEFAULT_OPTS}"
     export EMERGE_DEFAULT_OPTS="-b"
@@ -33,8 +33,7 @@ configure_bob()
 #
 configure_rootfs_build()
 {
-    update_use 'app-misc/ca-certificates' '-cacert' '-insecure_certs'
-    update_keywords 'app-misc/ca-certificates' '+~amd64'
+    update_use 'app-misc/ca-certificates' '-cacert'
 }
 
 #
