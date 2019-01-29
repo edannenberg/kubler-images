@@ -10,7 +10,7 @@ configure_rootfs_build()
 {
     local java_url
     java_url='http://download.oracle.com/otn-pub/java'
-    download_from_oracle "${java_url}"/jdk/8u192-b12/750e1c8617c5452694857ad95c3ee230/jre-8u192-linux-x64.tar.gz
+    download_from_oracle "${java_url}"/jdk/8u202-b08/1961070e4c9b4e26a04e7f5a083f551e/jre-8u202-linux-x64.tar.gz
     download_from_oracle "${java_url}"/jce/8/jce_policy-8.zip
 
     update_use 'dev-java/oracle-jre-bin' +headless-awt +jce +fontconfig
