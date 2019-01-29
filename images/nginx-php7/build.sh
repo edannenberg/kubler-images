@@ -6,7 +6,7 @@ _php_target="php${_php_slot/\./-}"
 _zend_api="20160303"
 _packages="dev-lang/php:${_php_slot} dev-php/xdebug dev-php/pecl-apcu_bc dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached"
 _php_timezone="${BOB_TIMEZONE:-UTC}"
-_adminer_version="4.6.2"
+_adminer_version="4.7.1"
 #_iconv_from=kubler/glibc
 
 configure_bob()
@@ -15,7 +15,6 @@ configure_bob()
     echo 'PHP_INI_VERSION="production"' >> /etc/portage/make.conf
     echo "-php_targets_${_php_target}" >> /etc/portage/profile/use.mask
 
-    update_keywords 'dev-lang/php' '+~amd64'
     update_use 'sys-libs/ncurses' '+minimal'
 
     update_use '+gif' '+jpeg' '+jpeg2k' '+png' '+tiff' '+webp'
@@ -33,9 +32,6 @@ configure_bob()
 #
 configure_rootfs_build()
 {
-    update_keywords 'dev-php/xdebug' '+~amd64'
-    update_keywords 'dev-php/xdebug-client' '+~amd64'
-
     update_use 'dev-php/pecl-apcu' '+mmap'
 
     # skip bash, perl, autogen. pulled in as dep since php 5.5.22
@@ -71,6 +67,7 @@ finish_rootfs_build()
     download_file https://www.adminer.org/static/download/"${_adminer_version}"/adminer-"${_adminer_version}"-en.php
     cp "${__download_file}" "${_EMERGE_ROOT}"/var/www/adminer/adminer.php
     download_file https://raw.github.com/vrana/adminer/master/designs/bueltge/adminer.css
+    log_as_installed "manual install" "adminer-${_adminer_version}" "https://www.adminer.org/"
     cp "${__download_file}" "${_EMERGE_ROOT}"/var/www/adminer/adminer.css
     echo "<?php phpinfo(); ?>" > "${_EMERGE_ROOT}"/var/www/phpinfo/phpinfo.php
 }
