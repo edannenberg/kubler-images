@@ -15,6 +15,7 @@ configure_bob() {
     done
 
     # install basics used by helper functions
+    eselect news read new 1> /dev/null
     emerge app-portage/flaggie app-portage/eix app-portage/gentoolkit
     configure_eix
 

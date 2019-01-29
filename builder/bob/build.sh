@@ -8,6 +8,7 @@
 configure_bob() {
     fix_portage_profile_symlink
     # install basics used by helper functions
+    eselect news read new 1> /dev/null
     emerge app-portage/flaggie app-portage/eix app-portage/gentoolkit
     configure_eix
     mkdir -p /etc/portage/package.{accept_keywords,unmask,mask,use}
