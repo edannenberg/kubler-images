@@ -1,22 +1,15 @@
-### kubler/python2:20190131
+### kubler/perl:20190131
 
-Built: Thu Jan 31 21:07:37 CET 2019
-Image Size: 110MB
+Built: Thu Jan 31 20:24:22 CET 2019
+Image Size: 81.8MB
 
 #### Installed
 Package | USE Flags
 --------|----------
+app-admin/perl-cleaner-2.27 | ``
 app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
-app-eselect/eselect-python-20171204 | ``
-app-misc/mime-types-9 | ``
-dev-db/sqlite-3.25.3 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-2.7.15 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -doc -examples -gdbm -ipv6 -libressl -ncurses -tk -wininst`
-dev-lang/python-exec-2.4.6 | ` `
-dev-libs/expat-2.2.5 | `unicode -examples -static-libs`
-dev-libs/libffi-3.2.1 | `-debug -pax`
-dev-python/certifi-2018.4.16 | ` `
-dev-python/pip-9.0.1-r1 | ` `
-dev-python/setuptools-36.7.2 | `-test`
+dev-lang/perl-5.26.2 | `-berkdb -debug -doc -gdbm -ithreads`
+perl-core/File-Temp-0.230.400-r1 | ``
 #### Inherited
 Package | USE Flags
 --------|----------

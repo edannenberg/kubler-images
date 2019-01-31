@@ -1,25 +1,46 @@
-### kubler/python2:20190131
+### kubler/graph-easy:20190131
 
-Built: Thu Jan 31 21:07:37 CET 2019
-Image Size: 110MB
+Built: Thu Jan 31 20:26:38 CET 2019
+Image Size: 122MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
-app-eselect/eselect-python-20171204 | ``
-app-misc/mime-types-9 | ``
-dev-db/sqlite-3.25.3 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-2.7.15 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -doc -examples -gdbm -ipv6 -libressl -ncurses -tk -wininst`
-dev-lang/python-exec-2.4.6 | ` `
 dev-libs/expat-2.2.5 | `unicode -examples -static-libs`
+dev-libs/fribidi-1.0.5 | `-static-libs`
+dev-libs/glib-2.56.4 | `mime xattr -dbus -debug (-fam) (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.2.1 | `-debug -pax`
-dev-python/certifi-2018.4.16 | ` `
-dev-python/pip-9.0.1-r1 | ` `
-dev-python/setuptools-36.7.2 | `-test`
+dev-libs/libltdl-2.4.6 | `-static-libs`
+dev-libs/libpcre-8.41-r1 | `bzip2 cxx readline recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
+dev-libs/libxml2-2.9.8 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/lzo-2.10 | `-examples -static-libs`
+dev-perl/Config-Tiny-2.230.0 | `-test`
+dev-perl/Digest-SHA1-2.130.0-r1 | ``
+dev-perl/Graph-Easy-0.76 | `graphviz`
+dev-util/glib-utils-2.56.4 | ` `
+media-fonts/liberation-fonts-2.00.1-r3 | `-`
+media-gfx/graphviz-2.40.1-r1 | `cairo -`
+media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
+media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
+media-libs/gd-2.2.5-r1 | `fontconfig jpeg png truetype zlib -static-libs -tiff -webp -xpm`
+media-libs/harfbuzz-2.0.2-r1 | `cairo glib truetype -debug -graphite -icu -introspection -static-libs -test`
+media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
+media-libs/libpng-1.6.35-r1 | `-apng (-neon) -static-libs`
+sys-apps/util-linux-2.33-r1 | `cramfs nls readline suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
+sys-devel/binutils-config-5-r4 | ``
+sys-libs/binutils-libs-2.30-r4 | `nls -64-bit-bfd -multitarget -static-libs`
+x11-libs/cairo-1.16.0-r2 | `glib svg -`
+x11-libs/pango-1.42.4 | `-`
+x11-libs/pixman-0.36.0 | `(-altivec) (-loongson2f) (-neon) -static-libs`
+x11-misc/shared-mime-info-1.10 | `-test`
 #### Inherited
 Package | USE Flags
 --------|----------
+**FROM kubler/perl** |
+app-admin/perl-cleaner-2.27 | ``
+app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
+dev-lang/perl-5.26.2 | `-berkdb -debug -doc -gdbm -ithreads`
+perl-core/File-Temp-0.230.400-r1 | ``
 **FROM kubler/bash** |
 app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
