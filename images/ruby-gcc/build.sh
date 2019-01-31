@@ -15,6 +15,8 @@ configure_rootfs_build()
     echo "-ruby_targets_ruby24" >> /etc/portage/profile/use.mask
     update_keywords 'dev-lang/ruby' '+~amd64'
     update_keywords '=dev-ruby/test-unit-3.2.8' '+~amd64'
+    # no python please.
+    provide_package dev-lang/python-exec app-eselect/eselect-python dev-lang/python
 }
 
 #
