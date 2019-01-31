@@ -16,6 +16,8 @@ configure_rootfs_build()
 # 
 finish_rootfs_build()
 {
+    cp /etc/{passwd,group} "${_EMERGE_ROOT}"/etc
+    sed -i 's|/bin/bash|/bin/sh|g' "${_EMERGE_ROOT}"/etc/passwd
     # log dir, root home dir
     mkdir -p "${_EMERGE_ROOT}"/var/log "${_EMERGE_ROOT}"/root
     # busybox crond setup
