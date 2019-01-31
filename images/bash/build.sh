@@ -17,5 +17,5 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
-    :
+    cp /etc/{passwd,group} "${_EMERGE_ROOT}"/etc
 }
