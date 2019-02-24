@@ -20,7 +20,7 @@ configure_bob() {
     configure_eix
 
     touch /etc/portage/package.accept_keywords/flaggie
-    echo 'LANG="en_US.UTF-8"' > /etc/env.d/02locale
+    echo 'LANG="en_US.utf8"' > /etc/env.d/02locale
     env-update
     source /etc/profile
     # install default packages
