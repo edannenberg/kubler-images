@@ -3,11 +3,7 @@
 #
 _packages="dev-java/oracle-jdk-bin"
 
-#
-# This hook is called just before starting the build of the root fs
-#
-configure_rootfs_build()
-{
+configure_builder() {
     local java_url
     java_url='http://download.oracle.com/otn-pub/java'
     download_from_oracle "${java_url}"/jdk/8u202-b08/1961070e4c9b4e26a04e7f5a083f551e/jdk-8u202-linux-x64.tar.gz
@@ -15,8 +11,17 @@ configure_rootfs_build()
 
     update_use 'dev-java/oracle-jdk-bin' +headless-awt +jce +fontconfig
     # skip python and iced-tea
-    provide_package dev-lang/python dev-java/icedtea-bin
+    provide_package dev-lang/python dev-lang/python-exec dev-java/icedtea-bin
 
+    # install java in build container so depending builds have it available
+    emerge dev-java/oracle-jre-bin
+}
+
+#
+# This hook is called just before starting the build of the root fs
+#
+configure_rootfs_build()
+{
     # add user/group for unprivileged container usage
     groupadd -g 808 java
     useradd -u 8080 -g java -d /home/java java

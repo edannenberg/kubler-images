@@ -3,16 +3,21 @@
 #
 _packages="dev-java/icedtea-bin:8"
 
+configure_builder()
+{
+    update_use 'dev-java/icedtea-bin' -webstart +headless-awt
+    # skip python and nss
+    provide_package dev-lang/python dev-libs/nss
+
+    # install java in build container so depending builds have it available
+    emerge dev-java/icedtea-bin:8
+}
+
 #
 # This hook is called just before starting the build of the root fs
 #
 configure_rootfs_build()
 {
-    update_use 'dev-java/icedtea-bin' -webstart +headless-awt
-    # skip python and nss
-    provide_package dev-lang/python
-    provide_package dev-libs/nss
-
     # add user/group for unprivileged container usage
     groupadd -g 808 java
     useradd -u 8080 -g java -d /home/java java
