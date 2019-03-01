@@ -3,10 +3,6 @@
 #
 _packages="dev-libs/libsass"
 
-configure_bob() {
-    add_layman_overlay graaff
-}
-
 #
 # This hook is called just before starting the build of the root fs
 #
