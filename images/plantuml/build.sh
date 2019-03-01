@@ -33,6 +33,9 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
+    # init glib
+    gio-querymodules "${_EMERGE_ROOT}"/usr/lib64/gio/modules
+
     emerge -C dev-java/javatoolkit dev-java/tomcat-servlet-api media-libs/freetype media-libs/fontconfig
     find /usr/"${_LIB}"/gcc -name libgcc_s.so.1 -exec cp {} "${_EMERGE_ROOT}"/usr/"${_LIB}"/ \;
     log_as_installed "manual install" plantuml-server-"${_plantuml_version}" https://github.com/plantuml/plantuml-server
