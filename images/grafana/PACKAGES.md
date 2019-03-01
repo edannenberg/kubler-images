@@ -1,12 +1,12 @@
-### kubler/grafana:20190131
+### kubler/grafana:20190228
 
-Built: Thu Jan 31 20:23:47 CET 2019
-Image Size: 116MB
+Built: Fri Mar  1 02:40:01 CET 2019
+Image Size: 128MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-www-apps/grafana-5.4.3 | `minimal`
+www-apps/grafana-6.0.0 | `minimal`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -23,7 +23,7 @@ dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.27-r6 | `hardened multiarch -audit -caps (-compile-locales) -doc -gd -headers-only (-multilib) -nscd (-profile) (-selinux) -suid -systemtap (-vanilla)`
+sys-libs/glibc-2.27-r6 | `hardened multiarch -audit -caps (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

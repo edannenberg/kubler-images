@@ -1,7 +1,7 @@
-### kubler/memcache:20190131
+### kubler/memcache:20190228
 
-Built: Thu Jan 31 20:48:43 CET 2019
-Image Size: 83.1MB
+Built: Fri Mar  1 03:33:35 CET 2019
+Image Size: 83.3MB
 
 #### Installed
 Package | USE Flags
@@ -21,13 +21,13 @@ app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
-net-misc/curl-7.62.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
+net-misc/curl-7.64.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
 sys-apps/acl-2.2.52-r1 | `nls -static-libs`
 sys-apps/attr-2.4.47-r2 | `nls -static-libs`
 sys-apps/coreutils-8.30 | `acl nls split-usr (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.34 | `zlib -python -static-libs`
+sys-apps/file-5.36 | `zlib -python -static-libs`
 sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
-sys-libs/ncurses-6.1-r2 | `cxx minimal threads unicode -ada -debug -doc -gpm (-profile) -static-libs -test -tinfo -trace`
+sys-libs/ncurses-6.1-r2 | `cxx minimal threads unicode -ada -debug -doc -gpm -profile -static-libs -test -tinfo -trace`
 sys-libs/readline-7.0_p5 | `-static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20180409.3.37 | `-cacert`
@@ -42,7 +42,7 @@ dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.27-r6 | `hardened multiarch -audit -caps (-compile-locales) -doc -gd -headers-only (-multilib) -nscd (-profile) (-selinux) -suid -systemtap (-vanilla)`
+sys-libs/glibc-2.27-r6 | `hardened multiarch -audit -caps (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

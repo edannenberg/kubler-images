@@ -1,49 +1,25 @@
-### kubler/plantuml:20190228
+### kubler/jdk-openjdk:20190228
 
-Built: Fri Mar  1 05:08:33 CET 2019
-Image Size: 239MB
-
+Built: Fri Mar  1 02:52:39 CET 2019
+Image Size: 208MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/glib-2.56.4 | `mime xattr -dbus -debug (-fam) (-selinux) -static-libs -systemtap -test -utils`
-dev-libs/libffi-3.2.1 | `-debug -pax`
-dev-libs/libltdl-2.4.6 | `-static-libs`
-dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libxml2-2.9.9 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
-dev-util/glib-utils-2.56.4 | ` `
-media-gfx/graphviz-2.40.1-r1 | `nls -`
-media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
-media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
-media-libs/gd-2.2.5-r1 | `fontconfig jpeg png truetype zlib -static-libs -tiff -webp -xpm`
-media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
-media-libs/libpng-1.6.35-r1 | `-apng (-neon) -static-libs`
-x11-misc/shared-mime-info-1.10 | `-test`
-*manual install*: plantuml-server-v1.2018.11 | https://github.com/plantuml/plantuml-server
-#### Inherited
-Package | USE Flags
---------|----------
-**FROM kubler/tomcat** |
-dev-java/ant-core-1.9.2 | `-doc -source`
-dev-java/ant-eclipse-ecj-4.5.1 | `-doc -source`
-dev-java/eclipse-ecj-4.5.1 | `ant -doc -source`
-dev-java/tomcat-native-1.2.19 | `-static-libs -test`
-dev-java/tomcat-servlet-api-9.0.7 | `-source`
-dev-libs/apr-1.6.3-r3 | `urandom -doc -older-kernels-compatibility (-selinux) -static-libs`
-www-servers/tomcat-9.0.7 | `-doc -extra-webapps -source -test`
-**FROM kubler/jre-oracle** |
 app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
 app-eselect/eselect-fontconfig-1.1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.2.0-r4 | `-test`
-dev-java/oracle-jre-bin-1.8.0.202 | `fontconfig headless-awt jce -alsa -commercial -cups -javafx -nsplugin (-selinux)`
+dev-java/openjdk-bin-8.202_p08 | `gentoo-vm headless-awt -alsa -cups -doc -examples -nsplugin (-selinux) -source -webstart`
 dev-libs/expat-2.2.6 | `unicode -examples -static-libs`
 media-fonts/liberation-fonts-2.00.1-r3 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
 sys-apps/baselayout-java-0.1.0 | ``
 sys-apps/util-linux-2.33-r1 | `cramfs nls readline suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
+#### Inherited
+Package | USE Flags
+--------|----------
 **FROM kubler/bash** |
 app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
