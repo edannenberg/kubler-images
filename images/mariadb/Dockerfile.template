@@ -21,4 +21,6 @@ EXPOSE 3306
 
 VOLUME /var/run/mysqld /backup
 
+HEALTHCHECK --interval=30s --timeout=3s CMD mysqladmin ping --silent
+
 CMD ["/bin/s6-svscan", "-t0", "/service"]

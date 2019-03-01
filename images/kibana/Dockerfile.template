@@ -3,6 +3,10 @@ LABEL maintainer ${MAINTAINER}
 
 ADD rootfs.tar /
 
+COPY docker-healthcheck.sh /usr/local/bin/
+
 EXPOSE 5601
 
-CMD sed -i "s|http://localhost:9200|${ELASTICSEARCH_URL:-http://es:9200}|" /opt/kibana/config/kibana.yml && /opt/kibana/bin/kibana
+HEALTHCHECK --interval=30s --timeout=3s CMD docker-healthcheck.sh
+
+CMD sed -i "s|http://localhost:9200|${ELASTICSEARCH_URL:-http://es:9200}|" /etc/kibana/kibana.yml && /opt/kibana/bin/kibana

@@ -14,4 +14,6 @@ RUN chmod +x $(find /etc/service -name run) && \
 
 EXPOSE 80 443
 
+HEALTHCHECK --interval=30s --timeout=3s CMD wget --spider http://localhost || exit 1
+
 VOLUME [ "/etc/nginx/certs" ]

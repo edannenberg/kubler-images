@@ -11,4 +11,6 @@ WORKDIR /opt/grafana
 
 RUN /usr/bin/grafana-cli --pluginsDir "/opt/grafana/data/plugins" plugins install grafana-piechart-panel
 
+HEALTHCHECK --interval=30s --timeout=3s CMD wget --spider http://localhost:3000/api/health || exit 1
+
 ENTRYPOINT ["/usr/bin/grafana-server"]
