@@ -2,10 +2,10 @@
 
 Run this [Clojure][] image with:
 
-    $ docker run -it --rm --name clojure kubler/clojure java clojure.main
+    $ docker run -it --rm --name clojure kubler/clojure clj
 
 [Boot][] and/or [Leiningen][] will install on first execution unless you mount the respective local
-cache directories.
+cache directories with preloaded jars.
 
 The image comes with a `java` user for unprivileged container usage. To ease development pains
 you can use the provided [ONBUILD][] instructions. Docker Compose example for a [Boot][] project:
@@ -15,7 +15,7 @@ version: '2'
 services:
   app:
     build:
-      dockerfile: ${PWD}/docker/Dockerfile
+      dockerfile: ./Dockerfile
       context: ./docker
       args:
         - JAVA_UID=${UID}

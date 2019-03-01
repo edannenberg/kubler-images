@@ -11,6 +11,4 @@ ONBUILD RUN if [ -n "$JAVA_UID" ] && [ -n "$JAVA_GID" ]; then \
 
 ADD rootfs.tar /
 
-ENV CLASSPATH /opt/clojure.jar
-
 CMD ["/bin/bash"]
