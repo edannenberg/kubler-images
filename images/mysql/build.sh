@@ -9,8 +9,11 @@ _autosqlbackup_version="3.0_rc6"
 #
 configure_rootfs_build()
 {
-    # sadly perl is required for db init scripts
-    #update_use 'dev-db/mysql' '-perl'
+    # the new mysqld --initialize option makes the old perl install scripts obsolete
+    update_use 'dev-db/mysql' '-perl'
+    # for some reason perl is still pulled in :/
+    provide_package dev-lang/perl dev-perl/Text-Unidecode dev-perl/libintl-perl dev-perl/Unicode-EastAsianWidth
+    provide_package dev-db/mysql-init-scripts
     # reinstall curl, needed at build time
     unprovide_package net-misc/curl
 }
@@ -21,8 +24,8 @@ configure_rootfs_build()
 finish_rootfs_build()
 {
     copy_gcc_libs
-    mkdir -p "${_EMERGE_ROOT}"/var/run/mysql "${_EMERGE_ROOT}"/var/run/mysqld
-    chown mysql:mysql "${_EMERGE_ROOT}"/var/run/mysql "${_EMERGE_ROOT}"/var/run/mysqld
+    mkdir -p "${_EMERGE_ROOT}"/var/run/{mysql,mysqld} "${_EMERGE_ROOT}"/var/lib/mysql
+    chown mysql:mysql "${_EMERGE_ROOT}"/var/run/{mysql,mysqld} "${_EMERGE_ROOT}"/var/lib/mysql
     # remove curl again
     uninstall_package net-misc/curl
     # install automysqlbackup
