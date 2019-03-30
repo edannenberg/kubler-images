@@ -1,7 +1,7 @@
-### kubler/graph-easy:20190228
+### kubler/graph-easy:20190330
 
-Built: Fri Mar  1 04:49:05 CET 2019
-Image Size: 122MB
+Built: Sat Mar 30 19:47:04 CET 2019
+Image Size: 127MB
 
 #### Installed
 Package | USE Flags
@@ -22,8 +22,8 @@ media-fonts/liberation-fonts-2.00.1-r3 | `-`
 media-gfx/graphviz-2.40.1-r1 | `cairo -`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
-media-libs/gd-2.2.5-r1 | `fontconfig jpeg png truetype zlib -static-libs -tiff -webp -xpm`
-media-libs/harfbuzz-2.0.2-r1 | `cairo glib truetype -debug -graphite -icu -introspection -static-libs -test`
+media-libs/gd-2.2.5-r2 | `fontconfig jpeg png truetype zlib -static-libs -test -tiff -webp -xpm`
+media-libs/harfbuzz-2.3.1 | `cairo glib truetype -debug -graphite -icu -introspection -static-libs -test`
 media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
 media-libs/libpng-1.6.35-r1 | `-apng (-neon) -static-libs`
 sys-apps/util-linux-2.33-r1 | `cramfs nls readline suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
@@ -57,7 +57,7 @@ sys-libs/readline-7.0_p5 | `-static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20180409.3.37 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.0.2q | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
+dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
@@ -66,8 +66,10 @@ dev-lang/execline-2.5.0.1 | `-static -static-libs`
 dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
+dev-libs/libunistring-0.9.10 | `-doc -static-libs`
+net-dns/libidn2-2.1.1a | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.27-r6 | `hardened multiarch -audit -caps (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap (-vanilla)`
+sys-libs/glibc-2.28-r5 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

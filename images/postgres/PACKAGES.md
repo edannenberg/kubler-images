@@ -1,7 +1,7 @@
-### kubler/postgres:20190228
+### kubler/postgres:20190330
 
-Built: Fri Mar  1 04:38:32 CET 2019
-Image Size: 54.5MB
+Built: Sat Mar 30 20:39:23 CET 2019
+Image Size: 58MB
 
 #### Installed
 Package | USE Flags
@@ -10,7 +10,7 @@ app-admin/su-exec-0.2 | `-static`
 app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
 app-eselect/eselect-postgresql-2.4 | ``
 app-misc/editor-wrapper-4 | ``
-dev-db/postgresql-11.1 | `nls readline server ssl threads zlib -doc -kerberos -ldap -libressl -llvm -pam -perl -python (-selinux) -static-libs -systemd -tcl -uuid -xml`
+dev-db/postgresql-11.2 | `nls readline server ssl threads zlib -doc -kerberos -ldap -libressl -llvm -pam -perl -python (-selinux) -static-libs -systemd -tcl -uuid -xml`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 sys-apps/less-531 | `pcre unicode`
 #### Inherited
@@ -32,7 +32,7 @@ sys-libs/readline-7.0_p5 | `-static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20180409.3.37 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.0.2q | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
+dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
@@ -41,8 +41,10 @@ dev-lang/execline-2.5.0.1 | `-static -static-libs`
 dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
+dev-libs/libunistring-0.9.10 | `-doc -static-libs`
+net-dns/libidn2-2.1.1a | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.27-r6 | `hardened multiarch -audit -caps (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap (-vanilla)`
+sys-libs/glibc-2.28-r5 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

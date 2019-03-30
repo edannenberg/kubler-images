@@ -1,7 +1,7 @@
-### kubler/mariadb:20190228
+### kubler/mariadb:20190330
 
-Built: Fri Mar  1 03:32:01 CET 2019
-Image Size: 277MB
+Built: Sat Mar 30 20:17:59 CET 2019
+Image Size: 288MB
 
 #### Installed
 Package | USE Flags
@@ -10,10 +10,10 @@ app-admin/perl-cleaner-2.27 | ``
 app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
 app-arch/libarchive-3.3.1 | `acl bzip2 e2fsprogs iconv lzma threads xattr zlib -expat -libressl -lz4 -lzo -nettle -static-libs`
 app-arch/pbzip2-1.1.12 | `-static -symlink`
-app-arch/xz-utils-5.2.3 | `extra-filters nls threads -static-libs`
-dev-db/mariadb-10.1.37 | `backup bindist perl server (-client-libs) -cracklib -debug -extraengine -galera -innodb-lz4 -innodb-lzo -innodb-snappy -jdbc -jemalloc -kerberos -latin1 -libressl (-mroonga) -numa -odbc -oqgraph -pam -profiling (-selinux) -sphinx -sst-mariabackup -sst-rsync -sst-xtrabackup -static -static-libs -systemd -systemtap -tcmalloc -test -tokudb -xml -yassl`
+app-arch/xz-utils-5.2.4-r2 | `extra-filters nls threads -static-libs`
+dev-db/mariadb-10.2.22-r1 | `backup bindist perl server (-client-libs) -cracklib -debug -extraengine -galera -innodb-lz4 -innodb-lzo -innodb-snappy -jdbc -jemalloc -kerberos -latin1 -libressl (-mroonga) -numa -odbc -oqgraph -pam -profiling -rocksdb (-selinux) -sphinx -sst-mariabackup -sst-rsync -sst-xtrabackup -static -systemd -systemtap -tcmalloc -test -tokudb -xml -yassl`
 dev-db/mysql-connector-c-6.1.11-r1 | `-libressl -static-libs`
-dev-db/mysql-init-scripts-2.2-r3 | ``
+dev-db/mysql-init-scripts-2.3 | ``
 dev-lang/perl-5.26.2 | `-berkdb -debug -doc -gdbm -ithreads`
 dev-libs/libaio-0.3.110 | `-static-libs -test`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
@@ -28,7 +28,7 @@ dev-perl/Text-Unidecode-1.300.0 | ``
 dev-perl/Unicode-EastAsianWidth-1.330.0-r1 | ``
 perl-core/File-Temp-0.230.400-r1 | ``
 sys-apps/opentmpfiles-0.2 | `(-selinux)`
-sys-apps/texinfo-6.3 | `nls -static`
+sys-apps/texinfo-6.6-r1 | `nls -static`
 sys-process/procps-3.3.15-r1 | `kill nls unicode -elogind -modern-top -ncurses (-selinux) -static-libs -systemd -test`
 *manual install*: automysqlbackup-3.0_rc6 | https://sourceforge.net/projects/automysqlbackup/
 #### Inherited
@@ -50,7 +50,7 @@ sys-libs/readline-7.0_p5 | `-static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20180409.3.37 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.0.2q | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
+dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
@@ -59,8 +59,10 @@ dev-lang/execline-2.5.0.1 | `-static -static-libs`
 dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
+dev-libs/libunistring-0.9.10 | `-doc -static-libs`
+net-dns/libidn2-2.1.1a | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.27-r6 | `hardened multiarch -audit -caps (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap (-vanilla)`
+sys-libs/glibc-2.28-r5 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

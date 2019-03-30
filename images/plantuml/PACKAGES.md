@@ -1,8 +1,7 @@
-### kubler/plantuml:20190228
+### kubler/plantuml:20190330
 
-Built: Fri Mar  1 05:08:33 CET 2019
-Image Size: 239MB
-
+Built: Sat Mar 30 20:38:33 CET 2019
+Image Size: 244MB
 
 #### Installed
 Package | USE Flags
@@ -16,7 +15,7 @@ dev-util/glib-utils-2.56.4 | ` `
 media-gfx/graphviz-2.40.1-r1 | `nls -`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
-media-libs/gd-2.2.5-r1 | `fontconfig jpeg png truetype zlib -static-libs -tiff -webp -xpm`
+media-libs/gd-2.2.5-r2 | `fontconfig jpeg png truetype zlib -static-libs -test -tiff -webp -xpm`
 media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
 media-libs/libpng-1.6.35-r1 | `-apng (-neon) -static-libs`
 x11-misc/shared-mime-info-1.10 | `-test`
@@ -25,7 +24,7 @@ x11-misc/shared-mime-info-1.10 | `-test`
 Package | USE Flags
 --------|----------
 **FROM kubler/tomcat** |
-dev-java/ant-core-1.9.2 | `-doc -source`
+dev-java/ant-core-1.10.5-r1 | `-doc -source`
 dev-java/ant-eclipse-ecj-4.5.1 | `-doc -source`
 dev-java/eclipse-ecj-4.5.1 | `ant -doc -source`
 dev-java/tomcat-native-1.2.19 | `-static-libs -test`
@@ -34,7 +33,7 @@ dev-libs/apr-1.6.3-r3 | `urandom -doc -older-kernels-compatibility (-selinux) -s
 www-servers/tomcat-9.0.7 | `-doc -extra-webapps -source -test`
 **FROM kubler/jre-oracle** |
 app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
-app-eselect/eselect-fontconfig-1.1 | ``
+app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.2.0-r4 | `-test`
 dev-java/oracle-jre-bin-1.8.0.202 | `fontconfig headless-awt jce -alsa -commercial -cups -javafx -nsplugin (-selinux)`
@@ -60,7 +59,7 @@ sys-libs/readline-7.0_p5 | `-static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20180409.3.37 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.0.2q | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
+dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
@@ -69,8 +68,10 @@ dev-lang/execline-2.5.0.1 | `-static -static-libs`
 dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
+dev-libs/libunistring-0.9.10 | `-doc -static-libs`
+net-dns/libidn2-2.1.1a | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.27-r6 | `hardened multiarch -audit -caps (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap (-vanilla)`
+sys-libs/glibc-2.28-r5 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
