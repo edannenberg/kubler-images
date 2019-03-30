@@ -18,6 +18,8 @@ configure_bob()
     update_use 'sys-libs/ncurses' '+minimal'
 
     update_use '+gif' '+jpeg' '+jpeg2k' '+png' '+tiff' '+webp'
+    # resolve circular dependency
+    update_use 'media-libs/tiff' '-webp'
     update_use 'dev-lang/php' '+bcmath' '+calendar' '+cli' '+curl' '+fpm' '+mhash' \
                '+mysql' '+mysqli' '+pcntl' '+pdo' '+soap' '+sockets' '+webp' '+xmlreader' '+xmlrpc' '+xmlwriter' '+xpm' '+xslt' '+zip'
     # flaggie issue with gd use flag, apparently there now is a conflicting license with the same name
