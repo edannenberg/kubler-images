@@ -41,8 +41,8 @@ finish_rootfs_build()
     gentoo_classpath="$(java-config --with-dependencies --classpath "${tomcat_deps//:/,}")"
     gentoo_classpath=${gentoo_classpath%:}
 
-    sed -i "s|CLASSPATH=\`java-config --classpath "${_tomcat_slot}"\`|CLASSPATH=`java-config --with-dependencies --classpath "${_tomcat_slot}",tomcat-native`|g" "${catalina}"
-    sed -i "s|\${gentoo\.classpath}|${gentoo_classpath//:/,}|g" "${cata_conf}"
+    sed-or-die "CLASSPATH=\`java-config --classpath "${_tomcat_slot}"\`" "CLASSPATH=`java-config --with-dependencies --classpath "${_tomcat_slot}",tomcat-native`" "${catalina}"
+    sed-or-die "\${gentoo\.classpath}" "${gentoo_classpath//:/,}" "${cata_conf}"
 
     # make TOMCAT_SLOT available in build containers depending on this image
     echo -e "#!/usr/bin/env bash\nexport TOMCAT_SLOT=${_tomcat_slot}" > /etc/profile.d/tomcat.sh

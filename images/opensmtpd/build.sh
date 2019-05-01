@@ -17,6 +17,6 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
-    sed -i 's/listen on localhost/listen on 0.0.0.0/g' "${_EMERGE_ROOT}"/etc/opensmtpd/smtpd.conf
+    sed-or-die 'listen on localhost' 'listen on 0.0.0.0' "${_EMERGE_ROOT}"/etc/opensmtpd/smtpd.conf
     mkdir "${_EMERGE_ROOT}"{/run,/var/run}
 }

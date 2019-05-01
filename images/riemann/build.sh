@@ -27,6 +27,6 @@ finish_rootfs_build()
     popd
     tar xvjf "${riemann_file}"
     mv /riemann-"${riemann_version}" "${_EMERGE_ROOT}"/riemann
-    sed -i 's/host "127.0.0.1"/host "0.0.0.0"/g' "${_EMERGE_ROOT}"/riemann/etc/riemann.config
+    sed-or-die 'host "127.0.0.1"' 'host "0.0.0.0"' "${_EMERGE_ROOT}"/riemann/etc/riemann.config
     log_as_installed "manual install" "riemann-${riemann_version}" "https://github.com/riemann/riemann"
 }

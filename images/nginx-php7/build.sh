@@ -3,7 +3,6 @@
 #
 _php_slot="${BOB_PHP_SLOT}"
 _php_target="php${_php_slot/\./-}"
-_zend_api="20160303"
 _packages="dev-lang/php:${_php_slot} dev-php/xdebug dev-php/pecl-apcu_bc dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached"
 _php_timezone="${BOB_TIMEZONE:-UTC}"
 _adminer_version="4.7.1"
@@ -48,11 +47,8 @@ finish_rootfs_build()
     # set php iconv default to UTF-8, if you need full iconv functionality set ICONV_FROM=kubler/glibc above
     local fpm_php_ini
     fpm_php_ini="${_EMERGE_ROOT}"/etc/php/fpm-php"${_php_slot}"/php.ini
-    sed -i 's/^;iconv.input_encoding = ISO-8859-1/iconv.input_encoding = UTF-8/g' "${fpm_php_ini}"
-    sed -i 's/^;iconv.internal_encoding = ISO-8859-1/iconv.internal_encoding = UTF-8/g' "${fpm_php_ini}"
-    sed -i 's/^;iconv.output_encoding = ISO-8859-1/iconv.output_encoding = UTF-8/g' "${fpm_php_ini}"
     # set php time zone
-    sed -i "s@^;date.timezone =@date.timezone = $_php_timezone@g" "${fpm_php_ini}"
+    sed-or-die '^;date.timezone =' "date.timezone = ${_php_timezone}" "${fpm_php_ini}"
     # use above changes also for php cli config
     cp "${fpm_php_ini}" "${_EMERGE_ROOT}"/etc/php/cli-php"${_php_slot}"/php.ini
     # disable xdebug

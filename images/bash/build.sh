@@ -19,6 +19,6 @@ finish_rootfs_build()
 {
     cp /etc/{passwd,group} "${_EMERGE_ROOT}"/etc
     # busybox's grep doesn't support --color=auto args, add a check for the alias in bashrc
-    sed -i "s%alias grep=%grep --color=auto root /etc/group \&> /dev/null \&\& alias grep=%g" \
+    sed-or-die 'alias grep=' 'grep --color=auto root /etc/group \&> /dev/null \&\& alias grep=' \
         "${_EMERGE_ROOT}"/etc/bash/bashrc
 }

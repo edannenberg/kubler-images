@@ -16,6 +16,7 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
+    sed-or-die '^bind 127.0.0.1' '#bind 127.0.0.1' "${_EMERGE_ROOT}"/etc/redis.conf
     # disable protected mode
-    sed -i 's/^protected-mode yes/protected-mode no/g' "${_EMERGE_ROOT}"/etc/redis.conf
+    sed-or-die '^protected-mode yes' 'protected-mode no' "${_EMERGE_ROOT}"/etc/redis.conf
 }
