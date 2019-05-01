@@ -1,23 +1,23 @@
-### kubler/jdk-icedtea:20190330
+### kubler/jdk-icedtea:20190430
 
-Built: Sat Mar 30 19:53:55 CET 2019
-Image Size: 529MB
+Built: Wed May  1 14:47:07 CEST 2019
+Image Size: 528MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
+app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/icedtea-bin-3.10.0-r1 | `headless-awt -alsa (-big-endian) -cups -doc -examples -gtk (-multilib) -nsplugin -pulseaudio (-selinux) -source -webstart`
 dev-java/java-config-2.2.0-r4 | `-test`
 dev-lang/python-exec-2.4.6 | ` `
 dev-libs/expat-2.2.6 | `unicode -examples -static-libs`
-dev-libs/glib-2.56.4 | `mime xattr -dbus -debug (-fam) (-selinux) -static-libs -systemtap -test -utils`
+dev-libs/glib-2.58.3 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.2.1 | `-debug -pax`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libxml2-2.9.9 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
-dev-util/glib-utils-2.56.4 | ` `
+dev-util/glib-utils-2.58.3 | ` `
 media-fonts/liberation-fonts-2.00.1-r3 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
@@ -33,7 +33,7 @@ Package | USE Flags
 dev-libs/gmp-6.1.2 | `asm cxx -doc -static-libs`
 dev-libs/mpc-1.0.3 | `-static-libs`
 dev-libs/mpfr-3.1.6 | `-static-libs`
-sys-devel/binutils-2.30-r4 | `cxx nls -doc -multitarget -static-libs -test`
+sys-devel/binutils-2.31.1-r4 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5-r4 | ``
 sys-devel/gcc-8.2.0-r6 | `cxx hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
 sys-devel/gcc-config-2.0 | ``
@@ -44,7 +44,7 @@ app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
-net-misc/curl-7.64.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
+net-misc/curl-7.64.1 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
 sys-apps/acl-2.2.52-r1 | `nls -static-libs`
 sys-apps/attr-2.4.47-r2 | `nls -static-libs`
 sys-apps/coreutils-8.30 | `acl nls split-usr (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -59,7 +59,7 @@ dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos 
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.1 | `-test`
+app-admin/entr-4.2 | `-test`
 dev-lang/execline-2.5.0.1 | `-static -static-libs`
 dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
@@ -67,7 +67,7 @@ sys-apps/s6-2.7.2.1 | `-static -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.28-r5 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.28-r6 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

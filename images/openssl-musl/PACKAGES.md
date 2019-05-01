@@ -1,7 +1,7 @@
-### kubler/openssl-musl:20190330
+### kubler/openssl-musl:20190430
 
-Built: Sat Mar 30 20:32:44 CET 2019
-Image Size: 6.17MB
+Built: Wed May  1 16:15:50 CEST 2019
+Image Size: 6.41MB
 
 #### Installed
 Package | USE Flags
@@ -15,9 +15,10 @@ sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 Package | USE Flags
 --------|----------
 **FROM kubler/musl** |
-sys-libs/musl-1.1.21 | `-headers-only`
+sys-libs/musl-1.1.22 | `-headers-only`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/sed-4.5 | `static -acl -forced-sandbox -nls (-selinux)`
 #### Purged
 - [x] Headers
 - [x] Static Libs

@@ -1,12 +1,12 @@
-### kubler/jdk-oracle:20190330
+### kubler/jdk-oracle:20190430
 
-Built: Sat Mar 30 19:59:39 CET 2019
+Built: Wed May  1 14:52:00 CEST 2019
 Image Size: 245MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
+app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.2.0-r4 | `-test`
@@ -25,7 +25,7 @@ app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
-net-misc/curl-7.64.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
+net-misc/curl-7.64.1 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
 sys-apps/acl-2.2.52-r1 | `nls -static-libs`
 sys-apps/attr-2.4.47-r2 | `nls -static-libs`
 sys-apps/coreutils-8.30 | `acl nls split-usr (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -40,7 +40,7 @@ dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos 
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.1 | `-test`
+app-admin/entr-4.2 | `-test`
 dev-lang/execline-2.5.0.1 | `-static -static-libs`
 dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
@@ -48,7 +48,7 @@ sys-apps/s6-2.7.2.1 | `-static -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.28-r5 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.28-r6 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

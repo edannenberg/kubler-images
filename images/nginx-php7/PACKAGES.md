@@ -1,13 +1,13 @@
-### kubler/nginx-php7:20190330
+### kubler/nginx-php7:20190430
 
-Built: Sat Mar 30 20:30:40 CET 2019
-Image Size: 135MB
+Built: Wed May  1 16:13:47 CEST 2019
+Image Size: 136MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
-app-admin/metalog-3-r2 | `unicode`
+app-admin/metalog-20181125 | `unicode`
 app-eselect/eselect-php-0.9.4-r5 | `fpm -apache2`
 dev-lang/php-7.2.16 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk -coverage -debug -embed -enchant -exif (-firebird) -flatfile -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos -ldap -ldap-sasl -libedit -libressl -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -truetype -wddx -zip-encryption`
 dev-libs/expat-2.2.6 | `unicode -examples -static-libs`
@@ -15,7 +15,7 @@ dev-libs/gmp-6.1.2 | `asm cxx -doc -static-libs`
 dev-libs/libbsd-0.9.1 | `-static-libs`
 dev-libs/libevent-2.1.8 | `ssl threads -debug -libressl -static-libs -test`
 dev-libs/libgcrypt-1.8.3 | `-doc -o-flag-munging -static-libs`
-dev-libs/libgpg-error-1.29 | `nls -common-lisp -static-libs`
+dev-libs/libgpg-error-1.36 | `nls -common-lisp -static-libs`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libmemcached-1.0.18-r3 | `libevent -debug -hsieh -sasl -static-libs`
 dev-libs/libpthread-stubs-0.4-r1 | ``
@@ -32,18 +32,18 @@ dev-php/pecl-redis-4.2.0 | `session -igbinary`
 dev-php/xdebug-2.6.1 | ` `
 dev-php/xdebug-client-2.6.1 | `-libedit`
 mail-mta/nullmailer-2.0-r1 | `ssl`
-media-gfx/imagemagick-7.0.8.28 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
+media-gfx/imagemagick-7.0.8.42 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
 media-libs/giflib-5.1.4 | `-doc -static-libs`
 media-libs/lcms-2.9 | `jpeg threads tiff -doc -static-libs -test`
 media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
-media-libs/libpng-1.6.35-r1 | `-apng (-neon) -static-libs`
-media-libs/libwebp-0.5.2 | `gif jpeg png tiff -experimental (-neon) -opengl -static-libs -swap-16bit-csp`
+media-libs/libpng-1.6.37 | `-apng (-neon) -static-libs`
+media-libs/libwebp-1.0.2 | `gif jpeg png tiff (-neon) -opengl -static-libs -swap-16bit-csp`
 media-libs/openjpeg-2.3.0-r1 | `-doc -static-libs -test`
 media-libs/tiff-4.0.10 | `cxx jpeg zlib -jbig -lzma -static-libs -test -webp -zstd`
-net-libs/gnutls-3.6.6 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
+net-libs/gnutls-3.6.7 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
 net-libs/libnsl-1.2.0 | ``
 net-libs/libtirpc-1.0.2-r1 | `-ipv6 -kerberos -static-libs`
-net-misc/curl-7.64.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
+net-misc/curl-7.64.1 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
 net-misc/memcached-1.5.12 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
 sys-apps/acl-2.2.52-r1 | `nls -static-libs`
 sys-apps/attr-2.4.47-r2 | `nls -static-libs`
@@ -61,21 +61,21 @@ x11-base/xorg-proto-2018.4 | ``
 x11-libs/libICE-1.0.9-r2 | `-doc -ipv6 -static-libs`
 x11-libs/libSM-1.2.3 | `uuid -doc -ipv6 -static-libs`
 x11-libs/libX11-1.6.7 | `-doc -ipv6 -static-libs -test`
-x11-libs/libXau-1.0.8-r1 | `-static-libs`
+x11-libs/libXau-1.0.9 | `-static-libs`
 x11-libs/libxcb-1.13.1 | `-doc (-selinux) -static-libs -test -xkb`
-x11-libs/libXdmcp-1.1.2-r2 | `-doc -static-libs`
-x11-libs/libXext-1.3.3-r1 | `-doc -static-libs`
+x11-libs/libXdmcp-1.1.3 | `-doc -static-libs`
+x11-libs/libXext-1.3.4 | `-doc -static-libs`
 x11-libs/libXpm-3.5.12-r1 | `-static-libs`
 x11-libs/libXt-1.1.5-r1 | `-static-libs -test`
-x11-libs/xtrans-1.3.5 | `-doc`
+x11-libs/xtrans-1.4.0 | `-doc`
 *manual install*: adminer-4.7.1 | https://www.adminer.org/
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/nginx** |
-app-arch/bzip2-1.0.6-r10 | `-static -static-libs`
+app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
 dev-libs/libpcre-8.42 | `bzip2 cxx recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -readline -static-libs`
-www-servers/nginx-1.15.10 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
+www-servers/nginx-1.16.0 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20180409.3.37 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
@@ -83,7 +83,7 @@ dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos 
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.1 | `-test`
+app-admin/entr-4.2 | `-test`
 dev-lang/execline-2.5.0.1 | `-static -static-libs`
 dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
@@ -91,7 +91,7 @@ sys-apps/s6-2.7.2.1 | `-static -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.28-r5 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.28-r6 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
