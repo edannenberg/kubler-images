@@ -8,6 +8,7 @@ _packages="www-apps/grafana"
 #
 configure_rootfs_build()
 {
+    update_use 'net-libs/nodejs' '+icu'
     update_use 'sys-apps/yarn' '+~amd64'
 }
 
