@@ -1,16 +1,16 @@
-### kubler/memcache:20190430
+### kubler/memcache:20190531
 
-Built: Wed May  1 15:20:32 CEST 2019
-Image Size: 87.8MB
+Built: Fri 31 May 2019 04:43:12 PM CEST
+Image Size: 93.1MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-admin/perl-cleaner-2.27 | ``
 app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
-dev-lang/perl-5.26.2 | `-berkdb -debug -doc -gdbm -ithreads`
+dev-lang/perl-5.28.2-r1 | `-berkdb -debug -doc -gdbm -ithreads`
 dev-libs/libevent-2.1.8 | `ssl threads -debug -libressl -static-libs -test`
-net-misc/memcached-1.5.12 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
+net-misc/memcached-1.5.14 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
 perl-core/File-Temp-0.230.400-r1 | ``
 sys-libs/libseccomp-2.4.0 | `-static-libs`
 #### Inherited
@@ -21,7 +21,7 @@ app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
-net-misc/curl-7.64.1 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
+net-misc/curl-7.65.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
 sys-apps/acl-2.2.52-r1 | `nls -static-libs`
 sys-apps/attr-2.4.47-r2 | `nls -static-libs`
 sys-apps/coreutils-8.30 | `acl nls split-usr (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -42,9 +42,9 @@ dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
-net-dns/libidn2-2.1.1a | `-static-libs`
+net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.28-r6 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r2 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

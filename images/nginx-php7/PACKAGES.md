@@ -1,6 +1,6 @@
-### kubler/nginx-php7:20190430
+### kubler/nginx-php7:20190531
 
-Built: Wed May  1 16:13:47 CEST 2019
+Built: Fri 31 May 2019 04:53:46 PM CEST
 Image Size: 136MB
 
 #### Installed
@@ -20,8 +20,8 @@ dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libmemcached-1.0.18-r3 | `libevent -debug -hsieh -sasl -static-libs`
 dev-libs/libpthread-stubs-0.4-r1 | ``
 dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
-dev-libs/libxml2-2.9.9 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
-dev-libs/libxslt-1.1.32 | `crypt -debug -examples -python -static-libs`
+dev-libs/libxml2-2.9.9-r1 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/libxslt-1.1.33-r1 | `crypt -debug -examples -python -static-libs`
 dev-libs/nettle-3.4.1 | `gmp -doc (-neon) -static-libs -test`
 dev-libs/oniguruma-6.9.1 | `-crnl-as-line-terminator -static-libs`
 dev-php/pecl-apcu-5.1.12 | `lock`
@@ -32,7 +32,7 @@ dev-php/pecl-redis-4.2.0 | `session -igbinary`
 dev-php/xdebug-2.6.1 | ` `
 dev-php/xdebug-client-2.6.1 | `-libedit`
 mail-mta/nullmailer-2.0-r1 | `ssl`
-media-gfx/imagemagick-7.0.8.42 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
+media-gfx/imagemagick-7.0.8.46 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
 media-libs/giflib-5.1.4 | `-doc -static-libs`
 media-libs/lcms-2.9 | `jpeg threads tiff -doc -static-libs -test`
 media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
@@ -43,8 +43,8 @@ media-libs/tiff-4.0.10 | `cxx jpeg zlib -jbig -lzma -static-libs -test -webp -zs
 net-libs/gnutls-3.6.7 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
 net-libs/libnsl-1.2.0 | ``
 net-libs/libtirpc-1.0.2-r1 | `-ipv6 -kerberos -static-libs`
-net-misc/curl-7.64.1 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
-net-misc/memcached-1.5.12 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
+net-misc/curl-7.65.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
+net-misc/memcached-1.5.14 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
 sys-apps/acl-2.2.52-r1 | `nls -static-libs`
 sys-apps/attr-2.4.47-r2 | `nls -static-libs`
 sys-apps/coreutils-8.30 | `acl nls split-usr (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -75,7 +75,7 @@ Package | USE Flags
 **FROM kubler/nginx** |
 app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
 dev-libs/libpcre-8.42 | `bzip2 cxx recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -readline -static-libs`
-www-servers/nginx-1.16.0 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
+www-servers/nginx-1.17.0 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20180409.3.37 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
@@ -89,9 +89,9 @@ dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
-net-dns/libidn2-2.1.1a | `-static-libs`
+net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.28-r6 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r2 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

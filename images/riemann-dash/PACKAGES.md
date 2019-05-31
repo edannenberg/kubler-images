@@ -1,6 +1,6 @@
-### kubler/riemann-dash:20190430
+### kubler/riemann-dash:20190531
 
-Built: Wed May  1 17:13:06 CEST 2019
+Built: Fri 31 May 2019 05:07:14 PM CEST
 Image Size: 453MB
 
 #### Installed
@@ -8,7 +8,7 @@ Package | USE Flags
 --------|----------
 dev-libs/libgcrypt-1.8.3 | `-doc -o-flag-munging -static-libs`
 dev-libs/libgpg-error-1.36 | `nls -common-lisp -static-libs`
-dev-libs/libxslt-1.1.32 | `crypt -debug -examples -python -static-libs`
+dev-libs/libxslt-1.1.33-r1 | `crypt -debug -examples -python -static-libs`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 *gem install*: riemann-client riemann-tools riemann-dash | https://github.com/aphyr/riemann
 #### Inherited
@@ -21,7 +21,7 @@ dev-lang/ruby-2.4.6 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemal
 dev-libs/glib-2.58.3 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.2.1 | `-debug -pax`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libxml2-2.9.9 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/libxml2-2.9.9-r1 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 dev-libs/libyaml-0.1.7 | `-doc -examples -static-libs -test`
 dev-ruby/did_you_mean-1.1.2 | `-test`
 dev-ruby/json-2.1.0 | `-doc -test`
@@ -32,7 +32,7 @@ dev-ruby/power_assert-1.1.1 | `-doc -test`
 dev-ruby/rake-12.3.1 | `-doc -test`
 dev-ruby/rdoc-5.1.0 | `-doc -test`
 dev-ruby/rubygems-2.7.9 | `-server -test`
-dev-ruby/test-unit-3.2.8 | `-doc -test`
+dev-ruby/test-unit-3.2.7 | `-doc -test`
 dev-ruby/xmlrpc-0.3.0 | `-doc -test`
 dev-util/glib-utils-2.58.3 | ` `
 dev-util/pkgconfig-0.29.2 | `hardened -internal-glib`
@@ -42,9 +42,9 @@ x11-misc/shared-mime-info-1.10 | `-test`
 dev-libs/gmp-6.1.2 | `asm cxx -doc -static-libs`
 dev-libs/mpc-1.0.3 | `-static-libs`
 dev-libs/mpfr-3.1.6 | `-static-libs`
-sys-devel/binutils-2.31.1-r4 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
+sys-devel/binutils-2.31.1-r6 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5-r4 | ``
-sys-devel/gcc-8.2.0-r6 | `cxx hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
+sys-devel/gcc-8.3.0-r1 | `cxx hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
 sys-devel/gcc-config-2.0 | ``
 sys-devel/make-4.2.1-r4 | `nls -guile -static`
 sys-kernel/linux-headers-4.14-r1 | `-headers-only`
@@ -53,7 +53,7 @@ app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
-net-misc/curl-7.64.1 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
+net-misc/curl-7.65.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
 sys-apps/acl-2.2.52-r1 | `nls -static-libs`
 sys-apps/attr-2.4.47-r2 | `nls -static-libs`
 sys-apps/coreutils-8.30 | `acl nls split-usr (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -74,9 +74,9 @@ dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
-net-dns/libidn2-2.1.1a | `-static-libs`
+net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.28-r6 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r2 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

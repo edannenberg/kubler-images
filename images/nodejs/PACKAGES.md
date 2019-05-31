@@ -1,17 +1,17 @@
-### kubler/nodejs:20190430
+### kubler/nodejs:20190531
 
-Built: Wed May  1 14:42:39 CEST 2019
-Image Size: 111MB
+Built: Fri 31 May 2019 04:12:58 PM CEST
+Image Size: 110MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/icu-63.1-r1 | `-debug -doc -examples -static-libs`
-dev-libs/libuv-1.20.0 | `-static-libs`
+dev-libs/icu-64.2 | `-debug -doc -examples -static-libs`
+dev-libs/libuv-1.28.0 | `-static-libs`
 net-libs/http-parser-2.8.1 | `-static-libs`
 net-libs/nghttp2-1.33.0 | `cxx threads -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
 net-libs/nodejs-8.12.0 | `icu npm snapshot ssl -debug -doc -inspector -systemtap -test`
-sys-apps/yarn-1.15.2 | ``
+sys-apps/yarn-1.16.0 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -28,9 +28,9 @@ dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
-net-dns/libidn2-2.1.1a | `-static-libs`
+net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.28-r6 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r2 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

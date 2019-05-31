@@ -1,7 +1,7 @@
-### kubler/graph-easy:20190430
+### kubler/graph-easy:20190531
 
-Built: Wed May  1 14:41:12 CEST 2019
-Image Size: 126MB
+Built: Fri 31 May 2019 04:11:18 PM CEST
+Image Size: 132MB
 
 #### Installed
 Package | USE Flags
@@ -12,7 +12,7 @@ dev-libs/glib-2.58.3 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -stat
 dev-libs/libffi-3.2.1 | `-debug -pax`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libxml2-2.9.9 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/libxml2-2.9.9-r1 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 dev-libs/lzo-2.10 | `-examples -static-libs`
 dev-perl/Config-Tiny-2.230.0 | `-test`
 dev-perl/Digest-SHA1-2.130.0-r1 | ``
@@ -28,9 +28,9 @@ media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
 media-libs/libpng-1.6.37 | `-apng (-neon) -static-libs`
 sys-apps/util-linux-2.33-r1 | `cramfs nls readline suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
 sys-devel/binutils-config-5-r4 | ``
-sys-libs/binutils-libs-2.31.1-r4 | `nls -64-bit-bfd -multitarget -static-libs`
+sys-libs/binutils-libs-2.31.1-r6 | `nls -64-bit-bfd -multitarget -static-libs`
 x11-libs/cairo-1.16.0-r3 | `glib svg -`
-x11-libs/pango-1.42.4 | `-`
+x11-libs/pango-1.42.4-r1 | `-`
 x11-libs/pixman-0.38.4 | `(-altivec) (-loongson2f) (-neon)`
 x11-misc/shared-mime-info-1.10 | `-test`
 #### Inherited
@@ -39,14 +39,14 @@ Package | USE Flags
 **FROM kubler/perl** |
 app-admin/perl-cleaner-2.27 | ``
 app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
-dev-lang/perl-5.26.2 | `-berkdb -debug -doc -gdbm -ithreads`
+dev-lang/perl-5.28.2-r1 | `-berkdb -debug -doc -gdbm -ithreads`
 perl-core/File-Temp-0.230.400-r1 | ``
 **FROM kubler/bash** |
 app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
-net-misc/curl-7.64.1 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
+net-misc/curl-7.65.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
 sys-apps/acl-2.2.52-r1 | `nls -static-libs`
 sys-apps/attr-2.4.47-r2 | `nls -static-libs`
 sys-apps/coreutils-8.30 | `acl nls split-usr (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -67,9 +67,9 @@ dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.7.2.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
-net-dns/libidn2-2.1.1a | `-static-libs`
+net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.28-r6 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r2 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2018i | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
