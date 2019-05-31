@@ -19,6 +19,9 @@ configure_bob() {
     echo 'LANG="en_US.utf8"' > /etc/env.d/02locale
     env-update
     source /etc/profile
+    # directories currently not supported by flaggie
+    mv /etc/portage/package.license/releng/package.license /etc/portage/package.license
+    rm -r /etc/portage/package.license/releng
     # install default packages
     # when using overlay1 docker storage the created hard link will trigger an error during openssh uninstall
     [[ -f /usr/"${_LIB}"/misc/ssh-keysign ]] && rm /usr/"${_LIB}"/misc/ssh-keysign
