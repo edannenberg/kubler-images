@@ -9,7 +9,6 @@ configure_builder()
     update_use 'dev-java/openjdk-bin' +headless-awt -webstart
     echo 'dev-java/openjdk-bin -gentoo-vm' >> /etc/portage/profile/package.use.mask
     update_keywords dev-java/openjdk-bin '+~amd64'
-    update_keywords sys-apps/baselayout-java '+~amd64'
     # skip python and iced-tea
     provide_package dev-lang/python dev-lang/python-exec dev-java/icedtea-bin
 
@@ -25,7 +24,8 @@ configure_rootfs_build()
     # add user/group for unprivileged container usage
     groupadd -g 808 java
     useradd -u 8080 -g java -d /home/java java
-    mkdir -p "${_EMERGE_ROOT}"/home/java
+    mkdir -p "${_EMERGE_ROOT}"/home/
+    cp -rp /home/java "${_EMERGE_ROOT}"/home/
 }
 
 #

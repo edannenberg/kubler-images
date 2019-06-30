@@ -25,7 +25,8 @@ configure_rootfs_build()
     # add user/group for unprivileged container usage
     groupadd -g 808 java
     useradd -u 8080 -g java -d /home/java java
-    mkdir -p "${_EMERGE_ROOT}"/home/java
+    mkdir -p "${_EMERGE_ROOT}"/home/
+    cp -rp /home/java "${_EMERGE_ROOT}"/home/
 }
 
 #
