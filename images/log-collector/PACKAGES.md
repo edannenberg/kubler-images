@@ -1,7 +1,7 @@
-### kubler/log-collector:20190531
+### kubler/log-collector:20190629
 
-Built: Fri 31 May 2019 04:38:03 PM CEST
-Image Size: 454MB
+Built: Sun 30 Jun 2019 03:46:24 PM CEST
+Image Size: 455MB
 
 #### Installed
 Package | USE Flags
@@ -34,20 +34,20 @@ dev-ruby/test-unit-3.2.7 | `-doc -test`
 dev-ruby/xmlrpc-0.3.0 | `-doc -test`
 dev-util/glib-utils-2.58.3 | ` `
 dev-util/pkgconfig-0.29.2 | `hardened -internal-glib`
-sys-apps/util-linux-2.33-r1 | `cramfs nls readline suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.33.2 | `cramfs nls readline suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
 x11-misc/shared-mime-info-1.10 | `-test`
 **FROM kubler/gcc** |
 dev-libs/gmp-6.1.2 | `asm cxx -doc -static-libs`
 dev-libs/mpc-1.0.3 | `-static-libs`
 dev-libs/mpfr-3.1.6 | `-static-libs`
-sys-devel/binutils-2.31.1-r6 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
+sys-devel/binutils-2.32-r1 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5-r4 | ``
 sys-devel/gcc-8.3.0-r1 | `cxx hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
 sys-devel/gcc-config-2.0 | ``
 sys-devel/make-4.2.1-r4 | `nls -guile -static`
 sys-kernel/linux-headers-4.14-r1 | `-headers-only`
 **FROM kubler/bash** |
-app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.14 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
@@ -67,9 +67,9 @@ sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.2 | `-test`
-dev-lang/execline-2.5.0.1 | `-static -static-libs`
-dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.7.2.1 | `-static -static-libs`
+dev-lang/execline-2.5.1.0 | `-static -static-libs`
+dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.8.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`

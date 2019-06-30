@@ -1,6 +1,6 @@
-### kubler/cadvisor:20190531
+### kubler/cadvisor:20190629
 
-Built: Fri 31 May 2019 03:59:24 PM CEST
+Built: Sun 30 Jun 2019 02:50:24 PM CEST
 Image Size: 52.6MB
 
 #### Installed

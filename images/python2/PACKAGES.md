@@ -1,7 +1,7 @@
-### kubler/python2:20190531
+### kubler/python2:20190629
 
-Built: Fri 31 May 2019 05:03:39 PM CEST
-Image Size: 115MB
+Built: Sun 30 Jun 2019 04:15:41 PM CEST
+Image Size: 118MB
 
 #### Installed
 Package | USE Flags
@@ -12,16 +12,16 @@ app-misc/mime-types-9 | ``
 dev-db/sqlite-3.28.0 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
 dev-lang/python-2.7.15 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -doc -examples -gdbm -ipv6 -libressl -ncurses -tk -wininst`
 dev-lang/python-exec-2.4.6 | ` `
-dev-libs/expat-2.2.6 | `unicode -examples -static-libs`
+dev-libs/expat-2.2.7 | `unicode -examples -static-libs`
 dev-libs/libffi-3.2.1 | `-debug -pax`
 dev-python/certifi-2018.4.16 | ` `
-dev-python/pip-9.0.1-r1 | ` `
+dev-python/pip-19.1 | `-test -vanilla`
 dev-python/setuptools-40.6.3 | `-test`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/bash** |
-app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.14 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
@@ -41,9 +41,9 @@ sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.2 | `-test`
-dev-lang/execline-2.5.0.1 | `-static -static-libs`
-dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.7.2.1 | `-static -static-libs`
+dev-lang/execline-2.5.1.0 | `-static -static-libs`
+dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.8.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`

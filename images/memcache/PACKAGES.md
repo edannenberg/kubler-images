@@ -1,7 +1,7 @@
-### kubler/memcache:20190531
+### kubler/memcache:20190629
 
-Built: Fri 31 May 2019 04:43:12 PM CEST
-Image Size: 93.1MB
+Built: Sun 30 Jun 2019 03:51:54 PM CEST
+Image Size: 93.7MB
 
 #### Installed
 Package | USE Flags
@@ -10,14 +10,14 @@ app-admin/perl-cleaner-2.27 | ``
 app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
 dev-lang/perl-5.28.2-r1 | `-berkdb -debug -doc -gdbm -ithreads`
 dev-libs/libevent-2.1.8 | `ssl threads -debug -libressl -static-libs -test`
-net-misc/memcached-1.5.14 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
+net-misc/memcached-1.5.16 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
 perl-core/File-Temp-0.230.400-r1 | ``
 sys-libs/libseccomp-2.4.0 | `-static-libs`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/bash** |
-app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.14 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
@@ -37,9 +37,9 @@ sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.2 | `-test`
-dev-lang/execline-2.5.0.1 | `-static -static-libs`
-dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.7.2.1 | `-static -static-libs`
+dev-lang/execline-2.5.1.0 | `-static -static-libs`
+dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.8.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`

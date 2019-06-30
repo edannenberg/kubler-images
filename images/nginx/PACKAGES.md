@@ -1,14 +1,14 @@
-### kubler/nginx:20190531
+### kubler/nginx:20190629
 
-Built: Fri 31 May 2019 04:45:54 PM CEST
-Image Size: 22.6MB
+Built: Sun 30 Jun 2019 03:54:44 PM CEST
+Image Size: 23.2MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
 dev-libs/libpcre-8.42 | `bzip2 cxx recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -readline -static-libs`
-www-servers/nginx-1.17.0 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
+www-servers/nginx-1.17.1 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -20,9 +20,9 @@ sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.2 | `-test`
-dev-lang/execline-2.5.0.1 | `-static -static-libs`
-dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.7.2.1 | `-static -static-libs`
+dev-lang/execline-2.5.1.0 | `-static -static-libs`
+dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.8.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`

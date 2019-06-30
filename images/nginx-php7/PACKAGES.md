@@ -1,16 +1,16 @@
-### kubler/nginx-php7:20190531
+### kubler/nginx-php7:20190629
 
-Built: Fri 31 May 2019 04:53:46 PM CEST
+Built: Sun 30 Jun 2019 04:06:14 PM CEST
 Image Size: 136MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.14 | `-doc -emacs -vim-syntax`
 app-admin/metalog-20181125 | `unicode`
 app-eselect/eselect-php-0.9.4-r5 | `fpm -apache2`
-dev-lang/php-7.2.16 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk -coverage -debug -embed -enchant -exif (-firebird) -flatfile -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos -ldap -ldap-sasl -libedit -libressl -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -truetype -wddx -zip-encryption`
-dev-libs/expat-2.2.6 | `unicode -examples -static-libs`
+dev-lang/php-7.2.19 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk -coverage -debug -embed -enchant -exif (-firebird) -flatfile -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos -ldap -ldap-sasl -libedit -libressl -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -truetype -wddx -zip-encryption`
+dev-libs/expat-2.2.7 | `unicode -examples -static-libs`
 dev-libs/gmp-6.1.2 | `asm cxx -doc -static-libs`
 dev-libs/libbsd-0.9.1 | `-static-libs`
 dev-libs/libevent-2.1.8 | `ssl threads -debug -libressl -static-libs -test`
@@ -23,35 +23,35 @@ dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
 dev-libs/libxml2-2.9.9-r1 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 dev-libs/libxslt-1.1.33-r1 | `crypt -debug -examples -python -static-libs`
 dev-libs/nettle-3.4.1 | `gmp -doc (-neon) -static-libs -test`
-dev-libs/oniguruma-6.9.1 | `-crnl-as-line-terminator -static-libs`
+dev-libs/oniguruma-6.9.2 | `-crnl-as-line-terminator -static-libs`
 dev-php/pecl-apcu-5.1.12 | `lock`
 dev-php/pecl-apcu_bc-1.0.4 | ` `
-dev-php/pecl-imagick-3.4.3 | `-examples -test`
-dev-php/pecl-memcached-3.0.4 | `session -examples -igbinary -json -sasl`
+dev-php/pecl-imagick-3.4.4 | `-examples -test`
+dev-php/pecl-memcached-3.1.3-r1 | `session -examples -igbinary -json -sasl -test`
 dev-php/pecl-redis-4.2.0 | `session -igbinary`
 dev-php/xdebug-2.6.1 | ` `
 dev-php/xdebug-client-2.6.1 | `-libedit`
 mail-mta/nullmailer-2.0-r1 | `ssl`
-media-gfx/imagemagick-7.0.8.46 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
+media-gfx/imagemagick-7.0.8.50 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
 media-libs/giflib-5.1.4 | `-doc -static-libs`
 media-libs/lcms-2.9 | `jpeg threads tiff -doc -static-libs -test`
 media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
 media-libs/libpng-1.6.37 | `-apng (-neon) -static-libs`
 media-libs/libwebp-1.0.2 | `gif jpeg png tiff (-neon) -opengl -static-libs -swap-16bit-csp`
-media-libs/openjpeg-2.3.0-r1 | `-doc -static-libs -test`
+media-libs/openjpeg-2.3.1 | `-doc -static-libs -test`
 media-libs/tiff-4.0.10 | `cxx jpeg zlib -jbig -lzma -static-libs -test -webp -zstd`
 net-libs/gnutls-3.6.7 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
 net-libs/libnsl-1.2.0 | ``
 net-libs/libtirpc-1.0.2-r1 | `-ipv6 -kerberos -static-libs`
 net-misc/curl-7.65.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
-net-misc/memcached-1.5.14 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
+net-misc/memcached-1.5.16 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
 sys-apps/acl-2.2.52-r1 | `nls -static-libs`
 sys-apps/attr-2.4.47-r2 | `nls -static-libs`
 sys-apps/coreutils-8.30 | `acl nls split-usr (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.36 | `zlib -python -static-libs`
 sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
 sys-apps/shadow-4.6 | `acl cracklib nls xattr -audit -pam (-selinux) -skey`
-sys-apps/util-linux-2.33-r1 | `cramfs nls readline suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.33.2 | `cramfs nls readline suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
 sys-devel/gettext-0.19.8.1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
 sys-libs/cracklib-2.9.6-r2 | `nls zlib -python -static-libs`
 sys-libs/libseccomp-2.4.0 | `-static-libs`
@@ -75,7 +75,7 @@ Package | USE Flags
 **FROM kubler/nginx** |
 app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
 dev-libs/libpcre-8.42 | `bzip2 cxx recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -readline -static-libs`
-www-servers/nginx-1.17.0 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
+www-servers/nginx-1.17.1 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20180409.3.37 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
@@ -84,9 +84,9 @@ sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.2 | `-test`
-dev-lang/execline-2.5.0.1 | `-static -static-libs`
-dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.7.2.1 | `-static -static-libs`
+dev-lang/execline-2.5.1.0 | `-static -static-libs`
+dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.8.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`

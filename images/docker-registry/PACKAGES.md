@@ -1,7 +1,7 @@
-### kubler/docker-registry:20190531
+### kubler/docker-registry:20190629
 
-Built: Fri 31 May 2019 04:03:39 PM CEST
-Image Size: 56.3MB
+Built: Sun 30 Jun 2019 02:55:30 PM CEST
+Image Size: 56.8MB
 
 #### Installed
 Package | USE Flags
@@ -18,9 +18,9 @@ sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.2 | `-test`
-dev-lang/execline-2.5.0.1 | `-static -static-libs`
-dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.7.2.1 | `-static -static-libs`
+dev-lang/execline-2.5.1.0 | `-static -static-libs`
+dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.8.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`

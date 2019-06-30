@@ -1,6 +1,6 @@
-### kubler/gcc:20190531
+### kubler/gcc:20190629
 
-Built: Fri 31 May 2019 04:06:35 PM CEST
+Built: Sun 30 Jun 2019 03:02:39 PM CEST
 Image Size: 388MB
 
 #### Installed
@@ -9,7 +9,7 @@ Package | USE Flags
 dev-libs/gmp-6.1.2 | `asm cxx -doc -static-libs`
 dev-libs/mpc-1.0.3 | `-static-libs`
 dev-libs/mpfr-3.1.6 | `-static-libs`
-sys-devel/binutils-2.31.1-r6 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
+sys-devel/binutils-2.32-r1 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5-r4 | ``
 sys-devel/gcc-8.3.0-r1 | `cxx hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
 sys-devel/gcc-config-2.0 | ``
@@ -19,7 +19,7 @@ sys-kernel/linux-headers-4.14-r1 | `-headers-only`
 Package | USE Flags
 --------|----------
 **FROM kubler/bash** |
-app-admin/eselect-1.4.13 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.14 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
@@ -39,9 +39,9 @@ sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.2 | `-test`
-dev-lang/execline-2.5.0.1 | `-static -static-libs`
-dev-libs/skalibs-2.7.0.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.7.2.1 | `-static -static-libs`
+dev-lang/execline-2.5.1.0 | `-static -static-libs`
+dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.8.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
