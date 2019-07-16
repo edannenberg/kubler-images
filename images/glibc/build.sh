@@ -26,9 +26,6 @@ configure_bob()
 #
 configure_rootfs_build()
 {
-    # make sure lib symlink exists before gentoofunctions package creates a dir during install
-    mkdir -p "${_EMERGE_ROOT}"/lib64
-    ln -sr "${_EMERGE_ROOT}"/lib64 "${_EMERGE_ROOT}"/lib
     # as we broke the normal builder chain, recreate the docs for the busybox image
     init_docs 'kubler/busybox'
     update_use 'sys-apps/busybox' '+static +make-symlinks'
