@@ -59,7 +59,7 @@ finish_rootfs_build()
     # apparently a bug with nullmailer? links to non existing gnutls lib
     ln -sr "${_EMERGE_ROOT}"/usr/"${_LIB}"/libgnutls.so.28 "${_EMERGE_ROOT}"/usr/"${_LIB}"/libgnutls.so.26
     # required by imagick
-    find /usr/"${_LIB}"/gcc/x86_64-pc-linux-gnu -name libgomp.so.* -exec cp {} "${_EMERGE_ROOT}"/usr/"${_LIB}"/ \;
+    find /usr/lib/gcc/x86_64-pc-linux-gnu -name libgomp.so.* -exec cp {} "${_EMERGE_ROOT}"/usr/"${_LIB}"/ \;
     # prepare adminer / phpinfo micro sites
     mkdir -p "${_EMERGE_ROOT}"/var/www/{adminer,phpinfo}
     download_file https://www.adminer.org/static/download/"${_adminer_version}"/adminer-"${_adminer_version}"-en.php
