@@ -13,8 +13,8 @@ configure_builder() {
     # skip python and iced-tea
     provide_package dev-lang/python dev-lang/python-exec dev-java/icedtea-bin
 
-    # install java in build container so depending builds have it available
-    emerge dev-java/oracle-jre-bin
+    # install jdk in build container so depending builds have it available
+    emerge dev-java/oracle-jdk-bin
 }
 
 #
