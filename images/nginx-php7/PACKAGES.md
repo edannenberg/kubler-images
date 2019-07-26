@@ -1,6 +1,6 @@
-### kubler/nginx-php7:20190629
+### kubler/nginx-php7:20190726
 
-Built: Sun 30 Jun 2019 04:06:14 PM CEST
+Built: Fri 26 Jul 2019 01:57:00 PM CEST
 Image Size: 136MB
 
 #### Installed
@@ -9,8 +9,8 @@ Package | USE Flags
 app-admin/eselect-1.4.14 | `-doc -emacs -vim-syntax`
 app-admin/metalog-20181125 | `unicode`
 app-eselect/eselect-php-0.9.4-r5 | `fpm -apache2`
-dev-lang/php-7.2.19 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk -coverage -debug -embed -enchant -exif (-firebird) -flatfile -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos -ldap -ldap-sasl -libedit -libressl -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -truetype -wddx -zip-encryption`
-dev-libs/expat-2.2.7 | `unicode -examples -static-libs`
+dev-lang/php-7.2.20 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk -coverage -debug -embed -enchant -exif (-firebird) -flatfile -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos -ldap -ldap-sasl -libedit -libressl -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -truetype -wddx -zip-encryption`
+dev-libs/expat-2.2.7 | `(split-usr) unicode -examples -static-libs`
 dev-libs/gmp-6.1.2 | `asm cxx -doc -static-libs`
 dev-libs/libbsd-0.9.1 | `-static-libs`
 dev-libs/libevent-2.1.8 | `ssl threads -debug -libressl -static-libs -test`
@@ -42,46 +42,46 @@ media-libs/openjpeg-2.3.1 | `-doc -static-libs -test`
 media-libs/tiff-4.0.10 | `cxx jpeg zlib -jbig -lzma -static-libs -test -webp -zstd`
 net-libs/gnutls-3.6.7 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
 net-libs/libnsl-1.2.0 | ``
-net-libs/libtirpc-1.0.2-r1 | `-ipv6 -kerberos -static-libs`
+net-libs/libtirpc-1.0.2-r1 | `(split-usr) -ipv6 -kerberos -static-libs`
 net-misc/curl-7.65.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
 net-misc/memcached-1.5.16 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
-sys-apps/acl-2.2.52-r1 | `nls -static-libs`
-sys-apps/attr-2.4.47-r2 | `nls -static-libs`
-sys-apps/coreutils-8.30 | `acl nls split-usr (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
+sys-apps/acl-2.2.52-r1 | `nls (split-usr) -static-libs`
+sys-apps/attr-2.4.47-r2 | `nls (split-usr) -static-libs`
+sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.36 | `zlib -python -static-libs`
 sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
-sys-apps/shadow-4.6 | `acl cracklib nls xattr -audit -pam (-selinux) -skey`
-sys-apps/util-linux-2.33.2 | `cramfs nls readline suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
+sys-apps/shadow-4.6 | `acl cracklib nls (split-usr) xattr -audit -pam (-selinux) -skey`
+sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
 sys-devel/gettext-0.19.8.1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
-sys-libs/cracklib-2.9.6-r2 | `nls zlib -python -static-libs`
+sys-libs/cracklib-2.9.6-r2 | `nls (split-usr) zlib -python -static-libs`
 sys-libs/libseccomp-2.4.0 | `-static-libs`
-sys-libs/ncurses-6.1-r2 | `cxx minimal threads unicode -ada -debug -doc -gpm -profile -static-libs -test -tinfo -trace`
-sys-libs/readline-7.0_p5 | `-static-libs -utils`
-x11-base/xorg-proto-2018.4 | ``
+sys-libs/ncurses-6.1_p20181020 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/readline-7.0_p5 | `(split-usr) -static-libs -utils`
+x11-base/xorg-proto-2019.1 | ``
 x11-libs/libICE-1.0.9-r2 | `-doc -ipv6 -static-libs`
 x11-libs/libSM-1.2.3 | `uuid -doc -ipv6 -static-libs`
-x11-libs/libX11-1.6.7 | `-doc -ipv6 -static-libs -test`
+x11-libs/libX11-1.6.8 | `-doc -ipv6 -static-libs -test`
 x11-libs/libXau-1.0.9 | `-static-libs`
 x11-libs/libxcb-1.13.1 | `-doc (-selinux) -static-libs -test -xkb`
 x11-libs/libXdmcp-1.1.3 | `-doc -static-libs`
 x11-libs/libXext-1.3.4 | `-doc -static-libs`
 x11-libs/libXpm-3.5.12-r1 | `-static-libs`
-x11-libs/libXt-1.1.5-r1 | `-static-libs -test`
+x11-libs/libXt-1.2.0 | `-doc -static-libs -test`
 x11-libs/xtrans-1.4.0 | `-doc`
-*manual install*: adminer-4.7.1 | https://www.adminer.org/
+*manual install*: adminer-4.7.2 | https://www.adminer.org/
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/nginx** |
-app-arch/bzip2-1.0.6-r11 | `-static -static-libs`
-dev-libs/libpcre-8.42 | `bzip2 cxx recursion-limit (unicode) zlib -jit -libedit -pcre16 -pcre32 -readline -static-libs`
-www-servers/nginx-1.17.1 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
+app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
+dev-libs/libpcre-8.42 | `bzip2 cxx recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -readline -static-libs`
+www-servers/nginx-1.17.2 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20180409.3.37 | `-cacert`
+app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
-sys-libs/zlib-1.2.11-r2 | `-minizip -static-libs`
+sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.2 | `-test`
 dev-lang/execline-2.5.1.0 | `-static -static-libs`
@@ -91,8 +91,8 @@ sys-apps/s6-2.8.0.1 | `-static -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.29-r2 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2018i | `nls -leaps`
+sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/timezone-data-2019a | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged

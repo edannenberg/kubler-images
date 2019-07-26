@@ -1,12 +1,12 @@
-### kubler/redis:20190629
+### kubler/redis:20190726
 
-Built: Sun 30 Jun 2019 04:17:31 PM CEST
-Image Size: 21.3MB
+Built: Fri 26 Jul 2019 02:08:37 PM CEST
+Image Size: 21.2MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-db/redis-4.0.10 | `jemalloc -luajit -tcmalloc -test`
+dev-db/redis-4.0.14 | `jemalloc -luajit -tcmalloc -test`
 dev-lang/lua-5.1.5-r4 | `deprecated -emacs -readline -static`
 dev-libs/jemalloc-3.6.0 | `-debug -static-libs -stats`
 #### Inherited
@@ -21,8 +21,8 @@ sys-apps/s6-2.8.0.1 | `-static -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.29-r2 | `multiarch (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2018i | `nls -leaps`
+sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/timezone-data-2019a | `nls -leaps`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged

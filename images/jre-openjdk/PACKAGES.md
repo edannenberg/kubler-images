@@ -1,7 +1,7 @@
-### kubler/jdk-icedtea:20190726
+### kubler/jre-openjdk:20190726
 
-Built: Fri 26 Jul 2019 01:01:12 PM CEST
-Image Size: 534MB
+Built: Fri 26 Jul 2019 12:42:43 PM CEST
+Image Size: 172MB
 
 #### Installed
 Package | USE Flags
@@ -10,37 +10,20 @@ app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-crypt/p11-kit-0.23.12-r1 | `asn1 libffi trust -debug`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
-dev-java/icedtea-bin-3.12.0-r1 | `headless-awt -alsa (-big-endian) -cups -doc -examples -gtk (-multilib) -nsplugin -pulseaudio (-selinux) -source -webstart`
 dev-java/java-config-2.2.0-r4 | `-test`
-dev-lang/python-exec-2.4.6 | ` `
+dev-java/openjdk-jre-bin-8.212_p03-r1 | `gentoo-vm headless-awt -alsa -cups -nsplugin (-selinux) -webstart`
 dev-libs/expat-2.2.7 | `(split-usr) unicode -examples -static-libs`
-dev-libs/glib-2.58.3-r1 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.2.1 | `-debug -pax`
-dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
-dev-libs/libxml2-2.9.9-r1 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
-dev-util/glib-utils-2.58.3 | ` `
 media-fonts/liberation-fonts-2.00.1-r3 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
-media-libs/lcms-2.9 | `threads -doc -jpeg -static-libs -test -tiff`
-media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
+net-libs/libnet-1.2_rc3-r1 | `-doc -static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
 sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
-x11-misc/shared-mime-info-1.10 | `-test`
 #### Inherited
 Package | USE Flags
 --------|----------
-**FROM kubler/gcc** |
-dev-libs/gmp-6.1.2 | `asm cxx -doc -static-libs`
-dev-libs/mpc-1.0.3 | `-static-libs`
-dev-libs/mpfr-3.1.6 | `-static-libs`
-sys-devel/binutils-2.32-r1 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
-sys-devel/binutils-config-5-r4 | ``
-sys-devel/gcc-8.3.0-r1 | `cxx hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
-sys-devel/gcc-config-2.0 | ``
-sys-devel/make-4.2.1-r4 | `nls -guile -static`
-sys-kernel/linux-headers-4.19 | `-headers-only`
 **FROM kubler/bash** |
 app-admin/eselect-1.4.14 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.74 | `nls -static`
@@ -76,7 +59,3 @@ sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev
 #### Purged
 - [x] Headers
 - [x] Static Libs
-
-#### Included
-- [x] Headers from kubler/glibc
-- [x] Static Libs from kubler/glibc
