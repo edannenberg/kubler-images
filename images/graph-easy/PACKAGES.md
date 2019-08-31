@@ -1,6 +1,6 @@
-### kubler/graph-easy:20190726
+### kubler/graph-easy:20190831
 
-Built: Fri 26 Jul 2019 12:54:16 PM CEST
+Built: Sat 31 Aug 2019 03:22:05 PM CEST
 Image Size: 133MB
 
 #### Installed
@@ -30,7 +30,7 @@ sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -buil
 sys-devel/binutils-config-5-r4 | ``
 sys-libs/binutils-libs-2.32-r1 | `nls -64-bit-bfd -multitarget -static-libs`
 x11-libs/cairo-1.16.0-r3 | `glib svg -`
-x11-libs/pango-1.42.4-r1 | `-`
+x11-libs/pango-1.42.4-r2 | `-`
 x11-libs/pixman-0.38.4 | `(-altivec) (-loongson2f) (-neon)`
 x11-misc/shared-mime-info-1.10 | `-test`
 #### Inherited
@@ -70,9 +70,9 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019a | `nls -leaps`
+sys-libs/timezone-data-2019b-r1 | `nls -leaps`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged
 - [x] Headers
 - [x] Static Libs

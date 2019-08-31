@@ -1,7 +1,7 @@
-### kubler/nodejs:20190726
+### kubler/nodejs:20190831
 
-Built: Fri 26 Jul 2019 12:55:46 PM CEST
-Image Size: 110MB
+Built: Sat 31 Aug 2019 03:49:44 PM CEST
+Image Size: 111MB
 
 #### Installed
 Package | USE Flags
@@ -9,9 +9,9 @@ Package | USE Flags
 dev-libs/icu-64.2 | `-debug -doc -examples -static-libs`
 dev-libs/libuv-1.28.0 | `-static-libs`
 net-libs/http-parser-2.8.1 | `-static-libs`
-net-libs/nghttp2-1.39.1 | `cxx threads -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
+net-libs/nghttp2-1.39.2 | `cxx threads -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
 net-libs/nodejs-8.12.0 | `icu npm snapshot ssl -debug -doc -inspector -systemtap -test`
-sys-apps/yarn-1.16.0 | ``
+sys-apps/yarn-1.17.3 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -31,9 +31,9 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019a | `nls -leaps`
+sys-libs/timezone-data-2019b-r1 | `nls -leaps`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged
 - [x] Headers
 - [x] Static Libs

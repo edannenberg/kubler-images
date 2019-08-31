@@ -1,6 +1,6 @@
-### kubler/gcc:20190726
+### kubler/gcc:20190831
 
-Built: Fri 26 Jul 2019 12:47:54 PM CEST
+Built: Sat 31 Aug 2019 02:40:12 PM CEST
 Image Size: 390MB
 
 #### Installed
@@ -11,7 +11,7 @@ dev-libs/mpc-1.0.3 | `-static-libs`
 dev-libs/mpfr-3.1.6 | `-static-libs`
 sys-devel/binutils-2.32-r1 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5-r4 | ``
-sys-devel/gcc-8.3.0-r1 | `cxx hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
+sys-devel/gcc-8.3.0-r1 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
 sys-devel/gcc-config-2.0 | ``
 sys-devel/make-4.2.1-r4 | `nls -guile -static`
 sys-kernel/linux-headers-4.19 | `-headers-only`
@@ -47,9 +47,9 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019a | `nls -leaps`
+sys-libs/timezone-data-2019b-r1 | `nls -leaps`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged
 - [ ] Headers
 - [ ] Static Libs

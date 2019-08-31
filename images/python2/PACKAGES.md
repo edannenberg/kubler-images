@@ -1,6 +1,6 @@
-### kubler/python2:20190726
+### kubler/python2:20190831
 
-Built: Fri 26 Jul 2019 02:05:44 PM CEST
+Built: Sat 31 Aug 2019 05:48:40 PM CEST
 Image Size: 118MB
 
 #### Installed
@@ -11,7 +11,7 @@ app-eselect/eselect-python-20171204 | ``
 app-misc/mime-types-9 | ``
 dev-db/sqlite-3.28.0 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
 dev-lang/python-2.7.15 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -doc -examples -gdbm -ipv6 -libressl -ncurses -tk -wininst`
-dev-lang/python-exec-2.4.6 | ` `
+dev-lang/python-exec-2.4.6-r1 | ` `
 dev-libs/expat-2.2.7 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.2.1 | `-debug -pax`
 dev-python/certifi-2018.4.16 | ` `
@@ -49,9 +49,9 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019a | `nls -leaps`
+sys-libs/timezone-data-2019b-r1 | `nls -leaps`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged
 - [x] Headers
 - [x] Static Libs

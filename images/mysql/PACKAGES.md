@@ -1,6 +1,6 @@
-### kubler/mysql:20190726
+### kubler/mysql:20190831
 
-Built: Fri 26 Jul 2019 01:36:31 PM CEST
+Built: Sat 31 Aug 2019 05:24:47 PM CEST
 Image Size: 204MB
 
 #### Installed
@@ -9,8 +9,8 @@ Package | USE Flags
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-arch/lz4-1.8.3 | `-static-libs`
 app-arch/pbzip2-1.1.12 | `-static -symlink`
-dev-db/mysql-5.7.25 | `server -cjk (-client-libs) -cracklib -debug -experimental -jemalloc -latin1 -libressl -numa -perl -profiling (-selinux) -static -static-libs -systemtap -tcmalloc -test -yassl`
-dev-db/mysql-connector-c-6.1.11-r1 | `-libressl -static-libs`
+dev-db/mysql-5.7.26-r1 | `server -cjk (-client-libs) -cracklib -debug -experimental -jemalloc -latin1 -libressl -numa -perl -profiling (-selinux) -static -static-libs -systemtap -tcmalloc -test -yassl`
+dev-db/mysql-connector-c-6.1.11-r2 | `-libressl -static-libs`
 dev-libs/libaio-0.3.110 | `(split-usr) -static-libs -test`
 sys-apps/texinfo-6.6-r1 | `nls -static`
 sys-process/procps-3.3.15-r1 | `kill nls (split-usr) unicode -elogind -modern-top -ncurses (-selinux) -static-libs -systemd -test`
@@ -47,9 +47,9 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019a | `nls -leaps`
+sys-libs/timezone-data-2019b-r1 | `nls -leaps`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged
 - [x] Headers
 - [x] Static Libs

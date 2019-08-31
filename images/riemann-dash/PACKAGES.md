@@ -1,6 +1,6 @@
-### kubler/riemann-dash:20190726
+### kubler/riemann-dash:20190831
 
-Built: Fri 26 Jul 2019 02:10:13 PM CEST
+Built: Sat 31 Aug 2019 05:52:24 PM CEST
 Image Size: 455MB
 
 #### Installed
@@ -16,13 +16,13 @@ Package | USE Flags
 --------|----------
 **FROM kubler/ruby-gcc** |
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
-app-eselect/eselect-ruby-20170723 | ``
-dev-lang/ruby-2.4.6 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -libressl -rubytests -socks5 -static-libs -tk -xemacs`
+app-eselect/eselect-ruby-20190121 | ``
+dev-lang/ruby-2.4.7 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -libressl -rubytests -socks5 -static-libs -tk -xemacs`
 dev-libs/glib-2.58.3-r1 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.2.1 | `-debug -pax`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libxml2-2.9.9-r1 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
-dev-libs/libyaml-0.1.7 | `-doc -examples -static-libs -test`
+dev-libs/libyaml-0.2.2 | `-doc -static-libs -test`
 dev-ruby/did_you_mean-1.1.2 | `-test`
 dev-ruby/json-2.1.0 | `-doc -test`
 dev-ruby/minitest-5.10.3 | `-doc -test`
@@ -30,7 +30,7 @@ dev-ruby/net-telnet-0.1.1-r1 | `-doc -test`
 dev-ruby/pkg-config-1.2.8 | `-test`
 dev-ruby/power_assert-1.1.1 | `-doc -test`
 dev-ruby/rake-12.3.1 | `-doc -test`
-dev-ruby/rdoc-5.1.0 | `-doc -test`
+dev-ruby/rdoc-6.1.1 | `-doc -test`
 dev-ruby/rubygems-2.7.9 | `-server -test`
 dev-ruby/test-unit-3.2.7 | `-doc -test`
 dev-ruby/xmlrpc-0.3.0 | `-doc -test`
@@ -44,7 +44,7 @@ dev-libs/mpc-1.0.3 | `-static-libs`
 dev-libs/mpfr-3.1.6 | `-static-libs`
 sys-devel/binutils-2.32-r1 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5-r4 | ``
-sys-devel/gcc-8.3.0-r1 | `cxx hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
+sys-devel/gcc-8.3.0-r1 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-altivec) -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -mpx (-multilib) -objc -objc`
 sys-devel/gcc-config-2.0 | ``
 sys-devel/make-4.2.1-r4 | `nls -guile -static`
 sys-kernel/linux-headers-4.19 | `-headers-only`
@@ -77,9 +77,9 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019a | `nls -leaps`
+sys-libs/timezone-data-2019b-r1 | `nls -leaps`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged
 - [ ] Headers
 - [x] Static Libs

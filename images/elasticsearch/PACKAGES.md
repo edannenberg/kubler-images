@@ -1,13 +1,13 @@
-### kubler/elasticsearch:20190726
+### kubler/elasticsearch:20190831
 
-Built: Fri 26 Jul 2019 12:45:21 PM CEST
+Built: Sat 31 Aug 2019 02:37:54 PM CEST
 Image Size: 280MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-admin/su-exec-0.2 | `-static`
-app-misc/elasticsearch-7.2.0 | `-x-pack`
+app-misc/elasticsearch-7.2.1 | `-x-pack`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -17,7 +17,7 @@ app-crypt/p11-kit-0.23.12-r1 | `asn1 libffi trust -debug`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.2.0-r4 | `-test`
-dev-java/openjdk-jre-bin-8.212_p03-r1 | `gentoo-vm headless-awt -alsa -cups -nsplugin (-selinux) -webstart`
+dev-java/openjdk-jre-bin-8.222_p10 | `gentoo-vm headless-awt -alsa -cups -nsplugin (-selinux) -webstart`
 dev-libs/expat-2.2.7 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.2.1 | `-debug -pax`
 dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
@@ -56,9 +56,9 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019a | `nls -leaps`
+sys-libs/timezone-data-2019b-r1 | `nls -leaps`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.29.3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged
 - [x] Headers
 - [x] Static Libs
