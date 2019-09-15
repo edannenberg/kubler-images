@@ -3,23 +3,12 @@
 #
 _packages="www-apps/grafana"
 
-configure_builder()
-{
-    emerge -C openssl
-    echo '=dev-libs/openssl-1.1.1c' >> /etc/portage/package.unmask/grafana
-}
-
-
 #
 # This hook is called just before starting the build of the root fs
 #
 configure_rootfs_build()
 {
-    update_keywords 'net-libs/http-parser-2.9.2' '+~amd64'
-    update_keywords 'net-dns/c-ares-1.15.0' '+~amd64'
-    update_keywords 'net-libs/nodejs-10.16.3' '+~amd64'
-    update_use 'net-libs/nodejs' '+icu'
-    update_use 'sys-apps/yarn' '+~amd64'
+  :
 }
 
 #
