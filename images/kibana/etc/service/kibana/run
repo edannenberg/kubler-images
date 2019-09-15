@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sed -i "s|#elasticsearch.hosts: \[\"http://localhost:9200\"\]|elasticsearch.hosts: [\"${ELASTICSEARCH_URL:-http://es:9200}\"]|" /etc/kibana/kibana.yml
+
+exec 2>&1
+su-exec kibana:kibana /opt/kibana/bin/kibana --cpu.cgroup.path.override=/ --cpuacct.cgroup.path.override=/ "$@"

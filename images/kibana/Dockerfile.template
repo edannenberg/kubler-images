@@ -3,10 +3,17 @@ LABEL maintainer ${MAINTAINER}
 
 ADD rootfs.tar /
 
+ADD etc /etc
+
 COPY docker-healthcheck.sh /usr/local/bin/
 
 EXPOSE 5601
 
 HEALTHCHECK --interval=30s --timeout=3s CMD docker-healthcheck.sh
 
-CMD sed -i "s|http://localhost:9200|${ELASTICSEARCH_URL:-http://es:9200}|" /etc/kibana/kibana.yml && /opt/kibana/bin/kibana
+RUN chown -R kibana:kibana /etc/kibana && \
+    chmod +x $(find /etc/service -name run) && \
+    ln -s /etc/s6_finish_default /etc/service/kibana/finish && \
+    ln -s /etc/service/kibana /service
+
+CMD ["/bin/s6-svscan", "-s", "-t0", "/service"]
