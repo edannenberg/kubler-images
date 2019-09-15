@@ -22,9 +22,11 @@ configure_bob() {
     # install default packages
     # when using overlay1 docker storage the created hard link will trigger an error during openssh uninstall
     [[ -f /usr/"${_LIB}"/misc/ssh-keysign ]] && rm /usr/"${_LIB}"/misc/ssh-keysign
-    emerge -C net-misc/openssh
+    emerge -C net-misc/openssh dev-libs/openssl
     update_use 'dev-libs/openssl' -bindist
+    update_keywords 'dev-libs/openssl-1.1.1c-r1' '+~amd64'
     emerge dev-libs/openssl
+    emerge @preserved-rebuild
     update_use 'dev-vcs/git' '-perl'
     update_use 'app-crypt/pinentry' '+ncurses'
     update_keywords 'app-portage/layman' '+~amd64'
