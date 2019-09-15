@@ -3,10 +3,14 @@
 #
 _packages="net-libs/nghttp2 net-libs/http-parser dev-libs/libuv dev-libs/icu net-libs/nodejs sys-apps/yarn"
 
-configure_bob()
+configure_builder()
 {
+    update_keywords 'net-libs/http-parser-2.9.2' '+~amd64'
+    update_keywords 'net-dns/c-ares-1.15.0' '+~amd64'
+    update_keywords 'net-libs/nodejs-10.16.3' '+~amd64'
+    update_keywords 'sys-apps/yarn' '+~amd64'
     update_use net-libs/nodejs +icu
-    # build binary packages first to avoid pulling in python in the next phase
+    # also install nodejs in the build container so child images have it available
     emerge net-libs/http-parser dev-libs/libuv dev-libs/icu net-libs/nodejs
 }
 
@@ -15,9 +19,8 @@ configure_bob()
 #
 configure_rootfs_build()
 {
-    update_keywords 'sys-apps/yarn' '+~amd64'
     # install binary packages with no deps when building the root fs
-    _emerge_opt="--nodeps"
+    #_emerge_opt="--nodeps"
     # add user/group for unprivileged container usage
     groupadd -g 700 nodejs
     useradd -u 7000 -g nodejs -d /home/nodejs nodejs
