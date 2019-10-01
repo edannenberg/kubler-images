@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="app-admin/su-exec www-apps/kibana-bin "
+_packages="app-admin/su-exec www-apps/kibana-bin"
 # skip all dependencies of kibana
 _emerge_opt="--nodeps"
 
