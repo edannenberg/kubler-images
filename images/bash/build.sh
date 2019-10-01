@@ -10,6 +10,8 @@ configure_rootfs_build()
 {
     update_use 'sys-libs/ncurses' '+minimal'
     unprovide_package sys-libs/readline
+    # these use flags pull in gcc as runtime dep
+    update_use app-portage/portage-utils -qmanifest -qtegrity
 }
 
 #
