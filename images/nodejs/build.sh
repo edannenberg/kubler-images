@@ -11,7 +11,7 @@ configure_builder()
     update_keywords 'sys-apps/yarn' '+~amd64'
     update_use net-libs/nodejs +icu
     # also install nodejs in the build container so child images have it available
-    emerge net-libs/http-parser dev-libs/libuv dev-libs/icu net-libs/nodejs
+    emerge net-libs/http-parser dev-libs/libuv dev-libs/icu net-libs/nodejs sys-apps/yarn
 }
 
 #
