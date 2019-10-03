@@ -1,7 +1,7 @@
-### kubler/riemann-dash:20190831
+### kubler/riemann-dash:20190930
 
-Built: Sat 31 Aug 2019 05:52:24 PM CEST
-Image Size: 455MB
+Built: Thu 03 Oct 2019 01:05:24 PM CEST
+Image Size: 462MB
 
 #### Installed
 Package | USE Flags
@@ -18,8 +18,9 @@ Package | USE Flags
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-eselect/eselect-ruby-20190121 | ``
 dev-lang/ruby-2.4.7 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -libressl -rubytests -socks5 -static-libs -tk -xemacs`
-dev-libs/glib-2.58.3-r1 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
-dev-libs/libffi-3.2.1 | `-debug -pax`
+dev-libs/elfutils-0.176-r1 | `bzip2 nls utils -lzma -static-libs -test (-threads)`
+dev-libs/glib-2.60.6 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
+dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libxml2-2.9.9-r1 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 dev-libs/libyaml-0.2.2 | `-doc -static-libs -test`
@@ -30,11 +31,10 @@ dev-ruby/net-telnet-0.1.1-r1 | `-doc -test`
 dev-ruby/pkg-config-1.2.8 | `-test`
 dev-ruby/power_assert-1.1.1 | `-doc -test`
 dev-ruby/rake-12.3.1 | `-doc -test`
-dev-ruby/rdoc-6.1.1 | `-doc -test`
+dev-ruby/rdoc-6.1.2 | `-doc -test`
 dev-ruby/rubygems-2.7.9 | `-server -test`
 dev-ruby/test-unit-3.2.7 | `-doc -test`
 dev-ruby/xmlrpc-0.3.0 | `-doc -test`
-dev-util/glib-utils-2.58.3 | ` `
 dev-util/pkgconfig-0.29.2 | `hardened -internal-glib`
 sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
 x11-misc/shared-mime-info-1.10 | `-test`
@@ -64,7 +64,7 @@ sys-libs/readline-7.0_p5 | `(split-usr) -static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
+dev-libs/openssl-1.1.1c-r1 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |

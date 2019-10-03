@@ -1,12 +1,12 @@
-### kubler/riemann:20190831
+### kubler/riemann:20190930
 
-Built: Sat 31 Aug 2019 05:51:02 PM CEST
-Image Size: 292MB
+Built: Thu 03 Oct 2019 01:04:50 PM CEST
+Image Size: 293MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-*manual install*: riemann-0.3.3 | https://github.com/riemann/riemann
+*manual install*: riemann-0.3.4 | https://github.com/riemann/riemann
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -23,7 +23,7 @@ app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.2.0-r4 | `-test`
 dev-java/openjdk-jre-bin-8.222_p10 | `gentoo-vm headless-awt -alsa -cups -nsplugin (-selinux) -webstart`
 dev-libs/expat-2.2.7 | `(split-usr) unicode -examples -static-libs`
-dev-libs/libffi-3.2.1 | `-debug -pax`
+dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
 media-fonts/liberation-fonts-2.00.1-r3 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
@@ -47,7 +47,7 @@ sys-libs/readline-7.0_p5 | `(split-usr) -static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
+dev-libs/openssl-1.1.1c-r1 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |

@@ -1,16 +1,19 @@
-### kubler/nodejs:20190831
+### kubler/nodejs:20190930
 
-Built: Sat 31 Aug 2019 03:49:44 PM CEST
-Image Size: 111MB
+Built: Mon 30 Sep 2019 04:23:12 PM CEST
+Image Size: 124MB
 
 #### Installed
 Package | USE Flags
 --------|----------
+app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
+dev-libs/boost-1.65.0 | `nls threads -context -debug -doc -icu -mpi -python -static-libs -tools`
 dev-libs/icu-64.2 | `-debug -doc -examples -static-libs`
 dev-libs/libuv-1.28.0 | `-static-libs`
-net-libs/http-parser-2.8.1 | `-static-libs`
+net-dns/c-ares-1.15.0 | `-static-libs`
+net-libs/http-parser-2.9.2 | `-static-libs`
 net-libs/nghttp2-1.39.2 | `cxx threads -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-libs/nodejs-8.12.0 | `icu npm snapshot ssl -debug -doc -inspector -systemtap -test`
+net-libs/nodejs-10.16.3 | `icu npm snapshot ssl -debug -doc -inspector -systemtap -test`
 sys-apps/yarn-1.17.3 | ``
 #### Inherited
 Package | USE Flags
@@ -18,7 +21,7 @@ Package | USE Flags
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
+dev-libs/openssl-1.1.1c-r1 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
@@ -31,7 +34,7 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019b-r1 | `nls -leaps`
+sys-libs/timezone-data-2019b-r1 | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged

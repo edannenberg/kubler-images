@@ -1,6 +1,6 @@
-### kubler/jre-openjdk:20190831
+### kubler/jre-openjdk:20190930
 
-Built: Sat 31 Aug 2019 02:34:55 PM CEST
+Built: Mon 30 Sep 2019 04:09:44 PM CEST
 Image Size: 172MB
 
 #### Installed
@@ -12,8 +12,8 @@ app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.2.0-r4 | `-test`
 dev-java/openjdk-jre-bin-8.222_p10 | `gentoo-vm headless-awt -alsa -cups -nsplugin (-selinux) -webstart`
-dev-libs/expat-2.2.7 | `(split-usr) unicode -examples -static-libs`
-dev-libs/libffi-3.2.1 | `-debug -pax`
+dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
+dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
 media-fonts/liberation-fonts-2.00.1-r3 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
@@ -26,7 +26,7 @@ Package | USE Flags
 --------|----------
 **FROM kubler/bash** |
 app-admin/eselect-1.4.14 | `-doc -emacs -vim-syntax`
-app-portage/portage-utils-0.74 | `nls -static`
+app-portage/portage-utils-0.80 | `nls openmp -libressl -qmanifest -qtegrity -static`
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
 net-misc/curl-7.65.0 | `ssl threads -adns -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink -rtmp -samba -ssh -static-libs -test`
@@ -40,7 +40,7 @@ sys-libs/readline-7.0_p5 | `(split-usr) -static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.0.2r | `asm sslv3 tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp -sslv2 -static-libs -test -vanilla`
+dev-libs/openssl-1.1.1c-r1 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
@@ -53,7 +53,7 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019b-r1 | `nls -leaps`
+sys-libs/timezone-data-2019b-r1 | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged
