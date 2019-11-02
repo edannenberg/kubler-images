@@ -1,6 +1,6 @@
-### kubler/nodejs:20190930
+### kubler/nodejs:20191031
 
-Built: Mon 30 Sep 2019 04:23:12 PM CEST
+Built: Sat 02 Nov 2019 12:55:17 AM CET
 Image Size: 124MB
 
 #### Installed
@@ -14,18 +14,18 @@ net-dns/c-ares-1.15.0 | `-static-libs`
 net-libs/http-parser-2.9.2 | `-static-libs`
 net-libs/nghttp2-1.39.2 | `cxx threads -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
 net-libs/nodejs-10.16.3 | `icu npm snapshot ssl -debug -doc -inspector -systemtap -test`
-sys-apps/yarn-1.17.3 | ``
+sys-apps/yarn-1.19.1 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1c-r1 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1d-r2 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.2 | `-test`
+app-admin/entr-4.3 | `-test`
 dev-lang/execline-2.5.1.0 | `-static -static-libs`
 dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.8.0.1 | `-static -static-libs`
@@ -34,7 +34,7 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019b-r1 | `nls -leaps-timezone`
+sys-libs/timezone-data-2019c | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 #### Purged

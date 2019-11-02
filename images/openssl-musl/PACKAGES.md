@@ -1,14 +1,14 @@
-### kubler/openssl-musl:20190930
+### kubler/openssl-musl:20191031
 
-Built: Tue 01 Oct 2019 05:28:29 PM CEST
-Image Size: 7.07MB
+Built: Sat 02 Nov 2019 01:45:01 AM CET
+Image Size: 7.05MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-misc/c_rehash-1.7-r1 | ``
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
-dev-libs/openssl-1.1.1c-r1 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1d-r2 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 #### Inherited

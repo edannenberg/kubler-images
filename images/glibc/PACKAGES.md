@@ -1,6 +1,6 @@
-### kubler/glibc:20190930
+### kubler/glibc:20191031
 
-Built: Mon 30 Sep 2019 03:46:41 PM CEST
+Built: Sat 02 Nov 2019 12:42:58 AM CET
 Image Size: 15.4MB
 
 #### Installed
@@ -10,7 +10,7 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019b-r1 | `nls -leaps-timezone`
+sys-libs/timezone-data-2019c | `nls -leaps-timezone`
 #### Inherited
 Package | USE Flags
 --------|----------
