@@ -5,9 +5,6 @@ _packages="net-libs/nghttp2 net-libs/http-parser dev-libs/libuv dev-libs/icu net
 
 configure_builder()
 {
-    update_keywords 'net-libs/http-parser-2.9.2' '+~amd64'
-    update_keywords 'net-dns/c-ares-1.15.0' '+~amd64'
-    update_keywords 'net-libs/nodejs-10.16.3' '+~amd64'
     update_keywords 'sys-apps/yarn' '+~amd64'
     update_use net-libs/nodejs +icu
     # also install nodejs in the build container so child images have it available
