@@ -1,7 +1,7 @@
-### kubler/docker-registry:20191031
+### kubler/docker-registry:20191130
 
-Built: Sat 02 Nov 2019 12:51:15 AM CET
-Image Size: 54.6MB
+Built: Sat 30 Nov 2019 07:08:42 PM CET
+Image Size: 55.2MB
 
 #### Installed
 Package | USE Flags
@@ -13,14 +13,14 @@ Package | USE Flags
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1d-r2 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1d-r3 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.3 | `-test`
-dev-lang/execline-2.5.1.0 | `-static -static-libs`
-dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.8.0.1 | `-static -static-libs`
+dev-lang/execline-2.5.3.0 | `-static -static-libs`
+dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`

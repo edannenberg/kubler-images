@@ -1,7 +1,7 @@
-### kubler/mariadb:20191031
+### kubler/mariadb:20191130
 
-Built: Sat 02 Nov 2019 01:29:13 AM CET
-Image Size: 296MB
+Built: Sat 30 Nov 2019 10:01:06 PM CET
+Image Size: 284MB
 
 #### Installed
 Package | USE Flags
@@ -10,10 +10,10 @@ acct-group/mysql-0 | ``
 acct-user/mysql-0 | ``
 app-admin/perl-cleaner-2.27 | ``
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
-app-arch/libarchive-3.3.3 | `acl bzip2 e2fsprogs iconv lzma threads xattr zlib -expat -libressl -lz4 -lzo -nettle -static-libs -zstd`
+app-arch/libarchive-3.4.0 | `acl bzip2 e2fsprogs iconv lzma threads xattr zlib -blake2 -expat -libressl -lz4 -lzo -nettle -static-libs -zstd`
 app-arch/pbzip2-1.1.12 | `-static -symlink`
 app-arch/xz-utils-5.2.4-r2 | `extra-filters nls (split-usr) threads -static-libs`
-dev-db/mariadb-10.2.22-r1 | `backup bindist perl server (-client-libs) -cracklib -debug -extraengine -galera -innodb-lz4 -innodb-lzo -innodb-snappy -jdbc -jemalloc -kerberos -latin1 -libressl (-mroonga) -numa -odbc -oqgraph -pam -profiling -rocksdb (-selinux) -sphinx -sst-mariabackup -sst-rsync -sst-xtrabackup -static -systemd -systemtap -tcmalloc -test -tokudb -xml -yassl`
+dev-db/mariadb-10.2.29 | `backup bindist perl server (-client-libs) -cracklib -debug -extraengine -galera -innodb-lz4 -innodb-lzo -innodb-snappy -jdbc -jemalloc -kerberos -latin1 -libressl (-mroonga) -numa -odbc -oqgraph -pam -profiling -rocksdb (-selinux) -sphinx -sst-mariabackup -sst-rsync -sst-xtrabackup -static -systemd -systemtap -tcmalloc -test -tokudb -xml -yassl`
 dev-db/mysql-connector-c-6.1.11-r2 | `-libressl -static-libs`
 dev-db/mysql-init-scripts-2.3-r3 | ``
 dev-lang/perl-5.28.2-r1 | `-berkdb -debug -doc -gdbm -ithreads`
@@ -44,8 +44,8 @@ app-portage/portage-utils-0.80 | `nls openmp -libressl -qmanifest -qtegrity -sta
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
 net-misc/curl-7.66.0 | `progress-meter ssl threads -adns -alt-svc -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -test`
-sys-apps/acl-2.2.52-r1 | `nls (split-usr) -static-libs`
-sys-apps/attr-2.4.47-r2 | `nls (split-usr) -static-libs`
+sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
+sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
 sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
@@ -54,14 +54,14 @@ sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1d-r2 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1d-r3 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.3 | `-test`
-dev-lang/execline-2.5.1.0 | `-static -static-libs`
-dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.8.0.1 | `-static -static-libs`
+dev-lang/execline-2.5.3.0 | `-static -static-libs`
+dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`

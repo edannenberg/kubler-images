@@ -1,12 +1,12 @@
-### kubler/graph-easy:20191031
+### kubler/graph-easy:20191130
 
-Built: Sat 02 Nov 2019 01:07:22 AM CET
-Image Size: 145MB
+Built: Sat 30 Nov 2019 08:31:33 PM CET
+Image Size: 141MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/elfutils-0.176-r1 | `bzip2 nls utils -lzma -static-libs -test (-threads)`
+dev-libs/elfutils-0.177 | `bzip2 nls utils -lzma -static-libs -test (-threads)`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/fribidi-1.0.5 | `-static-libs`
 dev-libs/glib-2.60.6 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
@@ -18,30 +18,21 @@ dev-libs/lzo-2.10 | `(split-usr) -examples -static-libs`
 dev-perl/Config-Tiny-2.230.0 | `-test`
 dev-perl/Digest-SHA1-2.130.0-r1 | ``
 dev-perl/Graph-Easy-0.76 | `graphviz`
-dev-util/pkgconf-1.6.3 | `pkg-config -test`
 media-fonts/liberation-fonts-2.00.1-r3 | `-`
-media-gfx/graphviz-2.42.1 | `cairo -`
+media-gfx/graphviz-2.42.1-r1 | `cairo -`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
 media-libs/gd-2.2.5-r2 | `fontconfig jpeg png truetype zlib -static-libs -test -tiff -webp -xpm`
-media-libs/harfbuzz-2.6.1 | `cairo glib truetype -debug -graphite -icu -introspection -static-libs -test`
-media-libs/libjpeg-turbo-1.5.3-r2 | `-java -static-libs`
+media-libs/harfbuzz-2.6.4 | `cairo glib truetype -debug -graphite -icu -introspection -static-libs -test`
+media-libs/libjpeg-turbo-2.0.3 | `-java -static-libs`
 media-libs/libpng-1.6.37 | `-apng (-neon) -static-libs`
 sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
-sys-devel/autoconf-2.69-r4 | `-emacs`
-sys-devel/autoconf-wrapper-13-r1 | ``
-sys-devel/automake-1.16.1-r1 | `-test`
-sys-devel/automake-wrapper-11 | ``
 sys-devel/binutils-config-5.1-r1 | ``
-sys-devel/flex-2.6.4-r1 | `nls -static -test`
-sys-devel/gnuconfig-20180101 | ``
-sys-devel/libtool-2.4.6-r3 | `-vanilla`
-sys-devel/m4-1.4.18-r1 | `-examples`
 sys-libs/binutils-libs-2.32-r1 | `nls -64-bit-bfd -multitarget -static-libs`
 x11-libs/cairo-1.16.0-r3 | `glib svg -`
 x11-libs/pango-1.42.4-r2 | `-`
 x11-libs/pixman-0.38.4 | `(-altivec) (-loongson2f) (-neon)`
-x11-misc/shared-mime-info-1.10 | `-test`
+x11-misc/shared-mime-info-1.10-r1 | `-test`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -56,8 +47,8 @@ app-portage/portage-utils-0.80 | `nls openmp -libressl -qmanifest -qtegrity -sta
 app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
 net-misc/curl-7.66.0 | `progress-meter ssl threads -adns -alt-svc -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -test`
-sys-apps/acl-2.2.52-r1 | `nls (split-usr) -static-libs`
-sys-apps/attr-2.4.47-r2 | `nls (split-usr) -static-libs`
+sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
+sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
 sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
@@ -66,14 +57,14 @@ sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1d-r2 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1d-r3 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.3 | `-test`
-dev-lang/execline-2.5.1.0 | `-static -static-libs`
-dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.8.0.1 | `-static -static-libs`
+dev-lang/execline-2.5.3.0 | `-static -static-libs`
+dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`

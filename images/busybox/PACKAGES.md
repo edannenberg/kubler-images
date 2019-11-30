@@ -1,7 +1,7 @@
-### kubler/busybox:20191031
+### kubler/busybox:20191130
 
-Built: Sat 02 Nov 2019 12:42:21 AM CET
-Image Size: 1.45MB
+Built: Sat 30 Nov 2019 06:47:04 PM CET
+Image Size: 1.22MB
 
 #### Installed
 Package | USE Flags

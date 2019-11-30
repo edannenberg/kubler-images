@@ -1,15 +1,15 @@
-### kubler/s6:20191031
+### kubler/s6:20191130
 
-Built: Sat 02 Nov 2019 12:43:19 AM CET
-Image Size: 17.3MB
+Built: Sat 30 Nov 2019 06:52:39 PM CET
+Image Size: 17.9MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-admin/entr-4.3 | `-test`
-dev-lang/execline-2.5.1.0 | `-static -static-libs`
-dev-libs/skalibs-2.8.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.8.0.1 | `-static -static-libs`
+dev-lang/execline-2.5.3.0 | `-static -static-libs`
+dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.0.1 | `-static -static-libs`
 #### Inherited
 Package | USE Flags
 --------|----------

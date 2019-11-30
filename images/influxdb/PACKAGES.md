@@ -1,7 +1,7 @@
-### kubler/influxdb:20191031
+### kubler/influxdb:20191130
 
-Built: Sat 02 Nov 2019 01:08:03 AM CET
-Image Size: 194MB
+Built: Sat 30 Nov 2019 09:09:07 PM CET
+Image Size: 195MB
 
 #### Installed
 Package | USE Flags

@@ -1,7 +1,7 @@
-### kubler/cadvisor:20191031
+### kubler/cadvisor:20191130
 
-Built: Sat 02 Nov 2019 12:45:26 AM CET
-Image Size: 52.6MB
+Built: Sat 30 Nov 2019 07:01:44 PM CET
+Image Size: 53.3MB
 
 #### Installed
 Package | USE Flags

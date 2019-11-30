@@ -1,7 +1,7 @@
-### kubler/glibc:20191031
+### kubler/glibc:20191130
 
-Built: Sat 02 Nov 2019 12:42:58 AM CET
-Image Size: 15.4MB
+Built: Sat 30 Nov 2019 06:51:42 PM CET
+Image Size: 16MB
 
 #### Installed
 Package | USE Flags
