@@ -5,6 +5,9 @@ ADD rootfs.tar /
 
 ADD etc /etc
 
+COPY docker-healthcheck.sh /usr/local/bin/
+HEALTHCHECK --interval=60s --timeout=3s CMD docker-healthcheck.sh
+
 RUN chmod +x $(find /etc/service -name run) && \
     ln -s /etc/s6_finish_default /etc/service/redis/finish && \
     ln -s /etc/service/redis /service
