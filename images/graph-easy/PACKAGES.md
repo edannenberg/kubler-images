@@ -1,25 +1,25 @@
-### kubler/graph-easy:20191130
+### kubler/graph-easy:20191229
 
-Built: Sat 30 Nov 2019 08:31:33 PM CET
-Image Size: 141MB
+Built: Sun 29 Dec 2019 01:58:31 PM CET
+Image Size: 139MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 dev-libs/elfutils-0.177 | `bzip2 nls utils -lzma -static-libs -test (-threads)`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
-dev-libs/fribidi-1.0.5 | `-static-libs`
-dev-libs/glib-2.60.6 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
+dev-libs/fribidi-1.0.8 | `-static-libs`
+dev-libs/glib-2.60.7 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libxml2-2.9.9-r1 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/libxml2-2.9.9-r2 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 dev-libs/lzo-2.10 | `(split-usr) -examples -static-libs`
 dev-perl/Config-Tiny-2.230.0 | `-test`
 dev-perl/Digest-SHA1-2.130.0-r1 | ``
 dev-perl/Graph-Easy-0.76 | `graphviz`
 media-fonts/liberation-fonts-2.00.1-r3 | `-`
-media-gfx/graphviz-2.42.1-r1 | `cairo -`
+media-gfx/graphviz-2.42.3 | `cairo -`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
 media-libs/gd-2.2.5-r2 | `fontconfig jpeg png truetype zlib -static-libs -test -tiff -webp -xpm`
@@ -39,8 +39,8 @@ Package | USE Flags
 **FROM kubler/perl** |
 app-admin/perl-cleaner-2.27 | ``
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
-dev-lang/perl-5.28.2-r1 | `-berkdb -debug -doc -gdbm -ithreads`
-perl-core/File-Temp-0.230.400-r1 | ``
+dev-lang/perl-5.30.1 | `-berkdb -debug -doc -gdbm -ithreads`
+perl-core/File-Temp-0.230.900 | ``
 **FROM kubler/bash** |
 app-admin/eselect-1.4.15 | `-doc -emacs -vim-syntax`
 app-portage/portage-utils-0.80 | `nls openmp -libressl -qmanifest -qtegrity -static`
@@ -52,7 +52,7 @@ sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
 sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
-sys-libs/ncurses-6.1_p20181020 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
@@ -69,7 +69,7 @@ sys-apps/s6-2.9.0.1 | `-static -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r7 | `multiarch (ssp) -audit -caps (-cet) -compile-locales -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2019c | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

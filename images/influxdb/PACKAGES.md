@@ -1,7 +1,7 @@
-### kubler/influxdb:20191130
+### kubler/influxdb:20191229
 
-Built: Sat 30 Nov 2019 09:09:07 PM CET
-Image Size: 195MB
+Built: Sun 29 Dec 2019 02:00:14 PM CET
+Image Size: 194MB
 
 #### Installed
 Package | USE Flags
@@ -14,7 +14,7 @@ Package | USE Flags
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r7 | `multiarch (ssp) -audit -caps (-cet) -compile-locales -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2019c | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

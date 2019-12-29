@@ -1,7 +1,7 @@
-### kubler/nginx-proxy-conf:20191130
+### kubler/nginx-proxy-conf:20191229
 
-Built: Sat 30 Nov 2019 10:53:28 PM CET
-Image Size: 13.8MB
+Built: Sun 29 Dec 2019 02:21:23 PM CET
+Image Size: 14MB
 
 #### Installed
 Package | USE Flags

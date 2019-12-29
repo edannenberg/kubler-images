@@ -1,7 +1,7 @@
-### kubler/bash:20191130
+### kubler/bash:20191229
 
-Built: Sat 30 Nov 2019 07:01:19 PM CET
-Image Size: 41MB
+Built: Sun 29 Dec 2019 01:49:13 PM CET
+Image Size: 40.4MB
 
 #### Installed
 Package | USE Flags
@@ -16,7 +16,7 @@ sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
 sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
-sys-libs/ncurses-6.1_p20181020 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 #### Inherited
 Package | USE Flags
@@ -36,7 +36,7 @@ sys-apps/s6-2.9.0.1 | `-static -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r7 | `multiarch (ssp) -audit -caps (-cet) -compile-locales -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2019c | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

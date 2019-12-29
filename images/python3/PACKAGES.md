@@ -1,6 +1,6 @@
-### kubler/python3:20191130
+### kubler/python3:20191229
 
-Built: Sat 30 Nov 2019 11:16:02 PM CET
+Built: Sun 29 Dec 2019 02:36:41 PM CET
 Image Size: 157MB
 
 #### Installed
@@ -10,13 +10,13 @@ app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-arch/xz-utils-5.2.4-r2 | `extra-filters nls (split-usr) threads -static-libs`
 app-eselect/eselect-python-20171204 | ``
 app-misc/mime-types-9 | ``
-dev-db/sqlite-3.29.0 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
+dev-db/sqlite-3.30.1 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
 dev-lang/python-3.6.9 | `hardened readline sqlite ssl (threads) xml -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -test -tk -wininst`
 dev-lang/python-exec-2.4.6-r1 | ` `
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-python/certifi-2019.6.16 | ` `
-dev-python/pip-19.1 | `-test -vanilla`
+dev-python/pip-19.3.1-r1 | `-test -vanilla`
 dev-python/setuptools-40.6.3 | `-test`
 #### Inherited
 Package | USE Flags
@@ -32,7 +32,7 @@ sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
 sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
-sys-libs/ncurses-6.1_p20181020 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
@@ -49,7 +49,7 @@ sys-apps/s6-2.9.0.1 | `-static -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r7 | `multiarch (ssp) -audit -caps (-cet) -compile-locales -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2019c | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

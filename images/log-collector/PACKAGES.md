@@ -1,7 +1,7 @@
-### kubler/log-collector:20191130
+### kubler/log-collector:20191229
 
-Built: Sat 30 Nov 2019 09:40:39 PM CET
-Image Size: 309MB
+Built: Sun 29 Dec 2019 02:12:14 PM CET
+Image Size: 308MB
 
 #### Installed
 Package | USE Flags
@@ -17,10 +17,10 @@ app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-eselect/eselect-ruby-20190121 | ``
 dev-lang/ruby-2.4.9 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -libressl -rubytests -socks5 -static-libs -tk -xemacs`
 dev-libs/elfutils-0.177 | `bzip2 nls utils -lzma -static-libs -test (-threads)`
-dev-libs/glib-2.60.6 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
+dev-libs/glib-2.60.7 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libxml2-2.9.9-r1 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/libxml2-2.9.9-r2 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 dev-libs/libyaml-0.2.2 | `-doc -static-libs -test`
 dev-ruby/did_you_mean-1.1.2 | `-test`
 dev-ruby/json-2.2.0 | `-doc -test`
@@ -57,7 +57,7 @@ sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
 sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
-sys-libs/ncurses-6.1_p20181020 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
@@ -74,7 +74,7 @@ sys-apps/s6-2.9.0.1 | `-static -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.1.1a-r1 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
-sys-libs/glibc-2.29-r2 | `multiarch (split-usr) (ssp) -audit -caps (-cet) (-compile-locales) -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.29-r7 | `multiarch (ssp) -audit -caps (-cet) -compile-locales -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2019c | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

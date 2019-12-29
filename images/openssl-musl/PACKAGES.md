@@ -1,7 +1,7 @@
-### kubler/openssl-musl:20191130
+### kubler/openssl-musl:20191229
 
-Built: Sat 30 Nov 2019 10:59:01 PM CET
-Image Size: 6.85MB
+Built: Sun 29 Dec 2019 02:22:44 PM CET
+Image Size: 7.08MB
 
 #### Installed
 Package | USE Flags

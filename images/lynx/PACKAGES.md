@@ -1,13 +1,13 @@
-### kubler/lynx:20191130
+### kubler/lynx:20191229
 
-Built: Sat 30 Nov 2019 09:43:50 PM CET
-Image Size: 14.3MB
+Built: Sun 29 Dec 2019 02:12:29 PM CET
+Image Size: 14.6MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
-sys-libs/ncurses-6.1_p20181020 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 www-client/lynx-2.8.9_p1 | `bzip2 libressl ssl unicode -cjk -gnutls -idn -ipv6 -nls`
 #### Inherited

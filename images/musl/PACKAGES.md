@@ -1,7 +1,7 @@
-### kubler/musl:20191130
+### kubler/musl:20191229
 
-Built: Sat 30 Nov 2019 09:24:20 PM CET
-Image Size: 1.98MB
+Built: Sun 29 Dec 2019 02:08:17 PM CET
+Image Size: 2.21MB
 
 #### Installed
 Package | USE Flags
