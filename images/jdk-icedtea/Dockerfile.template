@@ -15,4 +15,5 @@ ENV JAVA_HOME=/etc/java-config-2/current-system-vm \
     JAVA_TOOL_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
 
 RUN ldconfig && \
-    eselect java-vm set system 1
+    eselect java-vm set system 1 && \
+    update-ca-certificates
