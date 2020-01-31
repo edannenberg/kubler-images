@@ -1,20 +1,20 @@
-### kubler/grafana:20191229
+### kubler/grafana:20200131
 
-Built: Sun 29 Dec 2019 01:56:02 PM CET
-Image Size: 183MB
+Built: Fri 31 Jan 2020 02:31:02 PM CET
+Image Size: 196MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
-dev-libs/boost-1.71.0 | `bzip2 nls threads zlib -context -debug -doc -icu -lzma -mpi -numpy -python -static-libs -tools -zstd`
+dev-libs/boost-1.72.0-r1 | `bzip2 nls threads zlib -context -debug -doc -icu -lzma -mpi -numpy -python -static-libs -tools -zstd`
 dev-libs/libuv-1.33.1 | `-static-libs`
 net-dns/c-ares-1.15.0 | `-static-libs`
 net-libs/http-parser-2.9.2 | `-static-libs`
 net-libs/nghttp2-1.39.2 | `cxx threads -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-libs/nodejs-10.17.0 | `npm snapshot ssl -debug -doc -icu -inspector -systemtap -test`
-sys-apps/yarn-1.19.2 | ``
-www-apps/grafana-6.5.2 | `minimal`
+net-libs/nodejs-12.14.0 | `npm snapshot ssl -debug -doc -icu -inspector -systemtap -test`
+sys-apps/yarn-1.21.1 | ``
+www-apps/grafana-6.6.0 | `minimal`
 #### Inherited
 Package | USE Flags
 --------|----------

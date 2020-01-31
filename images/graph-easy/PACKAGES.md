@@ -1,6 +1,6 @@
-### kubler/graph-easy:20191229
+### kubler/graph-easy:20200131
 
-Built: Sun 29 Dec 2019 01:58:31 PM CET
+Built: Fri 31 Jan 2020 02:48:27 PM CET
 Image Size: 139MB
 
 #### Installed
@@ -9,11 +9,11 @@ Package | USE Flags
 dev-libs/elfutils-0.177 | `bzip2 nls utils -lzma -static-libs -test (-threads)`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/fribidi-1.0.8 | `-static-libs`
-dev-libs/glib-2.60.7 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
+dev-libs/glib-2.60.7-r1 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libxml2-2.9.9-r2 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/libxml2-2.9.9-r3 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 dev-libs/lzo-2.10 | `(split-usr) -examples -static-libs`
 dev-perl/Config-Tiny-2.230.0 | `-test`
 dev-perl/Digest-SHA1-2.130.0-r1 | ``
@@ -51,7 +51,7 @@ sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
+sys-apps/sed-4.7 | `acl nls (-selinux) -static`
 sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |

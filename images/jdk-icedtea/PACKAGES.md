@@ -1,25 +1,25 @@
-### kubler/jdk-icedtea:20191229
+### kubler/jdk-icedtea:20200131
 
-Built: Sun 29 Dec 2019 02:02:47 PM CET
+Built: Fri 31 Jan 2020 03:03:42 PM CET
 Image Size: 372MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
-app-crypt/p11-kit-0.23.12-r1 | `asn1 libffi trust -debug`
+app-crypt/p11-kit-0.23.16.1-r1 | `asn1 libffi trust -debug`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
-dev-java/icedtea-bin-3.13.0 | `headless-awt -alsa (-big-endian) -cups -doc -examples -gtk (-multilib) -nsplugin -pulseaudio (-selinux) -source -webstart`
+dev-java/icedtea-bin-3.14.0 | `headless-awt -alsa (-big-endian) -cups -doc -examples -gtk (-multilib) -nsplugin -pulseaudio (-selinux) -source -webstart`
 dev-java/java-config-2.2.0-r4 | `-test`
 dev-lang/python-exec-2.4.6-r1 | ` `
 dev-libs/elfutils-0.177 | `bzip2 nls utils -lzma -static-libs -test (-threads)`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
-dev-libs/glib-2.60.7 | `mime xattr -dbus -debug (-fam) -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
+dev-libs/glib-2.60.7-r1 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
-dev-libs/libxml2-2.9.9-r2 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/libxml2-2.9.9-r3 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 media-fonts/liberation-fonts-2.00.1-r3 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
@@ -51,7 +51,7 @@ sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
+sys-apps/sed-4.7 | `acl nls (-selinux) -static`
 sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |

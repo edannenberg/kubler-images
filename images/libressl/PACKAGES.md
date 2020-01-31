@@ -1,6 +1,6 @@
-### kubler/libressl:20191229
+### kubler/libressl:20200131
 
-Built: Sun 29 Dec 2019 02:08:02 PM CET
+Built: Fri 31 Jan 2020 03:11:36 PM CET
 Image Size: 19.2MB
 
 #### Installed
@@ -8,7 +8,7 @@ Package | USE Flags
 --------|----------
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/libressl-2.9.2 | `asm -static-libs -test`
+dev-libs/libressl-3.0.2 | `asm -static-libs -test`
 sys-apps/debianutils-4.8.3 | `-static`
 #### Inherited
 Package | USE Flags

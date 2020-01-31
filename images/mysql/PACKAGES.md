@@ -1,6 +1,6 @@
-### kubler/mysql:20191229
+### kubler/mysql:20200131
 
-Built: Sun 29 Dec 2019 02:16:08 PM CET
+Built: Fri 31 Jan 2020 03:25:15 PM CET
 Image Size: 193MB
 
 #### Installed
@@ -30,7 +30,7 @@ sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
+sys-apps/sed-4.7 | `acl nls (-selinux) -static`
 sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |

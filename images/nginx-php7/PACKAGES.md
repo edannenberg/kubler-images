@@ -1,6 +1,6 @@
-### kubler/nginx-php7:20191229
+### kubler/nginx-php7:20200131
 
-Built: Sun 29 Dec 2019 02:21:14 PM CET
+Built: Fri 31 Jan 2020 03:41:36 PM CET
 Image Size: 123MB
 
 #### Installed
@@ -9,7 +9,7 @@ Package | USE Flags
 app-admin/eselect-1.4.15 | `-doc -emacs -vim-syntax`
 app-admin/metalog-20181125 | `unicode`
 app-eselect/eselect-php-0.9.4-r5 | `fpm -apache2`
-dev-lang/php-7.2.26 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter flatfile fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer truetype unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk (-coverage) -debug -embed -enchant -exif (-firebird) -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos -ldap -ldap-sasl -libedit -libressl -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -wddx -zip-encryption`
+dev-lang/php-7.2.27 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter flatfile fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer truetype unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk (-coverage) -debug -embed -enchant -exif (-firebird) -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos -ldap -ldap-sasl -libedit -libressl -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -wddx -zip-encryption`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -static-libs`
 dev-libs/libbsd-0.10.0 | `-static-libs`
@@ -20,11 +20,11 @@ dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libmemcached-1.0.18-r3 | `libevent -debug -hsieh -sasl -static-libs`
 dev-libs/libpthread-stubs-0.4-r1 | ``
 dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
-dev-libs/libxml2-2.9.9-r2 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/libxml2-2.9.9-r3 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 dev-libs/libxslt-1.1.33-r1 | `crypt -debug -examples -python -static-libs`
 dev-libs/nettle-3.4.1 | `gmp -doc (-neon) -static-libs -test`
 dev-libs/oniguruma-6.9.4 | `-crnl-as-line-terminator -static-libs`
-dev-php/pecl-apcu-5.1.12 | `lock-pthreadrw mmap -lock-pthreadmutex -lock-semaphore -lock-spinlock`
+dev-php/pecl-apcu-5.1.18 | `lock-pthreadrw mmap -lock-pthreadmutex -lock-semaphore -lock-spinlock`
 dev-php/pecl-apcu_bc-1.0.4-r1 | ` `
 dev-php/pecl-imagick-3.4.4 | `-examples -test`
 dev-php/pecl-memcached-3.1.3-r1 | `session -examples -igbinary -json -sasl -test`
@@ -32,7 +32,7 @@ dev-php/pecl-redis-4.2.0 | `session -igbinary`
 dev-php/xdebug-2.6.1 | ` `
 dev-php/xdebug-client-2.6.1 | `-libedit`
 mail-mta/nullmailer-2.2 | `ssl -test`
-media-gfx/imagemagick-7.0.9.8 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
+media-gfx/imagemagick-7.0.9.14 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
 media-libs/giflib-5.1.4 | `-doc -static-libs`
 media-libs/lcms-2.9 | `jpeg threads tiff -doc -static-libs -test`
@@ -50,10 +50,10 @@ sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
+sys-apps/sed-4.7 | `acl nls (-selinux) -static`
 sys-apps/shadow-4.6 | `acl cracklib nls (split-usr) xattr -audit -pam (-selinux) -skey`
 sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
-sys-devel/gettext-0.19.8.1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
+sys-devel/gettext-0.20.1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
 sys-libs/cracklib-2.9.7 | `nls (split-usr) zlib -python -static-libs`
 sys-libs/libseccomp-2.4.2-r1 | `-static-libs`
 sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
@@ -66,7 +66,7 @@ x11-libs/libXau-1.0.9 | `-static-libs`
 x11-libs/libxcb-1.13.1 | `-doc (-selinux) -static-libs -test -xkb`
 x11-libs/libXdmcp-1.1.3 | `-doc -static-libs`
 x11-libs/libXext-1.3.4 | `-doc -static-libs`
-x11-libs/libXpm-3.5.12-r1 | `-static-libs`
+x11-libs/libXpm-3.5.13 | `-static-libs`
 x11-libs/libXt-1.2.0 | `-doc -static-libs -test`
 x11-libs/xtrans-1.4.0 | `-doc`
 *manual install*: adminer-4.7.2 | https://www.adminer.org/
@@ -76,7 +76,7 @@ Package | USE Flags
 **FROM kubler/nginx** |
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 dev-libs/libpcre-8.42 | `bzip2 cxx recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -readline -static-libs`
-www-servers/nginx-1.17.7 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
+www-servers/nginx-1.17.8 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``

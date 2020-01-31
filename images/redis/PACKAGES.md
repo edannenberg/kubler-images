@@ -1,12 +1,14 @@
-### kubler/redis:20191229
+### kubler/redis:20200131
 
-Built: Sun 29 Dec 2019 02:36:54 PM CET
-Image Size: 24MB
+Built: Fri 31 Jan 2020 03:57:53 PM CET
+Image Size: 24.4MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-db/redis-4.0.14 | `jemalloc -luajit -tcmalloc -test`
+acct-group/redis-0 | ``
+acct-user/redis-0 | ``
+dev-db/redis-5.0.7 | `jemalloc -luajit -tcmalloc -test`
 dev-lang/lua-5.1.5-r4 | `deprecated -emacs -readline -static`
 dev-libs/jemalloc-5.2.1 | `hardened -debug -lazy-lock -prof -static-libs -stats -xmalloc`
 #### Inherited

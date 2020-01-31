@@ -1,7 +1,7 @@
-### kubler/postgres:20191229
+### kubler/postgres:20200131
 
-Built: Sun 29 Dec 2019 02:30:03 PM CET
-Image Size: 61MB
+Built: Fri 31 Jan 2020 03:54:23 PM CET
+Image Size: 61.1MB
 
 #### Installed
 Package | USE Flags
@@ -11,8 +11,8 @@ app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-eselect/eselect-postgresql-2.4 | ``
 app-misc/editor-wrapper-4-r1 | ``
 dev-db/postgresql-12.1 | `nls readline server ssl threads zlib -debug -doc -icu -kerberos -ldap -libressl -llvm -pam -perl -python (-selinux) -static-libs -systemd -tcl -uuid -xml`
-dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-sys-apps/less-531 | `pcre unicode`
+dev-libs/libpcre2-10.33-r1 | `bzip2 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre16 -pcre32 -static-libs`
+sys-apps/less-551 | `pcre unicode`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -26,7 +26,7 @@ sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
+sys-apps/sed-4.7 | `acl nls (-selinux) -static`
 sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |

@@ -1,6 +1,6 @@
-### kubler/opensmtpd:20191229
+### kubler/opensmtpd:20200131
 
-Built: Sun 29 Dec 2019 02:21:45 PM CET
+Built: Fri 31 Jan 2020 03:47:13 PM CET
 Image Size: 32.4MB
 
 #### Installed
@@ -10,7 +10,7 @@ acct-group/mail-0 | ``
 acct-user/mail-0 | ``
 acct-user/postmaster-0 | ``
 dev-libs/libevent-2.1.8 | `ssl threads -debug -libressl -static-libs -test`
-mail-mta/opensmtpd-6.0.3_p1-r1 | `mta -libressl -pam`
+mail-mta/opensmtpd-6.0.3_p1-r2 | `mta -libressl -pam`
 net-libs/libasr-1.0.2 | ``
 net-mail/mailbase-1.5-r1 | `-pam`
 sys-libs/db-5.3.28-r2 | `cxx -doc -examples -java -tcl -test`

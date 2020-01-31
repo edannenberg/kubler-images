@@ -1,7 +1,7 @@
-### kubler/elasticsearch:20191229
+### kubler/elasticsearch:20200131
 
-Built: Sun 29 Dec 2019 01:52:38 PM CET
-Image Size: 267MB
+Built: Fri 31 Jan 2020 02:05:22 PM CET
+Image Size: 268MB
 
 #### Installed
 Package | USE Flags
@@ -9,24 +9,24 @@ Package | USE Flags
 acct-group/elasticsearch-0 | ``
 acct-user/elasticsearch-0 | ``
 app-admin/su-exec-0.2 | `-static`
-app-misc/elasticsearch-7.4.1 | `-x-pack`
+app-misc/elasticsearch-7.5.1 | `-x-pack`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/jre-openjdk** |
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
-app-crypt/p11-kit-0.23.12-r1 | `asn1 libffi trust -debug`
+app-crypt/p11-kit-0.23.16.1-r1 | `asn1 libffi trust -debug`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.2.0-r4 | `-test`
-dev-java/openjdk-jre-bin-8.232_p09 | `gentoo-vm headless-awt -alsa -cups -nsplugin (-selinux) -webstart`
+dev-java/openjdk-jre-bin-8.242_p08 | `headless-awt -alsa -cups -nsplugin (-selinux) -webstart`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
 media-fonts/liberation-fonts-2.00.1-r3 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
-net-libs/libnet-1.2_rc3-r1 | `-doc -static-libs`
+net-libs/libnet-1.2 | `-static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
 sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
 **FROM kubler/bash** |
@@ -39,7 +39,7 @@ sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
+sys-apps/sed-4.7 | `acl nls (-selinux) -static`
 sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |

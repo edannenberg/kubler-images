@@ -1,6 +1,6 @@
-### kubler/mariadb:20191229
+### kubler/mariadb:20200131
 
-Built: Sun 29 Dec 2019 02:14:09 PM CET
+Built: Fri 31 Jan 2020 03:23:16 PM CET
 Image Size: 282MB
 
 #### Installed
@@ -19,7 +19,7 @@ dev-db/mysql-init-scripts-2.3-r3 | ``
 dev-lang/perl-5.30.1 | `-berkdb -debug -doc -gdbm -ithreads`
 dev-libs/libaio-0.3.110 | `(split-usr) -static-libs -test`
 dev-libs/libpcre-8.42 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libxml2-2.9.9-r2 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
+dev-libs/libxml2-2.9.9-r3 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test`
 dev-perl/Class-Inspector-1.320.0 | `-test`
 dev-perl/DBD-mysql-4.44.0-r1 | `ssl -test`
 dev-perl/DBI-1.637.0 | `-examples -test`
@@ -48,7 +48,7 @@ sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
+sys-apps/sed-4.7 | `acl nls (-selinux) -static`
 sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |

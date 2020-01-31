@@ -1,17 +1,17 @@
-### kubler/jdk-openjdk:20191229
+### kubler/jdk-openjdk:20200131
 
-Built: Sun 29 Dec 2019 02:04:06 PM CET
+Built: Fri 31 Jan 2020 03:05:02 PM CET
 Image Size: 209MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
-app-crypt/p11-kit-0.23.12-r1 | `asn1 libffi trust -debug`
+app-crypt/p11-kit-0.23.16.1-r1 | `asn1 libffi trust -debug`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.2.0-r4 | `-test`
-dev-java/openjdk-bin-8.232_p09 | `gentoo-vm headless-awt -alsa -cups -examples -nsplugin (-selinux) -source -webstart`
+dev-java/openjdk-bin-8.242_p08 | `headless-awt -alsa -cups -examples -nsplugin (-selinux) -source -webstart`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libtasn1-4.13 | `-doc -static-libs -test -valgrind`
@@ -33,7 +33,7 @@ sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
+sys-apps/sed-4.7 | `acl nls (-selinux) -static`
 sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |

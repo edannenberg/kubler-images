@@ -1,6 +1,6 @@
-### kubler/openssl:20191229
+### kubler/openssl:20200131
 
-Built: Sun 29 Dec 2019 01:48:42 PM CET
+Built: Fri 31 Jan 2020 01:58:28 PM CET
 Image Size: 22.1MB
 
 #### Installed

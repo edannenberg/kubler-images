@@ -1,6 +1,6 @@
-### kubler/influxdb:20191229
+### kubler/influxdb:20200131
 
-Built: Sun 29 Dec 2019 02:00:14 PM CET
+Built: Fri 31 Jan 2020 03:00:36 PM CET
 Image Size: 194MB
 
 #### Installed

@@ -1,7 +1,7 @@
-### kubler/python3:20191229
+### kubler/python3:20200131
 
-Built: Sun 29 Dec 2019 02:36:41 PM CET
-Image Size: 157MB
+Built: Fri 31 Jan 2020 03:56:43 PM CET
+Image Size: 158MB
 
 #### Installed
 Package | USE Flags
@@ -17,7 +17,7 @@ dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-python/certifi-2019.6.16 | ` `
 dev-python/pip-19.3.1-r1 | `-test -vanilla`
-dev-python/setuptools-40.6.3 | `-test`
+dev-python/setuptools-42.0.2 | `-test`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -31,7 +31,7 @@ sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.30 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
 sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.5 | `acl nls -forced-sandbox (-selinux) -static`
+sys-apps/sed-4.7 | `acl nls (-selinux) -static`
 sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
 **FROM kubler/openssl** |

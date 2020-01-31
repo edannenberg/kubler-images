@@ -1,6 +1,6 @@
-### kubler/s6:20191229
+### kubler/s6:20200131
 
-Built: Sun 29 Dec 2019 01:48:25 PM CET
+Built: Fri 31 Jan 2020 01:58:11 PM CET
 Image Size: 17.3MB
 
 #### Installed
