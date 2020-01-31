@@ -6,10 +6,8 @@ _packages="www-apps/grafana net-libs/nodejs sys-apps/yarn"
 configure_builder()
 {
     # grafana apparently already on go 1.13.x which has some bug fixes missing missing in prev. versions
-    update_keywords '=dev-lang/go-1.13.4' '+~amd64'
+    update_keywords '>=dev-lang/go-1.13.4' '+~amd64'
     emerge -u dev-lang/go
-    # ..still running on old nodejs 10.x though :/
-    mask_package '>=net-libs/nodejs-12.13.0'
     update_keywords 'sys-apps/yarn' '+~amd64'
     emerge -u net-libs/nodejs
 }
