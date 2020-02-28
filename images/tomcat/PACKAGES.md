@@ -1,6 +1,6 @@
-### kubler/tomcat:20200131
+### kubler/tomcat:20200228
 
-Built: Fri 31 Jan 2020 03:49:06 PM CET
+Built: Fri 28 Feb 2020 12:41:26 PM CET
 Image Size: 170MB
 
 #### Installed
@@ -9,10 +9,10 @@ Package | USE Flags
 dev-java/ant-core-1.10.7 | `-doc -source`
 dev-java/ant-eclipse-ecj-4.5.1 | `-doc -source`
 dev-java/eclipse-ecj-4.5.1 | `ant -doc -source`
-dev-java/tomcat-native-1.2.21 | `-static-libs -test`
-dev-java/tomcat-servlet-api-9.0.7 | `-source`
+dev-java/tomcat-native-1.2.23 | `-static-libs -test`
+dev-java/tomcat-servlet-api-8.5.47 | `-source`
 dev-libs/apr-1.6.3-r4 | `urandom -doc -older-kernels-compatibility (-selinux) -static-libs`
-www-servers/tomcat-9.0.7 | `-doc -extra-webapps -source -test`
+www-servers/tomcat-8.5.47 | `-doc -extra-webapps -source -test`
 #### Inherited
 Package | USE Flags
 --------|----------

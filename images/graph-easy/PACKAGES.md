@@ -1,6 +1,6 @@
-### kubler/graph-easy:20200131
+### kubler/graph-easy:20200228
 
-Built: Fri 31 Jan 2020 02:48:27 PM CET
+Built: Fri 28 Feb 2020 11:35:28 AM CET
 Image Size: 139MB
 
 #### Installed

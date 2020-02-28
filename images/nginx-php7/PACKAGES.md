@@ -1,6 +1,6 @@
-### kubler/nginx-php7:20200131
+### kubler/nginx-php7:20200228
 
-Built: Fri 31 Jan 2020 03:41:36 PM CET
+Built: Fri 28 Feb 2020 11:58:38 AM CET
 Image Size: 123MB
 
 #### Installed
@@ -11,7 +11,7 @@ app-admin/metalog-20181125 | `unicode`
 app-eselect/eselect-php-0.9.4-r5 | `fpm -apache2`
 dev-lang/php-7.2.27 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter flatfile fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer truetype unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk (-coverage) -debug -embed -enchant -exif (-firebird) -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos -ldap -ldap-sasl -libedit -libressl -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -wddx -zip-encryption`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
-dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -static-libs`
+dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libbsd-0.10.0 | `-static-libs`
 dev-libs/libevent-2.1.8 | `ssl threads -debug -libressl -static-libs -test`
 dev-libs/libgcrypt-1.8.5 | `-doc -o-flag-munging -static-libs`
@@ -27,7 +27,7 @@ dev-libs/oniguruma-6.9.4 | `-crnl-as-line-terminator -static-libs`
 dev-php/pecl-apcu-5.1.18 | `lock-pthreadrw mmap -lock-pthreadmutex -lock-semaphore -lock-spinlock`
 dev-php/pecl-apcu_bc-1.0.4-r1 | ` `
 dev-php/pecl-imagick-3.4.4 | `-examples -test`
-dev-php/pecl-memcached-3.1.3-r1 | `session -examples -igbinary -json -sasl -test`
+dev-php/pecl-memcached-3.1.3-r1 | `session -igbinary -json -sasl -test`
 dev-php/pecl-redis-4.2.0 | `session -igbinary`
 dev-php/xdebug-2.6.1 | ` `
 dev-php/xdebug-client-2.6.1 | `-libedit`

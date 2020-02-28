@@ -1,7 +1,7 @@
-### kubler/grafana:20200131
+### kubler/grafana:20200228
 
-Built: Fri 31 Jan 2020 02:31:02 PM CET
-Image Size: 196MB
+Built: Fri 28 Feb 2020 11:18:55 AM CET
+Image Size: 197MB
 
 #### Installed
 Package | USE Flags
@@ -14,7 +14,7 @@ net-libs/http-parser-2.9.2 | `-static-libs`
 net-libs/nghttp2-1.39.2 | `cxx threads -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
 net-libs/nodejs-12.14.0 | `npm snapshot ssl -debug -doc -icu -inspector -systemtap -test`
 sys-apps/yarn-1.21.1 | ``
-www-apps/grafana-6.6.0 | `minimal`
+www-apps/grafana-6.6.2 | `minimal`
 #### Inherited
 Package | USE Flags
 --------|----------

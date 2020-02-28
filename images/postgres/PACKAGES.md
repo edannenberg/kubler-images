@@ -1,6 +1,6 @@
-### kubler/postgres:20200131
+### kubler/postgres:20200228
 
-Built: Fri 31 Jan 2020 03:54:23 PM CET
+Built: Fri 28 Feb 2020 12:46:25 PM CET
 Image Size: 61.1MB
 
 #### Installed

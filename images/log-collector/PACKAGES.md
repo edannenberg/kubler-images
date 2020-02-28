@@ -1,6 +1,6 @@
-### kubler/log-collector:20200131
+### kubler/log-collector:20200228
 
-Built: Fri 31 Jan 2020 03:21:22 PM CET
+Built: Fri 28 Feb 2020 11:49:13 AM CET
 Image Size: 309MB
 
 #### Installed
@@ -37,7 +37,7 @@ dev-util/pkgconfig-0.29.2 | `hardened -internal-glib`
 sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
 x11-misc/shared-mime-info-1.10-r1 | `-test`
 **FROM kubler/gcc** |
-dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -static-libs`
+dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/mpc-1.1.0-r1 | `-static-libs`
 dev-libs/mpfr-4.0.2 | `-static-libs`
 sys-devel/binutils-2.32-r1 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`

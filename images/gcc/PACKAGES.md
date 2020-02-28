@@ -1,12 +1,12 @@
-### kubler/gcc:20200131
+### kubler/gcc:20200228
 
-Built: Fri 31 Jan 2020 02:06:48 PM CET
+Built: Fri 28 Feb 2020 11:09:49 AM CET
 Image Size: 234MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -static-libs`
+dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/mpc-1.1.0-r1 | `-static-libs`
 dev-libs/mpfr-4.0.2 | `-static-libs`
 sys-devel/binutils-2.32-r1 | `cxx gold nls plugins -default-gold -doc -multitarget -static-libs -test`

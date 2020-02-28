@@ -1,6 +1,6 @@
-### kubler/gulp-sass:20200131
+### kubler/gulp-sass:20200228
 
-Built: Fri 31 Jan 2020 03:00:19 PM CET
+Built: Fri 28 Feb 2020 11:36:56 AM CET
 Image Size: 134MB
 
 #### Installed

@@ -1,6 +1,6 @@
-### kubler/openssl-musl:20200131
+### kubler/openssl-musl:20200228
 
-Built: Fri 31 Jan 2020 03:48:13 PM CET
+Built: Fri 28 Feb 2020 12:11:26 PM CET
 Image Size: 7.08MB
 
 #### Installed

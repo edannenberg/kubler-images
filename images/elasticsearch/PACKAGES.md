@@ -1,6 +1,6 @@
-### kubler/elasticsearch:20200131
+### kubler/elasticsearch:20200228
 
-Built: Fri 31 Jan 2020 02:05:22 PM CET
+Built: Fri 28 Feb 2020 11:07:50 AM CET
 Image Size: 268MB
 
 #### Installed

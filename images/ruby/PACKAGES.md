@@ -1,6 +1,6 @@
-### kubler/ruby:20200131
+### kubler/ruby:20200228
 
-Built: Fri 31 Jan 2020 03:59:57 PM CET
+Built: Fri 28 Feb 2020 12:51:07 PM CET
 Image Size: 56.2MB
 
 #### Installed
@@ -8,7 +8,7 @@ Package | USE Flags
 --------|----------
 app-eselect/eselect-ruby-20190121 | ``
 dev-lang/ruby-2.4.9 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -libressl -rubytests -socks5 -static-libs -tk -xemacs`
-dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -static-libs`
+dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libffi-3.3_rc0 | `-debug -pax`
 dev-libs/libyaml-0.2.2 | `-doc -static-libs -test`
 dev-ruby/did_you_mean-1.1.2 | `-test`

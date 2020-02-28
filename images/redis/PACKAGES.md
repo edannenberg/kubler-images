@@ -1,6 +1,6 @@
-### kubler/redis:20200131
+### kubler/redis:20200228
 
-Built: Fri 31 Jan 2020 03:57:53 PM CET
+Built: Fri 28 Feb 2020 12:49:04 PM CET
 Image Size: 24.4MB
 
 #### Installed

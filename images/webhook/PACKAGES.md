@@ -1,6 +1,6 @@
-### kubler/webhook:20200131
+### kubler/webhook:20200228
 
-Built: Fri 31 Jan 2020 04:01:15 PM CET
+Built: Fri 28 Feb 2020 12:52:25 PM CET
 Image Size: 86.6MB
 
 #### Installed
@@ -11,7 +11,7 @@ app-crypt/gnupg-2.2.17 | `bzip2 nls readline ssl -doc -ldap (-selinux) -smartcar
 app-crypt/pinentry-1.1.0-r2 | `ncurses -caps -emacs -fltk -gnome-keyring -gtk -qt5 -static`
 app-eselect/eselect-lib-bin-symlink-0.1.1-r1 | ``
 app-eselect/eselect-pinentry-0.7 | ``
-dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -static-libs`
+dev-libs/gmp-6.1.2-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libassuan-2.5.3 | `-static-libs`
 dev-libs/libgcrypt-1.8.5 | `-doc -o-flag-munging -static-libs`
 dev-libs/libgpg-error-1.36 | `nls -common-lisp -static-libs`

@@ -1,6 +1,6 @@
-### kubler/lynx:20200131
+### kubler/lynx:20200228
 
-Built: Fri 31 Jan 2020 03:21:36 PM CET
+Built: Fri 28 Feb 2020 11:49:28 AM CET
 Image Size: 14.6MB
 
 #### Installed

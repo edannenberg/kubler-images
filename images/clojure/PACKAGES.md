@@ -1,6 +1,6 @@
-### kubler/clojure:20200131
+### kubler/clojure:20200228
 
-Built: Fri 31 Jan 2020 02:04:12 PM CET
+Built: Fri 28 Feb 2020 11:07:05 AM CET
 Image Size: 186MB
 
 #### Installed
