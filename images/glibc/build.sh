@@ -28,8 +28,14 @@ configure_rootfs_build()
 {
     # as we broke the normal builder chain, recreate the docs for the busybox image
     init_docs 'kubler/busybox'
-    update_use 'sys-apps/busybox' '+static +make-symlinks'
-    generate_doc_package_installed 'sys-apps/busybox'
+    update_use 'sys-apps/busybox' +static +make-symlinks
+    update_use 'sys-apps/sed' +static -acl -nls
+    # bug with 1.31.1-r2 ebuild not respecting the static use flag
+    provide_package sys-libs/glibc
+    generate_doc_package_installed 'sys-apps/busybox' 'sys-apps/sed'
+    update_use 'sys-apps/sed' -static +acl +nls
+    # remove workaround
+    unprovide_package sys-libs/glibc
     # fake portage install
     provide_package sys-apps/portage
 
