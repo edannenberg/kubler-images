@@ -9,7 +9,7 @@ _packages="mail-mta/opensmtpd"
 configure_rootfs_build()
 {
     update_keywords net-libs/libasr-1.0.4 '+~amd64'
-    update_keywords mail-mta/opensmtpd-6.0.3_p1-r2 '+~amd64'
+    update_keywords mail-mta/opensmtpd-6.6.4_p1 '+~amd64'
 }
 
 #
@@ -17,6 +17,6 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
-    sed-or-die 'listen on localhost' 'listen on 0.0.0.0' "${_EMERGE_ROOT}"/etc/opensmtpd/smtpd.conf
+    sed-or-die 'listen on localhost' 'listen on 0.0.0.0' "${_EMERGE_ROOT}"/etc/smtpd/smtpd.conf
     mkdir "${_EMERGE_ROOT}"{/run,/var/run}
 }
