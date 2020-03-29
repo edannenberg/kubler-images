@@ -12,7 +12,7 @@ configure_rootfs_build()
     update_use 'net-ftp/pure-ftpd' '+vchroot'
     # add user/group for virtual accounts
     groupadd -g 2100 ftp-data
-    useradd -u 2100 -g ftp-data -d /dev/null -r -s /usr/sbin/nologin ftp-data
+    useradd -u 2100 -g ftp-data -d /dev/null -r -s /sbin/nologin ftp-data
 
     # add sql auth
     #update_use 'net-ftp/pure-ftpd' '+mysql'
