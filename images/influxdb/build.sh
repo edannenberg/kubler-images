@@ -10,8 +10,8 @@ configure_rootfs_build()
 {
     # for some unknown reason the "go get" cmd now returns with exit signal 1 and fails the build
     # very dirty workaround for now, gonna investigate later. why are go builds so freaking brittle all the time :/
-    cp /var/sync/portage/eclass/golang-vcs.eclass ~/golang-vcs.eclass
-    sed -i 's/"$@" || die/"$@"/g' /var/sync/portage/eclass/golang-vcs.eclass
+    cp /var/db/repos/gentoo/eclass/golang-vcs.eclass ~/golang-vcs.eclass
+    sed -i 's/"$@" || die/"$@"/g' /var/db/repos/gentoo/eclass/golang-vcs.eclass
 }
 
 #
@@ -20,5 +20,5 @@ configure_rootfs_build()
 finish_rootfs_build()
 {
     # revert eclass hack
-    mv ~/golang-vcs.eclass /var/sync/portage/eclass/golang-vcs.eclass
+    mv ~/golang-vcs.eclass /var/db/repos/gentoo/eclass/golang-vcs.eclass
 }
