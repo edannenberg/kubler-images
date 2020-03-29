@@ -1,7 +1,7 @@
-### kubler/lynx:20200228
+### kubler/lynx:20200329
 
-Built: Fri 28 Feb 2020 11:49:28 AM CET
-Image Size: 14.6MB
+Built: Sun 29 Mar 2020 01:11:29 PM CEST
+Image Size: 14.3MB
 
 #### Installed
 Package | USE Flags
@@ -21,7 +21,7 @@ sys-apps/debianutils-4.8.3 | `-static`
 **FROM kubler/musl** |
 sys-libs/musl-1.1.24 | `-headers-only`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
+sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
 sys-apps/sed-4.7 | `static -acl -nls (-selinux)`
 #### Purged
 - [x] Headers

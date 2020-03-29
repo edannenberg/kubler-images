@@ -1,7 +1,7 @@
-### kubler/libressl-musl:20200228
+### kubler/libressl-musl:20200329
 
-Built: Fri 28 Feb 2020 11:47:42 AM CET
-Image Size: 6.02MB
+Built: Sun 29 Mar 2020 01:07:30 PM CEST
+Image Size: 5.8MB
 
 #### Installed
 Package | USE Flags
@@ -16,7 +16,7 @@ Package | USE Flags
 **FROM kubler/musl** |
 sys-libs/musl-1.1.24 | `-headers-only`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
+sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
 sys-apps/sed-4.7 | `static -acl -nls (-selinux)`
 #### Purged
 - [x] Headers

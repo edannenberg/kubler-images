@@ -1,7 +1,7 @@
-### kubler/gcc:20200329
+### kubler/nodejs-gcc:20200329
 
-Built: Sun 29 Mar 2020 11:55:36 AM CEST
-Image Size: 235MB
+Built: Sun 29 Mar 2020 12:36:28 PM CEST
+Image Size: 304MB
 
 #### Installed
 Package | USE Flags
@@ -18,19 +18,14 @@ sys-kernel/linux-headers-5.4 | `-headers-only`
 #### Inherited
 Package | USE Flags
 --------|----------
-**FROM kubler/bash** |
-app-admin/eselect-1.4.15 | `-doc -emacs -vim-syntax`
-app-portage/portage-utils-0.80 | `nls openmp -libressl -qmanifest -qtegrity -static`
-app-shells/bash-4.4_p23-r1 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
-net-misc/curl-7.68.0 | `progress-meter ssl threads -adns -alt-svc -brotli -http2 -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -test`
-sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
-sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
-sys-apps/coreutils-8.31-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.37-r1 | `zlib -python -static-libs`
-sys-apps/sed-4.7 | `acl nls (-selinux) -static`
-sys-libs/ncurses-6.1_p20190609 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
-sys-libs/readline-7.0_p5-r1 | `(split-usr) unicode -static-libs -utils`
+**FROM kubler/nodejs** |
+dev-libs/icu-65.1-r1 | `-debug -doc -examples -static-libs`
+dev-libs/libuv-1.35.0 | `-static-libs`
+net-dns/c-ares-1.15.0 | `-static-libs`
+net-libs/http-parser-2.9.3 | `-static-libs`
+net-libs/nghttp2-1.40.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
+net-libs/nodejs-12.16.1 | `icu npm snapshot ssl system-ssl -debug -doc -inspector -systemtap -test`
+sys-apps/yarn-1.22.4 | ``
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20190110.3.43 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``

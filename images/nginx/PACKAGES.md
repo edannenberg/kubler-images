@@ -1,14 +1,14 @@
-### kubler/nginx:20200228
+### kubler/nginx:20200329
 
-Built: Fri 28 Feb 2020 11:54:11 AM CET
-Image Size: 23.7MB
+Built: Sun 29 Mar 2020 01:59:43 PM CEST
+Image Size: 23.5MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 dev-libs/libpcre-8.42 | `bzip2 cxx recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -readline -static-libs`
-www-servers/nginx-1.17.8 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
+www-servers/nginx-1.17.9-r1 | `http http-cache http2 pcre ssl threads -aio -debug -ipv6 -libatomic -libressl -luajit -pcre-jit -rtmp (-selinux) -vim-syntax`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -19,18 +19,19 @@ dev-libs/openssl-1.1.1d-r3 | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-li
 sys-apps/debianutils-4.8.3 | `-static`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.3 | `-test`
+app-admin/entr-4.4 | `-test`
 dev-lang/execline-2.5.3.0 | `-static -static-libs`
 dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.0.1 | `-static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
-net-dns/libidn2-2.1.1a-r1 | `-static-libs`
+net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.29-r7 | `multiarch (ssp) -audit -caps (-cet) -compile-locales -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
 sys-libs/timezone-data-2019c | `nls -leaps-timezone`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.30.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/sed-4.7 | `static -acl -nls (-selinux)`
 #### Purged
 - [x] Headers
 - [x] Static Libs
