@@ -10,6 +10,8 @@ configure_rootfs_build()
 {
     update_use 'sys-apps/busybox' +make-symlinks +static
     update_use 'sys-apps/sed' +static -acl -nls
+    # bug in busybox-1.31.1-r2 ebuild, musl is pulled in as rdep but we build static version
+    provide_package sys-libs/musl
 }
 
 #
@@ -31,4 +33,6 @@ finish_rootfs_build()
     rm -rf "${_EMERGE_ROOT}"/etc/init.d/
     # eselect now uses a hard coded readlink path :/
     ln -sr "${_EMERGE_ROOT}"/bin/readlink "${_EMERGE_ROOT}"/usr/bin/readlink
+    # remove temp skip from above
+    unprovide_package sys-libs/musl
 }
