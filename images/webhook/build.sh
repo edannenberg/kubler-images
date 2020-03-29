@@ -8,7 +8,7 @@ _packages="dev-vcs/git dev-vcs/webhook"
 #
 configure_rootfs_build()
 {
-    update_use 'dev-vcs/git' '-python' '-webdav'
+    update_use 'dev-vcs/git' -webdav
     update_use 'app-crypt/gnupg' '-smartcard'
 }
 
