@@ -24,8 +24,8 @@ configure_rootfs_build()
 finish_rootfs_build()
 {
     copy_gcc_libs
-    mkdir -p "${_EMERGE_ROOT}"/var/run/{mysql,mysqld} "${_EMERGE_ROOT}"/var/lib/mysql
-    chown mysql:mysql "${_EMERGE_ROOT}"/var/run/{mysql,mysqld} "${_EMERGE_ROOT}"/var/lib/mysql
+    mkdir -p "${_EMERGE_ROOT}"/var/run/{mysql,mysqld} "${_EMERGE_ROOT}"/var/lib/mysql "${_EMERGE_ROOT}"/var/log/mysql
+    chown mysql:mysql "${_EMERGE_ROOT}"/var/run/{mysql,mysqld} "${_EMERGE_ROOT}"/var/lib/mysql "${_EMERGE_ROOT}"/var/log/mysql
     # remove curl again
     uninstall_package net-misc/curl
     # install automysqlbackup
