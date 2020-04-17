@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="sys-apps/busybox sys-apps/sed"
+_packages="sys-apps/busybox"
 
 #
 # This hook is called just before starting the build of the root fs
@@ -19,6 +19,11 @@ configure_rootfs_build()
 # 
 finish_rootfs_build()
 {
+    # replace busybox sed with static gnu version
+    rm "${_EMERGE_ROOT}"/bin/sed
+    emerge sys-apps/sed
+    provide_package sys-apps/sed
+
     cp /etc/{passwd,group} "${_EMERGE_ROOT}"/etc
     mkdir -p "${_EMERGE_ROOT}"/usr/local/bin/
     cp /usr/local/bin/sed-or-die "${_EMERGE_ROOT}"/usr/local/bin/
