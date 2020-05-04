@@ -11,8 +11,7 @@ ONBUILD RUN if [ -n "$JAVA_UID" ] && [ -n "$JAVA_GID" ]; then \
 
 ADD rootfs.tar /
 
-ENV JAVA_HOME=/etc/java-config-2/current-system-vm \
-    JAVA_TOOL_OPTIONS="-XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap"
+ENV JAVA_HOME=/etc/java-config-2/current-system-vm
 
 RUN update-ca-certificates
 
