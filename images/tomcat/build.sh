@@ -6,6 +6,9 @@ _tomcat_slot="${BOB_TOMCAT_SLOT}"
 
 configure_bob()
 {
+    # needs jdk 8 for building
+    emerge dev-java/openjdk-bin:8
+    eselect java-vm set system 1
     # build tomcat-native package on the host
     unprovide_package dev-java/java-config app-eselect/eselect-java app-arch/zip
     emerge dev-java/ant-core dev-java/ant-junit dev-java/java-config dev-java/tomcat-native www-servers/tomcat
