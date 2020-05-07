@@ -35,4 +35,8 @@ configure_bob() {
     configure_layman
     add_overlay kubler https://github.com/edannenberg/kubler-overlay.git
     emerge dev-lang/go
+    # fix setuptools not installed for python3_6
+    PYTHON_TARGETS="python3_6 python2_7 python3_7" emerge -v dev-python/setuptools
+    # update to latest readline/bash
+    emerge bash
 }
