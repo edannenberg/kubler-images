@@ -1,7 +1,7 @@
-### kubler/musl:20200329
+### kubler/musl:20200430
 
-Built: Sun 29 Mar 2020 01:02:05 PM CEST
-Image Size: 1.99MB
+Built: Thu 07 May 2020 11:07:53 AM CEST
+Image Size: 2.22MB
 
 #### Installed
 Package | USE Flags
@@ -12,7 +12,6 @@ Package | USE Flags
 --------|----------
 **FROM kubler/busybox** |
 sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
-sys-apps/sed-4.7 | `static -acl -nls (-selinux)`
 
 #### Purged
 - [x] Headers
