@@ -27,6 +27,7 @@ configure_bob() {
     # when using overlay1 docker storage the created hard link will trigger an error during openssh uninstall
     [[ -f /usr/"${_LIB}"/misc/ssh-keysign ]] && rm /usr/"${_LIB}"/misc/ssh-keysign
     emerge -C net-misc/openssh dev-libs/openssl
+    update_use 'net-misc/openssh' -bindist
     update_use 'dev-libs/openssl' -bindist
     emerge dev-libs/openssl
     emerge @preserved-rebuild
@@ -43,6 +44,7 @@ configure_bob() {
     # go binary bootstrap fails on musl so we need to bootstrap from source
     update_use 'dev-lang/go' +srcgo
     emerge dev-lang/go::kubler
+    [[ "${BOB_UPDATE_WORLD}" == true ]] && emerge -vuND world
     # fix setuptools not installed for python3_6
     PYTHON_TARGETS="python3_6 python2_7 python3_7" emerge -v dev-python/setuptools
     # update to latest readline/bash
