@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="dev-lang/python:3.6 dev-python/pip"
+_packages="dev-lang/python:3.7 dev-python/pip"
 #_keep_headers=true
 
 configure_bob()
@@ -14,9 +14,9 @@ configure_bob()
 #
 configure_rootfs_build()
 {
-    echo 'PYTHON_TARGETS="python3_6"' >> /etc/portage/make.conf
-    echo 'PYTHON_SINGLE_TARGET="python3_6"' >> /etc/portage/make.conf
-    echo 'USE_PYTHON="3.6"' >> /etc/portage/make.conf
+    echo 'PYTHON_TARGETS="python3_7"' >> /etc/portage/make.conf
+    echo 'PYTHON_SINGLE_TARGET="python3_7"' >> /etc/portage/make.conf
+    echo 'USE_PYTHON="3.7"' >> /etc/portage/make.conf
     update_use '+sqlite'
 
     # add user/group for unprivileged container usage
