@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="www-apps/grafana net-libs/nodejs sys-apps/yarn"
+_packages="www-apps/grafana"
 
 configure_builder()
 {
@@ -9,7 +9,12 @@ configure_builder()
     update_keywords '>=dev-lang/go-1.13.4' '+~amd64'
     emerge -u dev-lang/go
     update_keywords 'sys-apps/yarn' '+~amd64'
-    emerge -u net-libs/nodejs
+    update_use net-libs/nodejs +icu
+    # bug with >=dev-libs/icu-66 and nodejs 12.x
+    mask_package '>=dev-libs/icu-66.0'
+    # grafana needs nodejs 12.x1
+    mask_package '>=net-libs/nodejs-13.0.0'
+    emerge -u net-libs/nodejs sys-apps/yarn
 }
 
 #
