@@ -37,15 +37,11 @@ configure_bob() {
     update_keywords 'app-admin/su-exec' '+~amd64'
     emerge dev-vcs/git app-portage/layman app-misc/jq app-shells/bash-completion
     install_git_postsync_hooks
+    [[ "${BOB_UPDATE_WORLD}" == true ]] && emerge -vuND world
     configure_layman
     add_layman_overlay musl
     add_overlay kubler https://github.com/edannenberg/kubler-overlay.git
     # go binary bootstrap fails on musl so we need to bootstrap from source
     update_use 'dev-lang/go' +srcgo
     emerge dev-lang/go::kubler
-    [[ "${BOB_UPDATE_WORLD}" == true ]] && emerge -vuND world
-    # fix setuptools not installed for python3_6
-    PYTHON_TARGETS="python3_6 python2_7 python3_7" emerge -v dev-python/setuptools
-    # update to latest readline/bash
-    emerge bash
 }
