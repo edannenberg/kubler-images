@@ -1,6 +1,6 @@
-### kubler/python2:20200430
+### kubler/python2:20200529
 
-Built: Thu 07 May 2020 01:14:15 PM CEST
+Built: Fri 29 May 2020 09:22:09 PM CEST
 Image Size: 120MB
 
 #### Installed
@@ -14,17 +14,16 @@ dev-lang/python-2.7.18 | `hardened readline sqlite ssl (threads) (wide-unicode) 
 dev-lang/python-exec-2.4.6-r1 | ` `
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r1 | `-debug -pax`
-dev-python/certifi-2019.11.28 | ` `
-dev-python/pip-19.3.1-r2 | `-test -vanilla`
+dev-python/certifi-2020.4.5.1 | ` `
+dev-python/pip-20.0.2 | `-test -vanilla`
 dev-python/setuptools-44.1.0 | `-test`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/bash** |
 app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
-app-portage/portage-utils-0.80 | `nls openmp -libressl -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.87 | `nls openmp -libressl -qmanifest -qtegrity -static`
 app-shells/bash-5.0_p17 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
 net-misc/curl-7.69.1 | `ftp imap pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gopher -http2 -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -telnet -test`
 sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
@@ -50,7 +49,7 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.30-r8 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019c | `nls -leaps-timezone`
+sys-libs/timezone-data-2020a | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 sys-apps/sed-4.7 | `static -acl -nls (-selinux)`

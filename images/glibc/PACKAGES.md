@@ -1,6 +1,6 @@
-### kubler/glibc:20200430
+### kubler/glibc:20200529
 
-Built: Thu 07 May 2020 10:42:07 AM CEST
+Built: Fri 29 May 2020 05:40:48 PM CEST
 Image Size: 15.3MB
 
 #### Installed
@@ -10,7 +10,7 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.30-r8 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019c | `nls -leaps-timezone`
+sys-libs/timezone-data-2020a | `nls -leaps-timezone`
 #### Inherited
 Package | USE Flags
 --------|----------

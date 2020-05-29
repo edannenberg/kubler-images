@@ -1,7 +1,7 @@
-### kubler/graph-easy:20200430
+### kubler/graph-easy:20200529
 
-Built: Thu 07 May 2020 10:51:42 AM CEST
-Image Size: 144MB
+Built: Fri 29 May 2020 06:11:18 PM CEST
+Image Size: 148MB
 
 #### Installed
 Package | USE Flags
@@ -22,17 +22,17 @@ media-fonts/liberation-fonts-2.1.0 | `-`
 media-gfx/graphviz-2.42.3 | `cairo -`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
 media-libs/freetype-2.9.1-r3 | `adobe-cff bindist bzip2 cleartype`
-media-libs/gd-2.2.5-r2 | `fontconfig jpeg png truetype zlib -static-libs -test -tiff -webp -xpm`
-media-libs/harfbuzz-2.6.4 | `cairo glib truetype -debug -graphite -icu -introspection -static-libs -test`
+media-libs/gd-2.3.0 | `fontconfig jpeg png truetype zlib -static-libs -test -tiff -webp -xpm`
+media-libs/harfbuzz-2.6.5 | `cairo glib truetype -debug -graphite -icu -introspection -static-libs -test`
 media-libs/libjpeg-turbo-2.0.4 | `-java -static-libs`
 media-libs/libpng-1.6.37 | `-apng (-neon) -static-libs`
-sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.35.1-r2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-devel/binutils-config-5.2 | ``
 sys-libs/binutils-libs-2.33.1-r1 | `nls -64-bit-bfd -multitarget -static-libs`
 x11-libs/cairo-1.16.0-r3 | `glib svg -`
 x11-libs/pango-1.42.4-r2 | `-`
 x11-libs/pixman-0.38.4 | `(-altivec) (-loongson2f) (-neon)`
-x11-misc/shared-mime-info-1.10-r1 | `-test`
+x11-misc/shared-mime-info-1.15 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -43,9 +43,8 @@ dev-lang/perl-5.30.1 | `-berkdb -debug -doc -gdbm -ithreads`
 perl-core/File-Temp-0.230.900 | ``
 **FROM kubler/bash** |
 app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
-app-portage/portage-utils-0.80 | `nls openmp -libressl -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.87 | `nls openmp -libressl -qmanifest -qtegrity -static`
 app-shells/bash-5.0_p17 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
 net-misc/curl-7.69.1 | `ftp imap pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gopher -http2 -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -telnet -test`
 sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
@@ -71,7 +70,7 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.30-r8 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019c | `nls -leaps-timezone`
+sys-libs/timezone-data-2020a | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 sys-apps/sed-4.7 | `static -acl -nls (-selinux)`

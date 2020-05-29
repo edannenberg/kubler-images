@@ -1,7 +1,7 @@
-### kubler/riemann-dash:20200430
+### kubler/riemann-dash:20200529
 
-Built: Thu 07 May 2020 01:16:40 PM CEST
-Image Size: 311MB
+Built: Fri 29 May 2020 09:27:09 PM CEST
+Image Size: 315MB
 
 #### Installed
 Package | USE Flags
@@ -36,8 +36,8 @@ dev-ruby/rubygems-2.7.10 | `-server -test`
 dev-ruby/test-unit-3.3.3 | `-doc -test`
 dev-ruby/xmlrpc-0.3.0 | `-doc -test`
 dev-util/pkgconfig-0.29.2 | `hardened -internal-glib`
-sys-apps/util-linux-2.33.2 | `cramfs nls readline (split-usr) suid unicode -build -caps -fdformat -kill -ncurses -pam -python (-selinux) -slang -static-libs -systemd -test -tty-helpers -udev`
-x11-misc/shared-mime-info-1.10-r1 | `-test`
+sys-apps/util-linux-2.35.1-r2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+x11-misc/shared-mime-info-1.15 | ``
 **FROM kubler/gcc** |
 dev-libs/gmp-6.2.0-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/mpc-1.1.0-r1 | `-static-libs`
@@ -47,12 +47,11 @@ sys-devel/binutils-config-5.2 | ``
 sys-devel/gcc-9.3.0 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.2.1 | ``
 sys-devel/make-4.2.1-r4 | `nls -guile -static`
-sys-kernel/linux-headers-5.4 | `-headers-only`
+sys-kernel/linux-headers-5.4-r1 | `-headers-only`
 **FROM kubler/bash** |
 app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
-app-portage/portage-utils-0.80 | `nls openmp -libressl -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.87 | `nls openmp -libressl -qmanifest -qtegrity -static`
 app-shells/bash-5.0_p17 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-dev-libs/iniparser-3.1-r1 | `-doc -examples -static-libs`
 net-misc/curl-7.69.1 | `ftp imap pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gopher -http2 -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -telnet -test`
 sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
@@ -78,7 +77,7 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.30-r8 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019c | `nls -leaps-timezone`
+sys-libs/timezone-data-2020a | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 sys-apps/sed-4.7 | `static -acl -nls (-selinux)`

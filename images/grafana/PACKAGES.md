@@ -1,18 +1,12 @@
-### kubler/grafana:20200430
+### kubler/grafana:20200529
 
-Built: Thu 07 May 2020 10:49:21 AM CEST
-Image Size: 188MB
+Built: Fri 29 May 2020 05:59:51 PM CEST
+Image Size: 157MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/libuv-1.35.0 | `-static-libs`
-net-dns/c-ares-1.15.0 | `-static-libs`
-net-libs/http-parser-2.9.3 | `-static-libs`
-net-libs/nghttp2-1.40.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-libs/nodejs-12.16.1 | `npm snapshot ssl system-ssl -debug -doc -icu -inspector -systemtap -test`
-sys-apps/yarn-1.22.4 | ``
-www-apps/grafana-6.6.2 | `minimal`
+www-apps/grafana-7.0.1 | `minimal`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -33,7 +27,7 @@ dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gentoo-functions-0.12 | ``
 sys-libs/glibc-2.30-r8 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -suid -systemtap -test (-vanilla)`
-sys-libs/timezone-data-2019c | `nls -leaps-timezone`
+sys-libs/timezone-data-2020a | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 sys-apps/sed-4.7 | `static -acl -nls (-selinux)`
