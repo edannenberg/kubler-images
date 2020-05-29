@@ -9,7 +9,7 @@ _packages="mail-mta/opensmtpd"
 configure_rootfs_build()
 {
     update_keywords net-libs/libasr-1.0.4 '+~amd64'
-    update_keywords mail-mta/opensmtpd-6.6.4_p1 '+~amd64'
+    update_keywords mail-mta/opensmtpd-6.7.1_p1 '+~amd64'
 }
 
 #
