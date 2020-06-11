@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="dev-vcs/git dev-vcs/webhook"
+_packages="net-misc/openssh dev-vcs/git dev-vcs/webhook"
 
 #
 # This hook is called just before starting the build of the root fs
@@ -9,7 +9,7 @@ _packages="dev-vcs/git dev-vcs/webhook"
 configure_rootfs_build()
 {
     update_use 'dev-vcs/git' -webdav
-    update_use 'app-crypt/gnupg' '-smartcard'
+    update_use 'app-crypt/gnupg' -smartcard
 }
 
 #
