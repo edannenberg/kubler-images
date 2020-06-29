@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="sys-kernel/linux-headers sys-devel/make sys-devel/binutils sys-devel/gcc"
+_packages="sys-kernel/linux-headers sys-devel/make sys-devel/binutils sys-devel/gcc sys-devel/autoconf sys-devel/automake"
 _keep_headers=true
 _keep_static_libs=true
 # include glibc headers and static files from glibc image
@@ -21,5 +21,5 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
-    :
+    mkdir -p "${_EMERGE_ROOT}/usr/share/aclocal"
 }
