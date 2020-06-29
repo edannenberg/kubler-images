@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="sys-apps/busybox"
+_packages="sys-apps/busybox::kubler"
 
 #
 # This hook is called just before starting the build of the root fs
