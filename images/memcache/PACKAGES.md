@@ -1,6 +1,6 @@
-### kubler/memcache:20200529
+### kubler/memcache:20200629
 
-Built: Fri 29 May 2020 06:50:03 PM CEST
+Built: Mon 29 Jun 2020 06:00:40 PM CEST
 Image Size: 94.1MB
 
 #### Installed

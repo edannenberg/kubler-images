@@ -1,6 +1,6 @@
-### kubler/ruby:20200529
+### kubler/ruby:20200629
 
-Built: Fri 29 May 2020 09:27:39 PM CEST
+Built: Mon 29 Jun 2020 06:15:07 PM CEST
 Image Size: 56.6MB
 
 #### Installed

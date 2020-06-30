@@ -1,6 +1,6 @@
-### kubler/plantuml:20200529
+### kubler/plantuml:20200629
 
-Built: Fri 29 May 2020 09:20:02 PM CEST
+Built: Mon 29 Jun 2020 06:10:55 PM CEST
 Image Size: 237MB
 
 #### Installed

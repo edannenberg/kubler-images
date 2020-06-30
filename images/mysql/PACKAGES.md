@@ -1,6 +1,6 @@
-### kubler/mysql:20200529
+### kubler/mysql:20200629
 
-Built: Fri 29 May 2020 07:11:32 PM CEST
+Built: Mon 29 Jun 2020 06:01:34 PM CEST
 Image Size: 340MB
 
 #### Installed

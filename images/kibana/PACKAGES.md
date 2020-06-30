@@ -1,6 +1,6 @@
-### kubler/kibana:20200529
+### kubler/kibana:20200629
 
-Built: Fri 29 May 2020 06:34:35 PM CEST
+Built: Mon 29 Jun 2020 05:49:41 PM CEST
 Image Size: 411MB
 
 #### Installed

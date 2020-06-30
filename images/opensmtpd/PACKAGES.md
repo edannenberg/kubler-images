@@ -1,7 +1,7 @@
-### kubler/opensmtpd:20200529
+### kubler/opensmtpd:20200629
 
-Built: Fri 29 May 2020 09:15:19 PM CEST
-Image Size: 28.4MB
+Built: Mon 29 Jun 2020 06:07:33 PM CEST
+Image Size: 28.3MB
 
 #### Installed
 Package | USE Flags

@@ -1,6 +1,6 @@
-### kubler/tomcat:20200529
+### kubler/tomcat:20200629
 
-Built: Fri 29 May 2020 09:17:44 PM CEST
+Built: Mon 29 Jun 2020 06:09:29 PM CEST
 Image Size: 192MB
 
 #### Installed

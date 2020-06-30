@@ -1,7 +1,7 @@
-### kubler/busybox:20200529
+### kubler/busybox:20200629
 
-Built: Fri 29 May 2020 05:40:19 PM CEST
-Image Size: 1.45MB
+Built: Mon 29 Jun 2020 04:51:43 PM CEST
+Image Size: 1.44MB
 
 #### Installed
 Package | USE Flags

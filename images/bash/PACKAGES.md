@@ -1,6 +1,6 @@
-### kubler/bash:20200529
+### kubler/bash:20200629
 
-Built: Fri 29 May 2020 05:42:19 PM CEST
+Built: Mon 29 Jun 2020 04:53:00 PM CEST
 Image Size: 40.9MB
 
 #### Installed

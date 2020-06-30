@@ -1,6 +1,6 @@
-### kubler/nginx:20200529
+### kubler/nginx:20200629
 
-Built: Fri 29 May 2020 07:12:42 PM CEST
+Built: Mon 29 Jun 2020 06:02:51 PM CEST
 Image Size: 23.6MB
 
 #### Installed

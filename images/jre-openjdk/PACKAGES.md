@@ -1,6 +1,6 @@
-### kubler/jre-openjdk:20200529
+### kubler/jre-openjdk:20200629
 
-Built: Fri 29 May 2020 05:45:17 PM CEST
+Built: Mon 29 Jun 2020 04:55:13 PM CEST
 Image Size: 181MB
 
 #### Installed

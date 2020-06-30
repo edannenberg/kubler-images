@@ -1,6 +1,6 @@
-### kubler/mariadb:20200529
+### kubler/mariadb:20200629
 
-Built: Fri 29 May 2020 06:47:59 PM CEST
+Built: Mon 29 Jun 2020 05:59:33 PM CEST
 Image Size: 485MB
 
 #### Installed

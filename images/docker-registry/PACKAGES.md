@@ -1,6 +1,6 @@
-### kubler/docker-registry:20200529
+### kubler/docker-registry:20200629
 
-Built: Fri 29 May 2020 05:45:52 PM CEST
+Built: Mon 29 Jun 2020 04:55:49 PM CEST
 Image Size: 54.5MB
 
 #### Installed

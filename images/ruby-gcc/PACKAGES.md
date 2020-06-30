@@ -1,12 +1,11 @@
-### kubler/ruby-gcc:20200529
+### kubler/ruby-gcc:20200629
 
-Built: Fri 29 May 2020 06:45:26 PM CEST
-Image Size: 284MB
+Built: Mon 29 Jun 2020 05:56:32 PM CEST
+Image Size: 339MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-eselect/eselect-ruby-20190121 | ``
 dev-lang/ruby-2.4.10 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -libressl -rubytests -socks5 -static-libs -tk -xemacs`
 dev-libs/elfutils-0.177 | `bzip2 nls utils -lzma -static-libs -test (-threads)`
@@ -33,13 +32,23 @@ x11-misc/shared-mime-info-1.15 | ``
 Package | USE Flags
 --------|----------
 **FROM kubler/gcc** |
+app-admin/perl-cleaner-2.27 | ``
+app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
+dev-lang/perl-5.30.1 | `-berkdb -debug -doc -gdbm -ithreads`
 dev-libs/gmp-6.2.0-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/mpc-1.1.0-r1 | `-static-libs`
 dev-libs/mpfr-4.0.2 | `-static-libs`
+perl-core/File-Temp-0.230.900 | ``
+sys-devel/autoconf-2.69-r4 | `-emacs`
+sys-devel/autoconf-wrapper-13-r1 | ``
+sys-devel/automake-1.16.1-r1 | `-test`
+sys-devel/automake-wrapper-11 | ``
 sys-devel/binutils-2.33.1-r1 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5.2 | ``
 sys-devel/gcc-9.3.0 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.2.1 | ``
+sys-devel/gnuconfig-20190912 | ``
+sys-devel/m4-1.4.18-r1 | `-examples`
 sys-devel/make-4.2.1-r4 | `nls -guile -static`
 sys-kernel/linux-headers-5.4-r1 | `-headers-only`
 **FROM kubler/bash** |

@@ -1,7 +1,7 @@
-### kubler/log-collector:20200529
+### kubler/log-collector:20200629
 
-Built: Fri 29 May 2020 06:45:45 PM CEST
-Image Size: 318MB
+Built: Mon 29 Jun 2020 05:56:54 PM CEST
+Image Size: 373MB
 
 #### Installed
 Package | USE Flags
@@ -13,7 +13,6 @@ app-emulation/docker-gen-0.7.4 | ``
 Package | USE Flags
 --------|----------
 **FROM kubler/ruby-gcc** |
-app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-eselect/eselect-ruby-20190121 | ``
 dev-lang/ruby-2.4.10 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -libressl -rubytests -socks5 -static-libs -tk -xemacs`
 dev-libs/elfutils-0.177 | `bzip2 nls utils -lzma -static-libs -test (-threads)`
@@ -37,13 +36,23 @@ dev-util/pkgconfig-0.29.2 | `hardened -internal-glib`
 sys-apps/util-linux-2.35.1-r2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 x11-misc/shared-mime-info-1.15 | ``
 **FROM kubler/gcc** |
+app-admin/perl-cleaner-2.27 | ``
+app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
+dev-lang/perl-5.30.1 | `-berkdb -debug -doc -gdbm -ithreads`
 dev-libs/gmp-6.2.0-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/mpc-1.1.0-r1 | `-static-libs`
 dev-libs/mpfr-4.0.2 | `-static-libs`
+perl-core/File-Temp-0.230.900 | ``
+sys-devel/autoconf-2.69-r4 | `-emacs`
+sys-devel/autoconf-wrapper-13-r1 | ``
+sys-devel/automake-1.16.1-r1 | `-test`
+sys-devel/automake-wrapper-11 | ``
 sys-devel/binutils-2.33.1-r1 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5.2 | ``
 sys-devel/gcc-9.3.0 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite (-jit) (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.2.1 | ``
+sys-devel/gnuconfig-20190912 | ``
+sys-devel/m4-1.4.18-r1 | `-examples`
 sys-devel/make-4.2.1-r4 | `nls -guile -static`
 sys-kernel/linux-headers-5.4-r1 | `-headers-only`
 **FROM kubler/bash** |

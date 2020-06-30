@@ -1,12 +1,12 @@
-### kubler/grafana:20200529
+### kubler/grafana:20200629
 
-Built: Fri 29 May 2020 05:59:51 PM CEST
+Built: Mon 29 Jun 2020 05:33:51 PM CEST
 Image Size: 157MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-www-apps/grafana-7.0.1 | `minimal`
+www-apps/grafana-7.0.4 | `minimal`
 #### Inherited
 Package | USE Flags
 --------|----------

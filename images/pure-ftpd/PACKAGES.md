@@ -1,6 +1,6 @@
-### kubler/pure-ftpd:20200529
+### kubler/pure-ftpd:20200629
 
-Built: Fri 29 May 2020 09:20:43 PM CEST
+Built: Mon 29 Jun 2020 06:11:37 PM CEST
 Image Size: 24.6MB
 
 #### Installed

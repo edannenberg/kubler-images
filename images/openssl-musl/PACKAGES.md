@@ -1,7 +1,7 @@
-### kubler/openssl-musl:20200529
+### kubler/openssl-musl:20200629
 
-Built: Fri 29 May 2020 09:16:18 PM CEST
-Image Size: 7.1MB
+Built: Mon 29 Jun 2020 06:08:32 PM CEST
+Image Size: 7.09MB
 
 #### Installed
 Package | USE Flags

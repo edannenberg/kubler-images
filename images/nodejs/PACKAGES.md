@@ -1,6 +1,6 @@
-### kubler/nodejs:20200529
+### kubler/nodejs:20200629
 
-Built: Fri 29 May 2020 06:27:15 PM CEST
+Built: Mon 29 Jun 2020 05:36:54 PM CEST
 Image Size: 112MB
 
 #### Installed
