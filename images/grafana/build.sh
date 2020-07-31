@@ -5,14 +5,10 @@ _packages="www-apps/grafana"
 
 configure_builder()
 {
-    # grafana apparently already on go 1.13.x which has some bug fixes missing missing in prev. versions
-    update_keywords '>=dev-lang/go-1.13.4' '+~amd64'
-    emerge -u dev-lang/go
-    update_keywords 'sys-apps/yarn' '+~amd64'
     update_use net-libs/nodejs +icu
     # bug with >=dev-libs/icu-67 and nodejs 12.x
     add_patch net-libs/nodejs https://720204.bugs.gentoo.org/attachment.cgi?id=639108 icu67-node12-bug
-    emerge -u net-libs/nodejs sys-apps/yarn
+    #emerge -u net-libs/nodejs sys-apps/yarn
 }
 
 #
