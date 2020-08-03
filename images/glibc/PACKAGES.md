@@ -1,6 +1,6 @@
-### kubler/glibc:20200629
+### kubler/glibc:20200731
 
-Built: Mon 29 Jun 2020 04:52:07 PM CEST
+Built: Fri 31 Jul 2020 03:38:48 PM CEST
 Image Size: 15.3MB
 
 #### Installed
@@ -16,7 +16,7 @@ Package | USE Flags
 --------|----------
 **FROM kubler/busybox** |
 sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
-sys-apps/sed-4.7 | `static -acl -nls (-selinux)`
+sys-apps/sed-4.8 | `static -acl -nls (-selinux)`
 
 #### Purged
 - [x] Headers

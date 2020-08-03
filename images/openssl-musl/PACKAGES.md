@@ -1,13 +1,13 @@
-### kubler/openssl-musl:20200629
+### kubler/openssl-musl:20200731
 
-Built: Mon 29 Jun 2020 06:08:32 PM CEST
-Image Size: 7.09MB
+Built: Fri 31 Jul 2020 11:23:17 PM CEST
+Image Size: 7.05MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-misc/c_rehash-1.7-r1 | ``
-app-misc/ca-certificates-20190110.3.43 | `-cacert`
+app-misc/ca-certificates-20200601.3.53 | `-cacert`
 dev-libs/openssl-1.1.1g | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.9.1 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``

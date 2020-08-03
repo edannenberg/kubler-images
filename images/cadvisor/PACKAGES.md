@@ -1,6 +1,6 @@
-### kubler/cadvisor:20200629
+### kubler/cadvisor:20200731
 
-Built: Mon 29 Jun 2020 04:53:12 PM CEST
+Built: Fri 31 Jul 2020 03:39:54 PM CEST
 Image Size: 51.3MB
 
 #### Installed
@@ -20,7 +20,7 @@ sys-libs/glibc-2.30-r8 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-c
 sys-libs/timezone-data-2020a | `nls -leaps-timezone`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
-sys-apps/sed-4.7 | `static -acl -nls (-selinux)`
+sys-apps/sed-4.8 | `static -acl -nls (-selinux)`
 #### Purged
 - [x] Headers
 - [x] Static Libs
