@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="app-eselect/eselect-ruby dev-lang/ruby:2.4 dev-util/pkgconfig sys-apps/coreutils dev-ruby/pkg-config"
+_packages="app-eselect/eselect-ruby dev-lang/ruby:2.5 dev-util/pkgconfig sys-apps/coreutils dev-ruby/pkg-config"
 _keep_headers='true'
 
 configure_builder()
@@ -14,10 +14,10 @@ configure_builder()
 #
 configure_rootfs_build()
 {
-    echo 'RUBY_TARGETS="ruby24"' >> /etc/portage/make.conf
+    echo 'RUBY_TARGETS="ruby25"' >> /etc/portage/make.conf
     # pkg-config needs unmasked ruby24 target
     mkdir -p "${_EMERGE_ROOT}"/etc
-    echo "-ruby_targets_ruby24" >> /etc/portage/profile/use.mask
+    echo "-ruby_targets_ruby25" >> /etc/portage/profile/use.mask
     update_keywords 'dev-lang/ruby' '+~amd64'
     # no python please.
     provide_package dev-lang/python app-eselect/eselect-python dev-lang/python-exec

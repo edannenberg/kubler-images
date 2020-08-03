@@ -1,17 +1,17 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="dev-libs/gmp app-eselect/eselect-ruby dev-lang/ruby:2.4"
+_packages="dev-libs/gmp app-eselect/eselect-ruby dev-lang/ruby:2.5"
 
 #
 # This hook is called just before starting the build of the root fs
 #
 configure_rootfs_build()
 {
-    echo 'RUBY_TARGETS="ruby24"' >> /etc/portage/make.conf
+    echo 'RUBY_TARGETS="ruby25"' >> /etc/portage/make.conf
     # pkg-config needs unmasked ruby24 target
     mkdir "${_EMERGE_ROOT}"/etc
-    echo "-ruby_targets_ruby24" >> /etc/portage/profile/use.mask
+    echo "-ruby_targets_ruby25" >> /etc/portage/profile/use.mask
     update_keywords 'dev-lang/ruby' '+~amd64'
 }
 
