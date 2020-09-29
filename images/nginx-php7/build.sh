@@ -3,7 +3,7 @@
 #
 _php_slot="${BOB_PHP_SLOT}"
 _php_target="php${_php_slot/\./-}"
-_packages="dev-lang/php:${_php_slot} dev-php/xdebug dev-php/pecl-apcu_bc dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached"
+_packages="dev-lang/php:${_php_slot} dev-php/xdebug dev-php/pecl-apcu_bc dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached app-arch/zstd"
 _php_timezone="${BOB_TIMEZONE:-UTC}"
 _adminer_version="4.7.2"
 #_iconv_from=kubler/glibc
