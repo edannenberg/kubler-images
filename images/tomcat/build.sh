@@ -19,7 +19,7 @@ configure_bob()
 #
 configure_rootfs_build()
 {
-    provide_package dev-java/java-config app-eselect/eselect-java
+    provide_package dev-java/openjdk-bin dev-java/java-config app-eselect/eselect-java
 }
 
 #
