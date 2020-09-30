@@ -5,7 +5,7 @@ _packages="dev-java/icedtea-bin:8"
 
 configure_builder()
 {
-    update_use 'dev-java/icedtea-bin' -webstart +headless-awt
+    update_use 'dev-java/icedtea-bin' +headless-awt
     # skip python and nss
     provide_package dev-lang/python dev-libs/nss
 
