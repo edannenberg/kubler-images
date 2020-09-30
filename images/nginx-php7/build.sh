@@ -25,6 +25,8 @@ configure_bob()
     echo 'dev-lang/php gd' >> /etc/portage/package.use/php
     update_use 'app-eselect/eselect-php' '+fpm'
     update_use 'media-gfx/imagemagick' '-openmp'
+    # skip python
+    provide_package dev-lang/python dev-lang/python-exec
     emerge "php:${_php_slot}" git libmemcached imagemagick
 }
 
