@@ -1,6 +1,6 @@
-### kubler/libressl:20200831
+### kubler/libressl:20200930
 
-Built: Mon Aug 31 01:35:55 PM CEST 2020
+Built: Wed Sep 30 04:50:36 PM CEST 2020
 Image Size: 19.2MB
 
 #### Installed
@@ -8,7 +8,7 @@ Package | USE Flags
 --------|----------
 app-misc/ca-certificates-20200601.3.53 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/libressl-3.1.3 | `asm -static-libs -test`
+dev-libs/libressl-3.1.4 | `asm -static-libs -test`
 sys-apps/debianutils-4.11.1 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 #### Inherited

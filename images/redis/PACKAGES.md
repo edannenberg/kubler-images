@@ -1,6 +1,6 @@
-### kubler/redis:20200831
+### kubler/redis:20200930
 
-Built: Mon Aug 31 02:55:38 PM CEST 2020
+Built: Wed Sep 30 05:09:51 PM CEST 2020
 Image Size: 24.3MB
 
 #### Installed
@@ -15,7 +15,7 @@ dev-libs/jemalloc-5.2.1 | `hardened -debug -lazy-lock -prof -static-libs -stats 
 Package | USE Flags
 --------|----------
 **FROM kubler/s6** |
-app-admin/entr-4.5 | `-test`
+app-admin/entr-4.6 | `-test`
 dev-lang/execline-2.5.3.0 | `-static -static-libs`
 dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.0.1 | `-static -static-libs`

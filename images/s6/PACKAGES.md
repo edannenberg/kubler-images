@@ -1,12 +1,12 @@
-### kubler/s6:20200831
+### kubler/s6:20200930
 
-Built: Mon Aug 31 12:22:50 PM CEST 2020
+Built: Wed Sep 30 04:29:20 PM CEST 2020
 Image Size: 17.1MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-admin/entr-4.5 | `-test`
+app-admin/entr-4.6 | `-test`
 dev-lang/execline-2.5.3.0 | `-static -static-libs`
 dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.0.1 | `-static -static-libs`

@@ -1,13 +1,13 @@
-### kubler/riemann-dash:20200831
+### kubler/riemann-dash:20200930
 
-Built: Mon Aug 31 02:57:02 PM CEST 2020
-Image Size: 377MB
+Built: Wed Sep 30 05:11:16 PM CEST 2020
+Image Size: 378MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/libgcrypt-1.8.6 | `-doc -o-flag-munging -static-libs`
-dev-libs/libgpg-error-1.38 | `nls -common-lisp -static-libs`
+dev-libs/libgcrypt-1.8.6 | `-doc -o-flag-munging`
+dev-libs/libgpg-error-1.38 | `nls -common-lisp`
 dev-libs/libxslt-1.1.34-r1 | `crypt -debug -examples -static-libs`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 *gem install*: riemann-client riemann-tools riemann-dash | https://github.com/aphyr/riemann
@@ -21,17 +21,17 @@ dev-libs/elfutils-0.180 | `bzip2 nls utils -lzma -static-libs -test (-threads) -
 dev-libs/glib-2.64.5 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libxml2-2.9.10-r1 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
+dev-libs/libxml2-2.9.10-r3 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
 dev-libs/libyaml-0.2.2 | `-doc -static-libs -test`
 dev-ruby/did_you_mean-1.2.1 | `-test`
 dev-ruby/json-2.3.0 | `-doc -test`
 dev-ruby/minitest-5.11.3 | `-doc -test`
-dev-ruby/net-telnet-0.1.1-r1 | `-doc -test`
+dev-ruby/net-telnet-0.2.0 | `-doc -test`
 dev-ruby/pkg-config-1.4.1 | `-doc -test`
 dev-ruby/power_assert-1.1.5 | `-doc -test`
 dev-ruby/rake-12.3.3 | `-doc -test`
 dev-ruby/rdoc-6.1.2 | `-doc -test`
-dev-ruby/rubygems-2.7.10 | `-server -test`
+dev-ruby/rubygems-3.0.3 | `-server -test`
 dev-ruby/test-unit-3.3.3 | `-doc -test`
 dev-ruby/xmlrpc-0.3.0 | `-doc -test`
 dev-util/pkgconfig-0.29.2 | `hardened -internal-glib`
@@ -41,14 +41,14 @@ x11-misc/shared-mime-info-1.15 | ``
 app-admin/perl-cleaner-2.27 | ``
 dev-lang/perl-5.30.3 | `-berkdb -debug -doc -gdbm -ithreads`
 dev-libs/gmp-6.2.0-r1 | `asm cxx -doc -pic -static-libs`
-dev-libs/mpc-1.1.0-r1 | `-static-libs`
+dev-libs/mpc-1.2.0 | `-static-libs`
 dev-libs/mpfr-4.1.0 | `-static-libs`
 perl-core/File-Temp-0.230.900 | ``
-sys-devel/autoconf-2.69-r4 | `-emacs`
+sys-devel/autoconf-2.69-r5 | `-emacs`
 sys-devel/autoconf-wrapper-13-r1 | ``
-sys-devel/automake-1.16.1-r1 | `-test`
+sys-devel/automake-1.16.1-r1 | ``
 sys-devel/automake-wrapper-11 | ``
-sys-devel/binutils-2.33.1-r1 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
+sys-devel/binutils-2.34-r2 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
 sys-devel/gcc-9.3.0-r1 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.3.1 | `(native-symlinks)`
@@ -59,14 +59,16 @@ sys-kernel/linux-headers-5.4-r1 | `-headers-only`
 **FROM kubler/bash** |
 app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
+app-arch/xz-utils-5.2.5 | `extra-filters nls (split-usr) threads -static-libs`
+app-arch/zstd-1.4.4-r4 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.87 | `nls openmp -libressl -qmanifest -qtegrity -static`
 app-shells/bash-5.0_p18 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-misc/curl-7.71.1 | `ftp http2 imap pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gopher -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -telnet -test`
+net-misc/curl-7.72.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -idn -ipv6 -kerberos -ldap -libressl -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl)`
 sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.39-r2 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.39-r3 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-libs/libseccomp-2.4.3 | `-static-libs`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
@@ -79,7 +81,7 @@ sys-apps/debianutils-4.11.1 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.5 | `-test`
+app-admin/entr-4.6 | `-test`
 dev-lang/execline-2.5.3.0 | `-static -static-libs`
 dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.0.1 | `-static -static-libs`

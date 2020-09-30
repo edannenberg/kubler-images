@@ -1,6 +1,6 @@
-### kubler/nginx:20200831
+### kubler/nginx:20200930
 
-Built: Mon Aug 31 02:20:05 PM CEST 2020
+Built: Wed Sep 30 05:00:09 PM CEST 2020
 Image Size: 23.6MB
 
 #### Installed
@@ -20,7 +20,7 @@ sys-apps/debianutils-4.11.1 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.5 | `-test`
+app-admin/entr-4.6 | `-test`
 dev-lang/execline-2.5.3.0 | `-static -static-libs`
 dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.0.1 | `-static -static-libs`

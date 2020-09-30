@@ -1,7 +1,7 @@
-### kubler/nginx-php7:20200831
+### kubler/nginx-php7:20200930
 
-Built: Mon Aug 31 02:33:19 PM CEST 2020
-Image Size: 290MB
+Built: Wed Sep 30 05:04:03 PM CEST 2020
+Image Size: 130MB
 
 #### Installed
 Package | USE Flags
@@ -9,24 +9,19 @@ Package | USE Flags
 app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
 app-admin/metalog-20181125 | `unicode`
 app-arch/xz-utils-5.2.5 | `extra-filters nls (split-usr) threads -static-libs`
+app-arch/zstd-1.4.4-r4 | `threads -lz4 -static-libs`
 app-eselect/eselect-php-0.9.4-r5 | `fpm -apache2`
-app-eselect/eselect-python-20190417 | ``
-app-misc/mime-types-9 | ``
 dev-lang/php-7.2.33 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter flatfile fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer truetype unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk (-coverage) -debug -embed -enchant -exif (-firebird) -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -kerberos -ldap -ldap-sasl -libedit -libressl -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -wddx -zip-encryption`
-dev-lang/python-2.7.18-r1 | `hardened readline ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -sqlite -tk -wininst`
-dev-lang/python-3.7.8-r2 | `hardened readline ssl xml -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -sqlite -test -tk -wininst`
-dev-lang/python-exec-2.4.6-r1 | ` `
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/gmp-6.2.0-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libbsd-0.10.0 | `-static-libs`
 dev-libs/libevent-2.1.11 | `ssl threads -debug -libressl -static-libs -test`
-dev-libs/libffi-3.3-r2 | `-debug -pax`
-dev-libs/libgcrypt-1.8.6 | `-doc -o-flag-munging -static-libs`
-dev-libs/libgpg-error-1.38 | `nls -common-lisp -static-libs`
+dev-libs/libgcrypt-1.8.6 | `-doc -o-flag-munging`
+dev-libs/libgpg-error-1.38 | `nls -common-lisp`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libmemcached-1.0.18-r3 | `libevent -debug -hsieh -sasl -static-libs`
 dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
-dev-libs/libxml2-2.9.10-r1 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
+dev-libs/libxml2-2.9.10-r3 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
 dev-libs/libxslt-1.1.34-r1 | `crypt -debug -examples -static-libs`
 dev-libs/nettle-3.6-r2 | `asm gmp -doc -static-libs -test`
 dev-libs/oniguruma-6.9.4 | `-crnl-as-line-terminator -static-libs`
@@ -35,8 +30,8 @@ dev-php/pecl-apcu_bc-1.0.4-r1 | ` `
 dev-php/pecl-imagick-3.4.4 | `-examples -test`
 dev-php/pecl-memcached-3.1.3-r1 | `session -igbinary -json -sasl -test`
 dev-php/pecl-redis-5.1.1 | `json session -igbinary`
-dev-php/xdebug-2.9.4 | ` `
-dev-php/xdebug-client-2.9.4 | `-libedit`
+dev-php/xdebug-2.9.6 | ` `
+dev-php/xdebug-client-2.9.6 | `-libedit`
 mail-mta/nullmailer-2.2-r1 | `ssl -test`
 media-gfx/imagemagick-7.0.10.28 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
 media-libs/freetype-2.10.2-r1 | `adobe-cff bindist bzip2 cleartype`
@@ -47,20 +42,20 @@ media-libs/libpng-1.6.37 | `-apng (-neon) -static-libs`
 media-libs/libwebp-1.1.0 | `gif jpeg png tiff -opengl -static-libs -swap-16bit-csp`
 media-libs/openjpeg-2.3.1-r1 | `-doc -static-libs -test`
 media-libs/tiff-4.1.0 | `cxx jpeg zlib -jbig -lzma -static-libs -test -webp -zstd`
-net-libs/gnutls-3.6.14 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
+net-libs/gnutls-3.6.15 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
 net-libs/libnsl-1.3.0-r1 | ``
 net-libs/libtirpc-1.2.6 | `(split-usr) -ipv6 -kerberos -static-libs`
 net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-misc/curl-7.71.1 | `ftp http2 imap pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gopher -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -telnet -test`
+net-misc/curl-7.72.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -idn -ipv6 -kerberos -ldap -libressl -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl)`
 net-misc/memcached-1.6.6 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
 sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.39-r2 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.39-r3 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-apps/shadow-4.8-r5 | `acl nls (split-usr) su xattr -audit -bcrypt -cracklib -pam (-selinux) -skey`
 sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
-sys-devel/gettext-0.20.2 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
+sys-devel/gettext-0.21 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
 sys-libs/libseccomp-2.4.3 | `-static-libs`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.0_p4 | `(split-usr) unicode -static-libs -utils`
@@ -91,7 +86,7 @@ sys-apps/debianutils-4.11.1 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.5 | `-test`
+app-admin/entr-4.6 | `-test`
 dev-lang/execline-2.5.3.0 | `-static -static-libs`
 dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.0.1 | `-static -static-libs`

@@ -1,13 +1,13 @@
-### kubler/nodejs:20200831
+### kubler/nodejs:20200930
 
-Built: Mon Aug 31 01:19:33 PM CEST 2020
+Built: Wed Sep 30 04:38:38 PM CEST 2020
 Image Size: 112MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 dev-libs/icu-67.1 | `-debug -doc -examples -static-libs`
-dev-libs/libuv-1.37.0 | `-static-libs`
+dev-libs/libuv-1.39.0 | `-static-libs`
 net-dns/c-ares-1.16.1 | `-static-libs`
 net-libs/http-parser-2.9.3 | `-static-libs`
 net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
@@ -24,7 +24,7 @@ sys-apps/debianutils-4.11.1 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.5 | `-test`
+app-admin/entr-4.6 | `-test`
 dev-lang/execline-2.5.3.0 | `-static -static-libs`
 dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.0.1 | `-static -static-libs`

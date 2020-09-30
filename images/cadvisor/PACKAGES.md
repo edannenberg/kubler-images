@@ -1,6 +1,6 @@
-### kubler/cadvisor:20200831
+### kubler/cadvisor:20200930
 
-Built: Mon Aug 31 12:27:14 PM CEST 2020
+Built: Wed Sep 30 04:30:24 PM CEST 2020
 Image Size: 51.3MB
 
 #### Installed

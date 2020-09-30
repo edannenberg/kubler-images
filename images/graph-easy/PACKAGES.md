@@ -1,7 +1,7 @@
-### kubler/graph-easy:20200831
+### kubler/graph-easy:20200930
 
-Built: Mon Aug 31 01:18:52 PM CEST 2020
-Image Size: 152MB
+Built: Wed Sep 30 04:37:56 PM CEST 2020
+Image Size: 153MB
 
 #### Installed
 Package | USE Flags
@@ -13,7 +13,7 @@ dev-libs/glib-2.64.5 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libxml2-2.9.10-r1 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
+dev-libs/libxml2-2.9.10-r3 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
 dev-libs/lzo-2.10 | `(split-usr) -examples -static-libs`
 dev-perl/Config-Tiny-2.230.0 | `-test`
 dev-perl/Digest-SHA1-2.130.0-r1 | ``
@@ -28,7 +28,7 @@ media-libs/libjpeg-turbo-2.0.5-r1 | `-java -static-libs`
 media-libs/libpng-1.6.37 | `-apng (-neon) -static-libs`
 sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
-sys-libs/binutils-libs-2.33.1-r1 | `nls -64-bit-bfd -multitarget -static-libs`
+sys-libs/binutils-libs-2.34-r2 | `nls -64-bit-bfd -multitarget -static-libs`
 x11-libs/cairo-1.16.0-r4 | `glib svg -`
 x11-libs/pango-1.42.4-r2 | `-`
 x11-libs/pixman-0.40.0 | `(-loongson2f) -static-libs`
@@ -43,14 +43,16 @@ perl-core/File-Temp-0.230.900 | ``
 **FROM kubler/bash** |
 app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
+app-arch/xz-utils-5.2.5 | `extra-filters nls (split-usr) threads -static-libs`
+app-arch/zstd-1.4.4-r4 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.87 | `nls openmp -libressl -qmanifest -qtegrity -static`
 app-shells/bash-5.0_p18 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-misc/curl-7.71.1 | `ftp http2 imap pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gopher -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -telnet -test`
+net-misc/curl-7.72.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -idn -ipv6 -kerberos -ldap -libressl -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl)`
 sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.39-r2 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.39-r3 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-libs/libseccomp-2.4.3 | `-static-libs`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
@@ -63,7 +65,7 @@ sys-apps/debianutils-4.11.1 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.5 | `-test`
+app-admin/entr-4.6 | `-test`
 dev-lang/execline-2.5.3.0 | `-static -static-libs`
 dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.0.1 | `-static -static-libs`

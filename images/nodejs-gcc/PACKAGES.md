@@ -1,6 +1,6 @@
-### kubler/nodejs-gcc:20200831
+### kubler/nodejs-gcc:20200930
 
-Built: Mon Aug 31 01:23:33 PM CEST 2020
+Built: Wed Sep 30 04:40:52 PM CEST 2020
 Image Size: 468MB
 
 #### Installed
@@ -12,42 +12,42 @@ app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-crypt/gnupg-2.2.20-r1 | `bzip2 nls readline smartcard ssl -doc -ldap (-selinux) -tofu -tools -usb -user-socket -wks-server`
 app-crypt/gpgme-1.13.0-r1 | `cxx -common-lisp -python -qt5 -static-libs`
 app-crypt/libb2-0.98.1-r2 | `openmp -native-cflags -static-libs`
-app-crypt/pinentry-1.1.0-r3 | `ncurses -caps -emacs -fltk -gnome-keyring -gtk -qt5 -static`
+app-crypt/pinentry-1.1.0-r3 | `ncurses -caps -emacs -fltk -gnome-keyring -gtk -qt5`
 app-eselect/eselect-lib-bin-symlink-0.1.1-r1 | ``
 app-eselect/eselect-pinentry-0.7 | ``
-app-eselect/eselect-python-20190417 | ``
+app-eselect/eselect-python-20200719 | ``
 app-misc/mime-types-9 | ``
 app-portage/portage-utils-0.87 | `nls openmp qmanifest qtegrity -libressl -static`
 app-shells/bash-5.0_p18 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-dev-db/sqlite-3.32.3-r1 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
+dev-db/sqlite-3.33.0 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
 dev-lang/perl-5.30.3 | `-berkdb -debug -doc -gdbm -ithreads`
-dev-lang/python-2.7.18-r1 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -tk -wininst`
+dev-lang/python-2.7.18-r2 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -tk -wininst`
 dev-lang/python-exec-2.4.6-r1 | ` `
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/gmp-6.2.0-r1 | `asm cxx -doc -pic -static-libs`
-dev-libs/libassuan-2.5.3 | `-static-libs`
+dev-libs/libassuan-2.5.3 | ``
 dev-libs/libffi-3.3-r2 | `-debug -pax`
-dev-libs/libgcrypt-1.8.6 | `-doc -o-flag-munging -static-libs`
-dev-libs/libgpg-error-1.38 | `nls -common-lisp -static-libs`
+dev-libs/libgcrypt-1.8.6 | `-doc -o-flag-munging`
+dev-libs/libgpg-error-1.38 | `nls -common-lisp`
 dev-libs/libksba-1.3.5-r1 | `-static-libs`
 dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
-dev-libs/mpc-1.1.0-r1 | `-static-libs`
+dev-libs/mpc-1.2.0 | `-static-libs`
 dev-libs/mpfr-4.1.0 | `-static-libs`
 dev-libs/nettle-3.6-r2 | `asm gmp -doc -static-libs -test`
 dev-libs/npth-1.6-r1 | `-static-libs`
-net-libs/gnutls-3.6.14 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
-net-misc/curl-7.71.1 | `ftp http2 imap pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gopher -idn -ipv6 -kerberos -ldap -metalink (-nghttp3) (-quiche) -rtmp -samba -ssh -static-libs -telnet -test`
+net-libs/gnutls-3.6.15 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
+net-misc/curl-7.72.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -idn -ipv6 -kerberos -ldap -libressl -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl)`
 perl-core/File-Temp-0.230.900 | ``
 sys-apps/acl-2.2.53 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r3 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.39-r2 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.39-r3 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
-sys-devel/autoconf-2.69-r4 | `-emacs`
+sys-devel/autoconf-2.69-r5 | `-emacs`
 sys-devel/autoconf-wrapper-13-r1 | ``
-sys-devel/automake-1.16.1-r1 | `-test`
+sys-devel/automake-1.16.1-r1 | ``
 sys-devel/automake-wrapper-11 | ``
-sys-devel/binutils-2.33.1-r1 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
+sys-devel/binutils-2.34-r2 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
 sys-devel/gcc-9.3.0-r1 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.3.1 | `(native-symlinks)`
@@ -63,7 +63,7 @@ Package | USE Flags
 --------|----------
 **FROM kubler/nodejs** |
 dev-libs/icu-67.1 | `-debug -doc -examples -static-libs`
-dev-libs/libuv-1.37.0 | `-static-libs`
+dev-libs/libuv-1.39.0 | `-static-libs`
 net-dns/c-ares-1.16.1 | `-static-libs`
 net-libs/http-parser-2.9.3 | `-static-libs`
 net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
@@ -77,7 +77,7 @@ sys-apps/debianutils-4.11.1 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
-app-admin/entr-4.5 | `-test`
+app-admin/entr-4.6 | `-test`
 dev-lang/execline-2.5.3.0 | `-static -static-libs`
 dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.0.1 | `-static -static-libs`
