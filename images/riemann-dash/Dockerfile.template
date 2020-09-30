@@ -5,8 +5,8 @@ ADD rootfs.tar /
 
 RUN mkdir -p /riemann-dash/config && \
     ln -s /usr/include/libxml2/libxml /usr/include/libxml && \
-    gem install nokogiri -- --use-system-libraries --no-ri --no-rdoc && \
-    gem install --no-ri --no-rdoc riemann-client riemann-tools riemann-dash
+    gem install nokogiri -- --use-system-libraries --no-document && \
+    gem install --no-document riemann-client riemann-tools riemann-dash
 
 COPY config.rb /riemann-dash/
 
