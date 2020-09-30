@@ -8,7 +8,7 @@ _packages="app-emulation/docker-registry"
 #
 configure_rootfs_build()
 {
-    update_keywords 'app-emulation/docker-registry' '+~amd64'
+    :
 }
 
 #
