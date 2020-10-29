@@ -6,9 +6,6 @@ _packages="www-apps/grafana"
 configure_builder()
 {
     update_use net-libs/nodejs +icu
-    # bug with >=dev-libs/icu-67 and nodejs 12.x
-    add_patch net-libs/nodejs https://720204.bugs.gentoo.org/attachment.cgi?id=639108 icu67-node12-bug
-    #emerge -u net-libs/nodejs sys-apps/yarn
 }
 
 #
