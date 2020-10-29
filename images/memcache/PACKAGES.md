@@ -1,6 +1,6 @@
-### kubler/memcache:20200930
+### kubler/memcache:20201029
 
-Built: Wed Sep 30 04:58:05 PM CEST 2020
+Built: Thu Oct 29 01:59:47 PM CET 2020
 Image Size: 98.1MB
 
 #### Installed
@@ -9,7 +9,7 @@ Package | USE Flags
 app-admin/perl-cleaner-2.27 | ``
 dev-lang/perl-5.30.3 | `-berkdb -debug -doc -gdbm -ithreads`
 dev-libs/libevent-2.1.11 | `ssl threads -debug -libressl -static-libs -test`
-net-misc/memcached-1.6.6 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
+net-misc/memcached-1.6.7 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
 perl-core/File-Temp-0.230.900 | ``
 #### Inherited
 Package | USE Flags
@@ -40,9 +40,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

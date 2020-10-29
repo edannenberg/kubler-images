@@ -1,6 +1,6 @@
-### kubler/python3:20200930
+### kubler/python3:20201029
 
-Built: Wed Sep 30 05:09:36 PM CEST 2020
+Built: Thu Oct 29 02:47:19 PM CET 2020
 Image Size: 174MB
 
 #### Installed
@@ -9,8 +9,8 @@ Package | USE Flags
 app-eselect/eselect-python-20200719 | ``
 app-misc/mime-types-9 | ``
 dev-db/sqlite-3.33.0 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-3.7.8-r2 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -test -tk -wininst`
-dev-lang/python-exec-2.4.6-r1 | ` `
+dev-lang/python-3.7.9 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -test -tk -wininst`
+dev-lang/python-exec-2.4.6-r2 | ` `
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-python/certifi-10001-r1 | `-test`
@@ -47,9 +47,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

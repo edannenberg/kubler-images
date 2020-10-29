@@ -1,7 +1,7 @@
-### kubler/jdk-openjdk:20200930
+### kubler/jdk-openjdk:20201029
 
-Built: Wed Sep 30 04:45:32 PM CEST 2020
-Image Size: 320MB
+Built: Thu Oct 29 01:27:49 PM CET 2020
+Image Size: 321MB
 
 #### Installed
 Package | USE Flags
@@ -10,13 +10,13 @@ app-crypt/p11-kit-0.23.19-r1 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.3.1 | `-test`
-dev-java/openjdk-bin-11.0.8_p10 | `gentoo-vm headless-awt -alsa -cups (-selinux) -source`
+dev-java/openjdk-bin-11.0.9_p11 | `gentoo-vm headless-awt -alsa -cups (-selinux) -source`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
 media-fonts/liberation-fonts-2.1.0 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
-media-libs/freetype-2.10.2-r1 | `adobe-cff bindist bzip2 cleartype`
+media-libs/freetype-2.10.4 | `adobe-cff bindist bzip2 cleartype`
 sys-apps/baselayout-java-0.1.0-r1 | ``
 sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 #### Inherited
@@ -48,9 +48,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

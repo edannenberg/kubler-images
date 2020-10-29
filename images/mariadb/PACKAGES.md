@@ -1,6 +1,6 @@
-### kubler/mariadb:20200930
+### kubler/mariadb:20201029
 
-Built: Wed Sep 30 04:57:01 PM CEST 2020
+Built: Thu Oct 29 01:58:01 PM CET 2020
 Image Size: 426MB
 
 #### Installed
@@ -14,12 +14,12 @@ app-arch/lz4-1.9.2 | `-static-libs`
 app-arch/pbzip2-1.1.12 | `-static -symlink`
 app-eselect/eselect-python-20200719 | ``
 app-misc/mime-types-9 | ``
-dev-db/mariadb-10.4.13-r2 | `backup bindist perl server -cracklib -debug -extraengine -galera -innodb-lz4 -innodb-lzo -innodb-snappy -jdbc -jemalloc -kerberos -latin1 -libressl (-mroonga) -numa -odbc -oqgraph -pam -profiling -rocksdb (-selinux) -sphinx -sst-mariabackup -sst-rsync -static -systemd -systemtap -tcmalloc -test -tokudb -xml -yassl`
+dev-db/mariadb-10.4.13-r3 | `backup bindist perl server -cracklib -debug -extraengine -galera -innodb-lz4 -innodb-lzo -innodb-snappy -jdbc -jemalloc -kerberos -latin1 -libressl (-mroonga) -numa -odbc -oqgraph -pam -profiling -rocksdb (-selinux) -sphinx -sst-mariabackup -sst-rsync -static -systemd -systemtap -tcmalloc -test -tokudb -xml -yassl`
 dev-db/mysql-connector-c-8.0.21-r2 | `-ldap -libressl -static-libs`
 dev-db/mysql-init-scripts-2.3-r3 | ``
 dev-lang/perl-5.30.3 | `-berkdb -debug -doc -gdbm -ithreads`
-dev-lang/python-3.7.8-r2 | `hardened readline ssl xml -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -sqlite -test -tk -wininst`
-dev-lang/python-exec-2.4.6-r1 | ` `
+dev-lang/python-3.7.9 | `hardened readline ssl xml -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -sqlite -test -tk -wininst`
+dev-lang/python-exec-2.4.6-r2 | ` `
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libaio-0.3.112 | `(split-usr) -static-libs -test`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
@@ -66,9 +66,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

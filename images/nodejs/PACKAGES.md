@@ -1,6 +1,6 @@
-### kubler/nodejs:20200930
+### kubler/nodejs:20201029
 
-Built: Wed Sep 30 04:38:38 PM CEST 2020
+Built: Thu Oct 29 01:17:27 PM CET 2020
 Image Size: 112MB
 
 #### Installed
@@ -11,7 +11,7 @@ dev-libs/libuv-1.39.0 | `-static-libs`
 net-dns/c-ares-1.16.1 | `-static-libs`
 net-libs/http-parser-2.9.3 | `-static-libs`
 net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-libs/nodejs-14.4.0 | `icu npm snapshot ssl system-ssl -debug -doc -inspector -pax`
+net-libs/nodejs-14.11.0 | `icu npm snapshot ssl system-ssl -debug -doc -inspector -pax`
 sys-apps/yarn-1.22.4 | ``
 #### Inherited
 Package | USE Flags
@@ -25,9 +25,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

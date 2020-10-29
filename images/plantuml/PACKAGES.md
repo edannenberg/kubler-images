@@ -1,21 +1,21 @@
-### kubler/plantuml:20200930
+### kubler/plantuml:20201029
 
-Built: Wed Sep 30 05:08:08 PM CEST 2020
-Image Size: 241MB
+Built: Thu Oct 29 02:42:31 PM CET 2020
+Image Size: 242MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/elfutils-0.180 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind`
+dev-libs/elfutils-0.181 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind`
 dev-libs/glib-2.64.5 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libxml2-2.9.10-r3 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
 media-gfx/graphviz-2.42.3-r1 | `nls -`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
-media-libs/freetype-2.10.2-r1 | `adobe-cff bindist bzip2 cleartype`
+media-libs/freetype-2.10.4 | `adobe-cff bindist bzip2 cleartype`
 media-libs/gd-2.3.0 | `fontconfig jpeg png truetype zlib -static-libs -test -tiff -webp -xpm`
-media-libs/libjpeg-turbo-2.0.5-r1 | `-java -static-libs`
+media-libs/libjpeg-turbo-2.0.5-r2 | `-java -static-libs`
 media-libs/libpng-1.6.37 | `-apng (-neon) -static-libs`
 x11-misc/shared-mime-info-1.15 | ``
 *manual install*: plantuml-server-v1.2020.8 | https://github.com/plantuml/plantuml-server
@@ -23,7 +23,7 @@ x11-misc/shared-mime-info-1.15 | ``
 Package | USE Flags
 --------|----------
 **FROM kubler/tomcat** |
-dev-java/ant-core-1.10.8 | `-doc -source`
+dev-java/ant-core-1.10.9 | `-doc -source`
 dev-java/ant-eclipse-ecj-4.5.1 | `-doc -source`
 dev-java/eclipse-ecj-4.5.1 | `ant -doc -source`
 dev-java/tomcat-native-1.2.24 | `-static-libs -test`
@@ -35,13 +35,13 @@ app-crypt/p11-kit-0.23.19-r1 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.3.1 | `-test`
-dev-java/openjdk-jre-bin-11.0.8_p10-r1 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
+dev-java/openjdk-jre-bin-11.0.9_p11 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
 media-fonts/liberation-fonts-2.1.0 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
-media-libs/freetype-2.10.2-r1 | `adobe-cff bindist bzip2 cleartype`
+media-libs/freetype-2.10.4 | `adobe-cff bindist bzip2 cleartype`
 net-libs/libnet-1.2 | `-static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
 sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
@@ -71,9 +71,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

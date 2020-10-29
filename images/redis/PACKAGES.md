@@ -1,6 +1,6 @@
-### kubler/redis:20200930
+### kubler/redis:20201029
 
-Built: Wed Sep 30 05:09:51 PM CEST 2020
+Built: Thu Oct 29 02:47:33 PM CET 2020
 Image Size: 24.3MB
 
 #### Installed
@@ -16,9 +16,9 @@ Package | USE Flags
 --------|----------
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

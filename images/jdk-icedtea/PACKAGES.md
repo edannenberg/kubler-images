@@ -1,6 +1,6 @@
-### kubler/jdk-icedtea:20200930
+### kubler/jdk-icedtea:20201029
 
-Built: Wed Sep 30 04:43:52 PM CEST 2020
+Built: Thu Oct 29 01:26:22 PM CET 2020
 Image Size: 444MB
 
 #### Installed
@@ -11,8 +11,8 @@ app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/icedtea-bin-3.16.0 | `headless-awt -alsa (-big-endian) -cups -doc -examples -gtk -pulseaudio (-selinux) -source`
 dev-java/java-config-2.3.1 | `-test`
-dev-lang/python-exec-2.4.6-r1 | ` `
-dev-libs/elfutils-0.180 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind`
+dev-lang/python-exec-2.4.6-r2 | ` `
+dev-libs/elfutils-0.181 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/glib-2.64.5 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
@@ -21,9 +21,9 @@ dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
 dev-libs/libxml2-2.9.10-r3 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
 media-fonts/liberation-fonts-2.1.0 | `-`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
-media-libs/freetype-2.10.2-r1 | `adobe-cff bindist bzip2 cleartype`
-media-libs/lcms-2.9 | `threads -doc -jpeg -static-libs -test -tiff`
-media-libs/libjpeg-turbo-2.0.5-r1 | `-java -static-libs`
+media-libs/freetype-2.10.4 | `adobe-cff bindist bzip2 cleartype`
+media-libs/lcms-2.11 | `threads -doc -jpeg -static-libs -test -tiff`
+media-libs/libjpeg-turbo-2.0.5-r2 | `-java -static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
 sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 x11-misc/shared-mime-info-1.15 | ``
@@ -44,7 +44,7 @@ sys-devel/automake-wrapper-11 | ``
 sys-devel/binutils-2.34-r2 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
 sys-devel/gcc-9.3.0-r1 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
-sys-devel/gcc-config-2.3.1 | `(native-symlinks)`
+sys-devel/gcc-config-2.3.2 | `(native-symlinks)`
 sys-devel/gnuconfig-20200621 | ``
 sys-devel/m4-1.4.18-r1 | `-examples`
 sys-devel/make-4.2.1-r4 | `nls -guile -static`
@@ -75,9 +75,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

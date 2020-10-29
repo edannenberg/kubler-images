@@ -1,12 +1,12 @@
-### kubler/grafana:20200930
+### kubler/grafana:20201029
 
-Built: Wed Sep 30 04:35:38 PM CEST 2020
-Image Size: 184MB
+Built: Thu Oct 29 12:49:41 PM CET 2020
+Image Size: 186MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-www-apps/grafana-7.2.0 | `minimal`
+www-apps/grafana-7.3.0 | `minimal`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -19,9 +19,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

@@ -1,12 +1,12 @@
-### kubler/graph-easy:20200930
+### kubler/graph-easy:20201029
 
-Built: Wed Sep 30 04:37:56 PM CEST 2020
+Built: Thu Oct 29 01:01:56 PM CET 2020
 Image Size: 153MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/elfutils-0.180 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind`
+dev-libs/elfutils-0.181 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind`
 dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
 dev-libs/fribidi-1.0.9 | `-static-libs`
 dev-libs/glib-2.64.5 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
@@ -21,10 +21,10 @@ dev-perl/Graph-Easy-0.76 | `graphviz`
 media-fonts/liberation-fonts-2.1.0 | `-`
 media-gfx/graphviz-2.42.3-r1 | `cairo -`
 media-libs/fontconfig-2.13.0-r4 | `-doc -static-libs`
-media-libs/freetype-2.10.2-r1 | `adobe-cff bindist bzip2 cleartype`
+media-libs/freetype-2.10.4 | `adobe-cff bindist bzip2 cleartype`
 media-libs/gd-2.3.0 | `fontconfig jpeg png truetype zlib -static-libs -test -tiff -webp -xpm`
-media-libs/harfbuzz-2.6.7 | `cairo glib truetype -debug -graphite -icu -introspection -static-libs -test`
-media-libs/libjpeg-turbo-2.0.5-r1 | `-java -static-libs`
+media-libs/harfbuzz-2.7.2 | `cairo glib truetype -debug -doc -graphite -icu -introspection -static-libs -test`
+media-libs/libjpeg-turbo-2.0.5-r2 | `-java -static-libs`
 media-libs/libpng-1.6.37 | `-apng (-neon) -static-libs`
 sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
@@ -66,9 +66,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

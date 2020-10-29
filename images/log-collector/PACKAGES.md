@@ -1,6 +1,6 @@
-### kubler/log-collector:20200930
+### kubler/log-collector:20201029
 
-Built: Wed Sep 30 04:54:59 PM CEST 2020
+Built: Thu Oct 29 01:45:27 PM CET 2020
 Image Size: 382MB
 
 #### Installed
@@ -15,7 +15,7 @@ Package | USE Flags
 **FROM kubler/ruby-gcc** |
 app-eselect/eselect-ruby-20190121 | ``
 dev-lang/ruby-2.5.8-r1 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -libressl -rubytests -socks5 -static-libs -systemtap -tk -xemacs`
-dev-libs/elfutils-0.180 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind`
+dev-libs/elfutils-0.181 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind`
 dev-libs/glib-2.64.5 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
@@ -49,7 +49,7 @@ sys-devel/automake-wrapper-11 | ``
 sys-devel/binutils-2.34-r2 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
 sys-devel/gcc-9.3.0-r1 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
-sys-devel/gcc-config-2.3.1 | `(native-symlinks)`
+sys-devel/gcc-config-2.3.2 | `(native-symlinks)`
 sys-devel/gnuconfig-20200621 | ``
 sys-devel/m4-1.4.18-r1 | `-examples`
 sys-devel/make-4.2.1-r4 | `nls -guile -static`
@@ -80,9 +80,9 @@ sys-kernel/installkernel-gentoo-2 | ``
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
-dev-lang/execline-2.5.3.0 | `-static -static-libs`
-dev-libs/skalibs-2.9.1.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.9.0.1 | `-static -static-libs`
+dev-lang/execline-2.6.1.1 | `-static -static-libs`
+dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
+sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
