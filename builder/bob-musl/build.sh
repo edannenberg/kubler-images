@@ -41,7 +41,5 @@ configure_bob() {
     configure_layman
     add_layman_overlay musl
     add_overlay kubler https://github.com/edannenberg/kubler-overlay.git
-    # go binary bootstrap fails on musl so we need to bootstrap from source
-    update_use 'dev-lang/go' +srcgo
-    emerge dev-lang/go::kubler
+    emerge dev-lang/go
 }
