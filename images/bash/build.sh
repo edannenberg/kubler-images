@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="sys-libs/readline net-misc/curl app-admin/eselect app-portage/portage-utils app-shells/bash app-arch/zstd"
+_packages="net-misc/curl app-admin/eselect app-portage/portage-utils app-shells/bash app-arch/zstd"
 
 #
 # This hook is called just before starting the build of the root fs
@@ -9,7 +9,6 @@ _packages="sys-libs/readline net-misc/curl app-admin/eselect app-portage/portage
 configure_rootfs_build()
 {
     update_use 'sys-libs/ncurses' '+minimal'
-    unprovide_package sys-libs/readline
     # these use flags pull in gcc as runtime dep
     update_use app-portage/portage-utils -qmanifest -qtegrity
 }
