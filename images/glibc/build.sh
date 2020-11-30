@@ -34,6 +34,7 @@ configure_rootfs_build()
     provide_package sys-libs/glibc
     generate_doc_package_installed 'sys-apps/busybox' 'sys-apps/sed'
     update_use 'sys-apps/sed' -static +acl +nls
+    update_use 'sys-libs/ncurses' +minimal
     # remove workaround
     unprovide_package sys-libs/glibc
     # fake portage install
