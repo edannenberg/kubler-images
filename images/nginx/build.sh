@@ -8,7 +8,7 @@ _packages="www-servers/nginx"
 configure_bob()
 {
     # add mva overlay which has nginx with pagespeed and other goodies
-    #layman -a mva
+    #add_overlay mva
     :
 }
 
@@ -35,5 +35,5 @@ finish_rootfs_build()
     #copy_gcc_libs
     # remove overlay
     #unset ROOT
-    #layman -d mva
+    #eselect repository remove mva
 }
