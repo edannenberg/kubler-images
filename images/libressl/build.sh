@@ -5,7 +5,7 @@ _packages="dev-libs/libressl"
 
 configure_bob()
 {
-    add_layman_overlay libressl
+    add_overlay libressl
     # libressl
     # https://wiki.gentoo.org/wiki/Project:LibreSSL
     echo 'USE="${USE} libressl"'   >> /etc/portage/make.conf 
