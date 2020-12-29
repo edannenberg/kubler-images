@@ -4,13 +4,14 @@
 #
 _packages="sys-libs/glibc"
 _timezone="${BOB_TIMEZONE:-UTC}"
-_glibc_locales=("en_US ISO-8859-1")
+_glibc_locales=("C.UTF8 UTF-8" "en_US.UTF-8 UTF-8")
 BOB_SKIP_LIB_CLEANUP=true
 
 configure_bob()
 {
     local locale
-     # set locales
+    # set locales
+    mv /etc/locale.gen /etc/locale.gen.bak
     for locale in "${_glibc_locales[@]}"; do
         echo "${locale}" >> /etc/locale.gen
     done
