@@ -1,6 +1,6 @@
-### kubler/nginx-proxy-conf:20201130
+### kubler/nginx-proxy-conf:20201230
 
-Built: Mon Nov 30 04:54:44 PM CET 2020
+Built: Wed Dec 30 02:31:07 PM CET 2020
 Image Size: 14MB
 
 #### Installed
@@ -13,7 +13,7 @@ Package | USE Flags
 **FROM kubler/musl** |
 sys-libs/musl-1.2.1-r1 | `-headers-only`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.31.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
+sys-apps/busybox-1.31.1-r3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
 #### Purged
 - [x] Headers
 - [x] Static Libs

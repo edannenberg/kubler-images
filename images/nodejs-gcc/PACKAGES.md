@@ -1,6 +1,6 @@
-### kubler/nodejs-gcc:20201130
+### kubler/nodejs-gcc:20201230
 
-Built: Mon Nov 30 04:32:07 PM CET 2020
+Built: Wed Dec 30 01:06:41 PM CET 2020
 Image Size: 502MB
 
 #### Installed
@@ -34,7 +34,7 @@ dev-libs/mpfr-4.1.0 | `-static-libs`
 dev-libs/nettle-3.6-r2 | `asm gmp -doc -static-libs -test`
 dev-libs/npth-1.6-r1 | ``
 net-libs/gnutls-3.6.15 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
-net-misc/curl-7.72.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -idn -ipv6 -kerberos -ldap -libressl -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl)`
+net-misc/curl-7.74.0-r2 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -libressl -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl) -zstd`
 perl-core/File-Temp-0.230.900 | ``
 sys-apps/acl-2.2.53-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r4 | `nls (split-usr) -debug -static-libs`
@@ -47,11 +47,11 @@ sys-devel/automake-1.16.2-r1 | `-test`
 sys-devel/automake-wrapper-11 | ``
 sys-devel/binutils-2.34-r2 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
 sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
-sys-devel/gcc-9.3.0-r1 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
+sys-devel/gcc-9.3.0-r2 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.3.2-r1 | `(cc-wrappers) (native-symlinks)`
 sys-devel/gnuconfig-20200621 | ``
 sys-devel/m4-1.4.18-r1 | `-examples`
-sys-devel/make-4.2.1-r4 | `nls -guile -static`
+sys-devel/make-4.3 | `nls -guile -static`
 sys-kernel/linux-headers-5.4-r1 | `-headers-only`
 sys-libs/libseccomp-2.4.4 | `-static-libs`
 #### Inherited
@@ -69,7 +69,7 @@ sys-apps/yarn-1.22.4 | ``
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20200601.3.53 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1g | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1i | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.1 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 **FROM kubler/s6** |
@@ -80,17 +80,17 @@ sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
 app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.0-r1 | `asm cxx -doc -pic -static-libs`
+dev-libs/gmp-6.2.1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.13 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r2 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.32-r3 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.0_p4 | `(split-usr) unicode -static-libs -utils`
-sys-libs/timezone-data-2020a | `nls -leaps-timezone`
+sys-libs/timezone-data-2020d | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.31.1-r3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
