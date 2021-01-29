@@ -1,7 +1,7 @@
-### kubler/python3:20201230
+### kubler/python3:20210129
 
-Built: Wed Dec 30 03:46:47 PM CET 2020
-Image Size: 179MB
+Built: Fri Jan 29 04:44:23 PM CET 2021
+Image Size: 184MB
 
 #### Installed
 Package | USE Flags
@@ -9,15 +9,15 @@ Package | USE Flags
 app-eselect/eselect-python-20200719 | ``
 app-misc/mime-types-9 | ``
 dev-db/sqlite-3.33.0 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-3.7.9 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -test -tk -wininst`
+dev-lang/python-3.8.7-r1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -test -tk -verify-sig -wininst`
 dev-lang/python-exec-2.4.6-r2 | ` `
-dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
+dev-libs/expat-2.2.10 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-python/certifi-10001-r1 | `-test`
-dev-python/pip-20.2.4 | `-test -vanilla`
+dev-python/pip-20.3.3 | `-test -vanilla`
 dev-python/setuptools-50.3.0 | `-test`
 dev-python/setuptools_scm-4.1.2-r1 | `-test`
-sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -39,7 +39,7 @@ sys-libs/libseccomp-2.4.4 | `-static-libs`
 app-misc/ca-certificates-20200601.3.53 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1i | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
-sys-apps/debianutils-4.11.1 | `installkernel -static`
+sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
@@ -56,13 +56,13 @@ net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.13 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r3 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
-sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
-sys-libs/readline-8.0_p4 | `(split-usr) unicode -static-libs -utils`
-sys-libs/timezone-data-2020d | `nls -leaps-timezone -zic-slim`
-sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
+sys-libs/glibc-2.32-r5 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/readline-8.0_p4 | `(split-usr) (unicode) -static-libs -utils`
+sys-libs/timezone-data-2020e | `nls -leaps-timezone -zic-slim`
+sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.31.1-r3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.32.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 sys-apps/sed-4.8 | `static -acl -nls (-selinux)`
 #### Purged
 - [x] Headers

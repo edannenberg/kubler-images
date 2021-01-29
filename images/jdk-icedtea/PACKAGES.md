@@ -1,7 +1,7 @@
-### kubler/jdk-icedtea:20201230
+### kubler/jdk-icedtea:20210129
 
-Built: Wed Dec 30 01:20:56 PM CET 2020
-Image Size: 448MB
+Built: Fri Jan 29 04:18:34 PM CET 2021
+Image Size: 450MB
 
 #### Installed
 Package | USE Flags
@@ -13,7 +13,7 @@ dev-java/icedtea-bin-3.16.0 | `headless-awt -alsa (-big-endian) -cups -doc -exam
 dev-java/java-config-2.3.1 | `-test`
 dev-lang/python-exec-2.4.6-r2 | ` `
 dev-libs/elfutils-0.182 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -zstd`
-dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
+dev-libs/expat-2.2.10 | `(split-usr) unicode -examples -static-libs`
 dev-libs/glib-2.64.5 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
@@ -22,11 +22,11 @@ media-fonts/liberation-fonts-2.1.0 | `-`
 media-libs/fontconfig-2.13.1-r2 | `-doc -static-libs`
 media-libs/freetype-2.10.4 | `adobe-cff bindist bzip2 cleartype`
 media-libs/lcms-2.11 | `threads -doc -jpeg -static-libs -test -tiff`
-media-libs/libjpeg-turbo-2.0.5-r2 | `-java -static-libs`
+media-libs/libjpeg-turbo-2.0.6 | `-java -static-libs`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
-sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid unicode -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
-x11-misc/shared-mime-info-1.15 | ``
+sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+x11-misc/shared-mime-info-2.0-r2 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -66,7 +66,7 @@ sys-libs/libseccomp-2.4.4 | `-static-libs`
 app-misc/ca-certificates-20200601.3.53 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1i | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
-sys-apps/debianutils-4.11.1 | `installkernel -static`
+sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
@@ -83,13 +83,13 @@ net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.13 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r3 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
-sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
-sys-libs/readline-8.0_p4 | `(split-usr) unicode -static-libs -utils`
-sys-libs/timezone-data-2020d | `nls -leaps-timezone -zic-slim`
-sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
+sys-libs/glibc-2.32-r5 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/readline-8.0_p4 | `(split-usr) (unicode) -static-libs -utils`
+sys-libs/timezone-data-2020e | `nls -leaps-timezone -zic-slim`
+sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.31.1-r3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.32.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 sys-apps/sed-4.8 | `static -acl -nls (-selinux)`
 #### Purged
 - [x] Headers

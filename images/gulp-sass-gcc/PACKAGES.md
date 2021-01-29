@@ -1,7 +1,7 @@
-### kubler/gulp-sass-gcc:20201230
+### kubler/gulp-sass-gcc:20210129
 
-Built: Wed Dec 30 01:18:10 PM CET 2020
-Image Size: 518MB
+Built: Fri Jan 29 04:15:36 PM CET 2021
+Image Size: 517MB
 
 #### Installed
 Package | USE Flags
@@ -14,25 +14,25 @@ Package | USE Flags
 **FROM kubler/nodejs-gcc** |
 app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
 app-admin/perl-cleaner-2.27 | ``
-app-crypt/gnupg-2.2.20-r2 | `bzip2 nls readline smartcard ssl -doc -ldap (-selinux) -tofu -tools -usb -user-socket -wks-server`
+app-crypt/gnupg-2.2.25 | `bzip2 nls readline smartcard ssl -doc -ldap -scd-shared-access (-selinux) -tofu -tools -usb -user-socket -wks-server`
 app-crypt/gpgme-1.14.0 | `cxx -common-lisp -python -qt5 -static-libs`
 app-crypt/libb2-0.98.1-r2 | `openmp -native-cflags -static-libs`
-app-crypt/pinentry-1.1.0-r3 | `ncurses -caps -emacs -fltk -gnome-keyring -gtk -qt5`
+app-crypt/pinentry-1.1.0-r4 | `ncurses -caps -emacs -gnome-keyring -gtk -qt5`
 app-eselect/eselect-lib-bin-symlink-0.1.1-r1 | ``
-app-eselect/eselect-pinentry-0.7 | ``
+app-eselect/eselect-pinentry-0.7.1 | ``
 app-eselect/eselect-python-20200719 | ``
 app-misc/mime-types-9 | ``
 app-portage/portage-utils-0.90 | `nls openmp qmanifest qtegrity -libressl -static`
 app-shells/bash-5.0_p18 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-db/sqlite-3.33.0 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
 dev-lang/perl-5.30.3 | `-berkdb -debug -doc -gdbm -ithreads`
-dev-lang/python-2.7.18-r4 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -tk -wininst`
+dev-lang/python-2.7.18-r6 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -examples -gdbm -ipv6 -libressl -ncurses -tk -verify-sig -wininst`
 dev-lang/python-exec-2.4.6-r2 | ` `
-dev-libs/expat-2.2.8 | `(split-usr) unicode -examples -static-libs`
+dev-libs/expat-2.2.10 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libassuan-2.5.3 | ``
 dev-libs/libffi-3.3-r2 | `-debug -pax`
-dev-libs/libgcrypt-1.8.6 | `-doc -o-flag-munging`
-dev-libs/libgpg-error-1.38 | `nls -common-lisp`
+dev-libs/libgcrypt-1.9.0 | `asm -doc -o-flag-munging -static-libs`
+dev-libs/libgpg-error-1.38 | `nls -common-lisp -static-libs`
 dev-libs/libksba-1.3.5-r1 | `-static-libs`
 dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
 dev-libs/mpc-1.2.1 | `-static-libs`
@@ -62,18 +62,18 @@ sys-kernel/linux-headers-5.4-r1 | `-headers-only`
 sys-libs/libseccomp-2.4.4 | `-static-libs`
 **FROM kubler/nodejs** |
 app-arch/brotli-1.0.9-r1 | `-python -test`
-dev-libs/icu-67.1 | `-debug -doc -examples -static-libs`
+dev-libs/icu-68.2 | `-debug -doc -examples -static-libs`
 dev-libs/libuv-1.40.0 | `-static-libs`
 net-dns/c-ares-1.17.1 | `-static-libs`
 net-libs/http-parser-2.9.4-r1 | ``
 net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-libs/nodejs-14.15.1 | `icu npm snapshot ssl system-ssl -debug -doc -inspector -pax`
+net-libs/nodejs-14.15.4 | `icu npm snapshot ssl system-ssl -debug -doc -inspector -pax`
 sys-apps/yarn-1.22.4 | ``
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20200601.3.53 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1i | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
-sys-apps/debianutils-4.11.1 | `installkernel -static`
+sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 **FROM kubler/s6** |
 app-admin/entr-4.6 | `-test`
@@ -90,13 +90,13 @@ net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.13 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r3 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
-sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) unicode -ada -debug -doc -gpm -profile -static-libs -test -trace`
-sys-libs/readline-8.0_p4 | `(split-usr) unicode -static-libs -utils`
-sys-libs/timezone-data-2020d | `nls -leaps-timezone -zic-slim`
-sys-libs/zlib-1.2.11-r2 | `(split-usr) -minizip -static-libs`
+sys-libs/glibc-2.32-r5 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/readline-8.0_p4 | `(split-usr) (unicode) -static-libs -utils`
+sys-libs/timezone-data-2020e | `nls -leaps-timezone -zic-slim`
+sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.31.1-r3 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.32.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 sys-apps/sed-4.8 | `static -acl -nls (-selinux)`
 #### Purged
 - [x] Headers
