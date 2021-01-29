@@ -1,4 +1,4 @@
 FROM ${NAMESPACE}/bob-musl
-LABEL maintainer ${MAINTAINER}
+LABEL maintainer="${MAINTAINER}"
 
 CMD ["/bin/bash"]
