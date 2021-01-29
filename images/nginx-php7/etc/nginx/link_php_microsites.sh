@@ -1,9 +1,9 @@
 #!/bin/sh
 
 if [ "$XDEBUG_ENABLED" == 'true' ]; then
-    if [ ! -f /etc/php/fpm-php7.2/ext-active/xdebug.ini ] && [ -f /etc/php/fpm-php7.2/ext/xdebug.ini ]; then
-        ln -s /etc/php/fpm-php7.2/ext/xdebug.ini /etc/php/fpm-php7.2/ext-active
-        ln -s /etc/php/cli-php7.2/ext/xdebug.ini /etc/php/cli-php7.2/ext-active
+    if [ ! -f /etc/php/fpm-php"${PHP_SLOT}"/ext-active/xdebug.ini ] && [ -f /etc/php/fpm-php"${PHP_SLOT}"/ext/xdebug.ini ]; then
+        ln -s /etc/php/fpm-php"${PHP_SLOT}"/ext/xdebug.ini /etc/php/fpm-php"${PHP_SLOT}"/ext-active
+        ln -s /etc/php/cli-php"${PHP_SLOT}"/ext/xdebug.ini /etc/php/cli-php"${PHP_SLOT}"/ext-active
     fi
 fi
 
