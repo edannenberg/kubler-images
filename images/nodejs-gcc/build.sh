@@ -19,7 +19,7 @@ configure_builder()
     update_use '+sqlite'
     emerge dev-lang/python
     # switch to python2_7
-    eselect python set 2
+    eselect python set 1
 }
 
 #
