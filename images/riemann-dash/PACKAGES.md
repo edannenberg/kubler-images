@@ -1,12 +1,12 @@
-### kubler/riemann-dash:20210129
+### kubler/riemann-dash:20210226
 
-Built: Fri Jan 29 04:46:17 PM CET 2021
-Image Size: 387MB
+Built: Fri Feb 26 01:05:36 AM CET 2021
+Image Size: 388MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/libgcrypt-1.9.0 | `asm -doc -o-flag-munging -static-libs`
+dev-libs/libgcrypt-1.8.6 | `-doc -o-flag-munging -static-libs`
 dev-libs/libgpg-error-1.38 | `nls -common-lisp -static-libs`
 dev-libs/libxslt-1.1.34-r1 | `crypt -debug -examples -static-libs`
 sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
@@ -16,9 +16,9 @@ Package | USE Flags
 --------|----------
 **FROM kubler/ruby-gcc** |
 app-eselect/eselect-ruby-20190121 | ``
-dev-lang/ruby-2.5.8-r1 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -libressl -rubytests -socks5 -static-libs -systemtap -tk -xemacs`
+dev-lang/ruby-2.5.8-r1 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc (-libressl) -rubytests -socks5 -static-libs -systemtap -tk -xemacs`
 dev-libs/elfutils-0.182 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -zstd`
-dev-libs/glib-2.64.5 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
+dev-libs/glib-2.66.7 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-libs/libxml2-2.9.10-r4 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
 dev-libs/libyaml-0.2.5 | `-doc -static-libs -test`
@@ -30,7 +30,7 @@ dev-ruby/pkg-config-1.4.1 | `-doc -test`
 dev-ruby/power_assert-1.1.5 | `-doc -test`
 dev-ruby/rake-12.3.3 | `-doc -test`
 dev-ruby/rdoc-6.1.2 | `-doc -test`
-dev-ruby/rubygems-3.0.3 | `-server -test`
+dev-ruby/rubygems-3.0.9 | `-server -test`
 dev-ruby/test-unit-3.3.3 | `-doc -test`
 dev-ruby/xmlrpc-0.3.0 | `-doc -test`
 dev-util/pkgconfig-0.29.2 | `hardened -internal-glib`
@@ -46,22 +46,22 @@ sys-devel/autoconf-2.69-r5 | `-emacs`
 sys-devel/autoconf-wrapper-13-r1 | ``
 sys-devel/automake-1.16.2-r1 | `-test`
 sys-devel/automake-wrapper-11 | ``
-sys-devel/binutils-2.34-r2 | `gold nls plugins -default-gold -doc -multitarget -static-libs -test`
+sys-devel/binutils-2.35.1-r1 | `gold nls plugins (-cet) -default-gold -doc -multitarget -static-libs -test -vanilla`
 sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
 sys-devel/gcc-9.3.0-r2 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) vtv (-ada) (-altivec) -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.3.2-r1 | `(cc-wrappers) (native-symlinks)`
 sys-devel/gnuconfig-20200621 | ``
 sys-devel/m4-1.4.18-r1 | `-examples`
 sys-devel/make-4.3 | `nls -guile -static`
-sys-kernel/linux-headers-5.4-r1 | `-headers-only`
+sys-kernel/linux-headers-5.10 | `-headers-only`
 **FROM kubler/bash** |
-app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5 | `extra-filters nls (split-usr) threads -static-libs`
 app-arch/zstd-1.4.5 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.90 | `nls openmp -libressl -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.90 | `nls openmp (-libressl) -qmanifest -qtegrity -static`
 app-shells/bash-5.0_p18 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-misc/curl-7.74.0-r2 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -libressl -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl) -zstd`
+net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc (-libressl) -static-libs -test -utils -xml`
+net-misc/curl-7.74.0-r2 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap (-libressl) -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl) -zstd`
 sys-apps/acl-2.2.53-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r4 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -71,7 +71,7 @@ sys-libs/libseccomp-2.4.4 | `-static-libs`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20200601.3.53 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1i | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1j | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 **FROM kubler/s6** |
@@ -89,10 +89,10 @@ net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.13 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r5 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.32-r6 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.0_p4 | `(split-usr) (unicode) -static-libs -utils`
-sys-libs/timezone-data-2020e | `nls -leaps-timezone -zic-slim`
+sys-libs/timezone-data-2020f | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.32.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

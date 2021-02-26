@@ -1,13 +1,13 @@
-### kubler/plantuml:20210129
+### kubler/plantuml:20210226
 
-Built: Fri Jan 29 04:42:46 PM CET 2021
-Image Size: 247MB
+Built: Fri Feb 26 01:02:12 AM CET 2021
+Image Size: 248MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 dev-libs/elfutils-0.182 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -zstd`
-dev-libs/glib-2.64.5 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -systemtap -test -utils`
+dev-libs/glib-2.66.7 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libxml2-2.9.10-r4 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
 media-gfx/graphviz-2.44.1-r1 | `nls -`
@@ -26,7 +26,7 @@ acct-user/tomcat-0 | ``
 dev-java/ant-core-1.10.9 | `-doc -source`
 dev-java/ant-eclipse-ecj-4.5.1 | `-doc -source`
 dev-java/eclipse-ecj-4.5.1 | `ant -doc -source`
-dev-java/tomcat-native-1.2.25 | `-static-libs -test`
+dev-java/tomcat-native-1.2.26 | `-static-libs -test`
 dev-java/tomcat-servlet-api-8.5.61 | `-source`
 dev-libs/apr-1.7.0-r1 | `urandom -doc -older-kernels-compatibility (-selinux) -static-libs`
 www-servers/tomcat-8.5.61 | `-doc -extra-webapps -source -test`
@@ -35,11 +35,11 @@ app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.3.1 | `-test`
-dev-java/openjdk-jre-bin-11.0.9_p11 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
+dev-java/openjdk-jre-bin-11.0.10_p9 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
 dev-libs/expat-2.2.10 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
-media-fonts/liberation-fonts-2.1.0 | `-`
+media-fonts/liberation-fonts-2.1.2 | `-`
 media-libs/fontconfig-2.13.1-r2 | `-doc -static-libs`
 media-libs/freetype-2.10.4 | `adobe-cff bindist bzip2 cleartype`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
@@ -47,13 +47,13 @@ net-libs/libnet-1.2 | `-static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
 sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 **FROM kubler/bash** |
-app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5 | `extra-filters nls (split-usr) threads -static-libs`
 app-arch/zstd-1.4.5 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.90 | `nls openmp -libressl -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.90 | `nls openmp (-libressl) -qmanifest -qtegrity -static`
 app-shells/bash-5.0_p18 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc -libressl -static-libs -test -utils -xml`
-net-misc/curl-7.74.0-r2 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -libressl -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl) -zstd`
+net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc (-libressl) -static-libs -test -utils -xml`
+net-misc/curl-7.74.0-r2 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap (-libressl) -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -static-libs -telnet -test (-winssl) -zstd`
 sys-apps/acl-2.2.53-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r4 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -63,7 +63,7 @@ sys-libs/libseccomp-2.4.4 | `-static-libs`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20200601.3.53 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1i | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1j | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 **FROM kubler/s6** |
@@ -81,10 +81,10 @@ net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.13 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r5 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.32-r6 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.0_p4 | `(split-usr) (unicode) -static-libs -utils`
-sys-libs/timezone-data-2020e | `nls -leaps-timezone -zic-slim`
+sys-libs/timezone-data-2020f | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.32.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

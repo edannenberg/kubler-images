@@ -1,6 +1,6 @@
-### kubler/redis:20210129
+### kubler/redis:20210226
 
-Built: Fri Jan 29 04:44:57 PM CET 2021
+Built: Fri Feb 26 01:04:15 AM CET 2021
 Image Size: 46.8MB
 
 #### Installed
@@ -8,7 +8,7 @@ Package | USE Flags
 --------|----------
 acct-group/redis-0-r1 | ``
 acct-user/redis-0-r1 | ``
-app-admin/eselect-1.4.16 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-eselect/eselect-lua-4-r1 | ``
 dev-db/redis-6.0.9-r100 | `jemalloc -tcmalloc -test`
 dev-lang/lua-5.1.5-r106 | `deprecated -readline`
@@ -37,10 +37,10 @@ net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.13 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r5 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.32-r6 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.0_p4 | `(split-usr) (unicode) -static-libs -utils`
-sys-libs/timezone-data-2020e | `nls -leaps-timezone -zic-slim`
+sys-libs/timezone-data-2020f | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.32.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`

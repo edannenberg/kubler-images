@@ -1,6 +1,6 @@
-### kubler/glibc:20210129
+### kubler/glibc:20210226
 
-Built: Fri Jan 29 04:02:47 PM CET 2021
+Built: Fri Feb 26 12:25:52 AM CET 2021
 Image Size: 21.1MB
 
 #### Installed
@@ -15,10 +15,10 @@ net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.13 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r5 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.32-r6 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.0_p4 | `(split-usr) (unicode) -static-libs -utils`
-sys-libs/timezone-data-2020e | `nls -leaps-timezone -zic-slim`
+sys-libs/timezone-data-2020f | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
 #### Inherited
 Package | USE Flags
