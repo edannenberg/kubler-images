@@ -16,8 +16,8 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
-    sed-or-die '^bind 127.0.0.1' '#bind 127.0.0.1' "${_EMERGE_ROOT}"/etc/redis.conf
+    sed-or-die '^bind 127.0.0.1' '#bind 127.0.0.1' "${_EMERGE_ROOT}"/etc/redis/redis.conf
     # disable protected mode
-    sed-or-die '^protected-mode yes' 'protected-mode no' "${_EMERGE_ROOT}"/etc/redis.conf
+    sed-or-die '^protected-mode yes' 'protected-mode no' "${_EMERGE_ROOT}"/etc/redis/redis.conf
     copy_gcc_libs
 }
