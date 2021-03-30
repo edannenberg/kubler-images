@@ -1,23 +1,23 @@
-### kubler/python3:20210226
+### kubler/python3:20210330
 
-Built: Fri Feb 26 01:03:44 AM CET 2021
-Image Size: 184MB
+Built: Tue Mar 30 11:14:56 AM CEST 2021
+Image Size: 185MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-eselect/eselect-python-20200719 | ``
 app-misc/mime-types-9 | ``
-dev-db/sqlite-3.33.0 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-3.8.7-r1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ipv6 (-libressl) -ncurses -test -tk -verify-sig -wininst`
-dev-lang/python-exec-2.4.6-r4 | `native-symlinks`
+dev-db/sqlite-3.34.1 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
+dev-lang/python-3.8.8 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ipv6 (-libressl) -ncurses -test -tk -verify-sig -wininst`
+dev-lang/python-exec-2.4.6-r4 | `(native-symlinks)`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.2.10 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-python/certifi-10001-r1 | `-test`
-dev-python/pip-21.0 | `-test -vanilla`
-dev-python/setuptools-51.3.3 | `-test`
-dev-python/setuptools_scm-4.1.2-r1 | `-test`
+dev-python/pip-21.0.1 | `-test -vanilla`
+dev-python/setuptools-53.0.0 | `-test`
+dev-python/setuptools_scm-5.0.1 | `-test`
 sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 #### Inherited
 Package | USE Flags
@@ -25,7 +25,7 @@ Package | USE Flags
 **FROM kubler/bash** |
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5 | `extra-filters nls (split-usr) threads -static-libs`
-app-arch/zstd-1.4.5 | `threads -lz4 -static-libs`
+app-arch/zstd-1.4.9 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.90 | `nls openmp (-libressl) -qmanifest -qtegrity -static`
 app-shells/bash-5.0_p18 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc (-libressl) -static-libs -test -utils -xml`
@@ -33,13 +33,13 @@ net-misc/curl-7.74.0-r2 | `ftp http2 imap openssl pop3 progress-meter smtp ssl t
 sys-apps/acl-2.2.53-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r4 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.39-r3 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.39-r4 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-libs/libseccomp-2.4.4 | `-static-libs`
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20200601.3.53 | `-cacert`
+app-misc/ca-certificates-20210119.3.62 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1j | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1k | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-2 | ``
 **FROM kubler/s6** |
@@ -48,19 +48,19 @@ dev-lang/execline-2.6.1.1 | `-static -static-libs`
 dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
-app-arch/bzip2-1.0.6-r11 | `(split-usr) -static -static-libs`
+app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
 app-arch/gzip-1.10 | `-pic -static`
 dev-libs/gmp-6.2.1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
-dev-libs/libunistring-0.9.10 | `-doc -static-libs`
+dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.13 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r6 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.32-r7 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.0_p4 | `(split-usr) (unicode) -static-libs -utils`
-sys-libs/timezone-data-2020f | `nls -leaps-timezone -zic-slim`
+sys-libs/timezone-data-2021a | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.32.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
