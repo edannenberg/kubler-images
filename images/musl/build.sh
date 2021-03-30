@@ -6,9 +6,9 @@ _timezone="${BOB_TIMEZONE:-UTC}"
 BOB_SKIP_LIB_CLEANUP=true
 
 configure_bob() {
+    emerge -1 sys-libs/timezone-data
     # set timezone
     echo "${_timezone}" > /etc/timezone
-    emerge -1 sys-libs/timezone-data
 }
 
 #
