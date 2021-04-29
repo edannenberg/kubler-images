@@ -1,7 +1,7 @@
-### kubler/jdk-openjdk:20210330
+### kubler/jdk-openjdk:20210429
 
-Built: Tue Mar 30 10:54:47 AM CEST 2021
-Image Size: 325MB
+Built: Thu Apr 29 12:19:39 PM CEST 2021
+Image Size: 361MB
 
 #### Installed
 Package | USE Flags
@@ -10,16 +10,30 @@ app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.0 | ``
 dev-java/java-config-2.3.1 | `-test`
-dev-java/openjdk-bin-11.0.10_p9 | `gentoo-vm headless-awt -alsa -cups (-selinux) -source`
+dev-java/openjdk-bin-11.0.11_p9-r1 | `gentoo-vm headless-awt -alsa -cups (-selinux) -source`
+dev-libs/elfutils-0.183 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -zstd`
 dev-libs/expat-2.2.10 | `(split-usr) unicode -examples -static-libs`
+dev-libs/glib-2.66.7 | `mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
+dev-libs/gobject-introspection-1.66.1 | `-doctool -gtk-doc -test`
+dev-libs/gobject-introspection-common-1.66.1 | ``
 dev-libs/libffi-3.3-r2 | `-debug -pax`
 dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
+dev-libs/libxml2-2.9.10-r5 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test`
+dev-libs/lzo-2.10 | `(split-usr) -examples -static-libs`
+dev-util/pkgconf-1.6.3 | `pkg-config -test`
 media-fonts/liberation-fonts-2.1.2 | `-`
+media-gfx/graphite2-1.3.14 | `-perl -test`
 media-libs/fontconfig-2.13.1-r2 | `-doc -static-libs`
 media-libs/freetype-2.10.4 | `adobe-cff bindist bzip2 cleartype`
+media-libs/harfbuzz-2.7.4 | `cairo glib graphite introspection truetype -debug -doc -icu -static-libs -test`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
-sys-apps/util-linux-2.35.2 | `cramfs logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -hardlink -kill -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.36.2 | `cramfs logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -hardlink -kill -magic -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
+sys-libs/binutils-libs-2.35.2 | `nls -64-bit-bfd (-cet) -multitarget -static-libs`
+x11-libs/cairo-1.16.0-r4 | `glib svg -`
+x11-libs/pixman-0.40.0 | `(-loongson2f) -static-libs`
+x11-misc/shared-mime-info-2.0-r2 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -34,11 +48,11 @@ net-misc/curl-7.74.0-r2 | `ftp http2 imap openssl pop3 progress-meter smtp ssl t
 sys-apps/acl-2.2.53-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r4 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.39-r4 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.40-r2 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-libs/libseccomp-2.4.4 | `-static-libs`
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20210119.3.62 | `-cacert`
+app-misc/ca-certificates-20210119.3.64 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1k | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
@@ -51,7 +65,7 @@ sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
 app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1 | `asm cxx -doc -pic -static-libs`
+dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

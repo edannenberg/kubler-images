@@ -1,7 +1,7 @@
-### kubler/mysql:20210330
+### kubler/mysql:20210429
 
-Built: Tue Mar 30 11:03:18 AM CEST 2021
-Image Size: 340MB
+Built: Thu Apr 29 12:46:08 PM CEST 2021
+Image Size: 341MB
 
 #### Installed
 Package | USE Flags
@@ -15,7 +15,7 @@ dev-libs/icu-68.2 | `-debug -doc -examples -static-libs`
 dev-libs/libaio-0.3.112 | `(split-usr) -static-libs -test`
 dev-libs/libevent-2.1.11 | `ssl threads -debug (-libressl) -static-libs -test`
 dev-libs/protobuf-3.14.0 | `zlib -emacs -examples -static-libs -test`
-net-libs/libtirpc-1.2.6 | `(split-usr) -ipv6 -kerberos -static-libs`
+net-libs/libtirpc-1.3.1 | `(split-usr) -ipv6 -kerberos -static-libs`
 sys-process/procps-3.3.17 | `kill nls (split-usr) (unicode) -elogind -modern-top -ncurses (-selinux) -static-libs -systemd -test`
 *manual install*: automysqlbackup-3.0_rc6 | https://sourceforge.net/projects/automysqlbackup/
 #### Inherited
@@ -32,11 +32,11 @@ net-misc/curl-7.74.0-r2 | `ftp http2 imap openssl pop3 progress-meter smtp ssl t
 sys-apps/acl-2.2.53-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r4 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.39-r4 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.40-r2 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-libs/libseccomp-2.4.4 | `-static-libs`
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20210119.3.62 | `-cacert`
+app-misc/ca-certificates-20210119.3.64 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1k | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
@@ -49,7 +49,7 @@ sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
 app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1 | `asm cxx -doc -pic -static-libs`
+dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

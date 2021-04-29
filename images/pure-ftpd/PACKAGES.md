@@ -1,6 +1,6 @@
-### kubler/pure-ftpd:20210330
+### kubler/pure-ftpd:20210429
 
-Built: Tue Mar 30 11:14:11 AM CEST 2021
+Built: Thu Apr 29 01:06:57 PM CEST 2021
 Image Size: 30.4MB
 
 #### Installed
@@ -9,14 +9,14 @@ Package | USE Flags
 acct-group/ftp-0-r1 | ``
 acct-user/ftp-0-r1 | ``
 app-emulation/syslog-stdout-1.1.1 | ``
-dev-libs/libsodium-1.0.18 | `asm urandom -minimal -static-libs`
+dev-libs/libsodium-1.0.18 | `asm urandom -minimal -static-libs -verify-sig`
 net-ftp/ftpbase-0.01-r4 | `-pam`
 net-ftp/pure-ftpd-1.0.49-r2 | `ssl vchroot -anondel -anonperm -anonren -anonres -caps -implicittls -ldap (-libressl) -mysql -noiplog -pam -paranoidmsg -postgres -resolveids (-selinux) -sysquota -xinetd`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20210119.3.62 | `-cacert`
+app-misc/ca-certificates-20210119.3.64 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1k | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
@@ -29,7 +29,7 @@ sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
 app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1 | `asm cxx -doc -pic -static-libs`
+dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`

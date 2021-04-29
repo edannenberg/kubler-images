@@ -1,7 +1,7 @@
-### kubler/gulp-sass-gcc:20210330
+### kubler/gulp-sass-gcc:20210429
 
-Built: Tue Mar 30 10:50:05 AM CEST 2021
-Image Size: 548MB
+Built: Thu Apr 29 12:13:25 PM CEST 2021
+Image Size: 549MB
 
 #### Installed
 Package | USE Flags
@@ -26,7 +26,7 @@ app-portage/portage-utils-0.90 | `nls openmp qmanifest qtegrity (-libressl) -sta
 app-shells/bash-5.0_p18 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-db/sqlite-3.34.1 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
 dev-lang/perl-5.30.3 | `-berkdb -debug -doc -gdbm -ithreads`
-dev-lang/python-2.7.18_p7 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -examples -gdbm -ipv6 (-libressl) -ncurses -tk -verify-sig -wininst`
+dev-lang/python-2.7.18_p8 | `hardened readline sqlite ssl (threads) (wide-unicode) xml (-berkdb) -bluetooth -build -examples -gdbm -ipv6 (-libressl) -ncurses -tk -verify-sig -wininst`
 dev-lang/python-exec-2.4.6-r4 | `(native-symlinks)`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.2.10 | `(split-usr) unicode -examples -static-libs`
@@ -46,16 +46,16 @@ perl-core/File-Temp-0.230.900 | ``
 sys-apps/acl-2.2.53-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.4.48-r4 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.39-r4 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.40-r2 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-devel/autoconf-2.69-r5 | `-emacs`
 sys-devel/autoconf-wrapper-13-r1 | ``
 sys-devel/automake-1.16.2-r1 | `-test`
 sys-devel/automake-wrapper-11 | ``
-sys-devel/binutils-2.35.1-r1 | `gold nls plugins (-cet) -default-gold -doc -multitarget -static-libs -test -vanilla`
+sys-devel/binutils-2.35.2 | `gold nls plugins (-cet) -default-gold -doc -multitarget -static-libs -test -vanilla`
 sys-devel/binutils-config-5.3.2 | `(native-symlinks)`
 sys-devel/gcc-10.2.0-r5 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) (-ada) -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
-sys-devel/gcc-config-2.3.3 | `(cc-wrappers) (native-symlinks)`
+sys-devel/gcc-config-2.4 | `(cc-wrappers) (native-symlinks)`
 sys-devel/gnuconfig-20200621 | ``
 sys-devel/m4-1.4.18-r2 | `-examples`
 sys-devel/make-4.3 | `nls -guile -static`
@@ -68,10 +68,10 @@ dev-libs/libuv-1.40.0 | `-static-libs`
 net-dns/c-ares-1.17.1 | `-static-libs`
 net-libs/http-parser-2.9.4-r1 | ``
 net-libs/nghttp2-1.41.0 | `threads -cxx -debug -hpack-tools -jemalloc (-libressl) -static-libs -test -utils -xml`
-net-libs/nodejs-14.16.0 | `icu npm snapshot ssl system-ssl -debug -doc -inspector -pax`
+net-libs/nodejs-14.16.1 | `icu npm snapshot ssl system-ssl -debug -doc -inspector -pax`
 sys-apps/yarn-1.22.4 | ``
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20210119.3.62 | `-cacert`
+app-misc/ca-certificates-20210119.3.64 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1k | `asm zlib -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
@@ -84,7 +84,7 @@ sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
 app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1 | `asm cxx -doc -pic -static-libs`
+dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
