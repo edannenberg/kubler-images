@@ -8,7 +8,6 @@ configure_builder()
     update_use -postscript
     update_use 'dev-java/openjdk-bin' +headless-awt
     echo 'dev-java/openjdk-bin -gentoo-vm' >> /etc/portage/profile/package.use.mask
-    update_keywords 'dev-java/openjdk-bin' '+~amd64'
     # skip python
     provide_package dev-lang/python dev-lang/python-exec
     # install java in build container so depending builds have it available
