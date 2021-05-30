@@ -1,12 +1,12 @@
-### kubler/influxdb:20210429
+### kubler/influxdb:20210530
 
-Built: Thu Apr 29 12:13:43 PM CEST 2021
-Image Size: 188MB
+Built: Sun May 30 05:11:49 PM CEST 2021
+Image Size: 305MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-db/influxdb-1.8.0 | `minimal`
+dev-db/influxdb-2.0.6 | `minimal`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -18,15 +18,15 @@ dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.0 | `-static-libs`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
-sys-apps/gentoo-functions-0.13 | ``
+sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
 sys-libs/glibc-2.32-r7 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
-sys-libs/readline-8.0_p4 | `(split-usr) (unicode) -static-libs -utils`
+sys-libs/readline-8.1_p1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a | `nls -leaps-timezone -zic-slim`
-sys-libs/zlib-1.2.11-r3 | `(split-usr) -minizip -static-libs`
+sys-libs/zlib-1.2.11-r4 | `(split-usr) -minizip -static-libs`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.32.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
+sys-apps/busybox-1.32.1-r1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog -systemd`
 sys-apps/sed-4.8 | `static -acl -nls (-selinux)`
 #### Purged
 - [x] Headers
