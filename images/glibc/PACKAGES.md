@@ -1,6 +1,6 @@
-### kubler/glibc:20210530
+### kubler/glibc:20210630
 
-Built: Sun May 30 04:57:40 PM CEST 2021
+Built: Wed Jun 30 08:18:19 AM CEST 2021
 Image Size: 21.2MB
 
 #### Installed
@@ -11,11 +11,11 @@ app-arch/gzip-1.10 | `-pic -static`
 dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.44 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
-net-dns/libidn2-2.3.0 | `-static-libs`
+net-dns/libidn2-2.3.1 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.5 | `nls pcre -static`
-sys-libs/glibc-2.32-r7 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
+sys-libs/glibc-2.33 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
 sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a | `nls -leaps-timezone -zic-slim`
