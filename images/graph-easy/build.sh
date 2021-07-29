@@ -18,6 +18,8 @@ configure_rootfs_build()
     update_use 'media-gfx/graphviz' -nls
     update_use 'media-libs/harfbuzz' -graphite
     update_use 'media-libs/gd' +fontconfig +jpeg +truetype +png
+    # pango-1.48.7 introduces a circular dependency for harfbuzz/freetype, mask for now
+    mask_package '>=x11-libs/pango-1.48.7'
     # graphviz ebuild calls 'dot -c || die' as part of postinstall. Fake dot and run the setup via Dockerfile instead.
     ln -s /bin/true /usr/bin/dot
     # no python please.
