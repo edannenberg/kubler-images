@@ -3,4 +3,4 @@ LABEL maintainer="${MAINTAINER}"
 
 ADD rootfs.tar /
 
-RUN eselect ruby set ruby25 &> /dev/null
+RUN eselect ruby set ruby26 &> /dev/null
