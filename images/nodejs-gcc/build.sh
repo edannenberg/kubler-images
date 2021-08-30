@@ -27,6 +27,7 @@ configure_builder()
 #
 configure_rootfs_build()
 {
+    update_use dev-libs/libxml2 -python
     unprovide_package sys-kernel/linux-headers
 }
 
