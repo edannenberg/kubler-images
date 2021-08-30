@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="app-eselect/eselect-ruby dev-lang/ruby:2.6 dev-util/pkgconfig sys-apps/coreutils dev-ruby/pkg-config"
+_packages="app-eselect/eselect-ruby dev-lang/ruby:2.6 dev-util/pkgconf sys-apps/coreutils dev-ruby/pkg-config"
 _keep_headers='true'
 
 configure_builder()
