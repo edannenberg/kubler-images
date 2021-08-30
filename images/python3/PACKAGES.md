@@ -1,6 +1,6 @@
-### kubler/python3:20210729
+### kubler/python3:20210830
 
-Built: Thu Jul 29 03:12:39 PM CEST 2021
+Built: Mon Aug 30 05:31:04 PM CEST 2021
 Image Size: 190MB
 
 #### Installed
@@ -8,14 +8,14 @@ Package | USE Flags
 --------|----------
 app-misc/mime-types-9 | ``
 dev-db/sqlite-3.35.5 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-3.9.6 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ipv6 -ncurses -test -tk -verify-sig -wininst`
-dev-lang/python-exec-2.4.6-r4 | `(native-symlinks)`
+dev-lang/python-3.9.6_p1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ipv6 -ncurses -test -tk -verify-sig -wininst`
+dev-lang/python-exec-2.4.8 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
-dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -pax`
+dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
 dev-python/certifi-10001-r1 | `-test`
-dev-python/pip-21.1.2-r1 | `-test -vanilla`
-dev-python/setuptools-57.0.0 | `-test`
+dev-python/pip-21.2.4 | `-test -vanilla`
+dev-python/setuptools-57.4.0-r2 | `-test`
 dev-python/setuptools_scm-6.0.1-r1 | `-test`
 dev-python/toml-0.10.2 | `-test`
 sys-apps/util-linux-2.36.2-r1 | `cramfs logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -hardlink -kill -magic -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
@@ -26,10 +26,10 @@ Package | USE Flags
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.90 | `nls openmp -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.43.0-r2 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.77.0-r1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
+net-misc/curl-7.78.0-r1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -39,11 +39,11 @@ sys-libs/libseccomp-2.5.1 | `-python -static-libs`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1k-r1 | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 **FROM kubler/s6** |
-app-admin/entr-4.9 | `-test`
+app-admin/entr-4.9 | ``
 dev-lang/execline-2.6.1.1 | `-static -static-libs`
 dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`

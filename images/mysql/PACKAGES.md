@@ -1,6 +1,6 @@
-### kubler/mysql:20210729
+### kubler/mysql:20210830
 
-Built: Thu Jul 29 03:00:17 PM CEST 2021
+Built: Mon Aug 30 05:18:29 PM CEST 2021
 Image Size: 357MB
 
 #### Installed
@@ -9,7 +9,7 @@ Package | USE Flags
 acct-group/mysql-0-r1 | ``
 acct-user/mysql-0-r1 | ``
 app-arch/lz4-1.9.3-r1 | `-static-libs`
-app-arch/pbzip2-1.1.12 | `-static -symlink`
+app-arch/pbzip2-1.1.13 | `-static -symlink`
 dev-db/mysql-8.0.25 | `server -cjk -cracklib -debug -jemalloc -latin1 -numa -perl -profiling -router (-selinux) -tcmalloc -test`
 dev-libs/icu-69.1 | `-debug -doc -examples -static-libs`
 dev-libs/libaio-0.3.112 | `(split-usr) -static-libs -test`
@@ -25,10 +25,10 @@ Package | USE Flags
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.90 | `nls openmp -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.43.0-r2 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.77.0-r1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
+net-misc/curl-7.78.0-r1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -38,11 +38,11 @@ sys-libs/libseccomp-2.5.1 | `-python -static-libs`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1k-r1 | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 **FROM kubler/s6** |
-app-admin/entr-4.9 | `-test`
+app-admin/entr-4.9 | ``
 dev-lang/execline-2.6.1.1 | `-static -static-libs`
 dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`

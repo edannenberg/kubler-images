@@ -1,6 +1,6 @@
-### kubler/tomcat:20210729
+### kubler/tomcat:20210830
 
-Built: Thu Jul 29 03:09:38 PM CEST 2021
+Built: Mon Aug 30 05:28:04 PM CEST 2021
 Image Size: 202MB
 
 #### Installed
@@ -12,9 +12,9 @@ dev-java/ant-core-1.10.9 | `-doc -source`
 dev-java/ant-eclipse-ecj-4.5.1 | `-doc -source`
 dev-java/eclipse-ecj-4.5.1 | `ant -doc -source`
 dev-java/tomcat-native-1.2.30 | `-static-libs -test`
-dev-java/tomcat-servlet-api-8.5.68 | `-source`
+dev-java/tomcat-servlet-api-8.5.69 | `-source`
 dev-libs/apr-1.7.0-r2 | `urandom -doc -older-kernels-compatibility (-selinux) -static-libs`
-www-servers/tomcat-8.5.68 | `-doc -extra-webapps -source -test`
+www-servers/tomcat-8.5.69 | `-doc -extra-webapps -source -test`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -25,8 +25,8 @@ app-eselect/eselect-java-0.4.2 | ``
 dev-java/java-config-2.3.1 | `-test`
 dev-java/openjdk-jre-bin-11.0.11_p9 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
 dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
-dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -pax`
-dev-libs/libtasn1-4.16.0 | `-doc -static-libs -test -valgrind`
+dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
+dev-libs/libtasn1-4.17.0 | `-doc -static-libs -test -valgrind`
 media-fonts/liberation-fonts-2.1.3 | `-`
 media-libs/fontconfig-2.13.1-r2 | `-doc -static-libs`
 media-libs/freetype-2.10.4 | `adobe-cff bindist bzip2 cleartype`
@@ -38,10 +38,10 @@ sys-apps/util-linux-2.36.2-r1 | `cramfs logger nls readline (split-usr) suid (un
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.90 | `nls openmp -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.43.0-r2 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.77.0-r1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls -metalink (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
+net-misc/curl-7.78.0-r1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -51,11 +51,11 @@ sys-libs/libseccomp-2.5.1 | `-python -static-libs`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1k-r1 | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 **FROM kubler/s6** |
-app-admin/entr-4.9 | `-test`
+app-admin/entr-4.9 | ``
 dev-lang/execline-2.6.1.1 | `-static -static-libs`
 dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`

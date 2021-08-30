@@ -1,6 +1,6 @@
-### kubler/pure-ftpd:20210729
+### kubler/pure-ftpd:20210830
 
-Built: Thu Jul 29 03:11:52 PM CEST 2021
+Built: Mon Aug 30 05:30:17 PM CEST 2021
 Image Size: 30.6MB
 
 #### Installed
@@ -9,8 +9,8 @@ Package | USE Flags
 acct-group/ftp-0-r1 | ``
 acct-user/ftp-0-r3 | ``
 app-emulation/syslog-stdout-1.1.1 | ``
-dev-libs/libsodium-1.0.18 | `asm urandom -minimal -static-libs -verify-sig`
-net-ftp/ftpbase-0.01-r4 | `-pam`
+dev-libs/libsodium-1.0.18_p20210617 | `asm urandom -minimal -static-libs -verify-sig`
+net-ftp/ftpbase-0.01-r5 | `-pam -zeroconf`
 net-ftp/pure-ftpd-1.0.49-r4 | `ssl vchroot -anondel -anonperm -anonren -anonres -caps -implicittls -ldap -mysql -noiplog -pam -paranoidmsg -postgres -resolveids (-selinux) -sysquota -xinetd`
 #### Inherited
 Package | USE Flags
@@ -18,11 +18,11 @@ Package | USE Flags
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1k-r1 | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 **FROM kubler/s6** |
-app-admin/entr-4.9 | `-test`
+app-admin/entr-4.9 | ``
 dev-lang/execline-2.6.1.1 | `-static -static-libs`
 dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`

@@ -1,23 +1,23 @@
-### kubler/grafana:20210729
+### kubler/grafana:20210830
 
-Built: Thu Jul 29 02:34:20 PM CEST 2021
-Image Size: 213MB
+Built: Mon Aug 30 04:53:26 PM CEST 2021
+Image Size: 215MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-www-apps/grafana-8.0.6 | `minimal`
+www-apps/grafana-8.1.2 | `minimal`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1k-r1 | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 **FROM kubler/s6** |
-app-admin/entr-4.9 | `-test`
+app-admin/entr-4.9 | ``
 dev-lang/execline-2.6.1.1 | `-static -static-libs`
 dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`

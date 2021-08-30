@@ -1,7 +1,7 @@
-### kubler/nodejs:20210729
+### kubler/nodejs:20210830
 
-Built: Thu Jul 29 02:38:06 PM CEST 2021
-Image Size: 150MB
+Built: Mon Aug 30 04:56:58 PM CEST 2021
+Image Size: 118MB
 
 #### Installed
 Package | USE Flags
@@ -9,22 +9,22 @@ Package | USE Flags
 app-arch/brotli-1.0.9-r1 | `-python -test`
 dev-libs/icu-69.1 | `-debug -doc -examples -static-libs`
 dev-libs/libuv-1.41.1 | ``
-net-dns/c-ares-1.17.1 | `-static-libs`
+net-dns/c-ares-1.17.2 | `-static-libs -test`
 net-libs/http-parser-2.9.4-r1 | ``
 net-libs/nghttp2-1.43.0-r2 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-libs/nodejs-14.17.3 | `icu npm snapshot ssl system-ssl -debug -doc -inspector -lto -pax-kernel -system-icu -systemtap -test`
-sys-apps/yarn-1.22.4 | ``
+net-libs/nodejs-14.17.5-r1 | `icu npm snapshot ssl system-icu system-ssl -debug -doc -inspector -lto -pax-kernel -systemtap -test`
+sys-apps/yarn-1.22.10 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1k-r1 | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
 sys-apps/debianutils-4.11.2 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 **FROM kubler/s6** |
-app-admin/entr-4.9 | `-test`
+app-admin/entr-4.9 | ``
 dev-lang/execline-2.6.1.1 | `-static -static-libs`
 dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
