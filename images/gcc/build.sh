@@ -13,6 +13,7 @@ _static_libs_from=kubler/glibc
 #
 configure_rootfs_build()
 {
+    update_use -python
     unprovide_package sys-kernel/linux-headers
 }
 
