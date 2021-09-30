@@ -11,15 +11,7 @@ _static_libs_from=kubler/glibc
 configure_builder()
 {
     emerge dev-python/pip
-    # node-gyp requires python 2.x :/
-    echo 'PYTHON_TARGETS="python2_7"' >> /etc/portage/make.conf
-    echo 'PYTHON_SINGLE_TARGET="python2_7"' >> /etc/portage/make.conf
-    echo 'USE_PYTHON="2.7"' >> /etc/portage/make.conf
-    mask_package '>=dev-lang/python-3.2.5-r6'
     update_use '+sqlite'
-    emerge dev-lang/python
-    # switch to python2_7
-    eselect python set 1
 }
 
 #
