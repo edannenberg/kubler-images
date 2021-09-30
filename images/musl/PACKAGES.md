@@ -1,6 +1,6 @@
-### kubler/musl:20210830
+### kubler/musl:20210930
 
-Built: Mon Aug 30 05:17:25 PM CEST 2021
+Built: Thu Sep 30 05:03:59 PM CEST 2021
 Image Size: 2.22MB
 
 #### Installed
@@ -11,7 +11,6 @@ sys-libs/musl-1.2.2-r3 | `-headers-only`
 Package | USE Flags
 --------|----------
 **FROM kubler/busybox** |
-sys-apps/busybox-1.32.1-r1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
 
 #### Purged
 - [x] Headers
