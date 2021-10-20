@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="sys-apps/busybox::kubler"
+_packages="sys-apps/busybox"
 
 #
 # This hook is called just before starting the build of the root fs
@@ -9,6 +9,7 @@ _packages="sys-apps/busybox::kubler"
 configure_rootfs_build()
 {
     update_use 'sys-apps/busybox' +make-symlinks +static
+    update_use 'virtual/libcrypt' +static-libs
     update_use 'sys-apps/sed' +static -acl -nls
     # bug in busybox-1.31.1-r2 ebuild, musl is pulled in as rdep but we build static version
     provide_package sys-libs/musl
