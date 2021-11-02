@@ -1,7 +1,7 @@
-### kubler/elasticsearch:20210930
+### kubler/elasticsearch:20211031
 
-Built: Thu Sep 30 03:45:43 PM CEST 2021
-Image Size: 439MB
+Built: Tue Nov  2 12:58:09 AM CET 2021
+Image Size: 464MB
 
 #### Installed
 Package | USE Flags
@@ -9,7 +9,7 @@ Package | USE Flags
 acct-group/elasticsearch-0-r1 | ``
 acct-user/elasticsearch-0-r1 | ``
 app-admin/su-exec-0.2 | `-static`
-app-misc/elasticsearch-7.13.4 | ``
+app-misc/elasticsearch-7.15.0 | ``
 sys-apps/systemd-tmpfiles-249.2 | `(-selinux) -test`
 sys-libs/libcap-2.49-r1 | `(split-usr) -pam -static-libs`
 #### Inherited
@@ -38,7 +38,7 @@ app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-net-libs/nghttp2-1.44.0-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
+net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
@@ -67,8 +67,9 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r1 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
-sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r4 | `(split-usr) -minizip -static-libs`

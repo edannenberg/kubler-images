@@ -1,16 +1,16 @@
-### kubler/plantuml:20210930
+### kubler/plantuml:20211031
 
-Built: Thu Sep 30 05:19:11 PM CEST 2021
+Built: Tue Nov  2 01:37:01 AM CET 2021
 Image Size: 248MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 dev-libs/elfutils-0.185 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -zstd`
-dev-libs/glib-2.68.3-r1 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
+dev-libs/glib-2.68.4 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libxml2-2.9.12-r5 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test -verify-sig`
-media-gfx/graphviz-2.47.1-r1 | `nls -`
+media-gfx/graphviz-2.49.0 | `nls -`
 media-libs/fontconfig-2.13.1-r2 | `-doc -static-libs`
 media-libs/freetype-2.11.0-r1 | `adobe-cff bzip2 cleartype-hinting png -`
 media-libs/gd-2.3.2 | `fontconfig jpeg png truetype zlib -avif -heif -static-libs -test -tiff -webp -xpm`
@@ -26,10 +26,10 @@ acct-user/tomcat-0 | ``
 dev-java/ant-core-1.10.9 | `-doc -source`
 dev-java/ant-eclipse-ecj-4.5.1 | `-doc -source`
 dev-java/eclipse-ecj-4.5.1 | `ant -doc -source`
-dev-java/tomcat-native-1.2.30 | `-static-libs -test`
-dev-java/tomcat-servlet-api-8.5.70 | `-source`
+dev-java/tomcat-native-1.2.31 | `-static-libs -test`
+dev-java/tomcat-servlet-api-8.5.72 | `-source`
 dev-libs/apr-1.7.0-r3 | `urandom -doc -older-kernels-compatibility (-selinux) -static-libs`
-www-servers/tomcat-8.5.70 | `-doc -extra-webapps -source -test`
+www-servers/tomcat-8.5.72 | `-doc -extra-webapps -source -test`
 **FROM kubler/jre-openjdk** |
 app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
@@ -53,7 +53,7 @@ app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-net-libs/nghttp2-1.44.0-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
+net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
@@ -82,8 +82,9 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r1 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
-sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r4 | `(split-usr) -minizip -static-libs`

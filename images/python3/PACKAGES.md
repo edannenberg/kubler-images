@@ -1,24 +1,26 @@
-### kubler/python3:20210930
+### kubler/python3:20211031
 
-Built: Thu Sep 30 05:21:03 PM CEST 2021
-Image Size: 192MB
+Built: Tue Nov  2 01:38:51 AM CET 2021
+Image Size: 194MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-misc/mime-types-9 | ``
 dev-db/sqlite-3.35.5 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-3.9.6_p2 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ncurses -test -tk -verify-sig -wininst`
+dev-lang/python-3.9.7_p1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ncurses -test -tk -verify-sig -wininst`
 dev-lang/python-exec-2.4.8 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.37-r2 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
 dev-python/certifi-10001-r1 | `-test`
+dev-python/packaging-21.0 | `-test`
 dev-python/pip-21.2.4 | `-test -vanilla`
-dev-python/setuptools-57.4.0-r2 | `-test`
-dev-python/setuptools_scm-6.0.1-r1 | `-test`
-dev-python/toml-0.10.2 | `-test`
+dev-python/pyparsing-2.4.7-r1 | `-examples`
+dev-python/setuptools-57.5.0 | `-test`
+dev-python/setuptools_scm-6.3.2 | `-test`
+dev-python/tomli-1.2.1 | `-test`
 sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 #### Inherited
 Package | USE Flags
@@ -29,7 +31,7 @@ app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
-net-libs/nghttp2-1.44.0-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
+net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
@@ -58,8 +60,9 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r1 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
-sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r4 | `(split-usr) -minizip -static-libs`

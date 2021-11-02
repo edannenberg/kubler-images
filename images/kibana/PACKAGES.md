@@ -1,23 +1,23 @@
-### kubler/kibana:20210930
+### kubler/kibana:20211031
 
-Built: Thu Sep 30 04:57:44 PM CEST 2021
-Image Size: 875MB
+Built: Tue Nov  2 01:19:09 AM CET 2021
+Image Size: 817MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-admin/su-exec-0.2 | `-static`
-www-apps/kibana-bin-7.13.4 | ``
+www-apps/kibana-bin-7.15.0 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/nodejs** |
-app-arch/brotli-1.0.9-r1 | `-python -test`
+app-arch/brotli-1.0.9-r3 | `-python -static-libs -test`
 dev-libs/icu-69.1-r1 | `-debug -doc -examples -static-libs`
 dev-libs/libuv-1.42.0 | ``
 net-dns/c-ares-1.17.2 | `-static-libs -test`
 net-libs/http-parser-2.9.4-r1 | ``
-net-libs/nghttp2-1.44.0-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
+net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-libs/nodejs-14.17.6 | `icu npm snapshot ssl system-icu system-ssl -debug -doc -inspector -lto -pax-kernel -systemtap -test`
 sys-apps/yarn-1.22.10 | ``
 **FROM kubler/openssl** |
@@ -41,8 +41,9 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r1 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
-sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r4 | `(split-usr) -minizip -static-libs`

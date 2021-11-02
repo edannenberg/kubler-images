@@ -1,7 +1,7 @@
-### kubler/redis:20210930
+### kubler/redis:20211031
 
-Built: Thu Sep 30 05:21:55 PM CEST 2021
-Image Size: 60.3MB
+Built: Tue Nov  2 01:39:44 AM CET 2021
+Image Size: 60.9MB
 
 #### Installed
 Package | USE Flags
@@ -12,7 +12,7 @@ app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-eselect/eselect-lua-4-r1 | ``
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-db/redis-6.2.5 | `jemalloc ssl -systemd -tcmalloc -test`
+dev-db/redis-6.2.6 | `jemalloc ssl -systemd -tcmalloc -test`
 dev-lang/lua-5.1.5-r106 | `deprecated -readline`
 dev-libs/jemalloc-5.2.1 | `hardened -debug -lazy-lock -prof -static-libs -stats -xmalloc`
 dev-libs/libpcre2-10.37-r2 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
@@ -46,8 +46,9 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r1 | `(crypt) multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemtap -test (-vanilla)`
-sys-libs/ncurses-6.2-r1 | `cxx minimal (split-usr) threads (tinfo) (unicode) -ada -debug -doc -gpm -profile -static-libs -test -trace`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`
 sys-libs/zlib-1.2.11-r4 | `(split-usr) -minizip -static-libs`
