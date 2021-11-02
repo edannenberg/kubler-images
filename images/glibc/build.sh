@@ -2,7 +2,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="sys-libs/glibc"
+_packages="sys-libs/glibc sys-libs/libxcrypt"
 _timezone="${BOB_TIMEZONE:-UTC}"
 _glibc_locales=("C.UTF8 UTF-8" "en_US.UTF-8 UTF-8")
 BOB_SKIP_LIB_CLEANUP=true
