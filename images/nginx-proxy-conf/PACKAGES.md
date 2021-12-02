@@ -1,7 +1,7 @@
-### kubler/nginx-proxy-conf:20211031
+### kubler/nginx-proxy-conf:20211130
 
-Built: Tue Nov  2 01:32:28 AM CET 2021
-Image Size: 14MB
+Built: Thu Dec  2 03:42:27 PM CET 2021
+Image Size: 14.1MB
 
 #### Installed
 Package | USE Flags
@@ -11,9 +11,9 @@ app-emulation/docker-gen-0.7.4 | ``
 Package | USE Flags
 --------|----------
 **FROM kubler/musl** |
-sys-libs/musl-1.2.2-r3 | `-headers-only`
+sys-libs/musl-1.2.2-r6 | `-headers-only`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.33.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
+sys-apps/busybox-1.34.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
 #### Purged
 - [x] Headers
 - [x] Static Libs

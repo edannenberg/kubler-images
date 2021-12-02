@@ -1,6 +1,6 @@
-### kubler/gcc:20211031
+### kubler/gcc:20211130
 
-Built: Tue Nov  2 01:00:23 AM CET 2021
+Built: Thu Dec  2 01:17:26 PM CET 2021
 Image Size: 359MB
 
 #### Installed
@@ -18,15 +18,15 @@ sys-devel/autoconf-2.71-r1 | `-emacs`
 sys-devel/autoconf-wrapper-15 | ``
 sys-devel/automake-1.16.4 | `-test`
 sys-devel/automake-wrapper-11 | ``
-sys-devel/binutils-2.37_p1 | `gold nls plugins (-cet) -default-gold -doc -multitarget -static-libs -test -vanilla`
+sys-devel/binutils-2.37_p1 | `gold nls plugins -cet -default-gold -doc -multitarget -static-libs -test -vanilla`
 sys-devel/binutils-config-5.4 | `(native-symlinks)`
-sys-devel/gcc-11.2.0 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) (-ada) -custom-cflags -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
+sys-devel/gcc-11.2.0 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) (-ada) -cet -custom-cflags -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.4 | `(cc-wrappers) (native-symlinks)`
 sys-devel/gettext-0.21-r1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
 sys-devel/gnuconfig-20210107 | ``
 sys-devel/m4-1.4.19 | `nls -examples`
 sys-devel/make-4.3 | `nls -guile -static`
-sys-kernel/linux-headers-5.10 | `-headers-only`
+sys-kernel/linux-headers-5.10-r1 | `-headers-only`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -65,8 +65,8 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`

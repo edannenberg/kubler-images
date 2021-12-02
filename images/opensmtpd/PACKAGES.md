@@ -1,6 +1,6 @@
-### kubler/opensmtpd:20211031
+### kubler/opensmtpd:20211130
 
-Built: Tue Nov  2 01:32:54 AM CET 2021
+Built: Thu Dec  2 03:42:54 PM CET 2021
 Image Size: 30.1MB
 
 #### Installed
@@ -13,7 +13,7 @@ acct-user/mail-0-r1 | ``
 acct-user/postmaster-0-r1 | ``
 acct-user/smtpd-0-r1 | ``
 acct-user/smtpq-0-r1 | ``
-dev-libs/libevent-2.1.11 | `ssl threads -debug -static-libs -test`
+dev-libs/libevent-2.1.12 | `clock-gettime ssl threads -debug -malloc-replacement -static-libs -test -verbose-debug`
 mail-mta/opensmtpd-6.8.0_p2-r1 | `mta (split-usr) -berkdb -pam`
 net-libs/libasr-1.0.4 | ``
 net-mail/mailbase-1.6-r1 | `-pam`
@@ -41,8 +41,8 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`

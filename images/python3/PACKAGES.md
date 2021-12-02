@@ -1,27 +1,28 @@
-### kubler/python3:20211031
+### kubler/python3:20211130
 
-Built: Tue Nov  2 01:38:51 AM CET 2021
-Image Size: 194MB
+Built: Thu Dec  2 03:49:15 PM CET 2021
+Image Size: 306MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-misc/mime-types-9 | ``
 dev-db/sqlite-3.35.5 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-3.9.7_p1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ncurses -test -tk -verify-sig -wininst`
+dev-lang/python-3.10.0_p1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
+dev-lang/python-3.9.9 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
 dev-lang/python-exec-2.4.8 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.37-r2 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
-dev-python/certifi-10001-r1 | `-test`
+dev-python/certifi-2999 | `-test`
 dev-python/packaging-21.0 | `-test`
-dev-python/pip-21.2.4 | `-test -vanilla`
+dev-python/pip-21.3.1 | `-test -vanilla`
 dev-python/pyparsing-2.4.7-r1 | `-examples`
 dev-python/setuptools-57.5.0 | `-test`
 dev-python/setuptools_scm-6.3.2 | `-test`
-dev-python/tomli-1.2.1 | `-test`
-sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+dev-python/tomli-1.2.2-r1 | `-test`
+sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -60,8 +61,8 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`

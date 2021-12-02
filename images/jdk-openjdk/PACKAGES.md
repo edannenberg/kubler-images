@@ -1,16 +1,16 @@
-### kubler/jdk-openjdk:20211031
+### kubler/jdk-openjdk:20211130
 
-Built: Tue Nov  2 01:15:02 AM CET 2021
-Image Size: 364MB
+Built: Thu Dec  2 03:23:01 PM CET 2021
+Image Size: 365MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
-app-eselect/eselect-java-0.4.2 | ``
+app-eselect/eselect-java-0.4.3 | ``
 dev-java/java-config-2.3.1 | `-test`
-dev-java/openjdk-bin-11.0.12_p7 | `gentoo-vm headless-awt -alsa -cups (-selinux) -source`
+dev-java/openjdk-bin-11.0.13_p8 | `gentoo-vm headless-awt -alsa -cups (-selinux) -source`
 dev-libs/elfutils-0.185 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -zstd`
 dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
 dev-libs/glib-2.68.4 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
@@ -26,12 +26,12 @@ media-fonts/liberation-fonts-2.1.3 | `-`
 media-gfx/graphite2-1.3.14 | `-perl -test`
 media-libs/fontconfig-2.13.1-r2 | `-doc -static-libs`
 media-libs/freetype-2.11.0-r1 | `adobe-cff bzip2 cleartype-hinting png -`
-media-libs/harfbuzz-2.9.1 | `cairo glib graphite introspection truetype -debug -doc -experimental -icu -test`
+media-libs/harfbuzz-3.1.1 | `cairo glib graphite introspection truetype -debug -doc -experimental -icu -test`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
-sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-devel/binutils-config-5.4 | `(native-symlinks)`
-sys-libs/binutils-libs-2.37_p1 | `nls -64-bit-bfd (-cet) -multitarget -static-libs`
+sys-libs/binutils-libs-2.37_p1 | `nls -64-bit-bfd -cet -multitarget -static-libs`
 x11-libs/cairo-1.16.0-r5 | `glib svg -`
 x11-libs/pixman-0.40.0 | `(-loongson2f) -static-libs`
 x11-misc/shared-mime-info-2.1 | ``
@@ -73,8 +73,8 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`

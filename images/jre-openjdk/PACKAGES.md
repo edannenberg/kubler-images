@@ -1,6 +1,6 @@
-### kubler/jre-openjdk:20211031
+### kubler/jre-openjdk:20211130
 
-Built: Tue Nov  2 12:56:25 AM CET 2021
+Built: Thu Dec  2 01:13:38 PM CET 2021
 Image Size: 193MB
 
 #### Installed
@@ -8,9 +8,9 @@ Package | USE Flags
 --------|----------
 app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
-app-eselect/eselect-java-0.4.2 | ``
+app-eselect/eselect-java-0.4.3 | ``
 dev-java/java-config-2.3.1 | `-test`
-dev-java/openjdk-jre-bin-11.0.12_p7 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
+dev-java/openjdk-jre-bin-11.0.13_p8-r1 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
 dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.37-r2 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
@@ -21,7 +21,7 @@ media-libs/freetype-2.11.0-r1 | `adobe-cff bzip2 cleartype-hinting png -`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
 net-libs/libnet-1.2 | `-static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
-sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -60,8 +60,8 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`

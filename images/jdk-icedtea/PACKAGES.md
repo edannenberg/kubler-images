@@ -1,6 +1,6 @@
-### kubler/jdk-icedtea:20211031
+### kubler/jdk-icedtea:20211130
 
-Built: Tue Nov  2 01:11:40 AM CET 2021
+Built: Thu Dec  2 03:19:43 PM CET 2021
 Image Size: 505MB
 
 #### Installed
@@ -8,7 +8,7 @@ Package | USE Flags
 --------|----------
 app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
-app-eselect/eselect-java-0.4.2 | ``
+app-eselect/eselect-java-0.4.3 | ``
 dev-java/icedtea-bin-3.16.0 | `headless-awt -alsa (-big-endian) -cups -doc -examples -gtk -pulseaudio (-selinux) -source`
 dev-java/java-config-2.3.1 | `-test`
 dev-lang/python-exec-2.4.8 | `(native-symlinks) -test`
@@ -25,7 +25,7 @@ media-libs/lcms-2.12 | `threads zlib -doc -jpeg -static-libs -test -tiff`
 media-libs/libjpeg-turbo-2.1.1-r2 | `-java -static-libs`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
-sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 x11-misc/shared-mime-info-2.1 | ``
 #### Inherited
 Package | USE Flags
@@ -43,15 +43,15 @@ sys-devel/autoconf-2.71-r1 | `-emacs`
 sys-devel/autoconf-wrapper-15 | ``
 sys-devel/automake-1.16.4 | `-test`
 sys-devel/automake-wrapper-11 | ``
-sys-devel/binutils-2.37_p1 | `gold nls plugins (-cet) -default-gold -doc -multitarget -static-libs -test -vanilla`
+sys-devel/binutils-2.37_p1 | `gold nls plugins -cet -default-gold -doc -multitarget -static-libs -test -vanilla`
 sys-devel/binutils-config-5.4 | `(native-symlinks)`
-sys-devel/gcc-11.2.0 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) (-ada) -custom-cflags -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
+sys-devel/gcc-11.2.0 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) (-ada) -cet -custom-cflags -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.4 | `(cc-wrappers) (native-symlinks)`
 sys-devel/gettext-0.21-r1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
 sys-devel/gnuconfig-20210107 | ``
 sys-devel/m4-1.4.19 | `nls -examples`
 sys-devel/make-4.3 | `nls -guile -static`
-sys-kernel/linux-headers-5.10 | `-headers-only`
+sys-kernel/linux-headers-5.10-r1 | `-headers-only`
 **FROM kubler/bash** |
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
@@ -87,8 +87,8 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`

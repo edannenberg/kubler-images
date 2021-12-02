@@ -1,6 +1,6 @@
-### kubler/mariadb:20211031
+### kubler/mariadb:20211130
 
-Built: Tue Nov  2 01:23:51 AM CET 2021
+Built: Thu Dec  2 03:33:40 PM CET 2021
 Image Size: 460MB
 
 #### Installed
@@ -18,7 +18,7 @@ dev-db/mysql-connector-c-8.0.25 | `-ldap -static-libs`
 dev-db/mysql-init-scripts-2.3-r3 | ``
 dev-db/sqlite-3.35.5 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
 dev-lang/perl-5.34.0-r3 | `-berkdb -debug -doc -gdbm -ithreads -minimal`
-dev-lang/python-3.9.7_p1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -ncurses -test -tk -verify-sig -wininst`
+dev-lang/python-3.9.9 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
 dev-lang/python-exec-2.4.8 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
@@ -35,7 +35,7 @@ perl-core/Encode-3.120.0 | ``
 perl-core/File-Temp-0.231.100 | ``
 sys-apps/systemd-tmpfiles-249.2 | `(-selinux) -test`
 sys-apps/texinfo-6.8 | `nls standalone -static`
-sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-libs/libcap-2.49-r1 | `(split-usr) -pam -static-libs`
 sys-process/procps-3.3.17-r1 | `kill nls (split-usr) (unicode) -elogind -modern-top -ncurses (-selinux) -static-libs -systemd -test`
 *manual install*: automysqlbackup-3.0_rc6 | https://sourceforge.net/projects/automysqlbackup/
@@ -77,8 +77,8 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`

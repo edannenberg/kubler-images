@@ -1,17 +1,17 @@
-### kubler/ruby:20211031
+### kubler/ruby:20211130
 
-Built: Tue Nov  2 01:42:04 AM CET 2021
+Built: Thu Dec  2 03:52:36 PM CET 2021
 Image Size: 100MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-crypt/gnupg-2.2.32 | `bzip2 nls readline smartcard ssl -doc -ldap (-selinux) -tofu -tools -usb -user-socket -wks-server`
+app-crypt/gnupg-2.2.32-r1 | `bzip2 nls readline smartcard ssl -doc -ldap (-selinux) -tofu -tools -usb -user-socket -wks-server`
 app-crypt/pinentry-1.2.0 | `ncurses -caps -efl -emacs -gnome-keyring -gtk -qt5`
 app-eselect/eselect-lib-bin-symlink-0.1.1-r1 | ``
 app-eselect/eselect-pinentry-0.7.2 | ``
 app-eselect/eselect-ruby-20191222 | ``
-dev-lang/ruby-2.6.8 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -jit -rubytests -socks5 -static-libs -systemtap -tk -xemacs`
+dev-lang/ruby-2.6.9 | `rdoc ssl -berkdb -debug -doc -examples -gdbm -ipv6 -jemalloc -jit -rubytests -socks5 -static-libs -systemtap -tk -xemacs`
 dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
 dev-libs/libassuan-2.5.5 | ``
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
@@ -33,7 +33,8 @@ dev-ruby/rake-13.0.3-r1 | `-doc -test`
 dev-ruby/rdoc-6.3.2 | `-doc -test`
 dev-ruby/rubygems-3.1.6 | `-server -test`
 dev-ruby/test-unit-3.3.9 | `-doc -test`
-dev-ruby/xmlrpc-0.3.0 | `-doc -test`
+dev-ruby/webrick-1.7.0 | `-doc -test`
+dev-ruby/xmlrpc-0.3.2-r1 | `-doc -test`
 dev-vcs/git-2.32.0-r1 | `blksha1 curl gpg iconv nls pcre threads webdav -cgi -cvs -doc -emacs -gnome-keyring -highlight -mediawiki -mediawiki-experimental -perforce -perl (-ppcsha1) -subversion -test -tk -xinetd`
 net-libs/gnutls-3.7.2 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
 #### Inherited
@@ -74,8 +75,8 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps (-cet) -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.25 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
 sys-libs/timezone-data-2021a-r1 | `nls -leaps-timezone -zic-slim`
