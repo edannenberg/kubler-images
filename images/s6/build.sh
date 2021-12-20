@@ -8,9 +8,7 @@ _packages="sys-apps/s6 app-admin/entr"
 #
 configure_rootfs_build()
 {
-    update_keywords 'dev-lang/execline' '+~amd64'
-    update_keywords 'dev-libs/skalibs' '+~amd64'
-    update_keywords 'sys-apps/s6' '+~amd64'
+    :
 }
 
 #
