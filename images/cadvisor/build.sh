@@ -1,14 +1,14 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="app-emulation/cadvisor"
+_packages="app-containers/cadvisor"
 
 #
 # This hook is called just before starting the build of the root fs
 #
 configure_rootfs_build()
 {
-    update_keywords app-emulation/cadvisor '+~amd64'
+    update_keywords app-containers/cadvisor '+~amd64'
 }
 
 #
