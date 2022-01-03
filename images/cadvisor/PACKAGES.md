@@ -1,6 +1,6 @@
-### kubler/cadvisor:20211130
+### kubler/cadvisor:20211231
 
-Built: Thu Dec  2 01:11:03 PM CET 2021
+Built: Mon Jan  3 12:45:43 CET 2022
 Image Size: 57.7MB
 
 #### Installed
@@ -8,14 +8,14 @@ Package | USE Flags
 --------|----------
 acct-group/cadvisor-0-r1 | ``
 acct-user/cadvisor-0-r1 | ``
-app-emulation/cadvisor-0.36.0 | ``
+app-containers/cadvisor-0.36.0 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
-app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
+app-arch/gzip-1.11 | `-pic -static`
+dev-libs/gmp-6.2.1-r2 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.45 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`

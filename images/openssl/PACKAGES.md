@@ -1,6 +1,6 @@
-### kubler/openssl:20211130
+### kubler/openssl:20211231
 
-Built: Thu Dec  2 01:10:20 PM CET 2021
+Built: Mon Jan  3 12:24:03 CET 2022
 Image Size: 28.4MB
 
 #### Installed
@@ -8,8 +8,8 @@ Package | USE Flags
 --------|----------
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
-sys-apps/debianutils-4.11.2 | `installkernel -static`
+dev-libs/openssl-1.1.1l-r1 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+sys-apps/debianutils-5.5 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 #### Inherited
 Package | USE Flags
@@ -21,8 +21,8 @@ dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
-app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
+app-arch/gzip-1.11 | `-pic -static`
+dev-libs/gmp-6.2.1-r2 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.45 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`

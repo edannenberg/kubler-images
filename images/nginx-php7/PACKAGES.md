@@ -1,6 +1,6 @@
-### kubler/nginx-php7:20211130
+### kubler/nginx-php7:20211231
 
-Built: Thu Dec  2 03:41:37 PM CET 2021
+Built: Mon Jan  3 14:26:43 CET 2022
 Image Size: 136MB
 
 #### Installed
@@ -12,17 +12,17 @@ app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-admin/metalog-20200113-r1 | `(unicode)`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
-app-crypt/libmd-1.0.3-r2 | ``
+app-crypt/libmd-1.0.4 | ``
 app-eselect/eselect-php-0.9.7 | `fpm -apache2`
 dev-lang/php-7.3.32 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter flatfile fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl threads tokenizer truetype unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk (-coverage) -debug -embed -enchant -exif (-firebird) -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -jit -kerberos -ldap -ldap-sasl -libedit -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -tidy -tokyocabinet -wddx -zip-encryption`
-dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
+dev-libs/expat-2.4.1 | `unicode -examples -static-libs`
 dev-libs/libbsd-0.11.3 | `-static-libs`
 dev-libs/libevent-2.1.12 | `clock-gettime ssl threads -debug -malloc-replacement -static-libs -test -verbose-debug`
 dev-libs/libgcrypt-1.8.8 | `-doc -o-flag-munging -static-libs`
 dev-libs/libgpg-error-1.42 | `nls -common-lisp -static-libs`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libmemcached-1.0.18-r4 | `libevent -debug -hsieh -sasl`
-dev-libs/libpcre2-10.37-r2 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
+dev-libs/libpcre2-10.39 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
 dev-libs/libtasn1-4.17.0 | `-doc -static-libs -test -valgrind`
 dev-libs/libxml2-2.9.12-r5 | `python readline -debug -examples -icu -ipv6 -lzma -static-libs -test -verify-sig`
 dev-libs/libxslt-1.1.34-r2 | `crypt -debug -examples -static-libs -verify-sig`
@@ -54,7 +54,7 @@ net-misc/memcached-1.6.10 | `seccomp -debug -sasl (-selinux) -slabs-reassign -te
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.40-r3 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.41 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-apps/shadow-4.9-r3 | `acl nls (split-usr) su xattr -audit -bcrypt -cracklib -pam (-selinux) -skey`
 sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
@@ -81,8 +81,8 @@ www-servers/nginx-1.21.4 | `http http2 http-cache pcre ssl threads -aio -debug -
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
-sys-apps/debianutils-4.11.2 | `installkernel -static`
+dev-libs/openssl-1.1.1l-r1 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+sys-apps/debianutils-5.5 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 **FROM kubler/s6** |
 app-admin/entr-5.0 | ``
@@ -91,8 +91,8 @@ dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
-app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
+app-arch/gzip-1.11 | `-pic -static`
+dev-libs/gmp-6.2.1-r2 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.45 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`

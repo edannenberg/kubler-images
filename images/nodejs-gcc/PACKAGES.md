@@ -1,7 +1,7 @@
-### kubler/nodejs-gcc:20211130
+### kubler/nodejs-gcc:20211231
 
-Built: Thu Dec  2 01:25:18 PM CET 2021
-Image Size: 581MB
+Built: Mon Jan  3 13:19:33 CET 2022
+Image Size: 580MB
 
 #### Installed
 Package | USE Flags
@@ -19,29 +19,30 @@ app-misc/mime-types-9 | ``
 app-portage/portage-utils-0.92 | `nls openmp qmanifest qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 dev-db/sqlite-3.35.5 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/perl-5.34.0-r3 | `-berkdb -debug -doc -gdbm -ithreads -minimal`
+dev-lang/perl-5.34.0-r6 | `-berkdb -debug -doc -gdbm -ithreads -minimal`
 dev-lang/python-3.10.0_p1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
-dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
+dev-libs/expat-2.4.1 | `unicode -examples -static-libs`
 dev-libs/libassuan-2.5.5 | ``
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
 dev-libs/libgcrypt-1.8.8 | `-doc -o-flag-munging -static-libs`
 dev-libs/libgpg-error-1.42 | `nls -common-lisp -static-libs`
 dev-libs/libksba-1.5.1 | `-static-libs`
-dev-libs/libpcre2-10.37-r2 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
+dev-libs/libpcre2-10.39 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
 dev-libs/libtasn1-4.17.0 | `-doc -static-libs -test -valgrind`
 dev-libs/libxml2-2.9.12-r5 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test -verify-sig`
 dev-libs/mpc-1.2.1 | `-static-libs`
-dev-libs/mpfr-4.1.0-r1 | `-static-libs`
+dev-libs/mpfr-4.1.0_p13-r1 | `-static-libs`
 dev-libs/nettle-3.7.3 | `asm gmp -doc -static-libs -test`
 dev-libs/npth-1.6-r1 | ``
 net-libs/gnutls-3.7.2 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
 net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
+perl-core/CPAN-2.290.0-r1 | ``
 perl-core/Encode-3.120.0 | ``
 perl-core/File-Temp-0.231.100 | ``
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.40-r3 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.41 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-devel/autoconf-2.71-r1 | `-emacs`
@@ -56,7 +57,7 @@ sys-devel/gettext-0.21-r1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncu
 sys-devel/gnuconfig-20210107 | ``
 sys-devel/m4-1.4.19 | `nls -examples`
 sys-devel/make-4.3 | `nls -guile -static`
-sys-kernel/linux-headers-5.10-r1 | `-headers-only`
+sys-kernel/linux-headers-5.15-r3 | `-headers-only`
 sys-libs/libseccomp-2.5.1-r1 | `-python -static-libs`
 #### Inherited
 Package | USE Flags
@@ -69,12 +70,12 @@ net-dns/c-ares-1.17.2 | `-static-libs -test`
 net-libs/http-parser-2.9.4-r1 | ``
 net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-libs/nodejs-14.17.6 | `icu npm snapshot ssl system-icu system-ssl -debug -doc -inspector -lto -pax-kernel -systemtap -test`
-sys-apps/yarn-1.22.10 | ``
+sys-apps/yarn-1.22.17 | ``
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
-sys-apps/debianutils-4.11.2 | `installkernel -static`
+dev-libs/openssl-1.1.1l-r1 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+sys-apps/debianutils-5.5 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 **FROM kubler/s6** |
 app-admin/entr-5.0 | ``
@@ -83,8 +84,8 @@ dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
-app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
+app-arch/gzip-1.11 | `-pic -static`
+dev-libs/gmp-6.2.1-r2 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.45 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`

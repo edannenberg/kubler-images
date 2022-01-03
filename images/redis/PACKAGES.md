@@ -1,7 +1,7 @@
-### kubler/redis:20211130
+### kubler/redis:20211231
 
-Built: Thu Dec  2 03:50:14 PM CET 2021
-Image Size: 60.9MB
+Built: Mon Jan  3 14:55:12 CET 2022
+Image Size: 61.2MB
 
 #### Installed
 Package | USE Flags
@@ -15,18 +15,18 @@ app-misc/c_rehash-1.7-r1 | ``
 dev-db/redis-6.2.6 | `jemalloc ssl -systemd -tcmalloc -test`
 dev-lang/lua-5.1.5-r106 | `deprecated -readline`
 dev-libs/jemalloc-5.2.1 | `hardened -debug -lazy-lock -prof -static-libs -stats -xmalloc`
-dev-libs/libpcre2-10.37-r2 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
-dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+dev-libs/libpcre2-10.39 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
+dev-libs/openssl-1.1.1l-r1 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/debianutils-4.11.2 | `installkernel -static`
-sys-apps/file-5.40-r3 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/debianutils-5.5 | `installkernel -static`
+sys-apps/file-5.41 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
-sys-apps/systemd-tmpfiles-249.2 | `(-selinux) -test`
+sys-apps/systemd-tmpfiles-249.5 | `(-selinux) -test`
 sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-kernel/installkernel-gentoo-3 | ``
-sys-libs/libcap-2.49-r1 | `(split-usr) -pam -static-libs`
+sys-libs/libcap-2.62 | `(split-usr) -pam -static-libs -tools`
 sys-libs/libseccomp-2.5.1-r1 | `-python -static-libs`
 #### Inherited
 Package | USE Flags
@@ -38,8 +38,8 @@ dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
-app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
+app-arch/gzip-1.11 | `-pic -static`
+dev-libs/gmp-6.2.1-r2 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.45 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`

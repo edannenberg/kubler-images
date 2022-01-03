@@ -1,7 +1,7 @@
-### kubler/python3:20211130
+### kubler/python3:20211231
 
-Built: Thu Dec  2 03:49:15 PM CET 2021
-Image Size: 306MB
+Built: Mon Jan  3 14:54:19 CET 2022
+Image Size: 307MB
 
 #### Installed
 Package | USE Flags
@@ -12,14 +12,14 @@ dev-lang/python-3.10.0_p1 | `hardened readline sqlite ssl xml -bluetooth -build 
 dev-lang/python-3.9.9 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
 dev-lang/python-exec-2.4.8 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
-dev-libs/expat-2.4.1 | `(split-usr) unicode -examples -static-libs`
+dev-libs/expat-2.4.1 | `unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
-dev-libs/libpcre2-10.37-r2 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
-dev-python/certifi-2999 | `-test`
+dev-libs/libpcre2-10.39 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
+dev-python/certifi-3021.3.16-r1 | `-test`
 dev-python/packaging-21.0 | `-test`
-dev-python/pip-21.3.1 | `-test -vanilla`
+dev-python/pip-21.3.1-r1 | `-test -vanilla`
 dev-python/pyparsing-2.4.7-r1 | `-examples`
-dev-python/setuptools-57.5.0 | `-test`
+dev-python/setuptools-59.2.0 | `-test`
 dev-python/setuptools_scm-6.3.2 | `-test`
 dev-python/tomli-1.2.2-r1 | `-test`
 sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
@@ -37,14 +37,14 @@ net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.40-r3 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.41 | `bzip2 seccomp zlib -lzma -python -static-libs`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static`
 sys-libs/libseccomp-2.5.1-r1 | `-python -static-libs`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1l | `asm -bindist -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
-sys-apps/debianutils-4.11.2 | `installkernel -static`
+dev-libs/openssl-1.1.1l-r1 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+sys-apps/debianutils-5.5 | `installkernel -static`
 sys-kernel/installkernel-gentoo-3 | ``
 **FROM kubler/s6** |
 app-admin/entr-5.0 | ``
@@ -53,8 +53,8 @@ dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
-app-arch/gzip-1.10 | `-pic -static`
-dev-libs/gmp-6.2.1-r1 | `asm cxx -doc -pic -static-libs`
+app-arch/gzip-1.11 | `-pic -static`
+dev-libs/gmp-6.2.1-r2 | `asm cxx -doc -pic -static-libs`
 dev-libs/libpcre-8.45 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
