@@ -1,28 +1,28 @@
-### kubler/python3:20211231
+### kubler/python3:20220131
 
-Built: Mon Jan  3 14:54:19 CET 2022
-Image Size: 307MB
+Built: Thu Feb  3 22:41:27 CET 2022
+Image Size: 308MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-misc/mime-types-9 | ``
-dev-db/sqlite-3.35.5 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-3.10.0_p1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
-dev-lang/python-3.9.9 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
+app-misc/mime-types-2.1.53 | `-nginx`
+dev-db/sqlite-3.37.2 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
+dev-lang/python-3.10.0_p1-r1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
+dev-lang/python-3.9.9-r1 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
 dev-lang/python-exec-2.4.8 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
-dev-libs/expat-2.4.1 | `unicode -examples -static-libs`
+dev-libs/expat-2.4.4 | `unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.39 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
 dev-python/certifi-3021.3.16-r1 | `-test`
-dev-python/packaging-21.0 | `-test`
+dev-python/packaging-21.3-r1 | `-test`
 dev-python/pip-21.3.1-r1 | `-test -vanilla`
-dev-python/pyparsing-2.4.7-r1 | `-examples`
-dev-python/setuptools-59.2.0 | `-test`
+dev-python/pyparsing-3.0.6 | `-examples -test`
+dev-python/setuptools-59.8.0 | `-test`
 dev-python/setuptools_scm-6.3.2 | `-test`
-dev-python/tomli-1.2.2-r1 | `-test`
-sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+dev-python/tomli-2.0.0 | `-test`
+sys-apps/util-linux-2.37.3-r1 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -30,7 +30,7 @@ Package | USE Flags
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
@@ -61,7 +61,7 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`

@@ -1,7 +1,7 @@
-### kubler/mysql:20211231
+### kubler/mysql:20220131
 
-Built: Mon Jan  3 14:21:32 CET 2022
-Image Size: 358MB
+Built: Thu Feb  3 08:29:12 CET 2022
+Image Size: 360MB
 
 #### Installed
 Package | USE Flags
@@ -10,7 +10,7 @@ acct-group/mysql-0-r1 | ``
 acct-user/mysql-0-r1 | ``
 app-arch/lz4-1.9.3-r1 | `-static-libs`
 app-arch/pbzip2-1.1.13 | `-static -symlink`
-dev-db/mysql-8.0.25 | `server -cjk -cracklib -debug -jemalloc -latin1 -numa -perl -profiling -router (-selinux) -tcmalloc -test`
+dev-db/mysql-8.0.27 | `server -cjk -cracklib -debug -jemalloc -latin1 -numa -perl -profiling -router (-selinux) -tcmalloc -test`
 dev-libs/icu-69.1-r1 | `-debug -doc -examples -static-libs`
 dev-libs/libaio-0.3.112 | `(split-usr) -static-libs -test`
 dev-libs/libevent-2.1.12 | `clock-gettime ssl threads -debug -malloc-replacement -static-libs -test -verbose-debug`
@@ -25,7 +25,7 @@ Package | USE Flags
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
@@ -56,7 +56,7 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`

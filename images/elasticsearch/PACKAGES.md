@@ -1,7 +1,7 @@
-### kubler/elasticsearch:20211231
+### kubler/elasticsearch:20220131
 
-Built: Mon Jan  3 12:52:29 CET 2022
-Image Size: 467MB
+Built: Wed Feb  2 23:26:18 CET 2022
+Image Size: 432MB
 
 #### Installed
 Package | USE Flags
@@ -9,8 +9,8 @@ Package | USE Flags
 acct-group/elasticsearch-0-r1 | ``
 acct-user/elasticsearch-0-r1 | ``
 app-admin/su-exec-0.2 | `-static`
-app-misc/elasticsearch-7.16.2 | ``
-sys-apps/systemd-tmpfiles-249.5 | `(-selinux) -test`
+app-misc/elasticsearch-7.16.3 | ``
+sys-apps/systemd-tmpfiles-249.9 | `(-selinux) -test`
 sys-libs/libcap-2.62 | `(split-usr) -pam -static-libs -tools`
 #### Inherited
 Package | USE Flags
@@ -20,8 +20,8 @@ app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-fontconfig-1.1-r1 | ``
 app-eselect/eselect-java-0.4.3 | ``
 dev-java/java-config-2.3.1 | `-test`
-dev-java/openjdk-jre-bin-11.0.13_p8-r1 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
-dev-libs/expat-2.4.1 | `unicode -examples -static-libs`
+dev-java/openjdk-jre-bin-11.0.14_p9 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
+dev-libs/expat-2.4.4 | `unicode -examples -static-libs`
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.39 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
 dev-libs/libtasn1-4.17.0 | `-doc -static-libs -test -valgrind`
@@ -31,12 +31,12 @@ media-libs/freetype-2.11.0-r1 | `adobe-cff bzip2 cleartype-hinting png -`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
 net-libs/libnet-1.2 | `-static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
-sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.37.3-r1 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 **FROM kubler/bash** |
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
@@ -67,7 +67,7 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`

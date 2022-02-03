@@ -1,15 +1,15 @@
-### kubler/graph-easy:20211231
+### kubler/graph-easy:20220131
 
-Built: Mon Jan  3 13:16:06 CET 2022
+Built: Thu Feb  3 00:07:10 CET 2022
 Image Size: 171MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 dev-libs/elfutils-0.186 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -zstd`
-dev-libs/expat-2.4.1 | `unicode -examples -static-libs`
+dev-libs/expat-2.4.4 | `unicode -examples -static-libs`
 dev-libs/fribidi-1.0.10 | ``
-dev-libs/glib-2.68.4 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
+dev-libs/glib-2.70.2 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libpcre2-10.39 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
@@ -23,10 +23,10 @@ media-gfx/graphviz-2.49.0 | `cairo -`
 media-libs/fontconfig-2.13.1-r2 | `-doc -static-libs`
 media-libs/freetype-2.11.0-r1 | `adobe-cff bzip2 cleartype-hinting png -`
 media-libs/gd-2.3.2-r1 | `fontconfig jpeg png truetype zlib -avif -heif -static-libs -test -tiff -webp -xpm`
-media-libs/harfbuzz-3.1.1 | `cairo glib truetype -debug -doc -experimental -graphite -icu -introspection -test`
+media-libs/harfbuzz-3.1.2 | `cairo glib truetype -debug -doc -experimental -graphite -icu -introspection -test`
 media-libs/libjpeg-turbo-2.1.1-r2 | `-java -static-libs`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
-sys-apps/util-linux-2.37.2-r1 | `cramfs hardlink logger nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
+sys-apps/util-linux-2.37.3-r1 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-devel/binutils-config-5.4 | `(native-symlinks)`
 sys-libs/binutils-libs-2.37_p1 | `nls -64-bit-bfd -cet -multitarget -static-libs`
 x11-libs/cairo-1.16.0-r5 | `glib svg -`
@@ -46,7 +46,7 @@ perl-core/File-Temp-0.231.100 | ``
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
@@ -77,7 +77,7 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`

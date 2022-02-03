@@ -1,6 +1,6 @@
-### kubler/gcc:20211231
+### kubler/gcc:20220131
 
-Built: Mon Jan  3 13:00:50 CET 2022
+Built: Wed Feb  2 23:28:25 CET 2022
 Image Size: 358MB
 
 #### Installed
@@ -8,7 +8,7 @@ Package | USE Flags
 --------|----------
 app-admin/perl-cleaner-2.30 | ``
 dev-lang/perl-5.34.0-r6 | `-berkdb -debug -doc -gdbm -ithreads -minimal`
-dev-libs/expat-2.4.1 | `unicode -examples -static-libs`
+dev-libs/expat-2.4.4 | `unicode -examples -static-libs`
 dev-libs/libxml2-2.9.12-r5 | `readline -debug -examples -icu -ipv6 -lzma -python -static-libs -test -verify-sig`
 dev-libs/mpc-1.2.1 | `-static-libs`
 dev-libs/mpfr-4.1.0_p13-r1 | `-static-libs`
@@ -22,7 +22,7 @@ sys-devel/automake-wrapper-11 | ``
 sys-devel/binutils-2.37_p1 | `gold nls plugins -cet -default-gold -doc -multitarget -static-libs -test -vanilla`
 sys-devel/binutils-config-5.4 | `(native-symlinks)`
 sys-devel/gcc-11.2.0 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) (-ada) -cet -custom-cflags -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
-sys-devel/gcc-config-2.4 | `(cc-wrappers) (native-symlinks)`
+sys-devel/gcc-config-2.5-r1 | `(cc-wrappers) (native-symlinks)`
 sys-devel/gettext-0.21-r1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
 sys-devel/gnuconfig-20210107 | ``
 sys-devel/m4-1.4.19 | `nls -examples`
@@ -35,7 +35,7 @@ Package | USE Flags
 app-admin/eselect-1.4.17 | `-doc -emacs -vim-syntax`
 app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.0 | `threads -lz4 -static-libs`
-app-portage/portage-utils-0.92 | `nls openmp -qmanifest -qtegrity -static`
+app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p8 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
@@ -66,7 +66,7 @@ net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.0 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.14 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) -custom-cflags -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.25-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p1-r1 | `(split-usr) (unicode) -static-libs -utils`
