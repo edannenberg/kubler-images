@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="www-servers/nginx"
+_packages="www-servers/nginx dev-libs/libpcre2"
 # ..or when using mva overlay
 #_packages="www-servers/nginx::mva"
 
