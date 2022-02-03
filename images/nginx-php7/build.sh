@@ -27,7 +27,7 @@ configure_bob()
     update_use 'media-gfx/imagemagick' '-openmp'
     # skip python
     provide_package dev-lang/python dev-lang/python-exec
-    emerge "php:${_php_slot}" git libmemcached imagemagick
+    emerge "php:${_php_slot}" dev-vcs/git libmemcached imagemagick
 }
 
 #
