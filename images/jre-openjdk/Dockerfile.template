@@ -13,5 +13,5 @@ ADD rootfs.tar /
 
 ENV JAVA_HOME=/etc/java-config-2/current-system-vm
 
-RUN eselect java-vm set system 1 && \
+RUN ln -s /opt/openjdk-jre-bin-11/ /etc/java-config-2/current-system-vm && \
     update-ca-certificates
