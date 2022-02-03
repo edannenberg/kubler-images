@@ -34,6 +34,7 @@ configure_rootfs_build()
     # bug with 1.31.1-r2 ebuild not respecting the static use flag
     provide_package sys-libs/glibc
     generate_doc_package_installed 'sys-apps/busybox' 'sys-apps/sed'
+    update_use 'sys-apps/util-linux' -su -logger
     update_use 'sys-apps/sed' -static +acl +nls
     update_use 'sys-libs/ncurses' +minimal
     # remove workaround
