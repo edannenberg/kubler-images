@@ -10,7 +10,6 @@ configure_builder()
     update_use 'dev-java/openjdk-bin' +headless-awt
     echo 'dev-java/openjdk-jre-bin -gentoo-vm' >> /etc/portage/profile/package.use.mask
     echo 'dev-java/openjdk-bin -gentoo-vm' >> /etc/portage/profile/package.use.mask
-    update_keywords 'dev-java/openjdk-jre-bin' '+~amd64'
     # skip python
     provide_package dev-lang/python dev-lang/python-exec
 
