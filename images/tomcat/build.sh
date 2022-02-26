@@ -13,7 +13,7 @@ configure_bob()
     mask_package '<=virtual/libcrypt-1-r1-6'
     # build tomcat-native package on the host
     unprovide_package dev-java/java-config app-eselect/eselect-java app-arch/zip
-    emerge dev-java/ant-core dev-java/ant-junit dev-java/java-config dev-java/tomcat-native www-servers/tomcat
+    emerge dev-java/ant-core dev-java/ant-junit dev-java/java-config dev-java/tomcat-native www-servers/tomcat dev-java/xalan
 }
 
 #
@@ -35,6 +35,9 @@ finish_rootfs_build()
     cata_conf="${tomcat_path}"/conf/catalina.properties
 
     mkdir -p "${_EMERGE_ROOT}"/etc/init.d
+
+    cp /usr/share/xalan/lib/xalan.jar "${_EMERGE_ROOT}"/usr/share/ant-core/lib
+    cp /usr/share/xalan-serializer/lib/xalan-serializer.jar "${_EMERGE_ROOT}"/usr/share/ant-core/lib/serializer.jar
 
     # adapted from Gentoo's Tomcat init.d script
     tomcat_deps="$(java-config --query DEPEND --package "${_tomcat_slot}")"
