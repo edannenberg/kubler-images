@@ -66,7 +66,7 @@ finish_rootfs_build()
     # backup iconv encodings so other images can pull them in again via _iconv_from=glibc
     tar -cpf "${_ROOTFS_BACKUP}"/glibc-iconv.tar "${_EMERGE_ROOT}"/usr/"${_LIB}"/gconv/
     # purge iconv
-    rm -f "${_EMERGE_ROOT}"/usr/"${_LIB}"/gconv/*
+    rm -fr "${_EMERGE_ROOT}"/usr/"${_LIB}"/gconv/*
     # add entry to purged section in PACKAGES.md
     write_checkbox_line "Glibc Iconv Encodings" "checked" "${_DOC_FOOTER_PURGED}"
 }
