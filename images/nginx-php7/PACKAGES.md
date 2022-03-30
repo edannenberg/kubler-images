@@ -1,7 +1,7 @@
-### kubler/nginx-php7:20220226
+### kubler/nginx-php7:20220330
 
-Built: Sat Feb 26 00:32:53 CET 2022
-Image Size: 135MB
+Built: Wed Mar 30 10:54:23 CEST 2022
+Image Size: 140MB
 
 #### Installed
 Package | USE Flags
@@ -14,8 +14,8 @@ app-arch/xz-utils-5.2.5-r1 | `extra-filters nls (split-usr) -static-libs`
 app-arch/zstd-1.5.2 | `threads -lz4 -static-libs`
 app-crypt/libmd-1.0.4 | ``
 app-eselect/eselect-php-0.9.8 | `fpm -apache2`
-dev-lang/php-7.3.32 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter flatfile fpm gd hash iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl tokenizer truetype unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk (-coverage) -debug -embed -enchant -exif (-firebird) -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -jit -kerberos -ldap -ldap-sasl -libedit -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm -recode (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -threads -tidy -tokyocabinet -wddx -zip-encryption`
-dev-libs/expat-2.4.6 | `unicode -examples -static-libs`
+dev-lang/php-7.4.28-r1 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter flatfile fpm gd iconv json mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl tokenizer truetype unicode webp xml xmlreader xmlrpc xmlwriter xpm xslt zip zlib -apache2 -argon2 -berkdb -cdb -cgi -cjk (-coverage) -debug -embed -enchant -exif -ffi (-firebird) -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -jit -kerberos -ldap -ldap-sasl -libedit -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -threads -tidy -tokyocabinet`
+dev-libs/expat-2.4.7 | `unicode -examples -static-libs`
 dev-libs/gmp-6.2.1-r2 | `asm cxx -doc -pic -static-libs`
 dev-libs/libbsd-0.11.3 | `-static-libs`
 dev-libs/libevent-2.1.12 | `clock-gettime ssl threads -debug -malloc-replacement -static-libs -test -verbose-debug`
@@ -24,15 +24,16 @@ dev-libs/libgpg-error-1.42 | `nls -common-lisp -static-libs`
 dev-libs/libltdl-2.4.6 | `-static-libs`
 dev-libs/libmemcached-1.0.18-r4 | `libevent -debug -hsieh -sasl`
 dev-libs/libtasn1-4.17.0 | `-doc -static-libs -test -valgrind`
-dev-libs/libxml2-2.9.12-r5 | `python readline -debug -examples -icu -lzma -static-libs -test -verify-sig`
-dev-libs/libxslt-1.1.34-r2 | `crypt -debug -examples -static-libs -verify-sig`
+dev-libs/libxml2-2.9.13-r1 | `python readline -debug -examples -icu -lzma -static-libs -test`
+dev-libs/libxslt-1.1.35 | `crypt -debug -examples -static-libs`
+dev-libs/libzip-1.8.0-r1 | `bzip2 ssl -gnutls -lzma -mbedtls -static-libs -test -tools -zstd`
 dev-libs/nettle-3.7.3 | `asm gmp -doc -static-libs -test`
 dev-libs/oniguruma-6.9.7.1 | `-crnl-as-line-terminator -static-libs`
 dev-php/pecl-apcu-5.1.19 | `lock-pthreadrw mmap -lock-pthreadmutex -lock-semaphore -lock-spinlock`
 dev-php/pecl-apcu_bc-1.0.5 | ` `
 dev-php/pecl-imagick-3.5.1 | `-examples -test`
 dev-php/pecl-memcached-3.1.5-r1 | `session -igbinary -json -sasl -test`
-dev-php/pecl-redis-5.3.2 | `json session -igbinary -lz4 -zstd`
+dev-php/pecl-redis-5.3.6 | `json session -igbinary -lz4 -zstd`
 dev-php/xdebug-3.1.1 | ` `
 mail-mta/nullmailer-2.2-r2 | `ssl -test`
 media-gfx/imagemagick-7.1.0.13 | `bzip2 cxx jpeg jpeg2k png tiff webp zlib -`
@@ -44,9 +45,9 @@ media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
 media-libs/libwebp-1.2.2 | `gif jpeg png tiff -opengl -static-libs -swap-16bit-csp`
 media-libs/openjpeg-2.4.0 | `-doc -static-libs -test`
 media-libs/tiff-4.3.0 | `cxx jpeg zlib -jbig -lzma -static-libs -test -webp -zstd`
-net-libs/gnutls-3.7.2 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
+net-libs/gnutls-3.7.3-r1 | `cxx idn nls openssl seccomp tls-heartbeat -dane -doc -examples -guile -pkcs11 -sslv2 -sslv3 -static-libs -test (-test-full) -tools -valgrind`
 net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
+net-misc/curl-7.79.1-r1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
 net-misc/memcached-1.6.10 | `seccomp -debug -sasl (-selinux) -slabs-reassign -test`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
@@ -57,7 +58,7 @@ sys-apps/shadow-4.11.1 | `acl nls (split-usr) xattr -audit -bcrypt -cracklib -pa
 sys-apps/systemd-tmpfiles-249.9 | `(-selinux) -test`
 sys-apps/util-linux-2.37.4 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-devel/gettext-0.21-r1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs`
-sys-libs/libcap-2.62 | `(split-usr) -pam -static-libs -tools`
+sys-libs/libcap-2.63 | `(split-usr) -pam -static-libs -tools`
 sys-libs/libseccomp-2.5.3 | `-python -static-libs -test`
 x11-base/xorg-proto-2021.5 | `-test`
 x11-libs/libICE-1.0.10-r1 | `-ipv6`
@@ -76,29 +77,29 @@ x11-misc/compose-tables-1.7.3 | ``
 Package | USE Flags
 --------|----------
 **FROM kubler/nginx** |
-dev-libs/libpcre2-10.39 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
-www-servers/nginx-1.21.6 | `http http2 http-cache pcre ssl threads -aio -debug -ipv6 -libatomic -pcre-jit -rtmp (-selinux) -vim-syntax`
+dev-libs/libpcre2-10.39-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
+www-servers/nginx-1.21.6-r1 | `http http2 http-cache pcre ssl threads -aio -debug -ipv6 -libatomic -pcre-jit -rtmp (-selinux) -vim-syntax`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1m | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1n | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig`
 sys-apps/debianutils-5.5 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
-app-admin/entr-5.0 | ``
+app-admin/entr-5.1 | ``
 dev-lang/execline-2.6.1.1 | `-static -static-libs`
 dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
 app-arch/gzip-1.11 | `-pic -static`
-dev-libs/libpcre-8.45 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
+dev-libs/libpcre-8.45-r1 | `bzip2 cxx readline (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.1-r1 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.15 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.34-r10 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.27 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p2 | `(split-usr) (unicode) -static-libs -utils`

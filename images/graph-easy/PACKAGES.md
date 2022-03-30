@@ -1,19 +1,19 @@
-### kubler/graph-easy:20220226
+### kubler/graph-easy:20220330
 
-Built: Sat Feb 26 00:04:30 CET 2022
+Built: Wed Mar 30 10:26:59 CEST 2022
 Image Size: 170MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 dev-libs/elfutils-0.186 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -zstd`
-dev-libs/expat-2.4.6 | `unicode -examples -static-libs`
-dev-libs/fribidi-1.0.10 | ``
-dev-libs/glib-2.70.2 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
+dev-libs/expat-2.4.7 | `unicode -examples -static-libs`
+dev-libs/fribidi-1.0.11 | `-doc -test`
+dev-libs/glib-2.70.4 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/libffi-3.3-r2 | `-debug -pax-kernel -static-libs -test`
 dev-libs/libltdl-2.4.6 | `-static-libs`
-dev-libs/libpcre2-10.39 | `bzip2 pcre16 readline recursion-limit (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
-dev-libs/libxml2-2.9.12-r5 | `python readline -debug -examples -icu -lzma -static-libs -test -verify-sig`
+dev-libs/libpcre2-10.39-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs`
+dev-libs/libxml2-2.9.13-r1 | `python readline -debug -examples -icu -lzma -static-libs -test`
 dev-libs/lzo-2.10 | `(split-usr) -examples -static-libs`
 dev-perl/Config-Tiny-2.270.0 | `-test`
 dev-perl/Digest-SHA1-2.130.0-r2 | ``
@@ -27,7 +27,7 @@ media-libs/harfbuzz-3.2.0 | `cairo glib truetype -debug -doc -experimental -grap
 media-libs/libjpeg-turbo-2.1.1-r2 | `-java -static-libs`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
 sys-apps/util-linux-2.37.4 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
-sys-devel/binutils-config-5.4 | `(native-symlinks)`
+sys-devel/binutils-config-5.4.1 | `(native-symlinks)`
 sys-libs/binutils-libs-2.37_p1-r2 | `nls -64-bit-bfd -cet -multitarget -static-libs`
 x11-libs/cairo-1.16.0-r5 | `glib svg -`
 x11-libs/pango-1.42.4-r2 | `-`
@@ -49,7 +49,7 @@ app-arch/zstd-1.5.2 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p16 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins`
 net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.79.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
+net-misc/curl-7.79.1-r1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test (-winssl) -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
@@ -59,24 +59,24 @@ sys-libs/libseccomp-2.5.3 | `-python -static-libs -test`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1m | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla`
+dev-libs/openssl-1.1.1n | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig`
 sys-apps/debianutils-5.5 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
-app-admin/entr-5.0 | ``
+app-admin/entr-5.1 | ``
 dev-lang/execline-2.6.1.1 | `-static -static-libs`
 dev-libs/skalibs-2.9.3.0 | `-doc -ipv6 -static-libs`
 sys-apps/s6-2.9.2.0 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs`
 app-arch/gzip-1.11 | `-pic -static`
-dev-libs/libpcre-8.45 | `bzip2 cxx readline recursion-limit (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
+dev-libs/libpcre-8.45-r1 | `bzip2 cxx readline (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.2 | `-static-libs -verify-sig`
 sys-apps/gawk-5.1.1-r1 | `nls readline -mpfr`
 sys-apps/gentoo-functions-0.15 | ``
 sys-apps/grep-3.7 | `nls pcre -static`
-sys-libs/glibc-2.33-r7 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.34-r10 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.27 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.2_p20210619 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace`
 sys-libs/readline-8.1_p2 | `(split-usr) (unicode) -static-libs -utils`
