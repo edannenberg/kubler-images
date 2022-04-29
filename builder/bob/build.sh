@@ -7,8 +7,6 @@
 #
 configure_bob() {
     fix_portage_profile_symlink
-    # See https://github.com/edannenberg/kubler/issues/209
-    revert_portage_user_root_patches
     # install basics used by helper functions
     eselect news read new 1> /dev/null
     emerge app-portage/flaggie app-portage/eix app-portage/gentoolkit

@@ -7,8 +7,6 @@
 #
 configure_bob() {
     fix_portage_profile_symlink
-    # See https://github.com/edannenberg/kubler/issues/209
-    revert_portage_user_root_patches
     # migrate from files to directories at /etc/portage/package.*
     for i in /etc/portage/package.{accept_keywords,unmask,mask,use}; do
         [[ -f "${i}" ]] && { cat "${i}"; mv "${i}" "${i}".old; }
