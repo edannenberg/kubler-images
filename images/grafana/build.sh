@@ -6,7 +6,6 @@ _packages="www-apps/grafana"
 configure_builder()
 {
     update_use net-libs/nodejs +icu
-    update_keywords net-libs/nodejs:0/16 '+~amd64'
 }
 
 #
