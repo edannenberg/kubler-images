@@ -1,6 +1,6 @@
-### kubler/openssl-musl:20220430
+### kubler/openssl-musl:20220530
 
-Built: Sat Apr 30 09:49:24 CEST 2022
+Built: Mon May 30 12:56:49 PM CEST 2022
 Image Size: 7.01MB
 
 #### Installed
@@ -8,7 +8,7 @@ Package | USE Flags
 --------|----------
 app-misc/c_rehash-1.7-r1 | ``
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
-dev-libs/openssl-1.1.1n | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1o | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.5 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 #### Inherited

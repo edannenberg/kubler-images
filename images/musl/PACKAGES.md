@@ -1,6 +1,6 @@
-### kubler/musl:20220430
+### kubler/musl:20220530
 
-Built: Sat Apr 30 09:40:54 CEST 2022
+Built: Mon May 30 12:47:26 PM CEST 2022
 Image Size: 2.25MB
 
 #### Installed
