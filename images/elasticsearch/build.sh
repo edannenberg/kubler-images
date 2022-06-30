@@ -11,6 +11,9 @@ configure_rootfs_build()
     update_keywords 'app-misc/elasticsearch' '+~amd64'
     # install bash again, needed at build time
     unprovide_package app-shells/bash
+    # postinstall tries to delete .keep files on the host and fails as the path doesn't exist
+    mkdir -p /usr/share/elasticsearch/plugins/
+    touch /usr/share/elasticsearch/plugins/.keep
 }
 
 #
@@ -18,5 +21,7 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
+    # manually remove the .keep files
+    rm ${_EMERGE_ROOT}/usr/share/elasticsearch/plugins/.keep*
     uninstall_package app-shells/bash virtual/jre-1.8.0-r1
 }

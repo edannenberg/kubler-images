@@ -5,7 +5,8 @@ ADD rootfs.tar /
 
 ADD etc /etc
 
-ENV ES_CLASSPATH /usr/share/elasticsearch/lib/*
+ENV ES_CLASSPATH=/usr/share/elasticsearch/lib/* \
+    ES_JAVA_HOME=/opt/openjdk-jre-bin-17/
 
 RUN chown -R elasticsearch:elasticsearch /etc/elasticsearch && \
     chmod +x $(find /etc/service -name run) && \
@@ -14,6 +15,7 @@ RUN chown -R elasticsearch:elasticsearch /etc/elasticsearch && \
 
 EXPOSE 9200 9300
 
-HEALTHCHECK --interval=30s --timeout=5s CMD curl -f http://localhost:9200
+# TODO: requires auth now, PW is currently auto generated
+#HEALTHCHECK --interval=30s --timeout=5s CMD curl -u elastic:${ELASTIC_PW} -f -k https://localhost:9200/_cat/health
 
 CMD ["/bin/s6-svscan", "-t0", "/service"]
