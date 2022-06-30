@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="dev-java/openjdk-bin:11"
+_packages="dev-java/openjdk-bin:17"
 
 configure_builder()
 {
@@ -11,7 +11,7 @@ configure_builder()
     # skip python
     provide_package dev-lang/python dev-lang/python-exec
     # install java in build container so depending builds have it available
-    emerge dev-java/openjdk-bin:11
+    emerge dev-java/openjdk-bin:17
 }
 
 #
