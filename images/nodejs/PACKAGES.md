@@ -1,18 +1,18 @@
-### kubler/nodejs:20220530
+### kubler/nodejs:20220629
 
-Built: Mon May 30 12:26:39 PM CEST 2022
-Image Size: 113MB
+Built: Wed Jun 29 16:05:07 CEST 2022
+Image Size: 117MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-arch/brotli-1.0.9-r3 | `-python -static-libs -test`
-dev-libs/icu-70.1-r1 | `-debug -doc -examples -static-libs`
+dev-libs/icu-71.1-r1 | `-debug -doc -examples -static-libs -test -verify-sig`
 dev-libs/libuv-1.44.1 | ``
 net-dns/c-ares-1.17.2 | `-static-libs -test`
 net-libs/http-parser-2.9.4-r1 | ``
-net-libs/nghttp2-1.45.1-r1 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-libs/nodejs-16.14.2 | `icu npm snapshot ssl system-icu system-ssl -debug -doc -inspector -lto -pax-kernel -systemtap -test`
+net-libs/nghttp2-1.47.0 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
+net-libs/nodejs-18.3.0 | `icu npm snapshot ssl system-icu system-ssl -debug -doc -inspector -lto -pax-kernel -systemtap -test`
 sys-apps/yarn-1.22.19 | ``
 #### Inherited
 Package | USE Flags
@@ -21,13 +21,13 @@ Package | USE Flags
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1o | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
-sys-apps/debianutils-5.5 | `installkernel -static`
+sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
 app-admin/entr-5.1 | ``
-dev-lang/execline-2.8.3.0 | `-static -static-libs`
+dev-lang/execline-2.8.3.0-r1 | `-static -static-libs`
 dev-libs/skalibs-2.11.2.0 | `-doc -ipv6 -static-libs`
-sys-apps/s6-2.11.1.0 | `execline -static -static-libs`
+sys-apps/s6-2.11.1.0-r1 | `execline -static -static-libs`
 **FROM kubler/glibc** |
 app-arch/bzip2-1.0.8-r1 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/gzip-1.12 | `-pic -static -verify-sig`
@@ -39,10 +39,10 @@ sys-apps/gentoo-functions-0.15 | ``
 sys-apps/grep-3.7 | `nls pcre -static -verify-sig`
 sys-libs/glibc-2.34-r13 | `clone3 multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.27 | `(compat) (split-usr) (system) -static-libs -test`
-sys-libs/ncurses-6.3_p20220423 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile -static-libs -test -trace -verify-sig`
+sys-libs/ncurses-6.3_p20220423 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
 sys-libs/timezone-data-2021e | `nls -leaps-timezone -zic-slim`
-sys-libs/zlib-1.2.11-r4 | `(split-usr) -minizip -static-libs`
+sys-libs/zlib-1.2.12-r2 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/busybox** |
 #### Purged
 - [x] Headers

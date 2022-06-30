@@ -1,6 +1,6 @@
-### kubler/busybox:20220530
+### kubler/busybox:20220629
 
-Built: Mon May 30 12:04:08 PM CEST 2022
+Built: Wed Jun 29 15:51:13 CEST 2022
 Image Size: 1.47MB
 
 #### Installed
