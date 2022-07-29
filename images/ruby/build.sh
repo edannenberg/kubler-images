@@ -1,14 +1,14 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="dev-libs/gmp app-eselect/eselect-ruby dev-lang/ruby:2.6"
+_packages="dev-libs/gmp app-eselect/eselect-ruby dev-lang/ruby:2.7"
 
 #
 # This hook is called just before starting the build of the root fs
 #
 configure_rootfs_build()
 {
-    echo 'RUBY_TARGETS="ruby26"' >> /etc/portage/make.conf
+    echo 'RUBY_TARGETS="ruby27"' >> /etc/portage/make.conf
     update_keywords 'dev-lang/ruby' '+~amd64'
 }
 
