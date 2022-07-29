@@ -1,7 +1,7 @@
-### kubler/tomcat:20220629
+### kubler/tomcat:20220729
 
-Built: Wed Jun 29 16:37:00 CEST 2022
-Image Size: 222MB
+Built: Fri Jul 29 17:08:29 CEST 2022
+Image Size: 223MB
 
 #### Installed
 Package | USE Flags
@@ -20,21 +20,21 @@ dev-java/glassfish-xmlrpc-api-1.1.1-r1 | `-doc -source`
 dev-java/jakarta-activation-api-1.2.2-r1 | `-doc -source`
 dev-java/jakartaee-migration-1.0.0 | `-doc -source -test`
 dev-java/jakarta-xml-soap-api-1.4.2-r1 | `-doc -source -test`
-dev-java/tomcat-native-1.2.33 | `-static-libs -test`
-dev-java/tomcat-servlet-api-10.0.21 | `-source`
+dev-java/tomcat-native-1.2.34 | `-static-libs -test`
+dev-java/tomcat-servlet-api-10.0.22 | `-source`
 dev-java/tomcat-servlet-api-7.0.109 | `-source`
-dev-java/wsdl4j-1.6.2-r1 | `-doc -source -test`
+dev-java/wsdl4j-1.6.3 | `-doc -source`
 dev-java/xz-java-1.9 | `-doc -examples -source`
 dev-java/zstd-jni-1.5.0.4 | ``
 dev-libs/apr-1.7.0-r4 | `urandom -doc -older-kernels-compatibility (-selinux) -static-libs`
 java-virtuals/servlet-api-3.0-r3 | ``
-www-servers/tomcat-10.0.21 | `-doc -extra-webapps -source -test`
+www-servers/tomcat-10.0.22 | `-doc -extra-webapps -source -test`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/jre-openjdk** |
 app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
-app-eselect/eselect-java-0.4.3 | ``
+app-eselect/eselect-java-0.5.0 | ``
 dev-java/java-config-2.3.1 | `-test`
 dev-java/openjdk-jre-bin-17.0.3_p7 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
 dev-libs/expat-2.4.8 | `unicode -examples -static-libs`
@@ -55,18 +55,18 @@ app-arch/zstd-1.5.2 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p16 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins -verify-sig`
 net-libs/nghttp2-1.47.0 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.83.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -zstd`
+net-misc/curl-7.84.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.41 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.42 | `bzip2 seccomp zlib -lzma -python -static-libs -verify-sig`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static -verify-sig`
 sys-kernel/linux-headers-5.15-r3 | `-headers-only`
 sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1o | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1q | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
@@ -84,7 +84,7 @@ sys-apps/gawk-5.1.1-r2 | `nls readline -mpfr -verify-sig`
 sys-apps/gentoo-functions-0.15 | ``
 sys-apps/grep-3.7 | `nls pcre -static -verify-sig`
 sys-libs/glibc-2.34-r13 | `clone3 multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.27 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/libxcrypt-4.4.28-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.3_p20220423 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
 sys-libs/timezone-data-2021e | `nls -leaps-timezone -zic-slim`

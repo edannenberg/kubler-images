@@ -1,18 +1,18 @@
-### kubler/jdk-openjdk:20220629
+### kubler/jdk-openjdk:20220729
 
-Built: Wed Jun 29 16:14:48 CEST 2022
-Image Size: 375MB
+Built: Fri Jul 29 14:49:24 CEST 2022
+Image Size: 376MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
-app-eselect/eselect-java-0.4.3 | ``
+app-eselect/eselect-java-0.5.0 | ``
 dev-java/java-config-2.3.1 | `-test`
 dev-java/openjdk-bin-17.0.3_p7 | `gentoo-vm headless-awt -alsa -cups (-selinux) -source`
 dev-libs/elfutils-0.187 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -verify-sig -zstd`
 dev-libs/expat-2.4.8 | `unicode -examples -static-libs`
-dev-libs/glib-2.72.1 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
+dev-libs/glib-2.72.2 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/gobject-introspection-1.72.0 | `-doctool -gtk-doc -test`
 dev-libs/gobject-introspection-common-1.72.0 | ``
 dev-libs/libffi-3.4.2-r1 | `-debug (-exec-static-trampoline) (-experimental-loong) -pax-kernel -static-libs -test`
@@ -25,12 +25,12 @@ media-fonts/liberation-fonts-2.1.3 | `-`
 media-gfx/graphite2-1.3.14_p20210810-r1 | `-perl -test`
 media-libs/fontconfig-2.14.0-r1 | `-doc -static-libs -test`
 media-libs/freetype-2.12.0-r1 | `adobe-cff bzip2 cleartype-hinting png -`
-media-libs/harfbuzz-4.2.1 | `cairo glib graphite introspection truetype -debug -doc -experimental -icu -test`
+media-libs/harfbuzz-4.4.1 | `cairo glib graphite introspection truetype -debug -doc -experimental -icu -test`
 media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
 sys-apps/util-linux-2.37.4 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 sys-devel/binutils-config-5.4.1 | `(native-symlinks)`
-sys-libs/binutils-libs-2.37_p1-r2 | `nls -64-bit-bfd -cet -multitarget -static-libs`
+sys-libs/binutils-libs-2.38-r2 | `nls -64-bit-bfd -cet -multitarget -static-libs`
 x11-libs/cairo-1.16.0-r5 | `glib svg -`
 x11-libs/pixman-0.40.0 | `(-loongson2f) -static-libs -test`
 x11-misc/shared-mime-info-2.2 | `-test`
@@ -44,18 +44,18 @@ app-arch/zstd-1.5.2 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p16 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins -verify-sig`
 net-libs/nghttp2-1.47.0 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.83.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -zstd`
+net-misc/curl-7.84.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.41 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.42 | `bzip2 seccomp zlib -lzma -python -static-libs -verify-sig`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static -verify-sig`
 sys-kernel/linux-headers-5.15-r3 | `-headers-only`
 sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1o | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1q | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
@@ -73,7 +73,7 @@ sys-apps/gawk-5.1.1-r2 | `nls readline -mpfr -verify-sig`
 sys-apps/gentoo-functions-0.15 | ``
 sys-apps/grep-3.7 | `nls pcre -static -verify-sig`
 sys-libs/glibc-2.34-r13 | `clone3 multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.27 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/libxcrypt-4.4.28-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.3_p20220423 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
 sys-libs/timezone-data-2021e | `nls -leaps-timezone -zic-slim`

@@ -1,7 +1,7 @@
-### kubler/mariadb:20220629
+### kubler/mariadb:20220729
 
-Built: Wed Jun 29 16:23:49 CEST 2022
-Image Size: 486MB
+Built: Fri Jul 29 16:36:48 CEST 2022
+Image Size: 489MB
 
 #### Installed
 Package | USE Flags
@@ -25,13 +25,12 @@ app-admin/perl-cleaner-2.30 | ``
 app-arch/libarchive-3.6.1 | `acl bzip2 e2fsprogs iconv lzma xattr -blake2 -expat -lz4 -lzo -nettle -static-libs -verify-sig -zstd`
 app-arch/lz4-1.9.3-r1 | `-static-libs`
 app-arch/pbzip2-1.1.13 | `-static -symlink`
-app-misc/mime-types-2.1.53 | `-nginx`
-dev-db/mariadb-10.5.13 | `backup bindist perl server -columnstore -cracklib -debug -extraengine -galera -innodb-lz4 -innodb-lzo -innodb-snappy -jdbc -jemalloc -kerberos -latin1 (-mroonga) -numa -odbc -oqgraph -pam -profiling -rocksdb -s3 (-selinux) -sphinx -sst-mariabackup -sst-rsync -static -systemd -systemtap -tcmalloc -test -xml -yassl`
+dev-db/mariadb-10.5.16 | `backup bindist perl server -columnstore -cracklib -debug -extraengine -galera -innodb-lz4 -innodb-lzo -innodb-snappy -jdbc -jemalloc -kerberos -latin1 (-mroonga) -numa -odbc -oqgraph -pam -profiling -rocksdb -s3 (-selinux) -sphinx -sst-mariabackup -sst-rsync -static -systemd -systemtap -tcmalloc -test -xml -yassl`
 dev-db/mysql-connector-c-8.0.27 | `-ldap -static-libs`
 dev-db/mysql-init-scripts-2.3-r4 | ``
 dev-db/sqlite-3.38.5 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
 dev-lang/perl-5.34.1-r3 | `-berkdb -debug -doc -gdbm -ithreads -minimal -quadmath`
-dev-lang/python-3.9.13 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -lto -ncurses -pgo -test -tk -verify-sig -wininst`
+dev-lang/python-3.10.5 | `hardened readline sqlite ssl xml -bluetooth -build -examples -gdbm -libedit -lto -ncurses -pgo -test -tk -verify-sig -wininst`
 dev-lang/python-exec-2.4.9 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.4.8 | `unicode -examples -static-libs`
@@ -66,18 +65,18 @@ app-arch/zstd-1.5.2 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p16 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins -verify-sig`
 net-libs/nghttp2-1.47.0 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.83.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -zstd`
+net-misc/curl-7.84.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.41 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.42 | `bzip2 seccomp zlib -lzma -python -static-libs -verify-sig`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static -verify-sig`
 sys-kernel/linux-headers-5.15-r3 | `-headers-only`
 sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1o | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1q | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
@@ -95,7 +94,7 @@ sys-apps/gawk-5.1.1-r2 | `nls readline -mpfr -verify-sig`
 sys-apps/gentoo-functions-0.15 | ``
 sys-apps/grep-3.7 | `nls pcre -static -verify-sig`
 sys-libs/glibc-2.34-r13 | `clone3 multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.27 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/libxcrypt-4.4.28-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.3_p20220423 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
 sys-libs/timezone-data-2021e | `nls -leaps-timezone -zic-slim`

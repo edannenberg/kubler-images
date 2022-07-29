@@ -1,17 +1,17 @@
-### kubler/jdk-icedtea:20220629
+### kubler/jdk-icedtea:20220729
 
-Built: Wed Jun 29 16:12:04 CEST 2022
-Image Size: 500MB
+Built: Fri Jul 29 14:46:27 CEST 2022
+Image Size: 501MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
-app-eselect/eselect-java-0.4.3 | ``
+app-eselect/eselect-java-0.5.0 | ``
 dev-java/icedtea-bin-3.16.0 | `headless-awt -alsa (-big-endian) -cups -doc -examples -gtk -pulseaudio (-selinux) -source`
 dev-java/java-config-2.3.1 | `-test`
 dev-libs/elfutils-0.187 | `bzip2 nls utils -lzma -static-libs -test (-threads) -valgrind -verify-sig -zstd`
-dev-libs/glib-2.72.1 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
+dev-libs/glib-2.72.2 | `elf mime xattr -dbus -debug -fam -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/libffi-3.4.2-r1 | `-debug (-exec-static-trampoline) (-experimental-loong) -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.40 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
 dev-libs/libtasn1-4.18.0 | `-static-libs -test -valgrind`
@@ -42,11 +42,11 @@ sys-devel/autoconf-2.71-r1 | `-emacs`
 sys-devel/autoconf-wrapper-20220130 | ``
 sys-devel/automake-1.16.5 | `-test`
 sys-devel/automake-wrapper-11-r1 | ``
-sys-devel/binutils-2.37_p1-r2 | `gold nls plugins -cet (-default-gold) -doc -multitarget -pgo -static-libs -test -vanilla`
+sys-devel/binutils-2.38-r2 | `gold nls plugins -cet (-default-gold) -doc -multitarget -pgo -static-libs -test -vanilla`
 sys-devel/binutils-config-5.4.1 | `(native-symlinks)`
 sys-devel/gcc-11.3.0 | `(cxx) hardened nls nptl openmp (pie) sanitize (ssp) (-ada) -cet (-custom-cflags) -d -debug -doc (-fixed-point) -fortran -go -graphite -jit (-libssp) -lto (-multilib) -objc -objc`
 sys-devel/gcc-config-2.5-r1 | `(cc-wrappers) (native-symlinks)`
-sys-devel/gettext-0.21-r1 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs -verify-sig`
+sys-devel/gettext-0.21-r3 | `acl cxx nls openmp -cvs -doc -emacs -git -java -ncurses -static-libs -verify-sig`
 sys-devel/gnuconfig-20220508 | ``
 sys-devel/m4-1.4.19 | `nls -examples -verify-sig`
 sys-devel/make-4.3 | `nls -guile -static -verify-sig`
@@ -58,18 +58,18 @@ app-arch/zstd-1.5.2 | `threads -lz4 -static-libs`
 app-portage/portage-utils-0.93.3 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p16 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins -verify-sig`
 net-libs/nghttp2-1.47.0 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.83.1 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -zstd`
+net-misc/curl-7.84.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -zstd`
 sys-apps/acl-2.3.1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.41 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.42 | `bzip2 seccomp zlib -lzma -python -static-libs -verify-sig`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static -verify-sig`
 sys-kernel/linux-headers-5.15-r3 | `-headers-only`
 sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20210119.3.66 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1o | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1q | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
@@ -87,7 +87,7 @@ sys-apps/gawk-5.1.1-r2 | `nls readline -mpfr -verify-sig`
 sys-apps/gentoo-functions-0.15 | ``
 sys-apps/grep-3.7 | `nls pcre -static -verify-sig`
 sys-libs/glibc-2.34-r13 | `clone3 multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) -static-pie -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.27 | `(compat) (split-usr) (system) -static-libs -test`
+sys-libs/libxcrypt-4.4.28-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.3_p20220423 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
 sys-libs/timezone-data-2021e | `nls -leaps-timezone -zic-slim`
