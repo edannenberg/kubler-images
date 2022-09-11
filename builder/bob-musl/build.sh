@@ -28,6 +28,7 @@ configure_bob() {
     [[ -f /usr/"${_LIB}"/misc/ssh-keysign ]] && rm /usr/"${_LIB}"/misc/ssh-keysign
     emerge -C net-misc/openssh dev-libs/openssl
     update_use 'dev-libs/openssl' -bindist
+    update_use 'sys-apps/util-linux' '+pam'
     emerge net-misc/openssh
     emerge @preserved-rebuild
     update_use 'dev-vcs/git' '-perl'
