@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="dev-lang/clojure-bin"
+_packages="dev-lang/clojure-tools-bin"
 
 configure_builder()
 {

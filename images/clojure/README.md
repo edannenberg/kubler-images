@@ -4,11 +4,13 @@ Run this [Clojure][] image with:
 
     $ docker run -it --rm --name clojure kubler/clojure clj
 
+The image includes [Clojure CLI Tools][].
+
 [Boot][] and/or [Leiningen][] will install on first execution unless you mount the respective local
 cache directories with preloaded jars.
 
 The image comes with a `java` user for unprivileged container usage. To ease development pains
-you can use the provided [ONBUILD][] instructions. Docker Compose example for a [Boot][] project:
+you can use the provided [ONBUILD][] instructions. Docker Compose example for a [deps.edn][] project:
 
 ```
 version: '2'
@@ -23,10 +25,10 @@ services:
     user: java
     working_dir: ${PWD}
     volumes:
+      - ~/.m2:/home/java/.clojure
       - ~/.m2:/home/java/.m2
-      - ~/.boot:/home/java/.boot
       - ${PWD}:${PWD}
-    command: [boot, dev]
+    command: [clojure, -M:dev]
 ```
 
 The referenced `docker/Dockerfile`:
@@ -50,6 +52,8 @@ export GID="$(id -g $(whoami))"
 [Last Build][packages]
 
 [Clojure]: http://clojure.org/
+[Clojure CLI Tools]:  https://clojure.org/guides/deps_and_cli
+[deps.edn]: https://clojure.org/reference/deps_and_cli
 [packages]: PACKAGES.md
 [ONBUILD]: https://docs.docker.com/engine/reference/builder/#onbuild
 [Boot]: http://boot-clj.com/
