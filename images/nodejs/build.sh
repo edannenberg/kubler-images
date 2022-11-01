@@ -15,6 +15,8 @@ configure_builder()
 #
 configure_rootfs_build()
 {
+   # no gcc please
+    provide_package sys-devel/gcc
     # install binary packages with no deps when building the root fs
     #_emerge_opt="--nodeps"
     # add user/group for unprivileged container usage
