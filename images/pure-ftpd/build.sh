@@ -2,7 +2,7 @@
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
 
-_packages="app-emulation/syslog-stdout net-ftp/pure-ftpd"
+_packages="app-containers/syslog-stdout net-ftp/pure-ftpd"
 
 #
 # This hook is called just before starting the build of the root fs
