@@ -5,7 +5,7 @@ _packages="dev-lang/clojure-tools-bin"
 
 configure_builder()
 {
-    emerge dev-lang/clojure-bin
+    emerge dev-lang/clojure-tools-bin
 }
 
 #
