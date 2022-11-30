@@ -1,27 +1,27 @@
-### kubler/kibana:20221031
+### kubler/kibana:20221130
 
-Built: Tue Nov  1 21:00:17 CET 2022
-Image Size: 705MB
+Built: Wed Nov 30 00:43:48 CET 2022
+Image Size: 706MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-admin/su-exec-0.2 | `-static`
-www-apps/kibana-bin-7.17.5 | ``
+www-apps/kibana-bin-7.17.7 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/nodejs** |
 app-arch/brotli-1.0.9-r5 | `-python -static-libs -test`
-dev-libs/icu-71.1-r1 | `-debug -doc -examples -static-libs -test -verify-sig`
+dev-libs/icu-72.1 | `-debug -doc -examples -static-libs -test -verify-sig`
 dev-libs/libuv-1.44.2-r1 | ``
 net-dns/c-ares-1.18.1 | `-static-libs -test`
 net-libs/http-parser-2.9.4-r2 | ``
 net-libs/nghttp2-1.47.0 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-libs/nodejs-18.9.1 | `icu npm snapshot ssl system-icu system-ssl -debug -doc -inspector -lto -pax-kernel -systemtap -test`
+net-libs/nodejs-18.12.1 | `icu npm snapshot ssl system-icu system-ssl -debug -doc -inspector -lto -pax-kernel -systemtap -test`
 sys-apps/yarn-1.22.19 | ``
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20211016.3.80 | `-cacert`
+app-misc/ca-certificates-20211016.3.83 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1q | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
@@ -40,12 +40,12 @@ net-dns/libidn2-2.3.3 | `nls -static-libs -verify-sig`
 sys-apps/gawk-5.1.1-r2 | `nls readline -mpfr -verify-sig`
 sys-apps/gentoo-functions-0.17 | ``
 sys-apps/grep-3.7 | `nls pcre -static -verify-sig`
-sys-libs/glibc-2.35-r8 | `clone3 multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc (-experimental-loong) -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.36-r5 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.28-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.3_p20220423 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
-sys-libs/readline-8.1_p2 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
-sys-libs/timezone-data-2022f | `nls -leaps-timezone -zic-slim`
-sys-libs/zlib-1.2.12-r3 | `(split-usr) -minizip -static-libs -verify-sig`
+sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
+sys-libs/timezone-data-2022f-r1 | `nls -leaps-timezone -zic-slim`
+sys-libs/zlib-1.2.13-r1 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/busybox** |
 #### Purged
 - [x] Headers

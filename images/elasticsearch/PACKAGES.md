@@ -1,7 +1,7 @@
-### kubler/elasticsearch:20221031
+### kubler/elasticsearch:20221130
 
-Built: Tue Nov  1 20:41:55 CET 2022
-Image Size: 1.12GB
+Built: Wed Nov 30 00:24:08 CET 2022
+Image Size: 1.13GB
 
 #### Installed
 Package | USE Flags
@@ -22,11 +22,11 @@ acct-group/tty-0-r1 | ``
 acct-group/video-0-r1 | ``
 acct-user/elasticsearch-0-r1 | ``
 app-admin/su-exec-0.2 | `-static`
-app-misc/elasticsearch-8.4.1 | ``
+app-misc/elasticsearch-8.5.0 | ``
 sys-apps/kmod-30 | `lzma (tools) zlib zstd -debug -doc -pkcs7 -python -static-libs`
-sys-apps/systemd-utils-251.4-r2 | `acl kmod (split-usr) tmpfiles udev -boot (-selinux) -sysusers -test`
+sys-apps/systemd-utils-251.7 | `acl kmod (split-usr) tmpfiles udev -boot (-selinux) -sysusers -test`
 sys-fs/udev-init-scripts-35 | ``
-sys-libs/libcap-2.65 | `(split-usr) -pam -static-libs -tools`
+sys-libs/libcap-2.66 | `(split-usr) -pam -static-libs -tools`
 #### Inherited
 Package | USE Flags
 --------|----------
@@ -36,33 +36,34 @@ app-eselect/eselect-java-0.5.0 | ``
 dev-java/java-config-2.3.1 | `-test`
 dev-java/openjdk-jre-bin-17.0.3_p7 | `gentoo-vm headless-awt -alsa -cups (-selinux)`
 dev-libs/expat-2.5.0 | `unicode -examples -static-libs`
-dev-libs/libffi-3.4.2-r2 | `-debug (-exec-static-trampoline) (-experimental-loong) -pax-kernel -static-libs -test`
+dev-libs/libffi-3.4.4 | `-debug (-exec-static-trampoline) -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.40 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
 dev-libs/libtasn1-4.19.0 | `-static-libs -test -valgrind -verify-sig`
 media-fonts/liberation-fonts-2.1.5 | `-`
 media-libs/fontconfig-2.14.0-r1 | `-doc -static-libs -test`
 media-libs/freetype-2.12.1-r1 | `adobe-cff bzip2 cleartype-hinting png -`
-media-libs/libpng-1.6.37-r2 | `-apng -static-libs`
+media-libs/libpng-1.6.38 | `-apng -static-libs`
 net-libs/libnet-1.2 | `-static-libs`
 sys-apps/baselayout-java-0.1.0-r1 | ``
 sys-apps/util-linux-2.37.4 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev`
 **FROM kubler/bash** |
 app-admin/eselect-1.4.20 | `-doc -emacs -vim-syntax`
-app-arch/xz-utils-5.2.7 | `extra-filters nls (split-usr) -static-libs -verify-sig`
-app-arch/zstd-1.5.2-r2 | `(split-usr) threads -lz4 -static-libs`
+app-arch/xz-utils-5.2.8 | `extra-filters nls (split-usr) -static-libs -verify-sig`
+app-arch/zstd-1.5.2-r3 | `(split-usr) -lz4 -static-libs`
 app-portage/portage-utils-0.94.1 | `nls openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p16-r2 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins -verify-sig`
+net-dns/c-ares-1.18.1 | `-static-libs -test`
 net-libs/nghttp2-1.47.0 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
-net-misc/curl-7.84.0 | `ftp http2 imap openssl pop3 progress-meter smtp ssl tftp threads -adns -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -zstd`
+net-misc/curl-7.86.0-r3 | `adns ftp http2 imap openssl pop3 progress-meter smtp ssl tftp -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -websockets -zstd`
 sys-apps/acl-2.3.1-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1-r2 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-8.32-r1 | `acl nls (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla`
-sys-apps/file-5.41 | `bzip2 seccomp zlib -lzma -python -static-libs`
+sys-apps/file-5.43-r1 | `bzip2 seccomp zlib -lzma -python -static-libs -verify-sig`
 sys-apps/sed-4.8 | `acl nls (-selinux) -static -verify-sig`
 sys-kernel/linux-headers-5.15-r3 | `-headers-only`
 sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20211016.3.80 | `-cacert`
+app-misc/ca-certificates-20211016.3.83 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1q | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
@@ -81,12 +82,12 @@ net-dns/libidn2-2.3.3 | `nls -static-libs -verify-sig`
 sys-apps/gawk-5.1.1-r2 | `nls readline -mpfr -verify-sig`
 sys-apps/gentoo-functions-0.17 | ``
 sys-apps/grep-3.7 | `nls pcre -static -verify-sig`
-sys-libs/glibc-2.35-r8 | `clone3 multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc (-experimental-loong) -gd -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.36-r5 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.28-r1 | `(compat) (split-usr) (system) -static-libs -test`
 sys-libs/ncurses-6.3_p20220423 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
-sys-libs/readline-8.1_p2 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
-sys-libs/timezone-data-2022f | `nls -leaps-timezone -zic-slim`
-sys-libs/zlib-1.2.12-r3 | `(split-usr) -minizip -static-libs -verify-sig`
+sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
+sys-libs/timezone-data-2022f-r1 | `nls -leaps-timezone -zic-slim`
+sys-libs/zlib-1.2.13-r1 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/busybox** |
 #### Purged
 - [x] Headers
