@@ -1,14 +1,14 @@
-### kubler/openssl-musl:20221130
+### kubler/openssl-musl:20221231
 
-Built: Wed Nov 30 00:59:21 CET 2022
-Image Size: 7.06MB
+Built: Fri Jan  6 09:37:13 PM CET 2023
+Image Size: 7.07MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-misc/c_rehash-1.7-r1 | ``
 app-misc/ca-certificates-20211016.3.83 | `-cacert`
-dev-libs/openssl-1.1.1q | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1s | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 #### Inherited
@@ -17,7 +17,7 @@ Package | USE Flags
 **FROM kubler/musl** |
 sys-libs/musl-1.2.3 | `-headers-only -verify-sig`
 **FROM kubler/busybox** |
-sys-apps/busybox-1.34.1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
+sys-apps/busybox-1.34.1-r1 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
 #### Purged
 - [x] Headers
 - [x] Static Libs
