@@ -10,7 +10,6 @@ configure_bob() {
     # install basics used by helper functions
     eselect news read new 1> /dev/null
     mkdir -p /etc/portage/package.{accept_keywords,unmask,mask,use}
-    echo "app-portage/flaggie" >> /etc/portage/package.unmask/flaggie
     emerge app-portage/flaggie app-portage/eix app-portage/gentoolkit
     configure_eix
     touch /etc/portage/package.accept_keywords/flaggie
