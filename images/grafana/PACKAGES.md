@@ -1,19 +1,19 @@
-### kubler/grafana:20221231
+### kubler/grafana:20230131
 
-Built: Fri Jan  6 06:04:27 PM CET 2023
-Image Size: 326MB
+Built: Tue Jan 31 11:58:55 PM CET 2023
+Image Size: 329MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 acct-group/grafana-0-r1 | ``
 acct-user/grafana-0-r1 | ``
-www-apps/grafana-9.3.1 | `minimal`
+www-apps/grafana-9.3.6 | `minimal`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20211016.3.83 | `-cacert`
+app-misc/ca-certificates-20211016.3.86 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-libs/openssl-1.1.1s | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
@@ -22,20 +22,20 @@ sys-kernel/installkernel-gentoo-5 | `-grub`
 app-admin/entr-5.2 | ``
 dev-lang/execline-2.9.0.1 | ``
 dev-libs/skalibs-2.12.0.1 | `-doc -ipv6`
-sys-apps/s6-2.11.1.2 | `execline`
+sys-apps/s6-2.11.1.2-r1 | `execline`
 **FROM kubler/glibc** |
 app-alternatives/awk-4 | `gawk (split-usr) -busybox -mawk -nawk`
 app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-alternatives/gzip-0 | `reference (split-usr) -pigz`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
-app-arch/gzip-1.12-r3 | `-pic -static -verify-sig`
-dev-libs/libpcre-8.45-r1 | `bzip2 cxx readline (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -static-libs`
+app-arch/gzip-1.12-r4 | `-pic -static -verify-sig`
+dev-libs/libpcre2-10.42 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-apps/gawk-5.2.1 | `nls readline -mpfr -pma -verify-sig`
 sys-apps/gentoo-functions-0.17 | ``
-sys-apps/grep-3.7 | `nls pcre -static -verify-sig`
-sys-libs/glibc-2.36-r5 | `multiarch (ssp) (static-libs) -audit -caps -cet -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
+sys-apps/grep-3.8-r1 | `egrep-fgrep nls pcre -static -verify-sig`
+sys-libs/glibc-2.36-r5 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.28-r2 | `(compat) (split-usr) (system) -headers-only -static-libs -test`
 sys-libs/ncurses-6.3_p20221203-r2 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
