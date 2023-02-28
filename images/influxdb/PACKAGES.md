@@ -1,6 +1,6 @@
-### kubler/influxdb:20230131
+### kubler/influxdb:20230228
 
-Built: Wed Feb  1 12:06:22 AM CET 2023
+Built: Tue Feb 28 12:03:08 PM CET 2023
 Image Size: 141MB
 
 #### Installed
@@ -19,7 +19,7 @@ app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-alternatives/gzip-0 | `reference (split-usr) -pigz`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/gzip-1.12-r4 | `-pic -static -verify-sig`
-dev-libs/libpcre2-10.42 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
+dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-apps/gawk-5.2.1 | `nls readline -mpfr -pma -verify-sig`

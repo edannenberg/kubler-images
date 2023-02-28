@@ -1,7 +1,7 @@
-### kubler/graph-easy:20230131
+### kubler/graph-easy:20230228
 
-Built: Wed Feb  1 12:01:05 AM CET 2023
-Image Size: 154MB
+Built: Tue Feb 28 11:58:03 AM CET 2023
+Image Size: 155MB
 
 #### Installed
 Package | USE Flags
@@ -9,7 +9,7 @@ Package | USE Flags
 dev-libs/elfutils-0.188 | `bzip2 nls utils -lzma -static-libs -test -valgrind -verify-sig -zstd`
 dev-libs/expat-2.5.0 | `unicode -examples -static-libs`
 dev-libs/fribidi-1.0.12 | `-doc -test`
-dev-libs/glib-2.74.4 | `elf mime xattr -dbus -debug -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
+dev-libs/glib-2.74.5 | `elf mime xattr -dbus -debug -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/libffi-3.4.4 | `-debug (-exec-static-trampoline) -pax-kernel -static-libs -test`
 dev-libs/libltdl-2.4.7 | `-static-libs`
 dev-libs/libxml2-2.10.3-r1 | `ftp python readline -debug -examples -icu -lzma -static-libs -test`
@@ -18,7 +18,7 @@ dev-perl/Config-Tiny-2.270.0 | `-test`
 dev-perl/Digest-SHA1-2.130.0-r2 | ``
 dev-perl/Graph-Easy-0.76 | `graphviz`
 media-fonts/liberation-fonts-2.1.5 | `-`
-media-gfx/graphviz-5.0.1-r2 | `cairo -`
+media-gfx/graphviz-7.0.5 | `cairo -`
 media-libs/fontconfig-2.14.0-r1 | `-doc -static-libs -test`
 media-libs/freetype-2.12.1-r1 | `adobe-cff bzip2 cleartype-hinting png -`
 media-libs/gd-2.3.3-r3 | `fontconfig jpeg png truetype zlib -avif -heif -static-libs -test -tiff -webp -xpm`
@@ -34,7 +34,7 @@ x11-misc/shared-mime-info-2.2 | `-test`
 Package | USE Flags
 --------|----------
 **FROM kubler/perl** |
-app-admin/perl-cleaner-2.30 | ``
+app-admin/perl-cleaner-2.30-r1 | `-pkgcore`
 dev-lang/perl-5.36.0-r1 | `-berkdb -debug -doc -gdbm -ithreads -minimal -quadmath`
 perl-core/File-Temp-0.231.100 | ``
 **FROM kubler/bash** |
@@ -44,7 +44,7 @@ app-arch/zstd-1.5.2-r3 | `(split-usr) -lz4 -static-libs`
 app-portage/portage-utils-0.94.3 | `openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p16-r2 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins -verify-sig`
 net-dns/c-ares-1.18.1 | `-static-libs -test`
-net-libs/nghttp2-1.47.0 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
+net-libs/nghttp2-1.51.0 | `-cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.87.0-r2 | `adns ftp http2 imap openssl pop3 progress-meter smtp ssl tftp -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp (-rustls) -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -websockets -zstd`
 sys-apps/acl-2.3.1-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1-r2 | `nls (split-usr) -debug -static-libs`
@@ -56,7 +56,7 @@ sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20211016.3.86 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1s | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1t-r1 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
@@ -70,7 +70,7 @@ app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-alternatives/gzip-0 | `reference (split-usr) -pigz`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/gzip-1.12-r4 | `-pic -static -verify-sig`
-dev-libs/libpcre2-10.42 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
+dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-apps/gawk-5.2.1 | `nls readline -mpfr -pma -verify-sig`

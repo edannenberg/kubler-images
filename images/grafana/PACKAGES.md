@@ -1,6 +1,6 @@
-### kubler/grafana:20230131
+### kubler/grafana:20230228
 
-Built: Tue Jan 31 11:58:55 PM CET 2023
+Built: Tue Feb 28 11:55:52 AM CET 2023
 Image Size: 329MB
 
 #### Installed
@@ -15,7 +15,7 @@ Package | USE Flags
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20211016.3.86 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1s | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1t-r1 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
@@ -29,7 +29,7 @@ app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-alternatives/gzip-0 | `reference (split-usr) -pigz`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/gzip-1.12-r4 | `-pic -static -verify-sig`
-dev-libs/libpcre2-10.42 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
+dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-apps/gawk-5.2.1 | `nls readline -mpfr -pma -verify-sig`

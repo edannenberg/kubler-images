@@ -1,16 +1,16 @@
-### kubler/plantuml:20230131
+### kubler/plantuml:20230228
 
-Built: Wed Feb  1 12:33:53 AM CET 2023
+Built: Tue Feb 28 12:30:39 PM CET 2023
 Image Size: 265MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 dev-libs/elfutils-0.188 | `bzip2 nls utils -lzma -static-libs -test -valgrind -verify-sig -zstd`
-dev-libs/glib-2.74.4 | `elf mime xattr -dbus -debug -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
+dev-libs/glib-2.74.5 | `elf mime xattr -dbus -debug -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/libltdl-2.4.7 | `-static-libs`
 dev-libs/libxml2-2.10.3-r1 | `ftp python readline -debug -examples -icu -lzma -static-libs -test`
-media-gfx/graphviz-5.0.1-r2 | `nls -`
+media-gfx/graphviz-7.0.5 | `nls -`
 media-libs/fontconfig-2.14.0-r1 | `-doc -static-libs -test`
 media-libs/freetype-2.12.1-r1 | `adobe-cff bzip2 cleartype-hinting png -`
 media-libs/gd-2.3.3-r3 | `fontconfig jpeg png truetype zlib -avif -heif -static-libs -test -tiff -webp -xpm`
@@ -24,31 +24,31 @@ Package | USE Flags
 acct-group/tomcat-0 | ``
 acct-user/tomcat-0 | ``
 dev-java/ant-core-1.10.9-r5 | `-doc -source`
-dev-java/ant-eclipse-ecj-4.25 | `-doc -source`
+dev-java/ant-eclipse-ecj-4.26 | `-doc -source`
 dev-java/asm-9.4 | `-doc -source`
 dev-java/bcel-6.6.0 | `-doc -source -verify-sig`
 dev-java/brotli-dec-0.1.2 | `-doc -source`
 dev-java/commons-compress-1.21-r1 | `-doc -source -test`
 dev-java/commons-io-2.11.0-r1 | `-doc -source -test`
 dev-java/commons-lang-3.12.0 | `-doc -source`
-dev-java/eclipse-ecj-4.25 | `ant -doc -source`
+dev-java/eclipse-ecj-4.26 | `ant -doc -source`
 dev-java/glassfish-xmlrpc-api-1.1.1-r1 | `-doc -source`
 dev-java/jakarta-activation-api-1.2.2-r1 | `-doc -source`
 dev-java/jakartaee-migration-1.0.6 | `-doc -source -test`
 dev-java/jakarta-xml-soap-api-1.4.2-r1 | `-doc -source -test`
-dev-java/tomcat-el-api-10.1.4 | `-doc -source -verify-sig`
-dev-java/tomcat-jsp-api-10.1.4 | `-doc -source -verify-sig`
+dev-java/tomcat-el-api-10.1.5 | `-doc -source -verify-sig`
+dev-java/tomcat-jsp-api-10.1.5 | `-doc -source -verify-sig`
 dev-java/tomcat-native-1.2.35 | `-static-libs -test`
-dev-java/tomcat-servlet-api-10.1.4 | `-doc -source -verify-sig`
+dev-java/tomcat-servlet-api-10.1.5 | `-doc -source -verify-sig`
 dev-java/tomcat-servlet-api-7.0.109 | `-source`
 dev-java/wsdl4j-1.6.3 | `-doc -source`
 dev-java/xz-java-1.9 | `-doc -examples -source`
 dev-java/zstd-jni-1.5.2.5 | `-doc -source`
-dev-libs/apr-1.7.0-r6 | `urandom -doc -older-kernels-compatibility (-selinux) -static-libs`
+dev-libs/apr-1.7.2 | `urandom -doc -old-kernel (-selinux) -static-libs`
 java-virtuals/servlet-api-3.0-r3 | ``
-www-servers/tomcat-10.1.4 | `-doc -extra-webapps -source -test -verify-sig`
+www-servers/tomcat-10.1.5 | `-doc -extra-webapps -source -test -verify-sig`
 **FROM kubler/jre-openjdk** |
-app-crypt/p11-kit-0.23.22 | `asn1 libffi trust -debug -systemd`
+app-crypt/p11-kit-0.24.1-r1 | `asn1 libffi trust -debug -systemd`
 app-eselect/eselect-java-0.5.0 | ``
 dev-java/java-config-2.3.1 | `-test`
 dev-java/openjdk-jre-bin-17.0.6_p10 | `headless-awt -alsa -cups (-selinux)`
@@ -69,7 +69,7 @@ app-arch/zstd-1.5.2-r3 | `(split-usr) -lz4 -static-libs`
 app-portage/portage-utils-0.94.3 | `openmp -qmanifest -qtegrity -static`
 app-shells/bash-5.1_p16-r2 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins -verify-sig`
 net-dns/c-ares-1.18.1 | `-static-libs -test`
-net-libs/nghttp2-1.47.0 | `threads -cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
+net-libs/nghttp2-1.51.0 | `-cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-7.87.0-r2 | `adns ftp http2 imap openssl pop3 progress-meter smtp ssl tftp -alt-svc -brotli -gnutls -gopher -hsts -idn -ipv6 -kerberos -ldap -mbedtls (-nghttp3) -nss (-quiche) -rtmp (-rustls) -samba -ssh -sslv3 -static-libs -telnet -test -verify-sig -websockets -zstd`
 sys-apps/acl-2.3.1-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1-r2 | `nls (split-usr) -debug -static-libs`
@@ -81,7 +81,7 @@ sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20211016.3.86 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
-dev-libs/openssl-1.1.1s | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1t-r1 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-5 | `-grub`
 **FROM kubler/s6** |
@@ -95,7 +95,7 @@ app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-alternatives/gzip-0 | `reference (split-usr) -pigz`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/gzip-1.12-r4 | `-pic -static -verify-sig`
-dev-libs/libpcre2-10.42 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
+dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-apps/gawk-5.2.1 | `nls readline -mpfr -pma -verify-sig`

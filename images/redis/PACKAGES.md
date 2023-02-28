@@ -1,7 +1,7 @@
-### kubler/redis:20230131
+### kubler/redis:20230228
 
-Built: Wed Feb  1 12:38:02 AM CET 2023
-Image Size: 72.2MB
+Built: Tue Feb 28 12:34:39 PM CET 2023
+Image Size: 72.4MB
 
 #### Installed
 Package | USE Flags
@@ -27,7 +27,7 @@ app-misc/ca-certificates-20211016.3.86 | `-cacert`
 app-misc/c_rehash-1.7-r1 | ``
 dev-db/redis-7.0.8 | `jemalloc ssl (-selinux) -systemd -tcmalloc -test`
 dev-libs/jemalloc-5.3.0-r1 | `-debug -lazy-lock -prof -stats -xmalloc`
-dev-libs/openssl-1.1.1s | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-1.1.1t-r1 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/acl-2.3.1-r1 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1-r2 | `nls (split-usr) -debug -static-libs`
 sys-apps/debianutils-5.7 | `installkernel -static`
@@ -51,7 +51,7 @@ app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-alternatives/gzip-0 | `reference (split-usr) -pigz`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/gzip-1.12-r4 | `-pic -static -verify-sig`
-dev-libs/libpcre2-10.42 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
+dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -verify-sig`
 dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-apps/gawk-5.2.1 | `nls readline -mpfr -pma -verify-sig`
