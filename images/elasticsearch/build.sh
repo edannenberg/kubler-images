@@ -21,7 +21,5 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
-    # manually remove the .keep files
-    rm ${_EMERGE_ROOT}/usr/share/elasticsearch/plugins/.keep*
     uninstall_package app-shells/bash virtual/jre-1.8.0-r1
 }
