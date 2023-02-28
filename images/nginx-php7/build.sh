@@ -5,7 +5,7 @@ _php_slot="${BOB_PHP_SLOT}"
 _php_target="php${_php_slot/\./-}"
 _packages="dev-lang/php:${_php_slot} dev-php/xdebug dev-php/pecl-apcu_bc dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached app-arch/zstd"
 _php_timezone="${BOB_TIMEZONE:-UTC}"
-_adminer_version="4.8.0"
+_adminer_version="4.8.1"
 #_iconv_from=kubler/glibc
 
 configure_bob()
@@ -27,6 +27,7 @@ configure_bob()
     update_use 'media-gfx/imagemagick' '-openmp'
     # skip python
     provide_package dev-lang/python dev-lang/python-exec
+    emerge -v --with-bdeps=y libxcb
     emerge "php:${_php_slot}" dev-vcs/git libmemcached imagemagick
 }
 
