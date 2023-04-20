@@ -10,6 +10,7 @@ configure_rootfs_build()
 {
     update_use 'sys-apps/busybox' +make-symlinks +static
     update_use 'virtual/libcrypt' +static-libs
+    update_use 'sys-libs/libxcrypt' +static-libs
     update_use 'sys-apps/sed' +static -acl -nls
     # bug in busybox-1.31.1-r2 ebuild, musl is pulled in as rdep but we build static version
     provide_package sys-libs/musl
