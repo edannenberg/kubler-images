@@ -13,12 +13,12 @@ configure_bob() {
         mkdir -p "${i}"
         [[ -f "${i}".old ]] &&  mv "${i}".old "${i}"/default
     done
-
     # install basics used by helper functions
     eselect news read new 1> /dev/null
+    # use hot fix in 0.99.4
+    echo '=app-portage/flaggie-0.99.4 ~amd64' >> /etc/portage/package.accept_keywords/flaggie
     emerge app-portage/flaggie app-portage/eix app-portage/gentoolkit
     configure_eix
-
     touch /etc/portage/package.accept_keywords/flaggie
     echo 'LANG="en_US.utf8"' > /etc/env.d/02locale
     env-update
