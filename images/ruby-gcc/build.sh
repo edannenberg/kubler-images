@@ -1,12 +1,12 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="app-eselect/eselect-ruby dev-lang/ruby:2.7 dev-util/pkgconf sys-apps/coreutils dev-ruby/pkg-config"
+_packages="app-eselect/eselect-ruby dev-lang/ruby dev-util/pkgconf sys-apps/coreutils dev-ruby/pkg-config"
 _keep_headers='true'
 
 configure_builder()
 {
-    emerge dev-libs/glib
+    emerge -v dev-libs/glib dev-lang/ruby
 }
 
 #
@@ -14,8 +14,6 @@ configure_builder()
 #
 configure_rootfs_build()
 {
-    echo 'RUBY_TARGETS="ruby27"' >> /etc/portage/make.conf
-    update_keywords 'dev-lang/ruby' '+~amd64'
     # no python please.
     provide_package dev-lang/python app-eselect/eselect-python dev-lang/python-exec
 }
