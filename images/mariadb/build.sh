@@ -13,6 +13,8 @@ configure_rootfs_build()
     #update_use 'dev-db/mariadb' '-perl'
     # reinstall curl, needed at build time
     unprovide_package net-misc/curl
+    # don't pull in gcc
+    provide_package sys-devel/gcc
 }
 
 #
