@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="dev-lang/python:3.10 dev-python/pip"
+_packages="dev-lang/python dev-python/pip"
 #_keep_headers=true
 
 configure_bob()
