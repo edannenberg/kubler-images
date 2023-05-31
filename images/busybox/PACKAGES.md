@@ -1,7 +1,7 @@
-### kubler/busybox:20230430
+### kubler/busybox:20230531
 
-Built: Tue May  2 08:57:09 AM CEST 2023
-Image Size: 1.47MB
+Built: Wed May 31 11:08:39 AM CEST 2023
+Image Size: 1.48MB
 
 #### Installed
 Package | USE Flags
