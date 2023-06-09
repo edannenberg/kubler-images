@@ -28,5 +28,6 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
-    :
+    # required for internal modules
+    copy_gcc_libs
 }
