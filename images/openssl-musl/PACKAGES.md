@@ -1,13 +1,13 @@
-### kubler/openssl-musl:20230531
+### kubler/openssl-musl:20230630
 
-Built: Wed May 31 11:51:41 AM CEST 2023
-Image Size: 7.12MB
+Built: Tue Jul  4 09:46:46 PM CEST 2023
+Image Size: 9.16MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-misc/ca-certificates-20230311.3.89.1 | `-cacert`
-dev-libs/openssl-1.1.1t-r3 | `asm -rfc3779 -sctp -sslv3 -static-libs -test -tls-compression -tls-heartbeat -vanilla -verify-sig -weak-ssl-ciphers`
+app-misc/ca-certificates-20230311.3.90 | `-cacert`
+dev-libs/openssl-3.0.9-r1 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 #### Inherited
