@@ -5,6 +5,9 @@ _packages="www-servers/nginx dev-libs/libpcre2"
 # ..or when using mva overlay
 #_packages="www-servers/nginx::mva"
 
+# openssl 3.x update breaks bin packages linked against 1.x
+_no_cache_20230630=www-servers/nginx
+
 configure_bob()
 {
     # add mva overlay which has nginx with pagespeed and other goodies
