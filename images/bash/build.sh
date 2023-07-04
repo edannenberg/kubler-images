@@ -10,7 +10,7 @@ configure_rootfs_build()
 {
     update_use 'sys-libs/ncurses' '+minimal'
     # these use flags pull in gcc as runtime dep
-    update_use app-portage/portage-utils -qmanifest -qtegrity
+    update_use app-portage/portage-utils -qmanifest -qtegrity -openmp
 }
 
 #
