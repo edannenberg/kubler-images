@@ -7,6 +7,7 @@ configure_builder()
 {
     update_use -postscript
     update_use 'dev-java/openjdk-bin' +headless-awt
+    update_use 'media-libs/harfbuzz' -graphite
     echo 'dev-java/openjdk-bin -gentoo-vm' >> /etc/portage/profile/package.use.mask
     # skip python
     provide_package dev-lang/python dev-lang/python-exec
