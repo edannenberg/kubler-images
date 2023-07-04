@@ -20,6 +20,8 @@ configure_bob()
     cp /usr/lib/locale/locale-archive "${_EMERGE_ROOT}"/usr/lib/locale/
     # set timezone
     echo $_timezone > /etc/timezone
+    # 30.06.23 - update glibc in build container first to resolve a blocker
+    emerge sys-libs/glibc
 }
 
 #
