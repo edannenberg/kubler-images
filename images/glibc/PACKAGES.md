@@ -1,12 +1,12 @@
-### kubler/glibc:20230630
+### kubler/glibc:20230731
 
-Built: Tue Jul  4 09:01:35 PM CEST 2023
-Image Size: 14.9MB
+Built: Mon Jul 31 04:23:25 PM CEST 2023
+Image Size: 15MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
+dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-libs/glibc-2.37-r3 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.33 | `(compat) (split-usr) (system) -headers-only -static-libs -test`

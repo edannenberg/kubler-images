@@ -1,7 +1,7 @@
-### kubler/gulp-sass-gcc:20230630
+### kubler/gulp-sass-gcc:20230731
 
-Built: Tue Jul  4 09:19:13 PM CEST 2023
-Image Size: 734MB
+Built: Mon Jul 31 04:41:18 PM CEST 2023
+Image Size: 735MB
 
 #### Installed
 Package | USE Flags
@@ -24,39 +24,39 @@ app-misc/mime-types-2.1.53 | `-nginx`
 app-portage/portage-utils-0.96-r1 | `openmp qmanifest qtegrity -static`
 app-shells/bash-5.1_p16-r6 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins -verify-sig`
 dev-db/sqlite-3.42.0 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/perl-5.36.1-r2 | `-berkdb -debug -doc -gdbm -ithreads -minimal -quadmath`
+dev-lang/perl-5.36.1-r3 | `-berkdb -debug -doc -gdbm -ithreads -minimal -quadmath`
 dev-lang/python-3.11.4 | `ensurepip readline sqlite ssl -bluetooth -build -debug -examples -gdbm -libedit -lto -ncurses -pgo -test -tk -valgrind -verify-sig`
 dev-lang/python-exec-2.4.10 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.5.0 | `unicode -examples -static-libs -test`
 dev-libs/gmp-6.2.1-r5 | `asm cpudetection cxx -doc -pic -static-libs`
-dev-libs/libassuan-2.5.5 | ``
+dev-libs/libassuan-2.5.6 | `-verify-sig`
 dev-libs/libffi-3.4.4-r1 | `-debug (-exec-static-trampoline) -pax-kernel -static-libs -test`
 dev-libs/libgcrypt-1.10.1-r3 | `asm getentropy -doc -static-libs -verify-sig`
 dev-libs/libgpg-error-1.47 | `nls -common-lisp -static-libs -test -verify-sig`
-dev-libs/libksba-1.6.3 | `-static-libs -verify-sig`
+dev-libs/libksba-1.6.4 | `-static-libs -verify-sig`
 dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -valgrind -verify-sig`
 dev-libs/libtasn1-4.19.0 | `-static-libs -test -verify-sig`
-dev-libs/libxml2-2.10.4 | `ftp readline -debug -examples -icu -lzma -python -static-libs -test`
+dev-libs/libxml2-2.11.4 | `ftp readline -debug -examples -icu -lzma -python -static-libs -test`
 dev-libs/mpc-1.3.1 | `-static-libs`
-dev-libs/mpfr-4.2.0_p9 | `-static-libs -verify-sig`
+dev-libs/mpfr-4.2.0_p12 | `-static-libs -verify-sig`
 dev-libs/nettle-3.9.1 | `asm gmp -doc -static-libs -verify-sig`
 dev-libs/npth-1.6-r1 | `-test`
 dev-python/ensurepip-pip-23.1.2 | ``
-dev-python/ensurepip-setuptools-67.8.0 | ``
+dev-python/ensurepip-setuptools-68.0.0 | ``
 dev-python/ensurepip-wheels-100 | ``
 dev-python/gentoo-common-1 | ``
-net-libs/gnutls-3.7.8 | `cxx idn nls openssl seccomp tls-heartbeat zlib -brotli -dane -doc -examples -guile -pkcs11 (-sslv2) (-sslv3) -static-libs -test (-test-full) -tools -verify-sig -zstd`
+net-libs/gnutls-3.8.0 | `cxx idn nls openssl seccomp tls-heartbeat zlib -brotli -dane -doc -examples -pkcs11 (-sslv2) (-sslv3) -static-libs -test (-test-full) -tools -verify-sig -zstd`
 net-misc/curl-8.0.1 | `adns ftp http2 imap openssl pop3 progress-meter smtp ssl tftp -alt-svc -brotli -gnutls -gopher -hsts -idn -kerberos -ldap -mbedtls (-nghttp3) -nss -rtmp (-rustls) -samba -ssh (-sslv3) -static-libs -telnet -test -verify-sig -websockets -zstd`
 perl-core/File-Temp-0.231.100 | ``
-sys-apps/acl-2.3.1-r1 | `nls (split-usr) -static-libs`
+sys-apps/acl-2.3.1-r2 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1-r2 | `nls (split-usr) -debug -static-libs`
 sys-apps/findutils-4.9.0-r2 | `nls (-selinux) -static -test -verify-sig`
 sys-apps/gentoo-functions-0.19 | ``
 sys-apps/util-linux-2.38.1-r2 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev -verify-sig`
 sys-devel/autoconf-2.71-r6 | `-emacs`
 sys-devel/autoconf-wrapper-20221207-r1 | ``
-sys-devel/automake-1.16.5 | `-test`
+sys-devel/automake-1.16.5-r1 | `-test`
 sys-devel/automake-wrapper-20221207 | ``
 sys-devel/binutils-2.40-r5 | `cet nls plugins -doc -gold -gprofng -multitarget -pgo -static-libs -test -vanilla -zstd`
 sys-devel/binutils-config-5.5 | `(native-symlinks)`
@@ -70,9 +70,9 @@ sys-kernel/linux-headers-6.1 | `-headers-only`
 sys-libs/ncurses-6.4_p20230401 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
 **FROM kubler/nodejs** |
-app-arch/brotli-1.0.9-r5 | `-debug -python -static-libs -test`
+app-arch/brotli-1.0.9-r6 | `-debug -python -static-libs -test`
 dev-libs/icu-73.1-r2 | `-debug -doc -examples -static-libs -test -verify-sig`
-dev-libs/libuv-1.44.2-r1 | ``
+dev-libs/libuv-1.46.0 | ``
 net-dns/c-ares-1.19.1 | `-static-libs -test -verify-sig`
 net-libs/http-parser-2.9.4-r2 | ``
 net-libs/nghttp2-1.51.0 | `-cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
@@ -81,7 +81,7 @@ sys-apps/yarn-1.22.19 | ``
 sys-libs/zlib-1.2.13-r1 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20230311.3.90 | `-cacert`
-dev-libs/openssl-3.0.9-r1 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-3.0.9-r2 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 **FROM kubler/s6** |
@@ -90,7 +90,7 @@ dev-lang/execline-2.9.3.0 | ``
 dev-libs/skalibs-2.13.1.1 | ``
 sys-apps/s6-2.11.3.2 | `execline`
 **FROM kubler/glibc** |
-dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
+dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-libs/glibc-2.37-r3 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.33 | `(compat) (split-usr) (system) -headers-only -static-libs -test`

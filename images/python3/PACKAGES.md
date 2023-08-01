@@ -1,7 +1,7 @@
-### kubler/python3:20230630
+### kubler/python3:20230731
 
-Built: Tue Jul  4 09:53:33 PM CEST 2023
-Image Size: 294MB
+Built: Mon Jul 31 05:17:41 PM CEST 2023
+Image Size: 291MB
 
 #### Installed
 Package | USE Flags
@@ -15,34 +15,32 @@ dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.5.0 | `unicode -examples -static-libs -test`
 dev-libs/libffi-3.4.4-r1 | `-debug (-exec-static-trampoline) -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -valgrind -verify-sig`
-dev-python/autocommand-2.2.2 | `-test`
 dev-python/certifi-3021.3.16-r3 | `-test`
 dev-python/ensurepip-pip-23.1.2 | ``
-dev-python/ensurepip-setuptools-67.8.0 | ``
+dev-python/ensurepip-setuptools-68.0.0 | ``
 dev-python/ensurepip-wheels-100 | ``
 dev-python/gentoo-common-1 | ``
-dev-python/inflect-6.0.4 | `-test`
 dev-python/jaraco-context-4.3.0 | `-test`
-dev-python/jaraco-functools-3.6.0 | `-test`
-dev-python/jaraco-text-3.11.1 | `-test`
+dev-python/jaraco-functools-3.8.0 | `-test`
+dev-python/jaraco-text-3.11.1 | `-cli -test`
 dev-python/more-itertools-9.1.0 | `-doc -test`
 dev-python/nspektr-0.4.0 | `-test`
 dev-python/ordered-set-4.1.0 | `-test`
 dev-python/packaging-23.1 | `-test`
 dev-python/pip-23.1.2 | `(test-rust) -test`
-dev-python/platformdirs-3.5.1 | `-test`
-dev-python/pydantic-1.10.9 | `-debug -native-extensions -test`
-dev-python/pyparsing-3.0.9 | `-examples -test`
-dev-python/setuptools-67.8.0 | `-test`
+dev-python/platformdirs-3.8.0 | `-test`
+dev-python/pyparsing-3.1.0 | `-examples -test`
+dev-python/setuptools-67.8.0-r1 | `-test`
 dev-python/setuptools-scm-7.1.0 | `-test`
 dev-python/tomli-2.0.1-r1 | `-test`
 dev-python/typing-extensions-4.6.3 | `-test`
+dev-python/wheel-0.40.0 | `-test`
 sys-apps/util-linux-2.38.1-r2 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev -verify-sig`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/bash** |
-app-admin/eselect-1.4.22-r1 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.25 | `-doc -emacs -vim-syntax`
 app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/xz-utils-5.4.3 | `extra-filters nls (split-usr) -doc -static-libs -verify-sig`
@@ -52,9 +50,9 @@ app-shells/bash-5.1_p16-r6 | `net nls (readline) -afs -bashlogger -examples -mem
 net-dns/c-ares-1.19.1 | `-static-libs -test -verify-sig`
 net-libs/nghttp2-1.51.0 | `-cxx -debug -hpack-tools -jemalloc -static-libs -test -utils -xml`
 net-misc/curl-8.0.1 | `adns ftp http2 imap openssl pop3 progress-meter smtp ssl tftp -alt-svc -brotli -gnutls -gopher -hsts -idn -kerberos -ldap -mbedtls (-nghttp3) -nss -rtmp (-rustls) -samba -ssh (-sslv3) -static-libs -telnet -test -verify-sig -websockets -zstd`
-sys-apps/acl-2.3.1-r1 | `nls (split-usr) -static-libs`
+sys-apps/acl-2.3.1-r2 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1-r2 | `nls (split-usr) -debug -static-libs`
-sys-apps/coreutils-9.3-r2 | `acl nls openssl (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla -verify-sig`
+sys-apps/coreutils-9.3-r3 | `acl nls openssl (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla -verify-sig`
 sys-apps/file-5.44-r3 | `bzip2 seccomp zlib -lzip -lzma -python -static-libs -verify-sig -zstd`
 sys-apps/sed-4.9 | `acl nls (-selinux) -static -verify-sig`
 sys-kernel/linux-headers-6.1 | `-headers-only`
@@ -64,7 +62,7 @@ sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify
 sys-libs/zlib-1.2.13-r1 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20230311.3.90 | `-cacert`
-dev-libs/openssl-3.0.9-r1 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-3.0.9-r2 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.7 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 **FROM kubler/s6** |
@@ -73,7 +71,7 @@ dev-lang/execline-2.9.3.0 | ``
 dev-libs/skalibs-2.13.1.1 | ``
 sys-apps/s6-2.11.3.2 | `execline`
 **FROM kubler/glibc** |
-dev-libs/libunistring-0.9.10-r1 | `-doc -static-libs`
+dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-libs/glibc-2.37-r3 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.33 | `(compat) (split-usr) (system) -headers-only -static-libs -test`
