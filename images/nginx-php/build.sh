@@ -3,7 +3,7 @@
 #
 _php_slot="${BOB_PHP_SLOT}"
 _php_target="php${_php_slot/\./-}"
-_packages="dev-lang/php:${_php_slot} dev-php/xdebug dev-php/pecl-apcu_bc dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached app-arch/zstd"
+_packages="dev-lang/php:${_php_slot} dev-php/xdebug dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached app-arch/zstd"
 _php_timezone="${BOB_TIMEZONE:-UTC}"
 _adminer_version="4.8.1"
 #_iconv_from=kubler/glibc
@@ -36,8 +36,6 @@ configure_bob()
 #
 configure_rootfs_build()
 {
-    update_use 'dev-php/pecl-apcu' '+mmap'
-
     # skip bash, perl, autogen. pulled in as dep since php 5.5.22
     provide_package app-shells/bash dev-lang/perl sys-devel/autogen
 }
