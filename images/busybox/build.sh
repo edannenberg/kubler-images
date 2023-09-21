@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="sys-apps/busybox"
+_packages="sys-apps/busybox::kubler"
 
 #
 # This hook is called just before starting the build of the root fs
@@ -14,9 +14,6 @@ configure_rootfs_build()
     update_use 'sys-apps/sed' +static -acl -nls
     # regression in 1.36.x makes wget unusable
     mask_package '>sys-apps/busybox-1.36.0'
-
-    # bug in busybox-1.31.1-r2 ebuild, musl is pulled in as rdep but we build static version
-    provide_package sys-libs/musl
 }
 
 #
