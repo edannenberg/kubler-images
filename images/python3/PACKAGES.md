@@ -1,6 +1,6 @@
-### kubler/python3:20230831
+### kubler/python3:20230929
 
-Built: Thu Aug 31 09:23:50 AM CEST 2023
+Built: Fri Sep 29 08:53:11 AM CEST 2023
 Image Size: 292MB
 
 #### Installed
@@ -17,30 +17,30 @@ dev-libs/libffi-3.4.4-r1 | `-debug (-exec-static-trampoline) -pax-kernel -static
 dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -valgrind -verify-sig`
 dev-python/certifi-3021.3.16-r3 | `-test`
 dev-python/ensurepip-pip-23.2.1 | ``
-dev-python/ensurepip-setuptools-68.0.0 | ``
+dev-python/ensurepip-setuptools-68.1.2 | ``
 dev-python/ensurepip-wheels-100 | ``
 dev-python/gentoo-common-1 | ``
 dev-python/jaraco-context-4.3.0 | `-test`
-dev-python/jaraco-functools-3.8.0 | `-test`
+dev-python/jaraco-functools-3.9.0 | `-test`
 dev-python/jaraco-text-3.11.1-r1 | `-test`
-dev-python/more-itertools-9.1.0 | `-doc -test`
-dev-python/nspektr-0.4.0 | `-test`
+dev-python/more-itertools-10.1.0 | `-doc -test`
+dev-python/nspektr-0.5.0 | `-test`
 dev-python/ordered-set-4.1.0 | `-test`
 dev-python/packaging-23.1 | `-test`
 dev-python/pip-23.2.1 | `(test-rust) -test`
 dev-python/platformdirs-3.10.0 | `-test`
 dev-python/pyparsing-3.1.1 | `-examples -test`
-dev-python/setuptools-68.0.0-r1 | `-test`
+dev-python/setuptools-68.1.2 | `-test`
 dev-python/setuptools-scm-7.1.0 | `-test`
 dev-python/tomli-2.0.1-r1 | `-test`
 dev-python/typing-extensions-4.7.1 | `-test`
-dev-python/wheel-0.41.1 | `-test`
+dev-python/wheel-0.41.2 | `-test`
 sys-apps/util-linux-2.38.1-r2 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev -verify-sig`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/bash** |
-app-admin/eselect-1.4.25 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.26 | `-doc -emacs -vim-syntax`
 app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/xz-utils-5.4.3 | `extra-filters nls (split-usr) -doc -static-libs -verify-sig`
@@ -53,7 +53,7 @@ net-misc/curl-8.1.2 | `adns ftp http2 imap openssl pop3 progress-meter smtp ssl 
 sys-apps/acl-2.3.1-r2 | `nls (split-usr) -static-libs`
 sys-apps/attr-2.5.1-r2 | `nls (split-usr) -debug -static-libs`
 sys-apps/coreutils-9.3-r3 | `acl nls openssl (split-usr) (xattr) -caps -gmp -hostname -kill -multicall (-selinux) -static -test -vanilla -verify-sig`
-sys-apps/file-5.44-r3 | `bzip2 seccomp zlib -lzip -lzma -python -static-libs -verify-sig -zstd`
+sys-apps/file-5.45-r1 | `bzip2 seccomp zlib -lzip -lzma -python -static-libs -verify-sig -zstd`
 sys-apps/sed-4.9 | `acl nls (-selinux) -static -verify-sig`
 sys-kernel/linux-headers-6.1 | `-headers-only`
 sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
@@ -62,7 +62,7 @@ sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify
 sys-libs/zlib-1.2.13-r1 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20230311.3.90 | `-cacert`
-dev-libs/openssl-3.0.9-r2 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+dev-libs/openssl-3.0.10 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
 sys-apps/debianutils-5.8 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 **FROM kubler/s6** |
@@ -74,7 +74,7 @@ sys-apps/s6-2.11.3.2 | `execline`
 dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4 | `nls -static-libs -verify-sig`
 sys-libs/glibc-2.37-r3 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.33 | `(compat) (split-usr) (system) -headers-only -static-libs -test`
+sys-libs/libxcrypt-4.4.36 | `(compat) (split-usr) (system) -headers-only -static-libs -test`
 sys-libs/timezone-data-2023c | `nls -leaps-timezone -zic-slim`
 **FROM kubler/busybox** |
 #### Purged
