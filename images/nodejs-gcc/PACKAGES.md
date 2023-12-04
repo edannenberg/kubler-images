@@ -1,7 +1,7 @@
-### kubler/nodejs-gcc:20231030
+### kubler/nodejs-gcc:20231130
 
-Built: Mon Oct 30 01:43:55 PM CET 2023
-Image Size: 724MB
+Built: Mon Dec  4 04:07:39 PM CET 2023
+Image Size: 712MB
 
 #### Installed
 Package | USE Flags
@@ -9,7 +9,7 @@ Package | USE Flags
 app-admin/perl-cleaner-2.31 | `-pkgcore`
 app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
-app-arch/xz-utils-5.4.3 | `extra-filters nls (split-usr) -doc -static-libs -verify-sig`
+app-arch/xz-utils-5.4.5 | `extra-filters nls (split-usr) -doc -pgo -static-libs -verify-sig`
 app-crypt/gnupg-2.2.41 | `bzip2 nls readline smartcard ssl -doc -ldap (-selinux) -test -tofu -tools -usb -user-socket -verify-sig -wks-server`
 app-crypt/gpgme-1.22.0 | `cxx -common-lisp -debug -python -qt5 -static-libs -test -verify-sig`
 app-crypt/libb2-0.98.1-r3 | `openmp -native-cflags -static-libs`
@@ -19,7 +19,7 @@ app-portage/portage-utils-0.96.1 | `openmp qmanifest qtegrity -static`
 app-shells/bash-5.1_p16-r6 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins -verify-sig`
 dev-db/sqlite-3.43.2 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
 dev-lang/perl-5.38.0-r1 | `-berkdb -debug -doc -gdbm -ithreads -minimal -quadmath`
-dev-lang/python-3.11.5 | `ensurepip readline sqlite ssl -bluetooth -build -debug -examples -gdbm -libedit -lto -ncurses -pgo -test -tk -valgrind -verify-sig`
+dev-lang/python-3.12.0_p1 | `ensurepip readline sqlite ssl -bluetooth -build -debug -examples -gdbm -libedit -lto -ncurses -pgo -test -tk -valgrind -verify-sig`
 dev-lang/python-exec-2.4.10 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.5.0 | `unicode -examples -static-libs -test`
@@ -29,16 +29,14 @@ dev-libs/libffi-3.4.4-r1 | `-debug (-exec-static-trampoline) -pax-kernel -static
 dev-libs/libgcrypt-1.10.2 | `asm getentropy -doc -static-libs -verify-sig`
 dev-libs/libgpg-error-1.47 | `nls -common-lisp -static-libs -test -verify-sig`
 dev-libs/libksba-1.6.4-r1 | `-static-libs -verify-sig`
-dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -valgrind -verify-sig`
+dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 pcre32 readline (split-usr) unicode zlib -jit -libedit -static-libs -valgrind -verify-sig`
 dev-libs/libtasn1-4.19.0 | `-static-libs -test -verify-sig`
 dev-libs/libxml2-2.11.5 | `ftp readline -debug -examples -icu -lzma -python -static-libs -test`
 dev-libs/mpc-1.3.1 | `-static-libs`
 dev-libs/mpfr-4.2.1 | `-static-libs -verify-sig`
 dev-libs/nettle-3.9.1 | `asm gmp -doc -static-libs -verify-sig`
 dev-libs/npth-1.6-r1 | `-test`
-dev-python/ensurepip-pip-23.2.1 | ``
-dev-python/ensurepip-setuptools-68.2.2 | ``
-dev-python/ensurepip-wheels-100 | ``
+dev-python/ensurepip-pip-23.3.1 | ``
 dev-python/gentoo-common-1 | ``
 net-libs/gnutls-3.8.0 | `cxx idn nls openssl seccomp tls-heartbeat zlib -brotli -dane -doc -examples -pkcs11 (-sslv2) (-sslv3) -static-libs -test (-test-full) -tools -verify-sig -zstd`
 net-misc/curl-8.4.0 | `adns alt-svc ftp hsts http2 imap openssl pop3 progress-meter smtp ssl tftp -brotli -gnutls -gopher -idn -kerberos -ldap -mbedtls (-nghttp3) -rtmp (-rustls) -samba -ssh (-sslv3) -static-libs -telnet -test -verify-sig -websockets -zstd`
@@ -52,7 +50,7 @@ sys-devel/autoconf-2.71-r6 | `-emacs`
 sys-devel/autoconf-wrapper-20221207-r1 | ``
 sys-devel/automake-1.16.5-r1 | `-test`
 sys-devel/automake-wrapper-20221207 | ``
-sys-devel/binutils-2.40-r5 | `cet nls plugins -doc -gold -gprofng -multitarget -pgo -static-libs -test -vanilla -zstd`
+sys-devel/binutils-2.40-r9 | `cet nls plugins -debuginfod -doc -gold -gprofng -multitarget -pgo -static-libs -test -vanilla -zstd`
 sys-devel/binutils-config-5.5 | `(native-symlinks)`
 sys-devel/gcc-13.2.1_p20230826 | `cet (cxx) (default-stack-clash-protection) (default-znow) fortran hardened nls nptl openmp (pie) sanitize (ssp) -ada (-custom-cflags) -d -debug -doc (-fixed-point) -go -graphite (-ieee-long-double) -jit (-libssp) -lto -modula2 (-multilib) -objc -objc`
 sys-devel/gcc-config-2.11 | `(cc-wrappers) (native-symlinks)`
@@ -70,12 +68,12 @@ Package | USE Flags
 app-arch/brotli-1.1.0 | `-debug -python -test`
 dev-libs/icu-73.2 | `-debug -doc -examples -static-libs -test -verify-sig`
 dev-libs/libuv-1.46.0 | ``
-net-dns/c-ares-1.19.1 | `-static-libs -test -verify-sig`
+net-dns/c-ares-1.21.0 | `-static-libs -test -verify-sig`
 net-libs/http-parser-2.9.4-r2 | ``
 net-libs/nghttp2-1.57.0 | `-debug -hpack-tools -jemalloc -static-libs -systemd -test -utils -xml`
 net-libs/nodejs-20.6.1 | `icu npm snapshot ssl system-icu system-ssl -corepack -debug -doc -inspector (-lto) -pax-kernel -test`
 sys-apps/yarn-1.22.19 | ``
-sys-libs/zlib-1.2.13-r1 | `(split-usr) -minizip -static-libs -verify-sig`
+sys-libs/zlib-1.3-r1 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20230311.3.90 | `-cacert`
 dev-libs/openssl-3.0.11 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
@@ -83,15 +81,15 @@ sys-apps/debianutils-5.8 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 **FROM kubler/s6** |
 app-admin/entr-5.4 | `-test`
-dev-lang/execline-2.9.3.0 | ``
+dev-lang/execline-2.9.3.0-r1 | ``
 dev-libs/skalibs-2.13.1.1 | ``
-sys-apps/s6-2.11.3.2 | `execline`
+sys-apps/s6-2.11.3.2-r1 | `execline`
 **FROM kubler/glibc** |
 dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4-r1 | `nls -static-libs -verify-sig`
 sys-libs/glibc-2.37-r7 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.36 | `(compat) (split-usr) (system) -headers-only -static-libs -test`
-sys-libs/timezone-data-2023c | `nls -leaps-timezone -zic-slim`
+sys-libs/timezone-data-2023c-r1 | `nls -leaps-timezone -zic-slim`
 **FROM kubler/busybox** |
 #### Purged
 - [ ] Headers

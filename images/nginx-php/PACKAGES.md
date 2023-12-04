@@ -1,6 +1,6 @@
-### kubler/nginx-php:20231030
+### kubler/nginx-php:20231130
 
-Built: Mon Oct 30 02:07:57 PM CET 2023
+Built: Mon Dec  4 04:31:04 PM CET 2023
 Image Size: 175MB
 
 #### Installed
@@ -25,10 +25,10 @@ acct-group/video-0-r2 | ``
 acct-user/nullmail-0-r1 | ``
 app-admin/eselect-1.4.27 | `-doc -emacs -vim-syntax`
 app-admin/metalog-20230719 | `(unicode)`
-app-alternatives/gzip-0 | `reference (split-usr) -pigz`
+app-alternatives/gzip-1 | `reference (split-usr) -pigz`
 app-arch/gzip-1.13 | `-pic -static -verify-sig`
 app-arch/ncompress-5.0-r1 | ``
-app-arch/xz-utils-5.4.3 | `extra-filters nls (split-usr) -doc -static-libs -verify-sig`
+app-arch/xz-utils-5.4.5 | `extra-filters nls (split-usr) -doc -pgo -static-libs -verify-sig`
 app-arch/zstd-1.5.5 | `lzma (split-usr) zlib -lz4 -static-libs -test`
 app-eselect/eselect-php-0.9.9 | `fpm -apache2`
 dev-lang/php-8.1.20-r1 | `acl bcmath bzip2 calendar cli ctype curl fileinfo filter flatfile fpm gd iconv mhash mysql mysqli nls opcache pcntl pdo phar posix readline session simplexml soap sockets ssl tokenizer truetype unicode webp xml xmlreader xmlwriter xpm xslt zip zlib -apache2 -apparmor -argon2 -avif -berkdb -cdb -cgi -cjk (-coverage) -debug -embed -enchant -exif -ffi (-firebird) -ftp -gdbm -gmp -imap -inifile -intl -iodbc -ipv6 -jit -kerberos -ldap -ldap-sasl -libedit -lmdb -mssql -oci8-instant-client -odbc -phpdbg -postgres -qdbm (-selinux) -session-mm -sharedmem -snmp -sodium -spell -sqlite -systemd -sysvipc -test -threads -tidy -tokyocabinet`
@@ -59,7 +59,7 @@ media-libs/libpng-1.6.40-r1 | `-apng -static-libs`
 media-libs/libwebp-1.3.2 | `gif jpeg png tiff -opengl -static-libs -swap-16bit-csp`
 media-libs/openjpeg-2.5.0-r5 | `-doc -test`
 media-libs/tiff-4.5.1 | `cxx jpeg zlib -jbig -lzma -static-libs -test -verify-sig -webp -zstd`
-net-dns/c-ares-1.19.1 | `-static-libs -test -verify-sig`
+net-dns/c-ares-1.21.0 | `-static-libs -test -verify-sig`
 net-libs/gnutls-3.8.0 | `cxx idn nls openssl seccomp tls-heartbeat zlib -brotli -dane -doc -examples -pkcs11 (-sslv2) (-sslv3) -static-libs -test (-test-full) -tools -verify-sig -zstd`
 net-libs/nghttp2-1.57.0 | `-debug -hpack-tools -jemalloc -static-libs -systemd -test -utils -xml`
 net-misc/curl-8.4.0 | `adns alt-svc ftp hsts http2 imap openssl pop3 progress-meter smtp ssl tftp -brotli -gnutls -gopher -idn -kerberos -ldap -mbedtls (-nghttp3) -rtmp (-rustls) -samba -ssh (-sslv3) -static-libs -telnet -test -verify-sig -websockets -zstd`
@@ -71,7 +71,7 @@ sys-apps/file-5.45-r3 | `bzip2 seccomp zlib -lzip -lzma -python -static-libs -ve
 sys-apps/kmod-30-r1 | `lzma (tools) zlib zstd -debug -doc -pkcs7 -python -static-libs`
 sys-apps/sed-4.9 | `acl nls (-selinux) -static -verify-sig`
 sys-apps/shadow-4.13-r4 | `acl nls (split-usr) xattr -audit -bcrypt -cracklib -pam (-selinux) -skey -su -verify-sig`
-sys-apps/systemd-utils-254.5-r1 | `acl kmod (split-usr) tmpfiles udev -boot -secureboot (-selinux) -sysusers -test`
+sys-apps/systemd-utils-254.5-r2 | `acl kmod (split-usr) tmpfiles udev -boot -kernel-install -secureboot (-selinux) -sysusers -test -ukify`
 sys-apps/util-linux-2.38.1-r2 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev -verify-sig`
 sys-devel/gettext-0.21.1 | `acl cxx nls openmp -doc -emacs -git -java -ncurses -static-libs -verify-sig`
 sys-fs/udev-init-scripts-35 | ``
@@ -98,12 +98,12 @@ acct-user/nginx-0-r1 | ``
 app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-misc/mime-types-2.1.53 | `nginx`
-dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 readline (split-usr) unicode zlib -jit -libedit -pcre32 -static-libs -valgrind -verify-sig`
+dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 pcre32 readline (split-usr) unicode zlib -jit -libedit -static-libs -valgrind -verify-sig`
 dev-libs/libpcre-8.45-r2 | `bzip2 cxx (split-usr) (unicode) zlib -jit -libedit -pcre16 -pcre32 -readline -static-libs -valgrind`
 sys-libs/ncurses-6.4_p20230401 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
-sys-libs/zlib-1.2.13-r1 | `(split-usr) -minizip -static-libs -verify-sig`
-www-servers/nginx-1.24.0-r1 | `http http2 http-cache pcre pcre2 ssl threads -aio -debug -libatomic -pcre-jit -rtmp (-selinux) -vim-syntax`
+sys-libs/zlib-1.3-r1 | `(split-usr) -minizip -static-libs -verify-sig`
+www-servers/nginx-1.25.3 | `http http2 http-cache pcre pcre2 ssl threads -aio -debug -http3 -ktls -libatomic -pcre-jit -rtmp (-selinux) -vim-syntax`
 **FROM kubler/openssl** |
 app-misc/ca-certificates-20230311.3.90 | `-cacert`
 dev-libs/openssl-3.0.11 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
@@ -111,15 +111,15 @@ sys-apps/debianutils-5.8 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 **FROM kubler/s6** |
 app-admin/entr-5.4 | `-test`
-dev-lang/execline-2.9.3.0 | ``
+dev-lang/execline-2.9.3.0-r1 | ``
 dev-libs/skalibs-2.13.1.1 | ``
-sys-apps/s6-2.11.3.2 | `execline`
+sys-apps/s6-2.11.3.2-r1 | `execline`
 **FROM kubler/glibc** |
 dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4-r1 | `nls -static-libs -verify-sig`
 sys-libs/glibc-2.37-r7 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.36 | `(compat) (split-usr) (system) -headers-only -static-libs -test`
-sys-libs/timezone-data-2023c | `nls -leaps-timezone -zic-slim`
+sys-libs/timezone-data-2023c-r1 | `nls -leaps-timezone -zic-slim`
 **FROM kubler/busybox** |
 #### Purged
 - [x] Headers

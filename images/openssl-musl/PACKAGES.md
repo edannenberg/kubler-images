@@ -1,6 +1,6 @@
-### kubler/openssl-musl:20231030
+### kubler/openssl-musl:20231130
 
-Built: Mon Oct 30 02:10:13 PM CET 2023
+Built: Mon Dec  4 04:33:17 PM CET 2023
 Image Size: 9.16MB
 
 #### Installed

@@ -1,6 +1,6 @@
-### kubler/nginx-proxy-conf:20231030
+### kubler/nginx-proxy-conf:20231130
 
-Built: Mon Oct 30 02:08:48 PM CET 2023
+Built: Mon Dec  4 04:31:54 PM CET 2023
 Image Size: 13.1MB
 
 #### Installed
