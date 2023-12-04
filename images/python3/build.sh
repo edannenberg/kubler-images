@@ -6,6 +6,8 @@ _packages="dev-lang/python dev-python/pip"
 
 configure_bob()
 {
+    # not supported by pip yet
+    mask_package '>=dev-lang/python-3.12.0'
     emerge dev-python/pip
 }
 
