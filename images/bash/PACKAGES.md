@@ -1,12 +1,12 @@
-### kubler/bash:20231130
+### kubler/bash:20231229
 
-Built: Mon Dec  4 03:51:04 PM CET 2023
-Image Size: 49.7MB
+Built: Fri Dec 29 02:01:10 PM CET 2023
+Image Size: 49.4MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-admin/eselect-1.4.27 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.27-r1 | `-doc -emacs -vim-syntax`
 app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/xz-utils-5.4.5 | `extra-filters nls (split-usr) -doc -pgo -static-libs -verify-sig`
@@ -25,20 +25,20 @@ sys-kernel/linux-headers-6.1 | `-headers-only`
 sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 sys-libs/ncurses-6.4_p20230401 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
-sys-libs/zlib-1.3-r1 | `(split-usr) -minizip -static-libs -verify-sig`
+sys-libs/zlib-1.3-r2 | `(split-usr) -minizip -static-libs -verify-sig`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20230311.3.90 | `-cacert`
-dev-libs/openssl-3.0.11 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
-sys-apps/debianutils-5.8 | `installkernel -static`
+app-misc/ca-certificates-20230311.3.93 | `-cacert`
+dev-libs/openssl-3.0.12 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+sys-apps/debianutils-5.14 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 **FROM kubler/s6** |
 app-admin/entr-5.4 | `-test`
-dev-lang/execline-2.9.3.0-r1 | ``
-dev-libs/skalibs-2.13.1.1 | ``
-sys-apps/s6-2.11.3.2-r1 | `execline`
+dev-lang/execline-2.9.4.0 | ``
+dev-libs/skalibs-2.14.0.1 | ``
+sys-apps/s6-2.12.0.2-r1 | `execline`
 **FROM kubler/glibc** |
 dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4-r1 | `nls -static-libs -verify-sig`

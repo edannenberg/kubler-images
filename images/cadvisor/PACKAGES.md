@@ -1,6 +1,6 @@
-### kubler/cadvisor:20231130
+### kubler/cadvisor:20231229
 
-Built: Mon Dec  4 03:51:16 PM CET 2023
+Built: Fri Dec 29 02:01:20 PM CET 2023
 Image Size: 49.9MB
 
 #### Installed

@@ -1,46 +1,45 @@
-### kubler/python3:20231130
+### kubler/python3:20231229
 
-Built: Mon Dec  4 04:40:16 PM CET 2023
-Image Size: 293MB
+Built: Fri Dec 29 02:50:11 PM CET 2023
+Image Size: 294MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-crypt/libb2-0.98.1-r3 | `openmp -native-cflags -static-libs`
 app-misc/mime-types-2.1.53 | `-nginx`
-dev-db/sqlite-3.43.2 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
-dev-lang/python-3.11.6 | `ensurepip readline sqlite ssl -bluetooth -build -debug -examples -gdbm -libedit -lto -ncurses -pgo -test -tk -valgrind -verify-sig`
+dev-db/sqlite-3.44.2-r1 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -tools`
+dev-lang/python-3.11.7 | `ensurepip readline sqlite ssl -bluetooth -build -debug -examples -gdbm -libedit -ncurses -pgo -test -tk -valgrind -verify-sig`
 dev-lang/python-exec-2.4.10 | `(native-symlinks) -test`
 dev-lang/python-exec-conf-2.4.6 | ` `
 dev-libs/expat-2.5.0 | `unicode -examples -static-libs -test`
-dev-libs/libffi-3.4.4-r1 | `-debug (-exec-static-trampoline) -pax-kernel -static-libs -test`
+dev-libs/libffi-3.4.4-r2 | `-debug (-exec-static-trampoline) -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 pcre32 readline (split-usr) unicode zlib -jit -libedit -static-libs -valgrind -verify-sig`
-dev-python/certifi-3021.3.16-r4 | `-test`
 dev-python/ensurepip-pip-23.3.1 | ``
-dev-python/ensurepip-setuptools-68.2.2 | ``
+dev-python/ensurepip-setuptools-69.0.2 | ``
 dev-python/ensurepip-wheels-100 | ``
 dev-python/gentoo-common-1 | ``
 dev-python/jaraco-context-4.3.0 | `-test`
 dev-python/jaraco-functools-4.0.0 | `-test`
-dev-python/jaraco-text-3.11.1-r1 | `-test`
+dev-python/jaraco-text-3.12.0 | `-test`
 dev-python/more-itertools-10.1.0 | `-doc -test`
 dev-python/nspektr-0.5.0 | `-test`
 dev-python/ordered-set-4.1.0 | `-test`
 dev-python/packaging-23.2 | `-test`
 dev-python/pip-23.3.1 | `(test-rust) -test`
-dev-python/platformdirs-4.0.0 | `-test`
+dev-python/platformdirs-4.1.0 | `-test`
 dev-python/pyparsing-3.1.1 | `-examples -test`
-dev-python/setuptools-68.2.2 | `-test`
+dev-python/setuptools-69.0.2-r1 | `-test`
 dev-python/setuptools-scm-8.0.4 | `-test`
 dev-python/tomli-2.0.1-r1 | `-test`
 dev-python/typing-extensions-4.8.0 | `-test`
-dev-python/wheel-0.41.3 | `-test`
-sys-apps/util-linux-2.38.1-r2 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev -verify-sig`
+dev-python/wheel-0.42.0 | `-test`
+sys-apps/util-linux-2.38.1-r3 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev -verify-sig`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/bash** |
-app-admin/eselect-1.4.27 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.27-r1 | `-doc -emacs -vim-syntax`
 app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/xz-utils-5.4.5 | `extra-filters nls (split-usr) -doc -pgo -static-libs -verify-sig`
@@ -59,17 +58,17 @@ sys-kernel/linux-headers-6.1 | `-headers-only`
 sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 sys-libs/ncurses-6.4_p20230401 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
-sys-libs/zlib-1.3-r1 | `(split-usr) -minizip -static-libs -verify-sig`
+sys-libs/zlib-1.3-r2 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20230311.3.90 | `-cacert`
-dev-libs/openssl-3.0.11 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
-sys-apps/debianutils-5.8 | `installkernel -static`
+app-misc/ca-certificates-20230311.3.93 | `-cacert`
+dev-libs/openssl-3.0.12 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+sys-apps/debianutils-5.14 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 **FROM kubler/s6** |
 app-admin/entr-5.4 | `-test`
-dev-lang/execline-2.9.3.0-r1 | ``
-dev-libs/skalibs-2.13.1.1 | ``
-sys-apps/s6-2.11.3.2-r1 | `execline`
+dev-lang/execline-2.9.4.0 | ``
+dev-libs/skalibs-2.14.0.1 | ``
+sys-apps/s6-2.12.0.2-r1 | `execline`
 **FROM kubler/glibc** |
 dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4-r1 | `nls -static-libs -verify-sig`

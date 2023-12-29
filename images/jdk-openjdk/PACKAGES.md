@@ -1,6 +1,6 @@
-### kubler/jdk-openjdk:20231130
+### kubler/jdk-openjdk:20231229
 
-Built: Mon Dec  4 04:13:07 PM CET 2023
+Built: Fri Dec 29 02:22:43 PM CET 2023
 Image Size: 380MB
 
 #### Installed
@@ -8,14 +8,14 @@ Package | USE Flags
 --------|----------
 app-crypt/p11-kit-0.25.0-r1 | `libffi nls -gtk-doc -systemd -test`
 app-eselect/eselect-java-0.5.0 | ``
-dev-java/java-config-2.3.1-r1 | `-test`
+dev-java/java-config-2.3.3-r1 | `-test`
 dev-java/openjdk-bin-17.0.8.1_p1 | `headless-awt -alsa -cups (-selinux) -source`
-dev-libs/elfutils-0.189-r4 | `bzip2 nls utils -debuginfod -lzma -static-libs -test -verify-sig -zstd`
+dev-libs/elfutils-0.190 | `bzip2 nls utils -debuginfod -lzma -static-libs -test -verify-sig -zstd`
 dev-libs/expat-2.5.0 | `unicode -examples -static-libs -test`
 dev-libs/glib-2.76.4 | `elf mime xattr -dbus -debug -gtk-doc (-selinux) -static-libs -sysprof -systemtap -test -utils`
 dev-libs/gobject-introspection-1.76.1 | `-doctool -gtk-doc -test`
 dev-libs/gobject-introspection-common-1.76.1 | ``
-dev-libs/libffi-3.4.4-r1 | `-debug (-exec-static-trampoline) -pax-kernel -static-libs -test`
+dev-libs/libffi-3.4.4-r2 | `-debug (-exec-static-trampoline) -pax-kernel -static-libs -test`
 dev-libs/libpcre2-10.42-r1 | `bzip2 pcre16 pcre32 readline (split-usr) unicode zlib -jit -libedit -static-libs -valgrind -verify-sig`
 dev-libs/libtasn1-4.19.0 | `-static-libs -test -verify-sig`
 dev-libs/libxml2-2.11.5 | `ftp python readline -debug -examples -icu -lzma -static-libs -test`
@@ -27,7 +27,7 @@ media-libs/freetype-2.13.2 | `adobe-cff bzip2 cleartype-hinting png -`
 media-libs/harfbuzz-8.2.0 | `cairo glib introspection truetype -debug -doc -experimental -graphite -icu -test`
 media-libs/libpng-1.6.40-r1 | `-apng -static-libs`
 sys-apps/baselayout-java-0.1.0-r2 | ``
-sys-apps/util-linux-2.38.1-r2 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev -verify-sig`
+sys-apps/util-linux-2.38.1-r3 | `cramfs hardlink nls readline (split-usr) suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev -verify-sig`
 x11-libs/cairo-1.18.0 | `glib -`
 x11-libs/pixman-0.42.2 | `(-loongson2f) -static-libs -test`
 x11-misc/shared-mime-info-2.2 | `-test`
@@ -35,7 +35,7 @@ x11-misc/shared-mime-info-2.2 | `-test`
 Package | USE Flags
 --------|----------
 **FROM kubler/bash** |
-app-admin/eselect-1.4.27 | `-doc -emacs -vim-syntax`
+app-admin/eselect-1.4.27-r1 | `-doc -emacs -vim-syntax`
 app-alternatives/bzip2-1 | `reference (split-usr) -lbzip2 -pbzip2`
 app-arch/bzip2-1.0.8-r4 | `(split-usr) -static -static-libs -verify-sig`
 app-arch/xz-utils-5.4.5 | `extra-filters nls (split-usr) -doc -pgo -static-libs -verify-sig`
@@ -54,17 +54,17 @@ sys-kernel/linux-headers-6.1 | `-headers-only`
 sys-libs/libseccomp-2.5.4 | `(-experimental-loong) -python -static-libs -test`
 sys-libs/ncurses-6.4_p20230401 | `cxx minimal (split-usr) (tinfo) -ada -debug -doc -gpm -profile (-stack-realign) -static-libs -test -trace -verify-sig`
 sys-libs/readline-8.1_p2-r1 | `(split-usr) (unicode) -static-libs -utils -verify-sig`
-sys-libs/zlib-1.3-r1 | `(split-usr) -minizip -static-libs -verify-sig`
+sys-libs/zlib-1.3-r2 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20230311.3.90 | `-cacert`
-dev-libs/openssl-3.0.11 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
-sys-apps/debianutils-5.8 | `installkernel -static`
+app-misc/ca-certificates-20230311.3.93 | `-cacert`
+dev-libs/openssl-3.0.12 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+sys-apps/debianutils-5.14 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 **FROM kubler/s6** |
 app-admin/entr-5.4 | `-test`
-dev-lang/execline-2.9.3.0-r1 | ``
-dev-libs/skalibs-2.13.1.1 | ``
-sys-apps/s6-2.11.3.2-r1 | `execline`
+dev-lang/execline-2.9.4.0 | ``
+dev-libs/skalibs-2.14.0.1 | ``
+sys-apps/s6-2.12.0.2-r1 | `execline`
 **FROM kubler/glibc** |
 dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4-r1 | `nls -static-libs -verify-sig`

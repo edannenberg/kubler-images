@@ -1,6 +1,6 @@
-### kubler/kibana:20231130
+### kubler/kibana:20231229
 
-Built: Mon Dec  4 04:17:12 PM CET 2023
+Built: Fri Dec 29 02:26:49 PM CET 2023
 Image Size: 697MB
 
 #### Installed
@@ -20,17 +20,17 @@ net-libs/http-parser-2.9.4-r2 | ``
 net-libs/nghttp2-1.57.0 | `-debug -hpack-tools -jemalloc -static-libs -systemd -test -utils -xml`
 net-libs/nodejs-20.6.1 | `icu npm snapshot ssl system-icu system-ssl -corepack -debug -doc -inspector (-lto) -pax-kernel -test`
 sys-apps/yarn-1.22.19 | ``
-sys-libs/zlib-1.3-r1 | `(split-usr) -minizip -static-libs -verify-sig`
+sys-libs/zlib-1.3-r2 | `(split-usr) -minizip -static-libs -verify-sig`
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20230311.3.90 | `-cacert`
-dev-libs/openssl-3.0.11 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
-sys-apps/debianutils-5.8 | `installkernel -static`
+app-misc/ca-certificates-20230311.3.93 | `-cacert`
+dev-libs/openssl-3.0.12 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+sys-apps/debianutils-5.14 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 **FROM kubler/s6** |
 app-admin/entr-5.4 | `-test`
-dev-lang/execline-2.9.3.0-r1 | ``
-dev-libs/skalibs-2.13.1.1 | ``
-sys-apps/s6-2.11.3.2-r1 | `execline`
+dev-lang/execline-2.9.4.0 | ``
+dev-libs/skalibs-2.14.0.1 | ``
+sys-apps/s6-2.12.0.2-r1 | `execline`
 **FROM kubler/glibc** |
 dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4-r1 | `nls -static-libs -verify-sig`

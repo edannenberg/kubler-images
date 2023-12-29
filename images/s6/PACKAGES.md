@@ -1,15 +1,15 @@
-### kubler/s6:20231130
+### kubler/s6:20231229
 
-Built: Mon Dec  4 03:50:14 PM CET 2023
+Built: Fri Dec 29 02:00:22 PM CET 2023
 Image Size: 17.2MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-admin/entr-5.4 | `-test`
-dev-lang/execline-2.9.3.0-r1 | ``
-dev-libs/skalibs-2.13.1.1 | ``
-sys-apps/s6-2.11.3.2-r1 | `execline`
+dev-lang/execline-2.9.4.0 | ``
+dev-libs/skalibs-2.14.0.1 | ``
+sys-apps/s6-2.12.0.2-r1 | `execline`
 #### Inherited
 Package | USE Flags
 --------|----------

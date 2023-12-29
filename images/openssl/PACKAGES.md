@@ -1,23 +1,23 @@
-### kubler/openssl:20231130
+### kubler/openssl:20231229
 
-Built: Mon Dec  4 03:50:25 PM CET 2023
+Built: Fri Dec 29 02:00:33 PM CET 2023
 Image Size: 24.1MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-misc/ca-certificates-20230311.3.90 | `-cacert`
-dev-libs/openssl-3.0.11 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
-sys-apps/debianutils-5.8 | `installkernel -static`
+app-misc/ca-certificates-20230311.3.93 | `-cacert`
+dev-libs/openssl-3.0.12 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+sys-apps/debianutils-5.14 | `installkernel -static`
 sys-kernel/installkernel-gentoo-7 | `-grub`
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/s6** |
 app-admin/entr-5.4 | `-test`
-dev-lang/execline-2.9.3.0-r1 | ``
-dev-libs/skalibs-2.13.1.1 | ``
-sys-apps/s6-2.11.3.2-r1 | `execline`
+dev-lang/execline-2.9.4.0 | ``
+dev-libs/skalibs-2.14.0.1 | ``
+sys-apps/s6-2.12.0.2-r1 | `execline`
 **FROM kubler/glibc** |
 dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
 net-dns/libidn2-2.3.4-r1 | `nls -static-libs -verify-sig`
