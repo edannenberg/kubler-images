@@ -1,17 +1,17 @@
-### kubler/nginx-proxy-conf:20231229
+### kubler/nginx-proxy-conf:20240131
 
-Built: Fri Dec 29 02:41:52 PM CET 2023
-Image Size: 13.1MB
+Built: Wed Jan 31 10:20:21 AM CET 2024
+Image Size: 14.7MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-containers/docker-gen-0.10.6 | ``
+app-containers/docker-gen-0.11.1 | ``
 #### Inherited
 Package | USE Flags
 --------|----------
 **FROM kubler/musl** |
-sys-libs/musl-1.2.3-r7 | `-crypt -headers-only -verify-sig`
+sys-libs/musl-1.2.3-r8 | `(split-usr) -crypt -headers-only -verify-sig`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.34.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
 #### Purged
