@@ -2,6 +2,17 @@
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
 _packages="app-containers/cadvisor"
+_no_cache_20240131=app-containers/cadvisor
+
+configure_builder()
+{
+    # TODO: apparently binary packages are now cached, fix kubler _no_cache
+    emaint binhost -f
+    # runtime error with go 1.21.x, still no new release with the fix: https://github.com/google/cadvisor/pull/3384
+    mask_package '>=dev-lang/go-1.21.0'
+    emerge -v dev-lang/go
+}
+
 
 #
 # This hook is called just before starting the build of the root fs
