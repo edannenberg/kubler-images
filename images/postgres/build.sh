@@ -16,6 +16,7 @@ configure_rootfs_build()
 #
 finish_rootfs_build()
 {
+    copy_gcc_libs
     uninstall_package app-shells/bash
     mkdir /backup
     # since eselect-postgresql-2.1 /usr/share/pkgconfig folder is expected
