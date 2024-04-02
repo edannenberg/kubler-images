@@ -13,7 +13,7 @@ configure_bob()
     mask_package '<=virtual/libcrypt-1-r1-6'
     # build tomcat-native package on the host
     unprovide_package dev-java/java-config app-eselect/eselect-java app-arch/zip
-    emerge dev-java/ant-core dev-java/ant-junit dev-java/java-config dev-java/tomcat-native www-servers/tomcat dev-java/xalan
+    emerge dev-java/ant-core dev-java/ant dev-java/java-config dev-java/tomcat-native www-servers/tomcat dev-java/xalan
 }
 
 #
