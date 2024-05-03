@@ -1,8 +1,7 @@
-### kubler/s6:20240331
+### kubler/s6:20240430
 
-Built: Tue Apr  2 10:44:07 PM CEST 2024
+Built: Thu May  2 12:11:59 PM CEST 2024
 Image Size: 17.2MB
-
 
 #### Installed
 Package | USE Flags
@@ -15,10 +14,10 @@ sys-apps/s6-2.12.0.3 | `execline`
 Package | USE Flags
 --------|----------
 **FROM kubler/glibc** |
-dev-libs/libunistring-1.1-r1 | `-doc -static-libs`
+dev-libs/libunistring-1.2 | `-doc -static-libs`
 net-dns/libidn2-2.3.7 | `nls -static-libs -verify-sig`
-sys-libs/glibc-2.38-r10 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
-sys-libs/libxcrypt-4.4.36 | `(compat) (split-usr) (system) -headers-only -static-libs -test`
+sys-libs/glibc-2.38-r13 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/libxcrypt-4.4.36-r3 | `(compat) (system) -headers-only -static-libs -test`
 sys-libs/timezone-data-2024a-r1 | `nls -leaps-timezone -zic-slim`
 **FROM kubler/busybox** |
 #### Purged

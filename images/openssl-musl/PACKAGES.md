@@ -1,13 +1,13 @@
-### kubler/openssl-musl:20240331
+### kubler/openssl-musl:20240430
 
-Built: Tue Apr  2 11:04:38 PM CEST 2024
-Image Size: 8.41MB
+Built: Thu May  2 11:32:44 PM CEST 2024
+Image Size: 8.42MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-misc/ca-certificates-20230311.3.97 | `-cacert`
-dev-libs/openssl-3.0.13 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+app-misc/ca-certificates-20240203.3.98 | `-cacert`
+dev-libs/openssl-3.0.13-r2 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
 #### Inherited
 Package | USE Flags
 --------|----------
