@@ -8,7 +8,7 @@ _packages="app-admin/su-exec app-shells/bash dev-db/postgresql"
 #
 configure_rootfs_build()
 {
-    unprovide_package app-shells/bash
+    unprovide_package app-shells/bash dev-build/cmake app-crypt/rhash app-arch/libarchive dev-libs/jsoncpp dev-libs/libuv
 }
 
 #
