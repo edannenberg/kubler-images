@@ -10,7 +10,7 @@ configure_builder()
     update_use 'media-libs/harfbuzz' -graphite
     echo 'dev-java/openjdk-bin -gentoo-vm' >> /etc/portage/profile/package.use.mask
     # skip python
-    provide_package dev-lang/python dev-lang/python-exec
+    provide_package dev-lang/python dev-lang/python-exec dev-python/wheel dev-python/setuptools-scm dev-python/setuptools dev-python/jaraco-text dev-python/setuptools dev-python/platformdirs dev-python/packaging dev-python/more-itertools dev-python/ordered-set
     # install java in build container so depending builds have it available
     emerge dev-java/openjdk-bin:17
 }
