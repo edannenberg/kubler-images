@@ -1,12 +1,12 @@
-### kubler/nginx-proxy-conf:20240430
+### kubler/nginx-proxy-conf:20240531
 
-Built: Thu May  2 11:28:32 PM CEST 2024
+Built: Thu Jun  6 03:25:38 PM CEST 2024
 Image Size: 15.6MB
 
 #### Installed
 Package | USE Flags
 --------|----------
-app-containers/docker-gen-0.12.0 | ``
+app-containers/docker-gen-0.14.0 | ``
 #### Inherited
 Package | USE Flags
 --------|----------

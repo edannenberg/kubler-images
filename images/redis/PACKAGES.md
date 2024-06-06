@@ -1,7 +1,7 @@
-### kubler/redis:20240430
+### kubler/redis:20240531
 
-Built: Thu May  2 11:58:02 PM CEST 2024
-Image Size: 75.8MB
+Built: Thu Jun  6 03:38:45 PM CEST 2024
+Image Size: 76.3MB
 
 #### Installed
 Package | USE Flags
@@ -35,7 +35,7 @@ dev-libs/openssl-3.0.13-r2 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test 
 sys-apps/acl-2.3.2-r1 | `nls -static-libs`
 sys-apps/attr-2.5.2-r1 | `nls -debug -static-libs`
 sys-apps/kmod-32-r1 | `lzma (split-usr) (tools) zlib zstd -debug -doc -pkcs7 -static-libs`
-sys-apps/systemd-utils-254.10-r1 | `acl kmod (split-usr) tmpfiles udev -boot -kernel-install -secureboot (-selinux) -sysusers -test -ukify`
+sys-apps/systemd-utils-254.13 | `acl kmod (split-usr) tmpfiles udev -boot -kernel-install -secureboot (-selinux) -sysusers -test -ukify`
 sys-apps/util-linux-2.39.3-r7 | `cramfs hardlink nls readline suid (unicode) -audit -build -caps -cryptsetup -fdformat -kill -logger -magic -ncurses -pam -python (-rtas) (-selinux) -slang -static-libs -su -systemd -test -tty-helpers -udev -verify-sig`
 sys-fs/udev-init-scripts-35 | ``
 sys-libs/libcap-2.69-r1 | `-pam -static-libs -tools`
@@ -47,13 +47,13 @@ Package | USE Flags
 --------|----------
 **FROM kubler/s6** |
 app-admin/entr-5.5 | `-test`
-dev-lang/execline-2.9.4.0 | ``
+dev-lang/execline-2.9.5.1 | ``
 dev-libs/skalibs-2.14.1.1 | ``
-sys-apps/s6-2.12.0.3 | `execline`
+sys-apps/s6-2.12.0.4 | `execline`
 **FROM kubler/glibc** |
 dev-libs/libunistring-1.2 | `-doc -static-libs`
 net-dns/libidn2-2.3.7 | `nls -static-libs -verify-sig`
-sys-libs/glibc-2.38-r13 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-crypt) (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
+sys-libs/glibc-2.39-r6 | `cet multiarch (ssp) (static-libs) -audit -caps -compile-locales (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) (-stack-realign) -suid -systemd -systemtap -test (-vanilla)`
 sys-libs/libxcrypt-4.4.36-r3 | `(compat) (system) -headers-only -static-libs -test`
 sys-libs/timezone-data-2024a-r1 | `nls -leaps-timezone -zic-slim`
 **FROM kubler/busybox** |
