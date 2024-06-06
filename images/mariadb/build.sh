@@ -9,12 +9,14 @@ _autosqlbackup_version="3.0_rc6"
 #
 configure_rootfs_build()
 {
-    # sadly perl is required for db init scripts
-    #update_use 'dev-db/mariadb' '-perl'
+    # cmake is a build dep
+    unprovide_package dev-build/cmake app-crypt/rhash app-arch/libarchive dev-libs/jsoncpp dev-libs/libuv
     # reinstall curl, needed at build time
     unprovide_package net-misc/curl
     # don't pull in gcc
     provide_package sys-devel/gcc
+    # skip python
+    provide_package dev-lang/python dev-lang/python-exec dev-python/wheel dev-python/setuptools-scm dev-python/setuptools
 }
 
 #
