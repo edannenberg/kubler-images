@@ -1,6 +1,6 @@
-### kubler/openssl-musl:20240531
+### kubler/openssl-musl:20240630
 
-Built: Thu Jun  6 03:27:21 PM CEST 2024
+Built: Sat Jul 20 04:47:00 AM CEST 2024
 Image Size: 8.42MB
 
 #### Installed
@@ -12,7 +12,7 @@ dev-libs/openssl-3.0.13-r2 | `asm -fips -ktls -rfc3779 -sctp -static-libs -test 
 Package | USE Flags
 --------|----------
 **FROM kubler/musl** |
-sys-libs/musl-1.2.4-r1 | `-crypt -headers-only (-split-usr) -verify-sig`
+sys-libs/musl-1.2.4-r2 | `-crypt -headers-only (-split-usr) -verify-sig`
 **FROM kubler/busybox** |
 sys-apps/busybox-1.34.1-r2 | `make-symlinks static -debug -ipv6 -livecd -math -mdev -pam -savedconfig (-selinux) -sep-usr -syslog (-systemd)`
 #### Purged
