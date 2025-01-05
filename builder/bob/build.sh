@@ -13,7 +13,7 @@ configure_bob() {
     # use hot fix in 0.99.4
     echo '=app-portage/flaggie-0.99.4 ~amd64' >> /etc/portage/package.accept_keywords/flaggie
     emerge app-portage/flaggie app-portage/eix app-portage/gentoolkit
-    configure_eix
+    eix-update
     touch /etc/portage/package.accept_keywords/flaggie
     # set locale of build container
     echo 'en_US.UTF-8 UTF-8' >> /etc/locale.gen
