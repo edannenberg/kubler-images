@@ -9,7 +9,7 @@ ONBUILD RUN if [ -n "${NODEJS_UID}" ] && [ -n "${NODEJS_GID}" ]; then \
               sed-or-die '^nodejs:x:[0-9]*:' "nodejs:x:${NODEJS_GID}:" /etc/group; \
               chown -R nodejs:nodejs /home/nodejs ; fi
 
-ENV PATH "${PATH}:/usr/local/yarn/bin"
+ENV PATH="${PATH}:/usr/local/yarn/bin"
 
 ADD rootfs.tar /
 
