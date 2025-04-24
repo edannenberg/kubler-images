@@ -17,8 +17,7 @@ configure_bob() {
     eselect news read new 1> /dev/null
     # use hot fix in 0.99.4
     echo '=app-portage/flaggie-0.99.4 ~amd64' >> /etc/portage/package.accept_keywords/flaggie
-    emerge app-portage/flaggie app-portage/eix app-portage/gentoolkit
-    eix-update
+    emerge app-portage/flaggie app-portage/gentoolkit
     touch /etc/portage/package.accept_keywords/flaggie
     echo 'LANG="en_US.utf8"' > /etc/env.d/02locale
     env-update
@@ -35,5 +34,8 @@ configure_bob() {
     [[ "${BOB_UPDATE_WORLD}" == true ]] && emerge -vuND world
     add_overlay musl
     add_overlay kubler https://github.com/edannenberg/kubler-overlay.git
+    find /var/db/repos/musl -name '*.ebuild' | xargs egrep -l EAPI=[123456] | xargs rm
+    emerge app-portage/eix
+    eix-update
     emerge dev-lang/go
 }
