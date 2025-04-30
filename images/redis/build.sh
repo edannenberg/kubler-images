@@ -9,6 +9,7 @@ _packages="dev-db/redis"
 configure_rootfs_build()
 {
     update_use 'dev-lang/lua' '-readline'
+    update_use 'dev-libs/jemalloc' '+stats'
 }
 
 #
