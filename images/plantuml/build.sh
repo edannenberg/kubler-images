@@ -2,7 +2,7 @@
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
 _packages="media-gfx/graphviz"
-_plantuml_version='v1.2020.8'
+_plantuml_version='v1.2025.2'
 
 configure_bob()
 {
