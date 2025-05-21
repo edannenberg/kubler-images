@@ -6,7 +6,7 @@ ADD rootfs.tar /
 ADD etc /etc
 
 ENV ES_CLASSPATH=/usr/share/elasticsearch/lib/* \
-    ES_JAVA_HOME=/opt/openjdk-jre-bin-17/
+    ES_JAVA_HOME=/opt/openjdk-bin-21/
 
 RUN chown -R elasticsearch:elasticsearch /etc/elasticsearch && \
     chmod +x $(find /etc/service -name run) && \

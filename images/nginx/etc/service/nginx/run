@@ -1,8 +1,10 @@
 #!/bin/sh
 
+[ ! -d /run/nginx ] && mkdir -p /run/nginx
+
 if [ "${NGINX_RELOAD_ON_CONTAINER_SIGHUP}" = true ]; then
     # instead of shutting down the container just send a SIGHUP to nginx and carry on
-    echo -e '#!/bin/sh\n[[ -f /run/nginx.pid ]] && pkill -HUP nginx' \
+    echo -e '#!/bin/sh\n[[ -f /run/nginx/nginx.pid ]] && pkill -HUP nginx' \
         > /etc/service/.s6-svscan/SIGHUP
 fi
 

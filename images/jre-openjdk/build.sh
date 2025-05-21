@@ -1,7 +1,7 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="dev-java/openjdk-jre-bin:17"
+_packages="dev-java/openjdk-jre-bin"
 
 configure_builder()
 {
@@ -9,13 +9,11 @@ configure_builder()
     update_use 'dev-java/openjdk-jre-bin' +headless-awt
     update_use 'dev-java/openjdk-bin' +headless-awt
     update_use 'media-libs/harfbuzz' -graphite
-    echo 'dev-java/openjdk-jre-bin -gentoo-vm' >> /etc/portage/profile/package.use.mask
-    echo 'dev-java/openjdk-bin -gentoo-vm' >> /etc/portage/profile/package.use.mask
     # skip python
     provide_package dev-lang/python dev-lang/python-exec
 
     # install jdk in build container so depending builds have it available
-    emerge dev-java/openjdk-bin:17
+    emerge dev-java/openjdk-bin
 }
 
 #
