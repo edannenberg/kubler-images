@@ -33,7 +33,6 @@ configure_bob() {
     emerge dev-vcs/git app-eselect/eselect-repository app-misc/jq app-shells/bash-completion
     #install_git_postsync_hooks
     [[ "${BOB_UPDATE_WORLD}" == true ]] && emerge -vuND world
-    add_overlay musl
     add_overlay kubler https://github.com/edannenberg/kubler-overlay.git
     emerge dev-lang/go
 }
