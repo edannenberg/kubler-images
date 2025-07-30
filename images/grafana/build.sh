@@ -5,7 +5,7 @@ _packages="www-apps/grafana"
 
 configure_builder()
 {
-    update_use net-libs/nodejs +icu
+    update_use net-libs/nodejs +icu +corepack
 }
 
 #
