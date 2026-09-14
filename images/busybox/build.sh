@@ -12,8 +12,10 @@ configure_rootfs_build()
     update_use 'virtual/libcrypt' +static-libs
     update_use 'sys-libs/libxcrypt' +static-libs
     update_use 'sys-apps/sed' +static -acl -nls
-    # regression in 1.36.x makes wget unusable
-    mask_package '>sys-apps/busybox-1.36.0'
+    mkdir -p "${_EMERGE_ROOT}"/{sbin,usr/bin,usr/sbin}
+    # patch regression in 1.36.x that makes wget unusable for https urls
+    mkdir -p /etc/portage/patches/sys-apps/busybox
+    cp /config/busybox-1.38.0-wget-vfork-exit.patch /etc/portage/patches/sys-apps/busybox/
 }
 
 #
@@ -26,7 +28,7 @@ finish_rootfs_build()
     emerge sys-apps/sed
     provide_package sys-apps/sed
 
-    cp /etc/{passwd,group} "${_EMERGE_ROOT}"/etc
+    cp /etc/{passwd,group,services} "${_EMERGE_ROOT}"/etc
     mkdir -p "${_EMERGE_ROOT}"/usr/local/bin/
     cp /usr/local/bin/sed-or-die "${_EMERGE_ROOT}"/usr/local/bin/
     sed-or-die '/bin/bash' '/bin/sh' "${_EMERGE_ROOT}"/etc/passwd

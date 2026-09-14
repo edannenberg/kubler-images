@@ -1,0 +1,31 @@
+wget: use _exit() in the vfork child when openssl cannot be executed
+
+spawn_https_helper_openssl() vforks and, if exec of "openssl" fails, the
+child calls xfunc_die() -> exit(). In a vfork child that runs the parent's
+atexit handlers and stdio flush in the shared address space. With musl >=
+1.2.5 it is worse: exit() takes a lock keyed on the thread id, and since the
+vfork child shares the parent's thread struct, the parent's own exit() later
+looks like a recursive call and musl deliberately crashes (SIGSEGV on hlt).
+
+Symptom: static musl busybox without openssl installed, every https wget
+download succeeds and then dies with "Segmentation fault" (exit 139).
+
+--- a/networking/wget.c
++++ b/networking/wget.c
+@@ -742,11 +742,14 @@
+ 
+ 		BB_EXECVP(argv[0], argv);
+ 		xmove_fd(3, 2);
++		/* vfork child: must not call exit(), it shares the parent's
++		 * address space (atexit handlers, stdio, musl's exit lock) */
+ # if ENABLE_FEATURE_WGET_HTTPS
+ 		child_failed = 1;
+-		xfunc_die();
++		_exit(xfunc_error_retval);
+ # else
+-		bb_perror_msg_and_die("can't execute '%s'", argv[0]);
++		bb_perror_msg("can't execute '%s'", argv[0]);
++		_exit(xfunc_error_retval);
+ # endif
+ 		/* notreached */
+ 	}
