@@ -1,16 +1,17 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_packages="sys-apps/busybox::kubler"
+_packages="sys-apps/busybox"
 
 #
 # This hook is called just before starting the build of the root fs
-# 
+#
 configure_rootfs_build()
 {
     update_use 'sys-apps/busybox' +make-symlinks +static
     update_use 'virtual/libcrypt' +static-libs
     update_use 'sys-libs/libxcrypt' +static-libs
+    update_use 'sys-apps/attr' +static-libs
     update_use 'sys-apps/sed' +static -acl -nls
     mkdir -p "${_EMERGE_ROOT}"/{sbin,usr/bin,usr/sbin}
     # patch regression in 1.36.x that makes wget unusable for https urls
@@ -20,7 +21,7 @@ configure_rootfs_build()
 
 #
 # This hook is called just before packaging the root fs tar ball, ideal for any post-install tasks, clean up, etc
-# 
+#
 finish_rootfs_build()
 {
     # replace busybox sed with static gnu version
