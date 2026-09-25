@@ -3,9 +3,9 @@
 #
 _php_slot="${BOB_PHP_SLOT}"
 _php_target="php${_php_slot/\./-}"
-_packages="dev-lang/php:${_php_slot} dev-php/xdebug dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached app-arch/zstd"
+_packages="dev-lang/php:${_php_slot} dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached app-arch/zstd"
 _php_timezone="${BOB_TIMEZONE:-UTC}"
-_adminer_version="4.8.1"
+_adminer_version="6.1.0"
 #_iconv_from=kubler/glibc
 
 configure_bob()
@@ -17,6 +17,7 @@ configure_bob()
     update_use 'sys-libs/ncurses' '+minimal'
 
     update_use '+gif' '+jpeg' '+jpeg2k' '+png' '+tiff' '+webp'
+    update_use 'media-libs/gd' +xpm +truetype
     # resolve circular dependency
     update_use 'media-libs/tiff' '-webp'
     update_use 'dev-lang/php' '+bcmath' '+calendar' '+cli' '+curl' '+fpm' '+mhash' \
@@ -64,7 +65,7 @@ finish_rootfs_build()
     # use above changes also for php cli config
     cp "${fpm_php_ini}" "${_EMERGE_ROOT}"/etc/php/cli-php"${_php_slot}"/php.ini
     # disable xdebug
-    rm "${_EMERGE_ROOT}"/etc/php/{cli,fpm}-php"${_php_slot}"/ext-active/xdebug.ini
+    #rm "${_EMERGE_ROOT}"/etc/php/{cli,fpm}-php"${_php_slot}"/ext-active/xdebug.ini
     # required by null-mailer
     copy_gcc_libs
     chmod 0640 "${_EMERGE_ROOT}"/etc/nullmailer/remotes
