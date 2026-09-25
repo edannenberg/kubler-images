@@ -31,5 +31,5 @@ configure_rootfs_build()
 finish_rootfs_build()
 {
     # some apps expect musl libc in /lib
-    ln -sr /emerge-root/usr/lib /emerge-root/lib
+    ln -sr ${_EMERGE_ROOT}/usr/lib ${_EMERGE_ROOT}/lib
 }
