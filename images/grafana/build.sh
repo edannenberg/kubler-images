@@ -6,6 +6,7 @@ _packages="www-apps/grafana"
 configure_builder()
 {
     update_use net-libs/nodejs +icu -corepack
+    update_keywords '=dev-lang/go-1.26.7' '+~amd64'
 }
 
 #
