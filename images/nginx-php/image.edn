@@ -1,0 +1,4 @@
+;; migrated from v1 by kubler migrate
+{:build/env {:KUBLER_BUILDER_PHP_SLOT "8.3"},
+ :image/parent :kubler/nginx,
+ :healthcheck {:enabled? true, :max-duration 30}}

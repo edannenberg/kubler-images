@@ -5,10 +5,7 @@ _packages="www-servers/nginx dev-libs/libpcre2"
 # ..or when using mva overlay
 #_packages="www-servers/nginx::mva"
 
-# openssl 3.x update breaks bin packages linked against 1.x
-_no_cache_20230630=www-servers/nginx
-
-configure_bob()
+configure_builder()
 {
     # add mva overlay which has nginx with pagespeed and other goodies
     #add_overlay mva
@@ -20,14 +17,11 @@ configure_bob()
 #
 configure_rootfs_build()
 {
-    # ssl is a regular http module since the nginx.eclass rewrite (was USE=ssl), an
-    # explicit NGINX_MODULES_HTTP list replaces the defaults so it must be listed
     echo 'NGINX_MODULES_HTTP="access auth_basic auth_request autoindex charset fastcgi \
-             gzip gzip_static limit_req map proxy realip rewrite scgi ssi ssl stub_status v2"' >> /etc/portage/make.conf
+        gzip gzip_static limit_req map proxy realip rewrite scgi ssi ssl stub_status v2"' >> /etc/portage/make.conf
     echo 'NGINX_MODULES_MAIL=""' >> /etc/portage/make.conf
 
     update_use 'app-misc/mime-types' '+nginx'
-    update_use 'www-servers/nginx' '+http2'
     update_use 'dev-libs/libpcre' '-readline'
 }
 

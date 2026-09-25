@@ -4,7 +4,7 @@
 _packages="dev-lang/python dev-python/pip"
 #_keep_headers=true
 
-configure_bob()
+configure_builder()
 {
     emerge dev-python/pip
 }

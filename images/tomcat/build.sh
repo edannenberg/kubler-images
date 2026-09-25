@@ -2,9 +2,9 @@
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
 _packages="dev-libs/apr dev-java/tomcat-native www-servers/tomcat"
-_tomcat_slot="${BOB_TOMCAT_SLOT}"
+_tomcat_slot="${KUBLER_BUILDER_TOMCAT_SLOT}"
 
-configure_bob()
+configure_builder()
 {
     # build tomcat-native package on the host
     emerge dev-java/ant dev-java/tomcat-native www-servers/tomcat dev-java/xalan

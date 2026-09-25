@@ -1,0 +1,2 @@
+;; migrated from v1 by kubler migrate
+#:image{:builder :kubler/builder-glibc, :parent :kubler/busybox}

@@ -3,7 +3,7 @@
 #
 _packages="dev-libs/openssl"
 
-configure_bob()
+configure_builder()
 {
     update_use 'app-misc/ca-certificates' '-cacert'
 }

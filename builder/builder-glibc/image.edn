@@ -1,0 +1,10 @@
+;; migrated from v1 by kubler migrate
+{:build/env
+ {:KUBLER_BUILDER_CFLAGS "-mtune=generic -O2 -pipe",
+  :KUBLER_BUILDER_CHOST "x86_64-pc-linux-gnu",
+  :KUBLER_BUILDER_CXXFLAGS "-mtune=generic -O2 -pipe"},
+ :gentoo/cflags "-mtune=generic -O2 -pipe",
+ :gentoo/chost "x86_64-pc-linux-gnu",
+ :gentoo/cxxflags "-mtune=generic -O2 -pipe",
+ :gentoo/stage3-base "stage3-amd64-nomultilib-openrc",
+ :gentoo/stage3-date "20260913T163055Z"}

@@ -1,0 +1,6 @@
+;; migrated from v1 by kubler migrate
+{:namespace/name "kubler",
+ :author "Erik Dannenberg <erik.dannenberg@xtrade-gmbh.de>",
+ :build/engine :docker,
+ :build/default-builder :kubler/builder-glibc,
+ :build/strategy :gentoo}

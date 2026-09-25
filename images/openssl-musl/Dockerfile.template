@@ -1,4 +1,0 @@
-FROM ${NAMESPACE}/musl
-LABEL maintainer="${MAINTAINER}"
-
-ADD rootfs.tar /

@@ -1,0 +1,3 @@
+;; migrated from v1 by kubler migrate
+{:image/parent :kubler/openssl,
+ :healthcheck {:enabled? true, :max-duration 60}}

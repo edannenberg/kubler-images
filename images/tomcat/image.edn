@@ -1,0 +1,3 @@
+;; migrated from v1 by kubler migrate
+{:build/env {:KUBLER_BUILDER_TOMCAT_SLOT "tomcat-11"},
+ :image/parent :kubler/jre-openjdk}

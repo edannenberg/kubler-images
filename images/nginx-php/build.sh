@@ -1,14 +1,14 @@
 #
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
-_php_slot="${BOB_PHP_SLOT}"
+_php_slot="${KUBLER_BUILDER_PHP_SLOT}"
 _php_target="php${_php_slot/\./-}"
 _packages="dev-lang/php:${_php_slot} dev-libs/libmemcached media-gfx/imagemagick dev-php/pecl-redis pecl-imagick dev-php/pecl-memcached app-arch/zstd"
-_php_timezone="${BOB_TIMEZONE:-UTC}"
+_php_timezone="${KUBLER_BUILDER_TIMEZONE:-UTC}"
 _adminer_version="6.1.0"
 #_iconv_from=kubler/glibc
 
-configure_bob()
+configure_builder()
 {
     echo "PHP_TARGETS=\"${_php_target}\"" >> /etc/portage/make.conf
     echo 'PHP_INI_VERSION="production"' >> /etc/portage/make.conf

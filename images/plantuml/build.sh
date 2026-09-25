@@ -4,7 +4,7 @@
 _packages="media-gfx/graphviz"
 _plantuml_version='v1.2026.8'
 
-configure_bob()
+configure_builder()
 {
     unprovide_package dev-java/javatoolkit dev-java/tomcat-servlet-api media-libs/freetype media-libs/fontconfig
     update_use 'media-libs/gd' +jpeg +png +fontconfig +truetype

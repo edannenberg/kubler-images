@@ -1,7 +1,0 @@
-FROM ${IMAGE_PARENT}
-LABEL maintainer="${MAINTAINER}"
-
-ADD rootfs.tar /
-
-# init graphviz
-RUN dot -c

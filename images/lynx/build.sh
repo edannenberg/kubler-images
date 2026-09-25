@@ -4,9 +4,9 @@
 _packages="www-client/lynx"
 
 # keep lynx docs
-export BOB_FEATURES="${BOB_FEATURES//nodoc/}"
+export KUBLER_BUILDER_FEATURES="${KUBLER_BUILDER_FEATURES//nodoc/}"
 
-configure_bob(){
+configure_builder(){
     update_use 'sys-libs/ncurses' +minimal
     update_use 'www-client/lynx'  -nls
 }

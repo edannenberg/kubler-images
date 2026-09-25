@@ -4,7 +4,7 @@
 _packages="dev-libs/libxslt sys-libs/zlib"
 _keep_headers=true
 
-configure_bob() {
+configure_builder() {
     :
 }
 

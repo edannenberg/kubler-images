@@ -2,10 +2,10 @@
 # Kubler phase 1 config, pick installed packages and/or customize the build
 #
 _packages="sys-libs/musl"
-_timezone="${BOB_TIMEZONE:-UTC}"
-BOB_SKIP_LIB_CLEANUP=true
+_timezone="${KUBLER_BUILDER_TIMEZONE:-UTC}"
+KUBLER_BUILDER_SKIP_LIB_CLEANUP=true
 
-configure_bob() {
+configure_builder() {
     update_use 'sys-apps/util-linux' -su -logger
     emerge -1 sys-libs/timezone-data
     # set timezone
