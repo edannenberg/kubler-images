@@ -17,4 +17,6 @@ configure_rootfs_build()
 finish_rootfs_build()
 {
     copy_gcc_libs
+    # influxdb links against python lib now
+    cp /usr/lib64/libpython3* ${_EMERGE_ROOT}/lib64/
 }
