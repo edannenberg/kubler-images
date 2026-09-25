@@ -20,8 +20,10 @@ configure_bob()
 #
 configure_rootfs_build()
 {
+    # ssl is a regular http module since the nginx.eclass rewrite (was USE=ssl), an
+    # explicit NGINX_MODULES_HTTP list replaces the defaults so it must be listed
     echo 'NGINX_MODULES_HTTP="access auth_basic auth_request autoindex charset fastcgi \
-             gzip gzip_static limit_req map proxy realip rewrite scgi ssi stub_status v2"' >> /etc/portage/make.conf
+             gzip gzip_static limit_req map proxy realip rewrite scgi ssi ssl stub_status v2"' >> /etc/portage/make.conf
     echo 'NGINX_MODULES_MAIL=""' >> /etc/portage/make.conf
 
     update_use 'app-misc/mime-types' '+nginx'
@@ -35,6 +37,8 @@ configure_rootfs_build()
 finish_rootfs_build()
 {
     mkdir -p "${_EMERGE_ROOT}"/etc/nginx/conf.d
+    # default docroot of sites-enabled/default.conf, the nginx ebuild only keeps /var/www since the eclass rewrite
+    mkdir -p "${_EMERGE_ROOT}"/var/www/localhost/htdocs
     # required if pagespeed module is included
     #copy_gcc_libs
     # remove overlay

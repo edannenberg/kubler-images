@@ -1,6 +1,7 @@
 #!/bin/sh
 
 [ ! -d /run/nginx ] && mkdir -p /run/nginx
+[ ! -d /var/cache/nginx ] && mkdir -p /var/cache/nginx
 
 if [ "${NGINX_RELOAD_ON_CONTAINER_SIGHUP}" = true ]; then
     # instead of shutting down the container just send a SIGHUP to nginx and carry on
