@@ -9,7 +9,7 @@ EXPOSE 8086
 
 VOLUME ["/var/lib/influxdb/"]
 
-HEALTHCHECK --interval=30s --timeout=3s CMD wget --spider http://localhost:8086/ping || exit 1
+HEALTHCHECK --interval=30s --timeout=3s CMD wget --spider http://localhost:8181/health || exit 1
 
 ENTRYPOINT ["/usr/bin/influxd"]
-CMD ["serve", "--node-id-from-env", "INFLUXDB_NODE_ID"]
+CMD ["serve", "--node-id-from-env", "INFLUXDB_NODE_ID", "--disable-authz", "health"]
