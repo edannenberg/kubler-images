@@ -18,6 +18,7 @@ configure_rootfs_build()
     update_use -introspection
     update_use 'media-gfx/graphviz' -nls
     update_use 'media-libs/harfbuzz' -graphite
+    update_use 'media-libs/freetype' +harfbuzz
     update_use 'media-libs/gd' +fontconfig +jpeg +truetype +png
     # graphviz ebuild calls 'dot -c || die' as part of postinstall. Fake dot and run the setup via Dockerfile instead.
     ln -s /bin/true /usr/bin/dot
