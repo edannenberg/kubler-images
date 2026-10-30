@@ -1,22 +1,22 @@
-### kubler/ruby-gcc:20260930
+### kubler/ruby-gcc:20261031
 
-Built: Wed 30 Sep 20:18:00 CEST 2026
-Image Size: 607MB
+Built: Thu 29 Oct 22:36:57 CET 2026
+Image Size: 611MB
 
 #### Installed
 Package | USE Flags
 --------|----------
 app-alternatives/gpg-1-r3 | `nls reference ssl -freepg -sequoia`
-app-crypt/gnupg-2.5.21 | `alternatives bzip2 nls readline smartcard ssl tofu -doc -ldap (-selinux) -test -tools -tpm -usb -user-socket (-verify-sig) -wks-server`
+app-crypt/gnupg-2.5.24-r2 | `alternatives bzip2 nls readline smartcard ssl tofu -doc -ldap (-selinux) -test -tools -tpm -usb -user-socket (-verify-sig) -wks-server`
 app-crypt/pinentry-1.3.3 | `ncurses -`
 app-eselect/eselect-ruby-20241225 | ``
-dev-lang/ruby-3.3.12 | `ssl -berkdb -debug -doc -examples -gdbm -gmp (-jemalloc) -jit -socks5 (-static-libs) -systemtap -tk -valgrind -xemacs`
-dev-libs/expat-2.8.5 | `unicode -examples -static-libs -test`
+dev-lang/ruby-3.3.13 | `ssl -berkdb -debug -doc -examples -gdbm -gmp (-jemalloc) -jit -socks5 (-static-libs) -systemtap -tk -valgrind -xemacs`
+dev-libs/expat-2.9.0 | `unicode -examples -static-libs -test`
 dev-libs/libassuan-3.0.0-r1 | `-verify-sig`
-dev-libs/libffi-3.5.2 | `exec-static-trampoline -debug -pax-kernel -static-libs -test`
+dev-libs/libffi-3.8.0 | `exec-static-trampoline -debug -pax-kernel -static-libs -test`
 dev-libs/libgcrypt-1.12.4 | `asm getentropy -doc -static-libs (-verify-sig)`
 dev-libs/libgpg-error-1.61 | `nls -common-lisp -static-libs -test (-verify-sig)`
-dev-libs/libksba-1.8.0 | `-static-libs (-verify-sig)`
+dev-libs/libksba-1.8.1 | `-static-libs (-verify-sig)`
 dev-libs/libpcre2-10.49 | `bzip2 jit pcre16 pcre32 readline unicode zlib -libedit -static-libs -valgrind -verify-sig`
 dev-libs/libyaml-0.2.5 | `-doc -static-libs -test`
 dev-libs/npth-1.8 | `-test -verify-sig`
@@ -67,21 +67,21 @@ Package | USE Flags
 --------|----------
 **FROM kubler/gcc** |
 app-admin/perl-cleaner-2.31-r3 | `-pkgcore`
-app-arch/libarchive-3.8.9 | `acl bzip2 e2fsprogs iconv lzma xattr zstd -blake2 -expat -lz4 -lzo -nettle -static-libs -test -verify-sig`
+app-arch/libarchive-3.8.10 | `acl bzip2 e2fsprogs iconv lzma xattr zstd -blake2 -expat -lz4 -lzo -nettle -static-libs -test -verify-sig`
 app-i18n/gnulib-l10n-20241231 | ``
-dev-build/autoconf-2.72-r7 | `-verify-sig`
+dev-build/autoconf-2.73-r2 | `-verify-sig`
 dev-build/autoconf-wrapper-20260320 | ``
-dev-build/automake-1.18.1-r1 | `-test -verify-sig`
-dev-build/automake-wrapper-20250528 | ``
+dev-build/automake-1.19 | `-test -verify-sig`
+dev-build/automake-wrapper-20260920 | ``
 dev-build/make-4.4.1-r102 | `nls -doc -guile -static -test -verify-sig`
-dev-db/sqlite-3.53.3 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -test-full -tools`
+dev-db/sqlite-3.53.4 | `readline -debug -doc -icu -secure-delete -static-libs -tcl -test -test-full -tools`
 dev-lang/perl-5.44.0 | `-berkdb -doc -gdbm -minimal`
-dev-libs/elfutils-0.195 | `bzip2 debuginfod libarchive lzma nls utils -stacktrace -static-libs -test -valgrind -verify-sig -zstd`
+dev-libs/elfutils-0.196-r1 | `bzip2 debuginfod libarchive lzma nls utils -libpfm -stackprof -static-libs -test -valgrind -verify-sig -zstd`
 dev-libs/gmp-6.3.0-r2 | `asm cpudetection cxx -doc -pic -static-libs -verify-sig`
-dev-libs/json-c-0.18 | `threads -doc -static-libs -test`
+dev-libs/json-c-0.19-r3 | `threads -static-libs -test`
 dev-libs/leancrypto-1.8.0 | `asm -test -tools -verify-sig`
 dev-libs/libtasn1-4.21.0 | `-static-libs -verify-sig`
-dev-libs/libxml2-2.15.3 | `readline -doc -icu -python -static-libs -test`
+dev-libs/libxml2-2.15.4 | `readline -doc -icu -python -static-libs -test`
 dev-libs/mpc-1.4.1 | `-static-libs -verify-sig`
 dev-libs/mpfr-4.2.2 | `-static-libs -verify-sig`
 dev-libs/nettle-3.10.2 | `asm gmp -doc -static-libs -verify-sig`
@@ -104,13 +104,13 @@ app-arch/bzip2-1.0.8-r5 | `-static -static-libs -verify-sig`
 app-arch/xz-utils-5.8.3 | `extra-filters nls -doc -pgo -static-libs -verify-sig`
 app-arch/zstd-1.5.7-r1 | `lzma zlib -lz4 -static-libs -test -verify-sig`
 app-portage/portage-utils-0.97.1 | `-openmp -qmanifest -static`
-app-shells/bash-5.3_p15 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -pgo -plugins -verify-sig`
-net-dns/c-ares-1.34.8 | `-static-libs -test -verify-sig`
+app-shells/bash-5.3_p20 | `net nls (readline) -afs -bashlogger -examples -mem-scramble -pgo -plugins -verify-sig`
+net-dns/c-ares-1.34.9 | `-static-libs -test -verify-sig`
 net-libs/libpsl-0.21.5 | `idn -icu -static-libs -test`
-net-libs/nghttp2-1.69.0 | `-debug -hpack-tools -systemd -test -utils -verify-sig -xml`
-net-libs/nghttp3-1.17.0 | `-verify-sig`
-net-libs/ngtcp2-1.24.0 | `openssl ssl -gnutls -verify-sig`
-net-misc/curl-8.21.0-r1 | `adns alt-svc ftp hsts http2 http3 httpsrr imap openssl pop3 psl quic smtp ssl tftp websockets -brotli -debug (-ech) -gnutls -gopher -idn -kerberos -ldap -mbedtls (-rustls) -sasl-scram -ssh -static-libs -telnet -test -verify-sig -zstd`
+net-libs/nghttp2-1.70.0 | `-debug -hpack-tools -systemd -test -utils -verify-sig -xml`
+net-libs/nghttp3-1.18.0 | `-verify-sig`
+net-libs/ngtcp2-1.25.0 | `openssl ssl -gnutls -verify-sig`
+net-misc/curl-8.23.0 | `adns alt-svc ftp hsts http2 http3 httpsrr imap openssl pop3 psl quic smtp ssl tftp websockets -brotli -debug (-ech) -gnutls -gopher -idn -kerberos -ldap -mbedtls (-rustls) -sasl-scram -ssh -static-libs -telnet -test -verify-sig -zstd`
 sys-apps/acl-2.4.0-r2 | `nls -static-libs -verify-sig`
 sys-apps/attr-2.6.0 | `nls -debug -static-libs -verify-sig`
 sys-apps/coreutils-9.11-r1 | `acl nls openssl xattr -caps -gmp -hostname -kill -multicall (-selinux) (-split-usr) -static -test -test-full -vanilla -verify-sig`
@@ -118,11 +118,11 @@ sys-apps/file-5.48 | `bzip2 seccomp zlib -lzip -lzma -python -static-libs -verif
 sys-apps/sed-4.10-r1 | `acl nls xattr (-selinux) -static -test-full -verify-sig`
 sys-libs/libseccomp-2.6.1 | `-debug -python -static-libs -test -verify-sig`
 sys-libs/ncurses-6.5_p20251220 | `cxx minimal (tinfo) -ada -debug -doc -gpm -profile (-split-usr) (-stack-realign) -static-libs -test -trace -verify-sig`
-sys-libs/readline-8.3_p3 | `(unicode) -static-libs -utils -verify-sig`
+sys-libs/readline-8.3_p6 | `(unicode) -static-libs -utils -verify-sig`
 sys-libs/zlib-1.3.2-r1 | `-minizip -static-libs -verify-sig`
 **FROM kubler/openssl** |
-app-misc/ca-certificates-20260601.3.112.5 | `-cacert`
-dev-libs/openssl-3.5.8 | `asm quic -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
+app-misc/ca-certificates-20260816.3.131.1 | `-cacert`
+dev-libs/openssl-3.5.9 | `asm quic -fips -ktls -rfc3779 -sctp -static-libs -test -tls-compression -vanilla -verify-sig -weak-ssl-ciphers`
 **FROM kubler/s6** |
 app-admin/entr-5.8 | `-test`
 dev-lang/execline-2.9.9.1 | ``
@@ -132,8 +132,8 @@ sys-apps/s6-2.15.0.0 | `execline`
 dev-libs/libunistring-1.4.2 | `-doc -static-libs`
 net-dns/libidn2-2.3.8 | `nls -static-libs -verify-sig`
 sys-libs/glibc-2.43-r4 | `cet multiarch ssp (static-libs) -audit -caps (-clang) -compile-locales (-custom-cflags) -doc -gd -hash-sysv-compat -headers-only (-multilib) -multilib-bootstrap -nscd -perl -profile (-selinux) -sframe (-stack-realign) -suid -systemd -systemtap -test (-vanilla) -verify-sig`
-sys-libs/libxcrypt-4.4.38-r1 | `(compat) (system) (-headers-only) -static-libs -test`
-sys-libs/timezone-data-2026b | `nls -leaps-timezone -zic-slim`
+sys-libs/libxcrypt-4.5.2 | `(compat) (system) (-headers-only) -static-libs -test`
+sys-libs/timezone-data-2026e | `nls -leaps-timezone -verify-sig -zic-slim`
 **FROM kubler/busybox** |
 #### Purged
 - [ ] Headers

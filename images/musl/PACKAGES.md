@@ -1,6 +1,6 @@
-### kubler/musl:20260930
+### kubler/musl:20261031
 
-Built: Wed 30 Sep 19:35:12 CEST 2026
+Built: Thu 29 Oct 20:52:26 CET 2026
 Image Size: 2.39MB
 
 #### Installed
